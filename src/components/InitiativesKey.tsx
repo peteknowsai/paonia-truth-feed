@@ -10,6 +10,40 @@ interface InitiativesKeyProps {
 export default function InitiativesKey({ activeInitiative, onInitiativeClick }: InitiativesKeyProps) {
   return (
     <aside className="space-y-4">
+      {/* Community Support Announcement */}
+      <div className="bg-yellow-100 rounded-lg border-2 border-yellow-300 shadow-md transform rotate-1 hover:rotate-0 transition-transform">
+        <div className="p-6 space-y-3">
+          <div className="flex-1">
+            <h3 className="font-bold text-gray-900 text-sm mb-2">
+              Community Support Needed - September 3rd, 10am
+            </h3>
+            <p className="text-xs text-gray-700 leading-relaxed mb-3">
+              I will be submitting these initiatives to the Town Clerk on <strong>September 3rd at 10am</strong>. 
+              I need the community's presence. I'm not doing this alone—there are many who support either 
+              these initiatives or my fundamental right to have them on the ballot. Your presence matters.
+            </p>
+            <p className="text-xs text-gray-700 font-semibold mb-3">
+              Stand with me for democracy on September 3rd. Show the Town that citizens care about their 
+              right to petition and vote.
+            </p>
+            <a
+              href="https://calendar.app.google/JfEjg284wKuGxzDd6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-yellow-200 hover:bg-yellow-300 text-gray-900 border-2 border-yellow-400 rounded-md text-sm font-semibold transition-colors shadow-sm"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+              </svg>
+              Add to Calendar
+            </a>
+            <p className="text-xs text-gray-600 mt-3 font-medium">
+              ~ Pete McCarthy
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Header Card */}
       <div className="bg-blue-50/30 backdrop-blur-sm rounded-lg border border-blue-100/50 overflow-hidden">
         <div className="px-3 py-2 border-b border-blue-100/30 bg-blue-50/20">
@@ -51,14 +85,13 @@ export default function InitiativesKey({ activeInitiative, onInitiativeClick }: 
                   {/* Links */}
                   <div className="flex items-center gap-2.5 ml-5">
                     <a
-                      href={`/paonia-town${initiative.pdfPath}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`/initiative/${initiative.id}`}
                       className="text-[10px] font-medium text-blue-600 hover:text-blue-700 hover:underline"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      PDF ↗
+                      Explainer
                     </a>
+                    <span className="text-[10px] text-gray-400">•</span>
                     <a
                       href={`/paonia-town${initiative.mdPath}`}
                       target="_blank"
