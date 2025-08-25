@@ -8,7 +8,7 @@ export const getByPost = query({
     const comments = await ctx.db
       .query("comments")
       .withIndex("by_post", (q) => q.eq("postId", args.postId))
-      .order("asc")
+      .order("desc") // Show newest comments first
       .collect();
     
     return comments;
@@ -24,8 +24,14 @@ export const create = mutation({
     content: v.string(),
   },
   handler: async (ctx, args) => {
+    // Validate content
+    if (!args.content.trim()) {
+      throw new Error("Comment cannot be empty");
+    }
+    
     const comment = await ctx.db.insert("comments", {
       ...args,
+      content: args.content.trim(),
       points: 0,
       time_ago: "just now",
       createdAt: Date.now(),
@@ -40,5 +46,39 @@ export const create = mutation({
     }
     
     return comment;
+  },
+});
+
+// Delete a comment
+export const deleteComment = mutation({
+  args: {
+    commentId: v.id("comments"),
+    userId: v.string(),
+    isAdmin: v.optional(v.boolean()),
+  },
+  handler: async (ctx, args) => {
+    const comment = await ctx.db.get(args.commentId);
+    
+    if (!comment) {
+      throw new Error("Comment not found");
+    }
+    
+    // Check if user owns the comment or is admin
+    if (comment.userId !== args.userId && !args.isAdmin) {
+      throw new Error("You can only delete your own comments");
+    }
+    
+    // Update comment count on post
+    const post = await ctx.db.get(comment.postId);
+    if (post) {
+      await ctx.db.patch(comment.postId, {
+        comments: Math.max(0, post.comments - 1),
+      });
+    }
+    
+    // Delete the comment
+    await ctx.db.delete(args.commentId);
+    
+    return { success: true };
   },
 });

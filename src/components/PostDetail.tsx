@@ -8,6 +8,8 @@ import remarkGfm from 'remark-gfm'
 import { getStoryContent } from '@/lib/storyContentMarkdown'
 import { useAuth } from '@clerk/nextjs'
 import { useRouter } from 'next/navigation'
+import CommentForm from './CommentForm'
+import CommentList from './CommentList'
 
 interface PostDetailProps {
   post: Post
@@ -17,17 +19,18 @@ export default function PostDetail({ post }: PostDetailProps) {
   const { votes, getVoteCount, vote } = useVoting()
   const { isSignedIn } = useAuth()
   const router = useRouter()
-  const userVote = votes[post.id]
-  const voteCount = getVoteCount(post.id, post.points, 0)
+  const postId = (post as any)._id || post.id
+  const userVote = votes[postId]
+  const voteCount = getVoteCount(postId, post.points, 0)
   // Use storyAnalysis from database if available, otherwise fall back to getStoryContent
-  const storyContent = (post as any).storyAnalysis || getStoryContent(post.id)
+  const storyContent = (post as any).storyAnalysis || getStoryContent(postId)
   
   const handleUpvote = () => {
     if (!isSignedIn) {
       router.push('/sign-in')
       return
     }
-    vote(post.id, 'up')
+    vote(postId, 'up')
   }
   
   const handleDownvote = () => {
@@ -35,7 +38,7 @@ export default function PostDetail({ post }: PostDetailProps) {
       router.push('/sign-in')
       return
     }
-    vote(post.id, 'down')
+    vote(postId, 'down')
   }
   
   const handleShare = () => {
@@ -120,12 +123,13 @@ export default function PostDetail({ post }: PostDetailProps) {
         </div>
 
         {/* Comments Section */}
-        <div className="mt-8 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-          <h3 className="text-sm font-semibold text-gray-900 mb-2">💬 Community Discussion</h3>
-          <p className="text-sm text-gray-600 mb-2">{post.comments} comments on this story</p>
-          <p className="text-xs text-gray-500 italic">
-            Comment system coming soon. Citizens will be able to add context, corrections, and local knowledge to AI-generated stories.
-          </p>
+        <div className="mt-8">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+            <span>💬</span>
+            <span>Community Discussion</span>
+          </h3>
+          <CommentForm postId={postId} />
+          <CommentList postId={postId} />
         </div>
 
         {/* Back to Feed */}

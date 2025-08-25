@@ -1,6 +1,10 @@
 'use client'
 
 import { initiatives, type InitiativeId } from '@/types/initiatives'
+import { useQuery, useMutation } from 'convex/react'
+import { api } from '../../convex/_generated/api'
+import { useAuth, useUser } from '@clerk/nextjs'
+import { useRouter } from 'next/navigation'
 
 interface InitiativesKeyProps {
   activeInitiative?: InitiativeId | null
@@ -8,6 +12,37 @@ interface InitiativesKeyProps {
 }
 
 export default function InitiativesKey({ activeInitiative, onInitiativeClick }: InitiativesKeyProps) {
+  const { isSignedIn } = useAuth()
+  const { user } = useUser()
+  const router = useRouter()
+  
+  const voteOnInitiative = useMutation(api.initiativeVotes.vote)
+  const allVoteCounts = useQuery(api.initiativeVotes.getAllCounts)
+  const userVotes = useQuery(api.initiativeVotes.getUserVotes, 
+    user?.id ? { userId: user.id } : 'skip'
+  )
+
+  const handleVote = async (initiativeId: InitiativeId, voteType: 'support' | 'oppose', e: React.MouseEvent) => {
+    e.stopPropagation() // Prevent triggering the card click
+    
+    if (!isSignedIn) {
+      router.push('/sign-in')
+      return
+    }
+
+    if (!user) return
+
+    try {
+      await voteOnInitiative({
+        initiativeId,
+        userId: user.id,
+        vote: voteType,
+      })
+    } catch (error) {
+      console.error('Failed to vote:', error)
+    }
+  }
+
   return (
     <aside className="space-y-4">
       {/* Community Support Announcement */}
@@ -54,7 +89,21 @@ export default function InitiativesKey({ activeInitiative, onInitiativeClick }: 
         
         {/* Initiative Cards */}
         <div className="divide-y divide-blue-100/20">
-          {Object.values(initiatives).map((initiative) => (
+          {Object.values(initiatives)
+            .sort((a, b) => {
+              // Sort by support count (highest first), then by total engagement
+              const aVotes = allVoteCounts?.[a.id] || { support: 0, oppose: 0, total: 0 }
+              const bVotes = allVoteCounts?.[b.id] || { support: 0, oppose: 0, total: 0 }
+              
+              // First sort by support count
+              if (bVotes.support !== aVotes.support) {
+                return bVotes.support - aVotes.support
+              }
+              
+              // Then by total engagement (support + oppose)
+              return bVotes.total - aVotes.total
+            })
+            .map((initiative) => (
             <div
               key={initiative.id}
               className={`
@@ -82,25 +131,64 @@ export default function InitiativesKey({ activeInitiative, onInitiativeClick }: 
                     {initiative.description}
                   </p>
                   
-                  {/* Links */}
-                  <div className="flex items-center gap-2.5 ml-5">
-                    <a
-                      href={`/initiative/${initiative.id}`}
-                      className="text-[10px] font-medium text-blue-600 hover:text-blue-700 hover:underline"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Explainer
-                    </a>
-                    <span className="text-[10px] text-gray-400">•</span>
-                    <a
-                      href={`/paonia-town${initiative.mdPath}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[10px] font-medium text-blue-600 hover:text-blue-700 hover:underline"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Full Text ↗
-                    </a>
+                  {/* Links and Voting */}
+                  <div className="flex items-center justify-between ml-5 mr-2">
+                    <div className="flex items-center gap-2.5">
+                      <a
+                        href={`/initiative/${initiative.id}`}
+                        className="text-[10px] font-medium text-blue-600 hover:text-blue-700 hover:underline"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Explainer
+                      </a>
+                      <span className="text-[10px] text-gray-400">•</span>
+                      <a
+                        href={`/paonia-town${initiative.mdPath}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[10px] font-medium text-blue-600 hover:text-blue-700 hover:underline"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Full Text ↗
+                      </a>
+                    </div>
+                    
+                    {/* Voting Controls */}
+                    <div className="flex items-center gap-1">
+                      <button
+                        onClick={(e) => handleVote(initiative.id, 'support', e)}
+                        className={`p-1 rounded transition-all ${
+                          userVotes?.[initiative.id] === 'support' 
+                            ? 'bg-green-100 text-green-700' 
+                            : 'text-gray-400 hover:text-green-600 hover:bg-green-50'
+                        }`}
+                        title="Support this initiative"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
+                        </svg>
+                      </button>
+                      <span className="text-[10px] tabular-nums font-medium text-green-700 min-w-[20px] text-center">
+                        {allVoteCounts?.[initiative.id]?.support || 0}
+                      </span>
+                      
+                      <button
+                        onClick={(e) => handleVote(initiative.id, 'oppose', e)}
+                        className={`p-1 rounded transition-all ${
+                          userVotes?.[initiative.id] === 'oppose' 
+                            ? 'bg-red-100 text-red-700' 
+                            : 'text-gray-400 hover:text-red-600 hover:bg-red-50'
+                        }`}
+                        title="Oppose this initiative"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z"/>
+                        </svg>
+                      </button>
+                      <span className="text-[10px] tabular-nums font-medium text-red-700 min-w-[20px] text-center">
+                        {allVoteCounts?.[initiative.id]?.oppose || 0}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

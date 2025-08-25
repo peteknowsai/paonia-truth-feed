@@ -18,6 +18,7 @@ import type * as addStory from "../addStory.js";
 import type * as clearAllStories from "../clearAllStories.js";
 import type * as comments from "../comments.js";
 import type * as deleteStory from "../deleteStory.js";
+import type * as initiativeVotes from "../initiativeVotes.js";
 import type * as posts from "../posts.js";
 import type * as removeMockStories from "../removeMockStories.js";
 import type * as seed from "../seed.js";
@@ -38,6 +39,7 @@ declare const fullApi: ApiFromModules<{
   clearAllStories: typeof clearAllStories;
   comments: typeof comments;
   deleteStory: typeof deleteStory;
+  initiativeVotes: typeof initiativeVotes;
   posts: typeof posts;
   removeMockStories: typeof removeMockStories;
   seed: typeof seed;

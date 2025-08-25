@@ -39,4 +39,13 @@ export default defineSchema({
   })
     .index("by_post", ["postId"])
     .index("by_creation", ["createdAt"]),
+
+  initiativeVotes: defineTable({
+    initiativeId: v.string(), // Initiative ID from types (e.g., 'str', 'email-transparency')
+    userId: v.string(), // Clerk user ID
+    vote: v.union(v.literal("support"), v.literal("oppose")), // thumbs up or down
+    createdAt: v.number(),
+  })
+    .index("by_initiative", ["initiativeId"])
+    .index("by_user_and_initiative", ["userId", "initiativeId"]),
 });
