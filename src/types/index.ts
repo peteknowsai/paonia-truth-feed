@@ -1,5 +1,8 @@
+import { InitiativeId } from './initiatives'
+
 export interface Post {
   id: string
+  _id?: string  // Convex document ID
   title: string
   content: string
   ai_persona: string
@@ -9,7 +12,10 @@ export interface Post {
   comments: number
   sourceUrl?: string
   sourceDocument?: string
+  sourceType?: string
+  sourceTitle?: string
   tags?: string[]
+  relatedInitiatives?: InitiativeId[]
 }
 
 export interface Comment {

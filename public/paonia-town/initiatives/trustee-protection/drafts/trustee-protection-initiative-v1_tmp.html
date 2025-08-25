@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>trustee-protection-initiative-v1.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+html,footer,header{
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///Users/pete/Projects/paonia/paonia-town/R%3A%5C2.Travail%5C1.Enseignement%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css"><link rel="stylesheet" href="file:///Users/pete/Projects/paonia/paonia-town/D%3A%5Crdaros%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css">
+</head>
+
+<body>
+    <h1 id="citizen-initiative-petition">CITIZEN INITIATIVE PETITION</h1>
+<p>TO THE TOWN CLERK OF PAONIA:</p>
+<p>We, the undersigned registered electors of the Town of Paonia, Colorado, hereby propose the following ordinance be submitted to the registered electors of the Town for their approval or rejection at the next regular or special election:</p>
+<hr>
+<h2 id="ordinance-no-2025">ORDINANCE NO. 2025-__</h2>
+<p><strong>AN INITIATED ORDINANCE PROTECTING ELECTED TRUSTEES FROM REMOVAL WITHOUT UNANIMOUS CONSENT</strong></p>
+<h3 id="recitals">RECITALS</h3>
+<p><strong>WHEREAS</strong>, the People of Paonia elect trustees to represent their interests and provide oversight of town operations; and</p>
+<p><strong>WHEREAS</strong>, trustees who received 227 votes from the People have been removed by as few as 5 votes from other trustees; and</p>
+<p><strong>WHEREAS</strong>, the ability of a simple majority to remove duly elected officials undermines the will of the voters and democratic governance; and</p>
+<p><strong>WHEREAS</strong>, trustees who pursue transparency and oversight through lawful means such as Colorado Open Records Act requests should not face retaliation; and</p>
+<p><strong>WHEREAS</strong>, the threat of removal chills legitimate oversight activities and enables administrative manipulation; and</p>
+<p><strong>WHEREAS</strong>, the People find it necessary to protect their elected representatives from politically motivated removal;</p>
+<p><strong>NOW, THEREFORE, BE IT ORDAINED BY THE PEOPLE OF THE TOWN OF PAONIA:</strong></p>
+<h3 id="section-1-policy-established">Section 1. Policy Established.</h3>
+<p>It shall be the policy of the Town of Paonia that elected trustees serve at the will of the People who elected them, not at the pleasure of their fellow board members. Removal of elected officials undermines democratic governance and should occur only in the most extraordinary circumstances with overwhelming consensus.</p>
+<h3 id="section-2-removal-standards">Section 2. Removal Standards.</h3>
+<p>(a) <strong>Unanimous Consent Required.</strong> No elected trustee may be removed from office except by:</p>
+<ol>
+<li>Unanimous vote of all other seated trustees; OR</li>
+<li>Recall election by the voters; OR</li>
+<li>Conviction of a felony</li>
+</ol>
+<p>(b) <strong>Abstentions and Recusals.</strong> For purposes of this ordinance:</p>
+<ol>
+<li>Abstentions count as votes against removal</li>
+<li>Recusals count as votes against removal</li>
+<li>Vacant seats are not counted in determining unanimity</li>
+</ol>
+<p>(c) <strong>Protected Activities.</strong> The following shall never constitute grounds for removal:</p>
+<ol>
+<li>Filing Colorado Open Records Act requests</li>
+<li>Requesting audits or investigations</li>
+<li>Voting contrary to the majority</li>
+<li>Speaking at public comment periods</li>
+<li>Communicating with constituents about town business</li>
+<li>Questioning staff or contractor actions</li>
+</ol>
+<h3 id="section-3-procedural-protections">Section 3. Procedural Protections.</h3>
+<p>(a) <strong>Notice Requirements.</strong> Any removal proceeding must provide:</p>
+<ol>
+<li>Written charges at least 30 days before any hearing</li>
+<li>Specific factual allegations, not conclusions</li>
+<li>Opportunity for written response</li>
+<li>Public hearing with right to present evidence</li>
+</ol>
+<p>(b) <strong>Burden of Proof.</strong> Those seeking removal must prove charges by clear and convincing evidence</p>
+<p>(c) <strong>Right to Counsel.</strong> The trustee facing removal may be represented by counsel at town expense if charges relate to official duties</p>
+<h3 id="section-4-retaliation-prohibited">Section 4. Retaliation Prohibited.</h3>
+<p>(a) No town employee, administrator, or contractor may threaten resignation or other adverse action to coerce trustee removal</p>
+<p>(b) Any contract or employment agreement contingent on trustee removal is void</p>
+<p>(c) Violations constitute official misconduct</p>
+<h3 id="section-5-voter-override">Section 5. Voter Override.</h3>
+<p>The voters may override any trustee removal by petition of 10% of registered electors within 30 days, triggering a special election on the removal.</p>
+<h3 id="section-6-enforcement">Section 6. Enforcement.</h3>
+<p>(a) Any removal vote not meeting these requirements is void</p>
+<p>(b) Citizens may seek injunctive relief and attorney fees</p>
+<p>(c) Wrongfully removed trustees are immediately reinstated</p>
+<h3 id="section-7-conflicts-and-amendments">Section 7. Conflicts and Amendments.</h3>
+<p>(a) This ordinance supersedes any conflicting provisions</p>
+<p>(b) May only be amended by vote of the People</p>
+<h3 id="section-8-severability">Section 8. Severability.</h3>
+<p>If any provision is held invalid, the remainder continues in effect.</p>
+<h3 id="section-9-effective-date">Section 9. Effective Date.</h3>
+<p>This ordinance takes effect immediately upon certification of election results.</p>
+<p><strong>ADOPTED BY THE PEOPLE OF THE TOWN OF PAONIA, COLORADO</strong></p>
+<p>Date: _______________________</p>
+<p><strong>ATTEST:</strong></p>
+<hr>
+<p>Town Clerk</p>
+<p><strong>CERTIFICATION</strong></p>
+<p>I hereby certify that the foregoing ordinance was adopted by the qualified electors of the Town of Paonia, Colorado at the election held on _____________, 2025.</p>
+<hr>
+<p>Town Clerk</p>
+<hr>
+<h2 id="signature-collection-section">SIGNATURE COLLECTION SECTION</h2>
+<p><strong>WARNING:</strong> IT IS AGAINST THE LAW: For anyone to sign any initiative petition with any name other than his or her own or to knowingly sign his or her name more than once for the same measure or to knowingly sign a petition when not a registered elector who is eligible to vote on the measure.</p>
+<p><strong>DO NOT SIGN THIS PETITION UNLESS YOU ARE A REGISTERED ELECTOR OF THE TOWN OF PAONIA</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Signature</th>
+<th>Printed Name</th>
+<th>Residence Address</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>_________</td>
+<td>____________</td>
+<td>_________________</td>
+<td>____</td>
+</tr>
+<tr>
+<td>2</td>
+<td>_________</td>
+<td>____________</td>
+<td>_________________</td>
+<td>____</td>
+</tr>
+<tr>
+<td>3</td>
+<td>_________</td>
+<td>____________</td>
+<td>_________________</td>
+<td>____</td>
+</tr>
+</tbody>
+</table>
+<p>[Continue for required number of signature lines]</p>
+<hr>
+<h2 id="affidavit-of-circulator">AFFIDAVIT OF CIRCULATOR</h2>
+<p>I, ________________________, swear or affirm that:</p>
+<ol>
+<li>I have read and understand the laws governing the circulation of petitions</li>
+<li>I circulated this petition and witnessed each signature</li>
+<li>Each signature is of a registered elector of the Town of Paonia</li>
+<li>To the best of my knowledge, each signature is genuine</li>
+</ol>
+<hr>
+<p>Signature of Circulator</p>
+<p>State of Colorado     )<br>
+) ss.<br>
+County of Delta      )</p>
+<p>Subscribed and sworn before me this ___ day of _______, 2025.</p>
+<hr>
+<p>Notary Public</p>
+<hr>
+<h2 id="cover-letter-for-submission">COVER LETTER FOR SUBMISSION</h2>
+<p>09/03/2025</p>
+<p>Town Clerk<br>
+Town of Paonia<br>
+214 Grand Avenue<br>
+Paonia, CO 81428</p>
+<p><strong>Re: Submission of Citizen Initiative Petition - Trustee Protection from Removal</strong></p>
+<p>Dear Town Clerk,</p>
+<p>I hereby submit this citizen initiative petition which establishes legislative policy requiring unanimous consent for the removal of elected trustees.</p>
+<p><strong>This Initiative is Clearly Legislative Because It:</strong></p>
+<ol>
+<li><strong>Establishes fundamental governance policy</strong> about the removal of elected officials</li>
+<li><strong>Sets procedural standards</strong> that apply prospectively to all future removal proceedings</li>
+<li><strong>Creates structural rules</strong> for government operation</li>
+<li><strong>Protects democratic institutions</strong> - a core legislative function</li>
+<li><strong>Defines the relationship</strong> between elected officials and voters</li>
+</ol>
+<p><strong>The Initiative Does NOT:</strong></p>
+<ul>
+<li>Direct any specific personnel action</li>
+<li>Address any individual trustee</li>
+<li>Interfere with day-to-day operations</li>
+<li>Make administrative decisions</li>
+</ul>
+<p><strong>Pure Legislative Policy-Making:</strong></p>
+<p>This initiative addresses how our democratic government functions - specifically, when and how elected representatives can be removed from office. This is quintessentially legislative, similar to:</p>
+<ul>
+<li>Term limit laws</li>
+<li>Recall provisions</li>
+<li>Ethics standards</li>
+<li>Procedural requirements for government action</li>
+</ul>
+<p><strong>Context and Public Interest:</strong></p>
+<p>The recent removal of Trustee Bill Brunner by a 5-1 vote, despite receiving 227 votes from citizens, demonstrates the need for this reform. When one trustee elected by hundreds can be removed by five trustees, democratic governance is undermined.</p>
+<p>The ability of administrators to leverage removal threats (as when Town Administrator Wynn threatened resignation unless Brunner was removed) creates an unhealthy dynamic where unelected staff can manipulate elected boards.</p>
+<p><strong>Legal Framework:</strong></p>
+<p>Per <em>Vagneur v. City of Aspen</em>, 295 P.3d 493 (Colo. 2013), the initiative power must be &quot;liberally construed.&quot; Establishing standards for removing elected officials is a fundamental legislative act about governmental structure.</p>
+<p>This is analogous to state laws requiring supermajorities for impeachment, constitutional amendments, or other extraordinary governmental actions. The People have the right to establish how their elected representatives may be removed.</p>
+<p><strong>Key Legislative Elements:</strong></p>
+<ul>
+<li>Creates general rules applying to all trustees equally</li>
+<li>Establishes procedural requirements</li>
+<li>Sets burden of proof standards</li>
+<li>Defines protected activities</li>
+<li>Provides enforcement mechanisms</li>
+</ul>
+<p>These are classic legislative functions establishing the framework of government.</p>
+<p>Please confirm receipt and acceptance of this petition for circulation within five (5) business days. Any concerns should be provided in writing.</p>
+<p>The fundamental question - should elected officials be removable by simple majority or require unanimous consent - is exactly the type of structural governance question voters should decide.</p>
+<p>Respectfully submitted,</p>
+<p>Pete McCarthy<br>
+119 1/2 Dorris Ave, Paonia, CO 81428</p>
+<p>cc: Town Attorney<br>
+Mayor</p>
+<hr>
+<h2 id="why-this-initiative-is-bulletproof">WHY THIS INITIATIVE IS BULLETPROOF:</h2>
+<h3 id="clearly-legislative">Clearly Legislative:</h3>
+<ol>
+<li><strong>Structural Governance</strong> - Defines how government operates</li>
+<li><strong>Procedural Standards</strong> - Sets rules for removal proceedings</li>
+<li><strong>General Application</strong> - Applies to all trustees equally</li>
+<li><strong>Prospective Effect</strong> - Governs future conduct</li>
+<li><strong>Democratic Protection</strong> - Preserves voter choices</li>
+</ol>
+<h3 id="strong-legal-position">Strong Legal Position:</h3>
+<ul>
+<li>Similar to impeachment standards (requiring supermajority)</li>
+<li>Like term limits or recall provisions (structural rules)</li>
+<li>Protects constitutional rights (due process, speech)</li>
+<li>Preserves voter sovereignty</li>
+</ul>
+<h3 id="key-context-from-brunner-removal">Key Context from Brunner Removal:</h3>
+<ul>
+<li><strong>Vote</strong>: 5-1 to remove (Brunner couldn't vote on his own removal)</li>
+<li><strong>Elected</strong>: Brunner received 227 votes from citizens</li>
+<li><strong>Charges</strong>: &quot;Harassment&quot; for pursuing CORA requests</li>
+<li><strong>Manipulation</strong>: Administrator threatened to resign unless removal occurred</li>
+<li><strong>Chilling Effect</strong>: Removes trustees who provide oversight</li>
+</ul>
+<p>This initiative ensures that the 227 voters who elected a trustee cannot have their choice overturned by just 5 other trustees.</p>
+
+</body>
+
+</html>

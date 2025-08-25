@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { VotingProvider } from '@/contexts/VotingContext'
+import ConvexClientProvider from '@/components/ConvexClientProvider'
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -15,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <VotingProvider>
-          {children}
-        </VotingProvider>
+        <ConvexClientProvider>
+          <VotingProvider>
+            {children}
+          </VotingProvider>
+        </ConvexClientProvider>
       </body>
     </html>
   )
