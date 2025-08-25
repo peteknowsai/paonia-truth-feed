@@ -3,7 +3,11 @@
 import { Post } from '@/types'
 import { useVoting } from '@/contexts/VotingContext'
 import Header from './Header'
-import { getStoryContent } from '@/lib/storyContent'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import { getStoryContent } from '@/lib/storyContentMarkdown'
+import { useAuth } from '@clerk/nextjs'
+import { useRouter } from 'next/navigation'
 
 interface PostDetailProps {
   post: Post
@@ -11,16 +15,33 @@ interface PostDetailProps {
 
 export default function PostDetail({ post }: PostDetailProps) {
   const { votes, getVoteCount, vote } = useVoting()
+  const { isSignedIn } = useAuth()
+  const router = useRouter()
   const userVote = votes[post.id]
   const voteCount = getVoteCount(post.id, post.points, 0)
-  const storyContent = getStoryContent(post.id)
+  // Use storyAnalysis from database if available, otherwise fall back to getStoryContent
+  const storyContent = (post as any).storyAnalysis || getStoryContent(post.id)
   
   const handleUpvote = () => {
+    if (!isSignedIn) {
+      router.push('/sign-in')
+      return
+    }
     vote(post.id, 'up')
   }
   
   const handleDownvote = () => {
+    if (!isSignedIn) {
+      router.push('/sign-in')
+      return
+    }
     vote(post.id, 'down')
+  }
+  
+  const handleShare = () => {
+    const url = window.location.href
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`
+    window.open(shareUrl, '_blank', 'width=600,height=400')
   }
 
   return (
@@ -58,85 +79,44 @@ export default function PostDetail({ post }: PostDetailProps) {
               </button>
             </div>
             
-            {/* Title and Meta */}
+            {/* Title and Share */}
             <div className="flex-1">
               <h1 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
                 {post.title}
               </h1>
-              
-              <div className="flex flex-wrap items-center gap-2 text-xs text-gray-600">
-                <span className="font-semibold text-[#ff6600]">{post.ai_persona}</span>
-                <span>•</span>
-                <span>{post.time_ago}</span>
-                <span>•</span>
-                <span>{post.comments} comments</span>
-                {post.sourceUrl && (
-                  <>
-                    <span>•</span>
-                    <a 
-                      href={post.sourceUrl} 
-                      className="text-blue-600 hover:underline font-medium"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Source
-                    </a>
-                  </>
-                )}
-              </div>
-              
-              {post.tags && post.tags.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 mt-3">
-                  {post.tags.map(tag => (
-                    <span 
-                      key={tag} 
-                      className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
+              <button
+                onClick={handleShare}
+                className="inline-flex items-center gap-2 px-3 py-1.5 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors"
+                aria-label="Share on Facebook"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Share on Facebook
+              </button>
             </div>
           </div>
 
-          {/* AI Summary Box */}
+          {/* AI Summary Box - Brief Overview */}
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r mb-6">
-            <h3 className="text-sm font-semibold text-blue-900 mb-2">AI Analysis Summary</h3>
-            <p className="text-sm text-gray-700 leading-relaxed">{post.content}</p>
+            <h3 className="text-sm font-semibold text-blue-900 mb-2">📊 AI Summary</h3>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              {post.content}
+            </p>
           </div>
         </div>
 
-        {/* Story Content */}
-        <article className="prose prose-sm max-w-none">
-          <div 
-            className="text-gray-800 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: storyContent }} 
-          />
-        </article>
-
-        {/* Source Documents Section */}
-        <div className="mt-10 p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <h3 className="text-sm font-semibold text-gray-900 mb-2">📄 Source Documents</h3>
-          <ul className="space-y-1 text-sm text-gray-700">
-            <li className="flex items-start">
-              <span className="text-gray-400 mr-2">•</span>
-              <span>{post.sourceDocument}</span>
-            </li>
-            {post.sourceUrl && (
-              <li className="flex items-start">
-                <span className="text-gray-400 mr-2">•</span>
-                <a 
-                  href={post.sourceUrl} 
-                  className="text-blue-600 hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Original Document →
-                </a>
-              </li>
-            )}
-          </ul>
+        {/* AI Story - Full Analysis */}
+        <div className="mb-8">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+            <span>🤖</span>
+            <span>AI Story Analysis</span>
+          </h2>
+          <article className="prose prose-sm max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-strong:text-gray-900 prose-ul:text-gray-700 prose-ol:text-gray-700 prose-blockquote:border-l-4 prose-blockquote:border-blue-400 prose-blockquote:bg-blue-50 prose-blockquote:pl-4 prose-blockquote:py-2 prose-blockquote:text-gray-700">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {storyContent}
+            </ReactMarkdown>
+          </article>
         </div>
 
         {/* Comments Section */}

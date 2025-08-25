@@ -2,7 +2,7 @@ import { v } from "convex/values";
 import { query, mutation } from "./_generated/server";
 import { Doc } from "./_generated/dataModel";
 
-// Get all posts sorted by creation date
+// Get all posts sorted by votes (highest first)
 export const list = query({
   args: {},
   handler: async (ctx) => {
@@ -31,11 +31,19 @@ export const list = query({
       })
     );
     
+    // Sort by points (highest first), then by creation date for ties
+    postsWithVotes.sort((a, b) => {
+      if (b.points !== a.points) {
+        return b.points - a.points;
+      }
+      return b.createdAt - a.createdAt;
+    });
+    
     return postsWithVotes;
   },
 });
 
-// Get posts filtered by initiative
+// Get posts filtered by initiative, sorted by votes
 export const listByInitiative = query({
   args: { initiative: v.string() },
   handler: async (ctx, args) => {
@@ -67,6 +75,14 @@ export const listByInitiative = query({
         };
       })
     );
+    
+    // Sort by points (highest first), then by creation date for ties
+    postsWithVotes.sort((a, b) => {
+      if (b.points !== a.points) {
+        return b.points - a.points;
+      }
+      return b.createdAt - a.createdAt;
+    });
     
     return postsWithVotes;
   },

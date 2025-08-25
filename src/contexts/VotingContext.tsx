@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useState, ReactNode } from 'react
 import { useMutation, useQuery } from 'convex/react'
 import { api } from '../../convex/_generated/api'
 import { Id } from '../../convex/_generated/dataModel'
+import { useUser } from '@clerk/nextjs'
 
 type VoteType = 'up' | 'down' | null
 
@@ -16,19 +17,20 @@ interface VotingContextType {
 
 const VotingContext = createContext<VotingContextType | undefined>(undefined)
 
-function getUserId(): string {
-  if (typeof window === 'undefined') return ''
-  
-  let userId = localStorage.getItem('userId')
-  if (!userId) {
-    userId = `user_${Math.random().toString(36).substr(2, 9)}`
-    localStorage.setItem('userId', userId)
-  }
-  return userId
-}
-
 export function VotingProvider({ children }: { children: ReactNode }) {
-  const [userId] = useState(() => getUserId())
+  const { user } = useUser()
+  const [anonymousUserId] = useState(() => {
+    if (typeof window === 'undefined') return ''
+    let anonId = localStorage.getItem('anonymousUserId')
+    if (!anonId) {
+      anonId = `anon_${Math.random().toString(36).substr(2, 9)}`
+      localStorage.setItem('anonymousUserId', anonId)
+    }
+    return anonId
+  })
+  
+  // Use Clerk user ID if signed in, otherwise use anonymous ID
+  const userId = user?.id || anonymousUserId
   const [localVotes, setLocalVotes] = useState<Record<string, VoteType>>({})
   const [isVoting, setIsVoting] = useState<Record<string, boolean>>({})
   

@@ -13,9 +13,15 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as addBrunnerContext from "../addBrunnerContext.js";
+import type * as addStory from "../addStory.js";
+import type * as clearAllStories from "../clearAllStories.js";
 import type * as comments from "../comments.js";
+import type * as deleteStory from "../deleteStory.js";
 import type * as posts from "../posts.js";
+import type * as removeMockStories from "../removeMockStories.js";
 import type * as seed from "../seed.js";
+import type * as updateFactChecked from "../updateFactChecked.js";
 import type * as votes from "../votes.js";
 
 /**
@@ -27,9 +33,15 @@ import type * as votes from "../votes.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  addBrunnerContext: typeof addBrunnerContext;
+  addStory: typeof addStory;
+  clearAllStories: typeof clearAllStories;
   comments: typeof comments;
+  deleteStory: typeof deleteStory;
   posts: typeof posts;
+  removeMockStories: typeof removeMockStories;
   seed: typeof seed;
+  updateFactChecked: typeof updateFactChecked;
   votes: typeof votes;
 }>;
 export declare const api: FilterApi<

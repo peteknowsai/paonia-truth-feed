@@ -1,23 +1,59 @@
-'use client'
-
-import { use } from 'react'
-import { useQuery } from 'convex/react'
+import { Metadata } from 'next'
 import { api } from '../../../../convex/_generated/api'
 import { Id } from '../../../../convex/_generated/dataModel'
-import PostDetail from '@/components/PostDetail'
-import { notFound } from 'next/navigation'
+import { fetchQuery } from 'convex/nextjs'
+import PostPageContent from './page-content'
 
-export default function PostPage({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = use(params)
-  const post = useQuery(api.posts.get, { id: resolvedParams.id as Id<"posts"> })
-  
-  if (post === undefined) {
-    return <div className="min-h-screen bg-white flex items-center justify-center">Loading...</div>
-  }
-  
-  if (!post) {
-    notFound()
-  }
+type Props = {
+  params: Promise<{ id: string }>
+}
 
-  return <PostDetail post={post} />
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const resolvedParams = await params
+  
+  try {
+    const post = await fetchQuery(api.posts.get, { 
+      id: resolvedParams.id as Id<"posts"> 
+    })
+    
+    if (!post) {
+      return {
+        title: 'Post Not Found - Paonia Truth Feed',
+      }
+    }
+
+    const description = post.content.length > 160 
+      ? post.content.substring(0, 157) + '...' 
+      : post.content
+
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
+
+    return {
+      title: `${post.title} - Paonia Truth Feed`,
+      description: description,
+      openGraph: {
+        title: post.title,
+        description: description,
+        url: `${baseUrl}/post/${resolvedParams.id}`,
+        siteName: 'Paonia Truth Feed',
+        type: 'article',
+        locale: 'en_US',
+      },
+      twitter: {
+        card: 'summary',
+        title: post.title,
+        description: description,
+      },
+    }
+  } catch (error) {
+    return {
+      title: 'Paonia Truth Feed',
+      description: 'AI-Generated Government Analysis',
+    }
+  }
+}
+
+export default async function PostPage({ params }: Props) {
+  const resolvedParams = await params
+  return <PostPageContent id={resolvedParams.id} />
 }

@@ -8,6 +8,7 @@ export default defineSchema({
     sourceType: v.optional(v.string()),
     sourceTitle: v.optional(v.string()),
     content: v.string(),
+    storyAnalysis: v.optional(v.string()), // Full AI Story Analysis in markdown
     points: v.number(),
     ai_persona: v.string(),
     time_ago: v.string(),
@@ -15,6 +16,8 @@ export default defineSchema({
     relatedInitiatives: v.optional(v.array(v.string())),
     tags: v.optional(v.array(v.string())),
     createdAt: v.number(),
+    submittedBy: v.optional(v.string()), // User ID who submitted the story
+    submittedByEmail: v.optional(v.string()), // Email of submitter for reference
   }).index("by_creation", ["createdAt"]),
 
   votes: defineTable({
