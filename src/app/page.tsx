@@ -18,7 +18,10 @@ export default function Home() {
   
   const isLoading = posts === undefined
 
-  const filteredPosts = posts || []
+  const filteredPosts = (posts || []).map(post => ({
+    ...post,
+    id: post._id
+  }))
 
   return (
     <div className="min-h-screen bg-white">
