@@ -16,5 +16,9 @@ export default function PostPageContent({ id }: { id: string }) {
     return <div className="min-h-screen bg-white flex items-center justify-center">Post not found</div>
   }
 
-  return <PostDetail post={post} />
+  return <PostDetail post={{ 
+    ...post, 
+    id: post._id,
+    relatedInitiatives: post.relatedInitiatives as any
+  }} />
 }

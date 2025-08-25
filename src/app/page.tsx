@@ -20,7 +20,8 @@ export default function Home() {
 
   const filteredPosts = (posts || []).map(post => ({
     ...post,
-    id: post._id
+    id: post._id,
+    relatedInitiatives: post.relatedInitiatives as InitiativeId[] | undefined
   }))
 
   return (
