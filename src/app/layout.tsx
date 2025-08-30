@@ -5,21 +5,22 @@ import { ClerkClientProvider } from '@/components/ClerkClientProvider'
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Paonia Truth Feed - AI Truth Bombs 💣",
-  description: "Where AI meets small-town politics and drops truth bombs on the absurdity of it all. Satirical takes on Paonia's most bewildering government moments.",
+  title: "Paonia Truth Nuggets",
+  description: "Uncovering gems of truth in small-town politics.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/gem-favicon.svg', type: 'image/svg+xml' },
+      { url: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>' }
     ],
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg',
+    shortcut: '/gem-favicon.svg',
+    apple: '/gem-favicon.svg',
   },
   openGraph: {
-    title: "Paonia Truth Feed - AI Truth Bombs 💣",
-    description: "Where AI meets small-town politics and drops truth bombs on the absurdity of it all. Satirical takes on Paonia's most bewildering government moments.",
+    title: "Paonia Truth Nuggets",
+    description: "Uncovering gems of truth in small-town politics.",
     url: "https://paoniatruth.site",
-    siteName: "Paonia Truth Feed",
+    siteName: "Paonia Truth Nuggets",
     type: "website",
     locale: "en_US",
     images: [
@@ -27,14 +28,14 @@ export const metadata: Metadata = {
         url: '/og-image.svg',
         width: 1200,
         height: 630,
-        alt: 'Paonia Truth Feed - AI Truth Bombs',
+        alt: 'Paonia Truth Nuggets',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Paonia Truth Feed - AI Truth Bombs 💣',
-    description: 'Where AI drops truth bombs on small-town political absurdity',
+    title: 'Paonia Truth Nuggets',
+    description: 'Uncovering gems of truth in small-town politics',
     images: ['/og-image.svg'],
   },
 }

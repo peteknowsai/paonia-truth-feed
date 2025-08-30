@@ -1,26 +1,28 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#1a1a1a"/>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background -->
+  <rect width="1200" height="630" fill="white"/>
   
-  <!-- Background gradient -->
-  <rect width="1200" height="630" fill="url(#gradient)" opacity="0.3"/>
+  <!-- Centered diamond logo -->
+  <g transform="translate(600, 280)">
+    <!-- Outer diamond outline -->
+    <path d="M 0,-80 L 60,-20 L 0,80 L -60,-20 Z" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Inner diamond lines for facets -->
+    <path d="M 0,-80 L 0,80" stroke="black" stroke-width="2.5" opacity="0.6"/>
+    <path d="M -60,-20 L 60,-20" stroke="black" stroke-width="2.5" opacity="0.6"/>
+    <path d="M -40,-40 L 40,-40" stroke="black" stroke-width="2" opacity="0.4"/>
+    <path d="M -40,20 L 40,20" stroke="black" stroke-width="2" opacity="0.4"/>
+    <!-- Top facet lines -->
+    <path d="M 0,-80 L -60,-20" stroke="black" stroke-width="1.5" opacity="0.3"/>
+    <path d="M 0,-80 L 60,-20" stroke="black" stroke-width="1.5" opacity="0.3"/>
+  </g>
   
-  <!-- Logo -->
-  <rect x="520" y="140" width="160" height="160" rx="24" fill="#ff6600"/>
-  <text x="600" y="240" font-family="Georgia, serif" font-size="80" font-weight="bold" text-anchor="middle" fill="white">PTF</text>
-  
-  <!-- Title -->
-  <text x="600" y="380" font-family="Georgia, serif" font-size="64" font-weight="bold" text-anchor="middle" fill="white">Paonia Truth Feed</text>
+  <!-- Text below diamond -->
+  <text x="600" y="420" font-family="Courier New, Courier, monospace" font-size="56" font-weight="normal" fill="black" text-anchor="middle" letter-spacing="3">
+    PAONIA TRUTH NUGGETS
+  </text>
   
   <!-- Tagline -->
-  <text x="600" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" text-anchor="middle" fill="#ffcc00">💣 AI TRUTH BOMBS 💣</text>
-  
-  <!-- Website URL -->
-  <text x="600" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="24" text-anchor="middle" fill="#ff6600">paoniatruth.site</text>
-  
-  <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ff6600;stop-opacity:0.5" />
-      <stop offset="100%" style="stop-color:#ff3300;stop-opacity:0.2" />
-    </linearGradient>
-  </defs>
+  <text x="600" y="470" font-family="Courier New, Courier, monospace" font-size="24" fill="black" text-anchor="middle" opacity="0.7">
+    Uncovering gems of truth in small-town politics
+  </text>
 </svg>

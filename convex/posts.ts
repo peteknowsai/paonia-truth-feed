@@ -2,7 +2,23 @@ import { v } from "convex/values";
 import { query, mutation } from "./_generated/server";
 import { Doc } from "./_generated/dataModel";
 
-// Get all posts sorted by votes (highest first)
+// Helper function to parse date strings like "Aug-25" to sortable values
+function parseDateString(dateStr: string | undefined): number {
+  if (!dateStr) return 0;
+  
+  const monthMap: Record<string, number> = {
+    'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
+    'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
+  };
+  
+  const [month, year] = dateStr.split('-');
+  const monthNum = monthMap[month] || 1;
+  const yearNum = parseInt('20' + year, 10);
+  
+  return yearNum * 100 + monthNum; // Creates sortable value like 202508 for Aug-25
+}
+
+// Get all posts sorted by date (newest first)
 export const list = query({
   args: {},
   handler: async (ctx) => {
@@ -12,11 +28,16 @@ export const list = query({
       .order("desc")
       .collect();
     
-    // Get vote counts for each post
+    // Get vote counts and bomb counts for each post
     const postsWithVotes = await Promise.all(
       posts.map(async (post) => {
         const votes = await ctx.db
           .query("votes")
+          .withIndex("by_post", (q) => q.eq("postId", post._id))
+          .collect();
+        
+        const bombs = await ctx.db
+          .query("bombs")
           .withIndex("by_post", (q) => q.eq("postId", post._id))
           .collect();
         
@@ -27,23 +48,23 @@ export const list = query({
         return {
           ...post,
           points: totalVotes,
+          bombCount: bombs.length,
         };
       })
     );
     
-    // Sort by points (highest first), then by creation date for ties
+    // Sort by date (newest first)
     postsWithVotes.sort((a, b) => {
-      if (b.points !== a.points) {
-        return b.points - a.points;
-      }
-      return b.createdAt - a.createdAt;
+      const dateA = parseDateString(a.date);
+      const dateB = parseDateString(b.date);
+      return dateB - dateA; // Newest first
     });
     
     return postsWithVotes;
   },
 });
 
-// Get posts filtered by initiative, sorted by votes
+// Get posts filtered by initiative, sorted by date (newest first)
 export const listByInitiative = query({
   args: { initiative: v.string() },
   handler: async (ctx, args) => {
@@ -57,11 +78,16 @@ export const listByInitiative = query({
       post.relatedInitiatives?.includes(args.initiative)
     );
     
-    // Get vote counts for each post
+    // Get vote counts and bomb counts for each post
     const postsWithVotes = await Promise.all(
       filteredPosts.map(async (post) => {
         const votes = await ctx.db
           .query("votes")
+          .withIndex("by_post", (q) => q.eq("postId", post._id))
+          .collect();
+        
+        const bombs = await ctx.db
+          .query("bombs")
           .withIndex("by_post", (q) => q.eq("postId", post._id))
           .collect();
         
@@ -72,16 +98,16 @@ export const listByInitiative = query({
         return {
           ...post,
           points: totalVotes,
+          bombCount: bombs.length,
         };
       })
     );
     
-    // Sort by points (highest first), then by creation date for ties
+    // Sort by date (newest first)
     postsWithVotes.sort((a, b) => {
-      if (b.points !== a.points) {
-        return b.points - a.points;
-      }
-      return b.createdAt - a.createdAt;
+      const dateA = parseDateString(a.date);
+      const dateB = parseDateString(b.date);
+      return dateB - dateA; // Newest first
     });
     
     return postsWithVotes;

@@ -17,12 +17,15 @@ export default defineSchema({
     sourceTitle: v.optional(v.string()),
     content: v.string(),
     storyAnalysis: v.optional(v.string()), // Full AI Story Analysis in markdown
+    facts: v.optional(v.string()), // Fact section in markdown with links
+    story: v.optional(v.string()), // Story section written by truth-nugget-writer
     points: v.number(),
     ai_persona: v.string(),
     time_ago: v.string(),
     comments: v.number(),
     relatedInitiatives: v.optional(v.array(v.string())),
     tags: v.optional(v.array(v.string())),
+    date: v.optional(v.string()), // Date in format like "Aug-25"
     createdAt: v.number(),
     submittedBy: v.optional(v.string()), // User ID who submitted the story
     submittedByEmail: v.optional(v.string()), // Email of submitter for reference
@@ -51,9 +54,40 @@ export default defineSchema({
   initiativeVotes: defineTable({
     initiativeId: v.string(), // Initiative ID from types (e.g., 'str', 'email-transparency')
     userId: v.string(), // Clerk user ID
+    username: v.optional(v.string()), // Username for display
     vote: v.union(v.literal("support"), v.literal("oppose")), // thumbs up or down
     createdAt: v.number(),
   })
     .index("by_initiative", ["initiativeId"])
     .index("by_user_and_initiative", ["userId", "initiativeId"]),
+
+  bombs: defineTable({
+    postId: v.id("posts"),
+    userId: v.string(), // Clerk user ID
+    createdAt: v.number(),
+  })
+    .index("by_post", ["postId"])
+    .index("by_user_and_post", ["userId", "postId"]),
+
+  initiativeComments: defineTable({
+    initiativeId: v.string(), // Initiative ID (e.g., 'str', 'email-transparency')
+    userId: v.string(),
+    username: v.string(),
+    content: v.string(),
+    createdAt: v.number(),
+  })
+    .index("by_initiative", ["initiativeId"])
+    .index("by_creation", ["createdAt"]),
+
+  feedback: defineTable({
+    type: v.union(v.literal("feedback"), v.literal("question"), v.literal("story")),
+    message: v.string(),
+    contactInfo: v.optional(v.string()),
+    userId: v.string(),
+    username: v.string(),
+    createdAt: v.number(),
+    status: v.string(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_status", ["status"]),
 });

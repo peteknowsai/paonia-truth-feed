@@ -6,6 +6,7 @@ export const vote = mutation({
   args: {
     initiativeId: v.string(),
     userId: v.string(),
+    username: v.string(),
     vote: v.union(v.literal("support"), v.literal("oppose")),
   },
   handler: async (ctx, args) => {
@@ -26,6 +27,7 @@ export const vote = mutation({
         // Otherwise, update to the new vote
         await ctx.db.patch(existingVote._id, {
           vote: args.vote,
+          username: args.username,
           createdAt: Date.now(),
         });
         return { action: "updated", vote: args.vote };
@@ -35,6 +37,7 @@ export const vote = mutation({
       await ctx.db.insert("initiativeVotes", {
         initiativeId: args.initiativeId,
         userId: args.userId,
+        username: args.username,
         vote: args.vote,
         createdAt: Date.now(),
       });
@@ -99,5 +102,31 @@ export const getUserVotes = query({
     }
 
     return userVotes;
+  },
+});
+
+// Get voters lists for an initiative
+export const getVoters = query({
+  args: { initiativeId: v.string() },
+  handler: async (ctx, args) => {
+    const votes = await ctx.db
+      .query("initiativeVotes")
+      .withIndex("by_initiative", (q) => q.eq("initiativeId", args.initiativeId))
+      .collect();
+
+    const supporters = votes
+      .filter((v) => v.vote === "support")
+      .map(v => v.username || "Anonymous");
+    
+    const opposers = votes
+      .filter((v) => v.vote === "oppose")
+      .map(v => v.username || "Anonymous");
+
+    return { 
+      supporters,
+      opposers,
+      supportCount: supporters.length,
+      opposeCount: opposers.length,
+    };
   },
 });

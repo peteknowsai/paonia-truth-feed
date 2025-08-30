@@ -36,6 +36,7 @@ export default function InitiativesKey({ activeInitiative, onInitiativeClick }: 
       await voteOnInitiative({
         initiativeId,
         userId: user.id,
+        username: user.username || user.firstName || 'Anonymous',
         vote: voteType,
       })
     } catch (error) {
