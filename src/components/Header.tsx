@@ -8,64 +8,58 @@ export default function Header() {
   const { isSignedIn } = useAuth();
   const { user } = useUser();
   
-  // Check if user is admin
   const isAdmin = isAdminEmail(user?.primaryEmailAddress?.emailAddress);
 
   return (
-    <header className="bg-[#ff6600] shadow-sm sticky top-0 z-50">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo and Title */}
-          <a href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <div className="h-10 w-10 grid place-items-center rounded-xl bg-white text-[#ff6600] font-serif font-bold text-lg shadow-sm">
-              PTF
-            </div>
-            <span className="text-white text-xl font-serif font-semibold">
-              Paonia Truth Feed
-            </span>
+    <header className="border-b-2 border-black bg-white">
+      <div className="max-w-6xl mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <a href="/" className="text-lg font-bold uppercase tracking-wider hover:bg-black hover:text-white px-2">
+            PTF
           </a>
           
-          {/* Auth Navigation */}
-          <div className="flex items-center gap-4">
+          {/* Navigation */}
+          <nav className="flex items-center gap-4 text-xs uppercase">
             {isSignedIn ? (
               <>
                 {isAdmin && (
                   <Link
                     href="/admin/submit"
-                    className="px-4 py-2 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors"
+                    className="underline hover:bg-black hover:text-white px-1"
                   >
-                    Submit Story
+                    Submit
                   </Link>
                 )}
                 <UserButton 
-                  afterSignOutUrl="/"
                   appearance={{
                     elements: {
-                      avatarBox: "h-9 w-9",
-                    },
+                      avatarBox: "w-8 h-8 border border-black",
+                      userButtonPopoverCard: "border border-black shadow-none",
+                    }
                   }}
                 />
               </>
             ) : (
-              <div className="flex items-center gap-2">
-                <Link
-                  href="/sign-in"
-                  className="px-4 py-2 bg-white text-[#ff6600] rounded-lg font-medium hover:bg-gray-100 transition-colors"
+              <>
+                <Link 
+                  href="/sign-in" 
+                  className="underline hover:bg-black hover:text-white px-1"
                 >
                   Sign In
                 </Link>
-                <span className="text-white">|</span>
-                <Link
-                  href="/sign-up"
-                  className="px-4 py-2 bg-white text-[#ff6600] rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                <span>|</span>
+                <Link 
+                  href="/sign-up" 
+                  className="underline hover:bg-black hover:text-white px-1"
                 >
                   Sign Up
                 </Link>
-              </div>
+              </>
             )}
-          </div>
+          </nav>
         </div>
       </div>
     </header>
-  )
+  );
 }
