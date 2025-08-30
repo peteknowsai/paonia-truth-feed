@@ -19,6 +19,7 @@ export default function PostPageContent({ id }: { id: string }) {
   return <PostDetail post={{ 
     ...post, 
     id: post._id,
-    relatedInitiatives: post.relatedInitiatives as any
-  }} />
+    relatedInitiatives: post.relatedInitiatives as any,
+    createdAt: post.createdAt || (post._creationTime ? new Date(post._creationTime).toISOString() : new Date().toISOString())
+  } as any} />
 }
