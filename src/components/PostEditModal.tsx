@@ -50,10 +50,39 @@ export default function PostEditModal({
     }
   }
   
+  const handleCopyAll = async () => {
+    const allContent = `Title:
+${title}
+
+AI Summary:
+${content}
+
+Full AI Analysis:
+${storyAnalysis}`
+    
+    try {
+      await navigator.clipboard.writeText(allContent)
+      alert('All sections copied to clipboard!')
+    } catch (error) {
+      console.error('Failed to copy:', error)
+      alert('Failed to copy to clipboard')
+    }
+  }
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className="bg-gray-800 rounded-lg p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-        <h2 className="text-2xl font-bold text-gray-100 mb-4">Edit Post</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-2xl font-bold text-gray-100">Edit Post</h2>
+          <button
+            type="button"
+            onClick={handleCopyAll}
+            className="px-3 py-1.5 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors flex items-center gap-2"
+            title="Copy all sections"
+          >
+            📋 Copy All
+          </button>
+        </div>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>

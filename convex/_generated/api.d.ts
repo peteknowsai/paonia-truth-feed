@@ -24,6 +24,7 @@ import type * as posts from "../posts.js";
 import type * as removeMockStories from "../removeMockStories.js";
 import type * as seed from "../seed.js";
 import type * as updateFactChecked from "../updateFactChecked.js";
+import type * as updatePost from "../updatePost.js";
 import type * as users from "../users.js";
 import type * as votes from "../votes.js";
 
@@ -47,6 +48,7 @@ declare const fullApi: ApiFromModules<{
   removeMockStories: typeof removeMockStories;
   seed: typeof seed;
   updateFactChecked: typeof updateFactChecked;
+  updatePost: typeof updatePost;
   users: typeof users;
   votes: typeof votes;
 }>;
