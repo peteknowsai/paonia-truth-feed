@@ -5,6 +5,7 @@ import { api } from '../../convex/_generated/api'
 import { Id } from '../../convex/_generated/dataModel'
 import { useUser } from '@clerk/nextjs'
 import { formatDistanceToNow } from '@/lib/utils'
+import { isAdminEmail } from '@/lib/config'
 
 interface CommentListProps {
   postId: Id<"posts">
@@ -15,8 +16,7 @@ export default function CommentList({ postId }: CommentListProps) {
   const deleteComment = useMutation(api.comments.deleteComment)
   const { user } = useUser()
   
-  const isAdmin = user?.primaryEmailAddress?.emailAddress && 
-    process.env.NEXT_PUBLIC_ADMIN_EMAILS?.split(',').includes(user.primaryEmailAddress.emailAddress)
+  const isAdmin = isAdminEmail(user?.primaryEmailAddress?.emailAddress)
 
   const handleDelete = async (commentId: Id<"comments">) => {
     if (!user) return

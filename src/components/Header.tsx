@@ -2,14 +2,14 @@
 
 import { UserButton, useAuth, useUser } from "@clerk/nextjs";
 import Link from "next/link";
+import { isAdminEmail } from "@/lib/config";
 
 export default function Header() {
   const { isSignedIn } = useAuth();
   const { user } = useUser();
   
   // Check if user is admin
-  const isAdmin = user?.primaryEmailAddress?.emailAddress && 
-    process.env.NEXT_PUBLIC_ADMIN_EMAILS?.split(',').includes(user.primaryEmailAddress.emailAddress);
+  const isAdmin = isAdminEmail(user?.primaryEmailAddress?.emailAddress);
 
   return (
     <header className="bg-[#ff6600] shadow-sm sticky top-0 z-50">

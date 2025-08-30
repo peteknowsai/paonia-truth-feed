@@ -14,6 +14,7 @@ import PostEditModal from './PostEditModal'
 import { useState } from 'react'
 import { useMutation } from 'convex/react'
 import { api } from '../../convex/_generated/api'
+import { isAdminEmail } from '@/lib/config'
 
 interface PostDetailProps {
   post: Post
@@ -30,8 +31,7 @@ export default function PostDetail({ post }: PostDetailProps) {
   const deletePost = useMutation(api.updatePost.deletePost)
   
   // Check if user is admin
-  const isAdmin = user?.primaryEmailAddress?.emailAddress && 
-    process.env.NEXT_PUBLIC_ADMIN_EMAILS?.split(',').includes(user.primaryEmailAddress.emailAddress)
+  const isAdmin = isAdminEmail(user?.primaryEmailAddress?.emailAddress)
   
   const postId = (post as any)._id || post.id
   const userVote = votes[postId]
