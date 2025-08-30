@@ -25,47 +25,58 @@ export default function Home() {
   }))
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
       <Header />
       
       {/* Main Content with proper spacing from header */}
       <main className="w-full mt-8">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Clean Section Header */}
-          <div className="mb-6">
-            <div className="py-2">
-              <div className="flex items-baseline justify-between gap-3">
-                <h1 className="text-2xl font-serif font-bold leading-tight text-gray-900">
-                  AI-Generated Government Analysis
-                </h1>
-                {/* Info Icon with Tooltip */}
+          {/* Fun Section Header */}
+          <div className="mb-8 text-center">
+            <div className="py-4">
+              <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-full text-white font-black text-lg mb-4 shadow-2xl animate-pulse">
+                <span className="text-2xl">💣</span>
+                <span className="tracking-wider">AI TRUTH BOMBS</span>
+                <span className="text-2xl">💣</span>
+              </div>
+              
+              <h1 className="text-4xl sm:text-5xl font-black leading-tight bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-3">
+                Where AI Exposes Small-Town Political Absurdity
+              </h1>
+              
+              {/* Info Button with Fun Tooltip */}
+              <div className="flex justify-center items-center gap-3 mt-4">
+                <p className="text-gray-400 text-lg">
+                  {activeInitiative 
+                    ? `💥 ${filteredPosts.length} truth bombs about this initiative`
+                    : "Today's freshest truth bombs from Paonia's political circus 🎪"
+                  }
+                </p>
+                
                 <div className="relative group">
                   <button
-                    className="h-7 w-7 shrink-0 grid place-items-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors"
-                    aria-label="About AI-Generated Analysis"
+                    className="h-8 w-8 shrink-0 grid place-items-center rounded-full bg-orange-500 hover:bg-orange-400 text-white transition-all transform hover:scale-110"
+                    aria-label="What are Truth Bombs?"
                   >
-                    <span className="text-sm font-sans font-medium">i</span>
+                    <span className="text-sm font-bold">?</span>
                   </button>
                   
-                  {/* Tooltip - shows on hover */}
-                  <div className="absolute right-0 top-full mt-2 w-80 p-5 bg-gray-900 text-white text-sm rounded-lg shadow-xl z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div className="font-semibold mb-2 text-base">About AI-Generated Analysis</div>
-                    <p className="text-sm leading-relaxed text-gray-200">
-                      The Paonia Truth Feed provides AI-generated analysis of government documents and actions. 
-                      These are neutral, fact-based assessments created by artificial intelligence, not human opinion. 
-                      Each analysis represents an AI's interpretation of public records and should be considered 
-                      as one perspective among many in civic discourse.
+                  {/* Fun Tooltip */}
+                  <div className="absolute right-0 top-full mt-2 w-80 p-5 bg-gradient-to-br from-orange-500 to-red-500 text-white text-sm rounded-lg shadow-xl z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div className="font-black mb-2 text-lg">💣 What Are AI Truth Bombs?</div>
+                    <p className="text-sm leading-relaxed">
+                      Our AI reads through the mind-numbing government documents so you don't have to! 
+                      It then drops satirical truth bombs that expose the absurdity, contradictions, and 
+                      hilarious moments in local politics. Think of it as your sarcastic friend who actually 
+                      reads the meeting minutes and can't wait to tell you about the ridiculous stuff that went down.
                     </p>
-                    <div className="absolute -top-1 right-3 w-2 h-2 bg-gray-900 transform rotate-45"></div>
+                    <div className="mt-3 text-xs font-bold text-yellow-200">
+                      ⚠️ Warning: May contain traces of actual facts
+                    </div>
+                    <div className="absolute -top-1 right-3 w-2 h-2 bg-orange-500 transform rotate-45"></div>
                   </div>
                 </div>
               </div>
-              <p className="mt-1 text-gray-500 text-sm">
-                {activeInitiative 
-                  ? `Showing ${filteredPosts.length} stories related to selected initiative`
-                  : 'Neutral analysis of Paonia government documents and actions'
-                }
-              </p>
             </div>
           </div>
 
@@ -73,9 +84,7 @@ export default function Home() {
           <div className="grid grid-cols-1 xl:grid-cols-[3fr_1fr] gap-8">
             {/* Story Feed - Left Side */}
             <div className="min-w-0">
-              <div className="bg-white">
-                <PostList posts={filteredPosts} isLoading={isLoading} />
-              </div>
+              <PostList posts={filteredPosts} isLoading={isLoading} />
             </div>
             
             {/* Initiatives Key - Right Side */}

@@ -5,8 +5,8 @@ import { ClerkClientProvider } from '@/components/ClerkClientProvider'
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Paonia Truth Feed - AI-Generated Government Analysis",
-  description: "Neutral AI analysis of Paonia government documents and actions. Stay informed with fact-checked local news and community discussions.",
+  title: "Paonia Truth Feed - AI Truth Bombs 💣",
+  description: "Where AI meets small-town politics and drops truth bombs on the absurdity of it all. Satirical takes on Paonia's most bewildering government moments.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   icons: {
     icon: [
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     apple: '/favicon.svg',
   },
   openGraph: {
-    title: "Paonia Truth Feed - AI-Powered Government Transparency",
-    description: "Neutral AI analysis of Paonia government documents and actions. Stay informed with fact-checked local news and community discussions.",
+    title: "Paonia Truth Feed - AI Truth Bombs 💣",
+    description: "Where AI meets small-town politics and drops truth bombs on the absurdity of it all. Satirical takes on Paonia's most bewildering government moments.",
     url: "https://paoniatruth.site",
     siteName: "Paonia Truth Feed",
     type: "website",
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
         url: '/og-image.svg',
         width: 1200,
         height: 630,
-        alt: 'Paonia Truth Feed - AI-Powered Government Transparency',
+        alt: 'Paonia Truth Feed - AI Truth Bombs',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Paonia Truth Feed',
-    description: 'Neutral AI analysis of Paonia government documents and actions',
+    title: 'Paonia Truth Feed - AI Truth Bombs 💣',
+    description: 'Where AI drops truth bombs on small-town political absurdity',
     images: ['/og-image.svg'],
   },
 }

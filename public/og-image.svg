@@ -12,7 +12,7 @@
   <text x="600" y="380" font-family="Georgia, serif" font-size="64" font-weight="bold" text-anchor="middle" fill="white">Paonia Truth Feed</text>
   
   <!-- Tagline -->
-  <text x="600" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="28" text-anchor="middle" fill="#a0a0a0">AI-Powered Government Transparency</text>
+  <text x="600" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" text-anchor="middle" fill="#ffcc00">💣 AI TRUTH BOMBS 💣</text>
   
   <!-- Website URL -->
   <text x="600" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="24" text-anchor="middle" fill="#ff6600">paoniatruth.site</text>
