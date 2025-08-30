@@ -38,11 +38,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         siteName: 'Paonia Truth Feed',
         type: 'article',
         locale: 'en_US',
+        publishedTime: post._creationTime ? new Date(post._creationTime).toISOString() : undefined,
+        authors: ['Paonia Truth Feed AI'],
+        images: [
+          {
+            url: '/og-image.svg',
+            width: 1200,
+            height: 630,
+            alt: post.title,
+          }
+        ],
       },
       twitter: {
-        card: 'summary',
+        card: 'summary_large_image',
         title: post.title,
         description: description,
+        images: ['/og-image.svg'],
       },
     }
   } catch (error) {
