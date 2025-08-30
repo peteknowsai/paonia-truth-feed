@@ -1,75 +1,55 @@
 'use client'
 
-import { useState } from 'react'
 import { useQuery } from 'convex/react'
 import { api } from '../../convex/_generated/api'
-import Header from '@/components/Header'
-import PostList from '@/components/PostList'
-import InitiativesKey from '@/components/InitiativesKey'
-import { type InitiativeId } from '@/types/initiatives'
-import { type Post } from '@/types'
+import { useAuth } from '@clerk/nextjs'
+import Link from 'next/link'
 
 export default function Home() {
-  const [activeInitiative, setActiveInitiative] = useState<InitiativeId | null>(null)
-  
-  // Use Convex to fetch posts
-  const posts = activeInitiative 
-    ? useQuery(api.posts.listByInitiative, { initiative: activeInitiative })
-    : useQuery(api.posts.list)
-  
+  const { isSignedIn } = useAuth()
+  const posts = useQuery(api.posts.list)
   const isLoading = posts === undefined
 
-  const filteredPosts = (posts || []).map((post: any) => ({
-    ...post,
-    id: post._id,
-    relatedInitiatives: post.relatedInitiatives as InitiativeId[] | undefined,
-    createdAt: post.createdAt || (post._creationTime ? new Date(post._creationTime).toISOString() : new Date().toISOString())
-  } as Post))
-
   return (
-    <div className="min-h-screen bg-white text-black">
-      <Header />
-      
-      <main className="max-w-4xl mx-auto px-4 py-8">
-        {/* Typewriter Header */}
-        <div className="text-center mb-12 border-b-2 border-black pb-8">
-          <h1 className="text-2xl font-bold mb-4 tracking-wider">
-            PAONIA TRUTH FEED
-          </h1>
-          <p className="text-sm uppercase tracking-widest">
-            AI Truth Bombs / Political Absurdity / Local News
-          </p>
-          <p className="text-xs mt-2">
-            {new Date().toLocaleDateString('en-US', { 
-              weekday: 'long', 
-              year: 'numeric', 
-              month: 'long', 
-              day: 'numeric' 
-            }).toUpperCase()}
-          </p>
+    <div className="min-h-screen bg-white text-black font-mono p-8 max-w-2xl mx-auto">
+      {/* Minimal Header */}
+      <header className="mb-12">
+        <h1 className="text-base font-normal">Paonia Truth Feed</h1>
+        <div className="mt-2 text-sm">
+          {!isSignedIn && (
+            <>
+              <Link href="/sign-in" className="underline">sign in</Link>
+              {' / '}
+              <Link href="/sign-up" className="underline">register</Link>
+            </>
+          )}
         </div>
+      </header>
 
-        {/* Simple instruction */}
-        <div className="mb-8 text-center">
-          <p className="text-sm">
-            {activeInitiative 
-              ? `[SHOWING ${filteredPosts.length} STORIES ABOUT ${activeInitiative.toUpperCase()}]`
-              : `[${filteredPosts.length} TRUTH BOMBS LOADED]`
-            }
-          </p>
-        </div>
-
-        {/* Stories */}
-        <div className="space-y-8">
-          <PostList posts={filteredPosts} isLoading={isLoading} />
-        </div>
+      {/* Posts */}
+      <main>
+        {isLoading ? (
+          <p className="text-sm">Loading...</p>
+        ) : (
+          <ul className="space-y-6">
+            {(posts || []).map((post: any, index: number) => (
+              <li key={post._id} className="text-sm">
+                <Link 
+                  href={`/post/${post._id}`}
+                  className="block hover:underline"
+                >
+                  <span className="text-gray-500">{String(index + 1).padStart(2, '0')}.</span>
+                  {' '}
+                  <span>{post.title}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
         
-        {/* Footer */}
-        <footer className="mt-16 pt-8 border-t-2 border-black text-center">
-          <p className="text-xs uppercase tracking-widest">
-            End of transmission
-          </p>
-        </footer>
+        {posts && posts.length === 0 && (
+          <p className="text-sm text-gray-500">No posts yet.</p>
+        )}
       </main>
     </div>
   )
