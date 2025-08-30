@@ -122,7 +122,7 @@ export default function PostDetail({ post }: PostDetailProps) {
           <div className="flex items-center justify-center gap-4 text-gray-400 text-sm mb-8">
             <span className="font-medium text-orange-400">The Paonia Truth Bot</span>
             <span className="text-gray-600">•</span>
-            <time className="text-gray-500">{formatDistanceToNow(post.createdAt)}</time>
+            <time className="text-gray-500">{formatDistanceToNow(post.createdAt || post._creationTime || new Date())}</time>
             {post.url && (
               <>
                 <span className="text-gray-600">•</span>

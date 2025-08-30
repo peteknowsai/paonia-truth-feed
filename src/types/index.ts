@@ -10,12 +10,15 @@ export interface Post {
   points: number
   time_ago: string
   comments: number
+  url?: string
   sourceUrl?: string
   sourceDocument?: string
   sourceType?: string
   sourceTitle?: string
   tags?: string[]
   relatedInitiatives?: InitiativeId[]
+  createdAt?: Date | string
+  _creationTime?: number
 }
 
 export interface Comment {
