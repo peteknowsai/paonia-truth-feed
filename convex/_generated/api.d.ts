@@ -18,11 +18,13 @@ import type * as addStory from "../addStory.js";
 import type * as clearAllStories from "../clearAllStories.js";
 import type * as comments from "../comments.js";
 import type * as deleteStory from "../deleteStory.js";
+import type * as http from "../http.js";
 import type * as initiativeVotes from "../initiativeVotes.js";
 import type * as posts from "../posts.js";
 import type * as removeMockStories from "../removeMockStories.js";
 import type * as seed from "../seed.js";
 import type * as updateFactChecked from "../updateFactChecked.js";
+import type * as users from "../users.js";
 import type * as votes from "../votes.js";
 
 /**
@@ -39,11 +41,13 @@ declare const fullApi: ApiFromModules<{
   clearAllStories: typeof clearAllStories;
   comments: typeof comments;
   deleteStory: typeof deleteStory;
+  http: typeof http;
   initiativeVotes: typeof initiativeVotes;
   posts: typeof posts;
   removeMockStories: typeof removeMockStories;
   seed: typeof seed;
   updateFactChecked: typeof updateFactChecked;
+  users: typeof users;
   votes: typeof votes;
 }>;
 export declare const api: FilterApi<

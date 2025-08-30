@@ -1,10 +1,15 @@
 "use client";
 
-import { UserButton, useAuth } from "@clerk/nextjs";
+import { UserButton, useAuth, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default function Header() {
   const { isSignedIn } = useAuth();
+  const { user } = useUser();
+  
+  // Check if user is admin
+  const isAdmin = user?.primaryEmailAddress?.emailAddress && 
+    process.env.NEXT_PUBLIC_ADMIN_EMAILS?.split(',').includes(user.primaryEmailAddress.emailAddress);
 
   return (
     <header className="bg-[#ff6600] shadow-sm sticky top-0 z-50">
@@ -23,21 +28,40 @@ export default function Header() {
           {/* Auth Navigation */}
           <div className="flex items-center gap-4">
             {isSignedIn ? (
-              <UserButton 
-                afterSignOutUrl="/"
-                appearance={{
-                  elements: {
-                    avatarBox: "h-9 w-9",
-                  },
-                }}
-              />
+              <>
+                {isAdmin && (
+                  <Link
+                    href="/admin/submit"
+                    className="px-4 py-2 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors"
+                  >
+                    Submit Story
+                  </Link>
+                )}
+                <UserButton 
+                  afterSignOutUrl="/"
+                  appearance={{
+                    elements: {
+                      avatarBox: "h-9 w-9",
+                    },
+                  }}
+                />
+              </>
             ) : (
-              <Link
-                href="/sign-in"
-                className="px-4 py-2 bg-white text-[#ff6600] rounded-lg font-medium hover:bg-gray-100 transition-colors"
-              >
-                Sign In
-              </Link>
+              <div className="flex items-center gap-2">
+                <Link
+                  href="/sign-in"
+                  className="px-4 py-2 bg-white text-[#ff6600] rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                >
+                  Sign In
+                </Link>
+                <span className="text-white">|</span>
+                <Link
+                  href="/sign-up"
+                  className="px-4 py-2 bg-white text-[#ff6600] rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                >
+                  Sign Up
+                </Link>
+              </div>
             )}
           </div>
         </div>
