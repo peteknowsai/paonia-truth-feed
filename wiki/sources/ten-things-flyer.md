@@ -1,5 +1,5 @@
 ---
-title: "10 Things Paonia Should Know About Its Town Administrator" - Original Flyer
+title: '"10 Things Paonia Should Know About Its Town Administrator" - Original Flyer'
 type: source
 created: 2026-04-06
 updated: 2026-04-06

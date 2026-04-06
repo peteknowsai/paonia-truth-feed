@@ -41,7 +41,17 @@ yarn-error.log*
 next-env.d.ts
 setup-vercel-env.sh
 
+# Generated wiki cache
+src/lib/wiki-cache.json
+
 # OpenNext build
 .open-next/
 .worker-next/
 .wrangler/
+
+# Scratch downloads
+download.html
+download.txt
+
+# Claude scheduled tasks
+.claude/scheduled_tasks.lock

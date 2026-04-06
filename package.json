@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "prebuild": "node scripts/build-wiki-cache.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -16,13 +17,12 @@
     "@clerk/nextjs": "^6.31.4",
     "@clerk/themes": "^2.4.13",
     "convex": "^1.26.1",
+    "gray-matter": "^4.0.3",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-markdown": "^10.1.0",
-    "remark-gfm": "^4.0.1",
-    "resend": "^6.0.2",
-    "svix": "^1.74.1"
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@opennextjs/cloudflare": "^1.11.0",
@@ -30,6 +30,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "svix": "^1.90.0",
     "tailwindcss": "^4",
     "typescript": "5.9.3"
   }

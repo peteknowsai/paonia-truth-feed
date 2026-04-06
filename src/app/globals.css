@@ -3,10 +3,12 @@
 
 body {
   font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 16px;
   background: white;
   color: black;
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: unset;
+  line-height: 1.6;
 }
 
 /* Remove all animations */
@@ -15,10 +17,13 @@ body {
   transition: none !important;
 }
 
-/* Simple link styling */
+/* Craigslist link colors */
 a {
-  color: black;
-  text-decoration: underline;
+  color: #00e;
+}
+
+a:visited {
+  color: #551a8b;
 }
 
 a:hover {
@@ -34,4 +39,195 @@ a:hover {
 /* Remove all rounded corners */
 * {
   border-radius: 0 !important;
+}
+
+/* Markdown content */
+.wiki-content h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+.wiki-content h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.wiki-content h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 1rem 0 0.25rem;
+}
+
+.wiki-content p {
+  margin: 0.5rem 0;
+}
+
+.wiki-content ul, .wiki-content ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.wiki-content li {
+  margin: 0.25rem 0;
+}
+
+.wiki-content ul li {
+  list-style-type: disc;
+}
+
+.wiki-content ol li {
+  list-style-type: decimal;
+}
+
+.wiki-content blockquote {
+  border-left: 3px solid #666;
+  padding-left: 0.75rem;
+  margin: 0.75rem 0;
+  color: #333;
+}
+
+.wiki-content table {
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  width: 100%;
+}
+
+.wiki-content th, .wiki-content td {
+  border: 1px solid #999;
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+}
+
+.wiki-content th {
+  background: #eee;
+  font-weight: bold;
+}
+
+.wiki-content code {
+  background: #f0f0f0;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.9em;
+}
+
+.wiki-content pre {
+  background: #f0f0f0;
+  padding: 0.75rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.wiki-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.wiki-content hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
+.wiki-content strong {
+  font-weight: bold;
+}
+
+/* Status badges */
+.badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+
+.badge-rejected {
+  color: #991b1b;
+  border-color: #991b1b;
+  background: #fee2e2;
+}
+
+.badge-pending {
+  color: #92400e;
+  border-color: #92400e;
+  background: #fef3c7;
+}
+
+.badge-active {
+  color: #065f46;
+  border-color: #065f46;
+  background: #d1fae5;
+}
+
+.badge-open {
+  color: #1e40af;
+  border-color: #1e40af;
+  background: #dbeafe;
+}
+
+/* Vote buttons */
+.vote-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid #999;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.vote-btn:hover {
+  background: #f0f0f0;
+}
+
+.vote-btn.active-up {
+  background: #d1fae5;
+  border-color: #065f46;
+}
+
+.vote-btn.active-down {
+  background: #fee2e2;
+  border-color: #991b1b;
+}
+
+/* Grid layout */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Nav */
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section headers */
+.section-header {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
 }

@@ -3,7 +3,7 @@ title: Citizen Initiative Process
 type: issue
 created: 2026-04-05
 updated: 2026-04-05
-tags: [initiative, petition, vetter, buchner, str, surveillance]
+tags: [petition, vetter, buchner, str, surveillance]
 sources: [board-letter-2026-03-30, fb-05-initiative-rejected-again, rejection-response-to-vetter, split-initiatives, rule-106-petition-draft, v5-cover-letter]
 ---
 

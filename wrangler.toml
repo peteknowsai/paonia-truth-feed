@@ -6,6 +6,12 @@ compatibility_flags = ["nodejs_compat"]
 # Workers (not Pages) configuration
 main = ".open-next/worker.js"
 
+workers_dev = true
+
+[[routes]]
+pattern = "paoniatruth.site"
+custom_domain = true
+
 [observability]
 enabled = true
 

@@ -1,5 +1,5 @@
 ---
-title: "10 Things" Flyer Distributed
+title: '"10 Things" Flyer Distributed'
 type: event
 created: 2026-04-06
 updated: 2026-04-06

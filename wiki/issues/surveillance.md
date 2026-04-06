@@ -3,7 +3,7 @@ title: Surveillance and Cameras
 type: issue
 created: 2026-04-05
 updated: 2026-04-06
-tags: [surveillance, cameras, verkada, initiative, privacy]
+tags: [surveillance, cameras, verkada, privacy]
 sources: [board-letter-2026-03-30, verkada-10-things, hunter-rebuttal-flyer, meeting-2024-11-12]
 ---
 

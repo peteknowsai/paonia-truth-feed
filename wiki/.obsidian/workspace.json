@@ -183,8 +183,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "86190e8470202a38",
+  "active": "5bcfc93c16c0b1dc",
   "lastOpenFiles": [
+    "issues/str-rights.md",
+    "issues/robot-moratorium.md",
+    "issues/camera-ban.md",
+    "people/clayton-buchner.md",
+    "sources/attorney-outreach-emails.md",
+    "sources/board-letter-2026-03-30.md",
+    "open-questions/bowman-termination-circumstances.md",
     "open-questions/finance-committee-effectiveness.md",
     "open-questions/admin-compensation-structure.md",
     "open-questions/budget-dependency-risk.md",
@@ -203,13 +210,6 @@
     "sources/meeting-2024-11-20.md",
     "people/commissioner-watson.md",
     "sources/lucy-hunter-response-2026-03-31.md",
-    "sources/mayor-report-agenda-packet.md",
-    "sources/final-published-letter.md",
-    "sources/meeting-2024-12-02.md",
-    "sources/neptune-beach-case.md",
-    "sources/meeting-2024-11-12.md",
-    "sources/fb-03-legal-analysis-libelous.md",
-    "sources/fb-02-they-didnt-edit-a-word.md",
-    "sources/meeting-2024-11-04.md"
+    "sources/mayor-report-agenda-packet.md"
   ]
 }

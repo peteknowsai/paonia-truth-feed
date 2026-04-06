@@ -90,4 +90,33 @@ export default defineSchema({
   })
     .index("by_user", ["userId"])
     .index("by_status", ["status"]),
+
+  pageVotes: defineTable({
+    pageSlug: v.string(),
+    userId: v.string(),
+    vote: v.union(v.literal("up"), v.literal("down")),
+  })
+    .index("by_page", ["pageSlug"])
+    .index("by_user_and_page", ["userId", "pageSlug"]),
+
+  pageComments: defineTable({
+    pageSlug: v.string(),
+    userId: v.string(),
+    username: v.string(),
+    content: v.string(),
+    createdAt: v.number(),
+  })
+    .index("by_page", ["pageSlug"])
+    .index("by_creation", ["createdAt"]),
+
+  coraTracking: defineTable({
+    questionSlug: v.string(),
+    userId: v.string(),
+    username: v.string(),
+    status: v.string(),
+    notes: v.optional(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_question", ["questionSlug"])
+    .index("by_user", ["userId"]),
 });
