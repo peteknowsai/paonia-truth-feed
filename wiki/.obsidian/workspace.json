@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/meeting-2024-11-20.md",
+                "file": "open-questions/bowman-termination-circumstances.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "meeting-2024-11-20"
+              "title": "bowman-termination-circumstances"
             }
           }
         ]
@@ -185,15 +185,24 @@
   },
   "active": "5bcfc93c16c0b1dc",
   "lastOpenFiles": [
+    "issues/surveillance.md",
+    "issues/retaliation-pattern.md",
+    "issues/public-records-access.md",
+    "issues/initiative-process.md",
+    "analysis/discrepancies-register.md",
+    "issues/board-oversight.md",
+    "analysis/master-timeline.md",
+    "analysis/the-brunner-standard.md",
+    "analysis/what-the-board-did-not-dispute.md",
+    "sources/meeting-2024-11-20.md",
+    "people/commissioner-watson.md",
     "sources/lucy-hunter-response-2026-03-31.md",
     "sources/mayor-report-agenda-packet.md",
     "sources/final-published-letter.md",
     "sources/meeting-2024-12-02.md",
     "sources/neptune-beach-case.md",
     "sources/meeting-2024-11-12.md",
-    "issues/board-oversight.md",
     "sources/fb-03-legal-analysis-libelous.md",
-    "sources/meeting-2024-11-20.md",
     "sources/fb-02-they-didnt-edit-a-word.md",
     "sources/meeting-2024-11-04.md",
     "events/2026-03-25-ten-things-flyer.md",
@@ -201,15 +210,6 @@
     "open-questions/verkada-approval-process.md",
     "open-questions/bowman-termination-circumstances.md",
     "sources/citation-sheet.md",
-    "sources/board-letter-2026-03-30.md",
-    "sources/attorney-outreach-emails.md",
-    "people/mayor-smith.md",
-    "people/lucy-hunter.md",
-    "issues/retaliation-pattern.md",
-    "sources/cora-libelous-communications.md",
-    "issues/public-records-access.md",
-    "issues/initiative-process.md",
-    "sources/reporter-package-email-coverup.md",
-    "Town/Welcome.md"
+    "sources/board-letter-2026-03-30.md"
   ]
 }

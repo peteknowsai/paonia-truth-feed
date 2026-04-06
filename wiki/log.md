@@ -136,3 +136,20 @@ Final batch. Ingested the original 10 Things flyer, Hunter's rebuttal flyer, and
 
 **Key discrepancy surfaced:**
 Board states cameras are "not nefarious face recognition." Verkada's own product documentation shows the cameras include facial recognition, People Analytics (filter by clothing, sex, backpack), and photo-based person search as standard features.
+
+## [2026-04-06] analysis | First analysis pages and Watson person page
+
+Created 4 new pages: 3 analysis pages and 1 new person page.
+
+**New pages (4):**
+- `people/commissioner-watson.md` -- Independent corroborating witness from Dec 2 meeting
+- `analysis/master-timeline.md` -- Every dated event, chronological
+- `analysis/what-the-board-did-not-dispute.md` -- Systematic comparison of 10 flyer claims vs. board/Hunter responses
+- `analysis/the-brunner-standard.md` -- Brunner removal standard applied to Wynn and Vetter's documented conduct
+- `analysis/discrepancies-register.md` -- 9 factual conflicts in the record, 5 unresolved
+
+**Key findings from analysis:**
+- Zero of 10 underlying factual sources were disputed by the board. All disagreements are about interpretation.
+- By the standard used to remove Brunner, Wynn's documented conduct meets or exceeds the threshold on every measure.
+- 9 discrepancies documented in the record, including the Verkada facial recognition contradiction and the "voted to edit, published unedited" sequence.
+- Watson independently corroborates the hostile environment from a position the board cannot dismiss as a grievance.
