@@ -203,6 +203,46 @@ Consistent tags across pages (expand as needed):
 **Legal**: `filing`, `complaint`, `court`, `first-amendment`
 **People**: Use last names as tags: `buchner`, `smith`, `hunter`, `brunner`, `bowman`, `vetter`
 
+## Source Monitoring
+
+The wiki is fed by automated source watchers that check for new public documents and news articles. New items are queued in `raw/INBOX.md` for manual ingest.
+
+### CivicClerk API (Town Meeting Portal)
+
+The town uses CivicClerk for agendas, minutes, and meeting media. No authentication required.
+
+**Base URL:** `https://paoniaco.api.civicclerk.com/v1/`
+
+**List events (meetings):**
+```
+GET /Events?$filter=startDateTime+ge+{DATE}&$orderby=startDateTime+asc
+```
+Returns JSON with meeting dates, names, YouTube links, and `publishedFiles` array containing file IDs, names, types, and publish dates.
+
+**Download meeting files (agenda, packet, minutes):**
+```
+GET /Meetings/GetMeetingFileStream(fileId={ID},plainText=false)
+```
+Returns the PDF directly. File IDs come from the `publishedFiles` array on each event.
+
+**Event categories:**
+```
+GET /EventCategories
+```
+
+**YouTube channel for meeting videos:**
+`https://www.youtube.com/channel/UC2mZDPKrwEAf5T-x3Camtow`
+
+### News Sources
+
+- **Delta County Independent**: `deltacountyindependent.com/news/north-fork/` (primary Paonia government coverage, reporter Justin Shaw)
+- **High Country Spotlight**: `highcountryspotlight.com/local_news/`
+- **KVNF**: `kvnf.org` (community radio, less frequent government coverage)
+
+### Daily Watcher Loop
+
+A `/loop` runs daily at 3:17 AM checking all sources above. New items are appended to `raw/INBOX.md`. Articles are downloaded to `raw/articles/`. The loop does not ingest into the wiki; it only queues items for review.
+
 ## Relationship to Other Project Layers
 
 ```
