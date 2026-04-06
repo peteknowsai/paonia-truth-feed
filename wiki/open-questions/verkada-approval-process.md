@@ -29,12 +29,24 @@ sources: [board-letter-2026-03-30, verkada-10-things, hunter-rebuttal-flyer, mee
 - Whether Verkada's history (employee harassment, 150K camera breach, FTC fine) was disclosed
 - Whether a surveillance policy was considered before or alongside the purchase
 
-## What Could Answer This
+## Suggested CORA Requests
 
-- Board meeting minutes from the "at least six meetings" where cameras were discussed
-- Purchase orders or contracts with Verkada
-- Any internal communications about vendor selection
-- CORA request for Verkada-related communications and procurement documents
+**Request 1: Verkada Contract and Procurement**
+> Under C.R.S. 24-72-201 et seq., I request a copy of the contract, purchase order, or agreement between the Town of Paonia and Verkada, Inc. for the surveillance camera system, including all terms, pricing, service level agreements, data retention policies, and any renewal or licensing terms. Also request any competitive bids, sole-source justifications, or vendor selection documents.
+
+**Request 2: Verkada Capabilities Disclosure**
+> Under C.R.S. 24-72-201 et seq., I request all sales proposals, product specifications, demonstrations, or marketing materials provided by Verkada, Inc. to the Town of Paonia, including any materials describing facial recognition, People Analytics, AI video analytics, or person-tracking capabilities.
+
+**Request 3: Camera Policy and Access**
+> Under C.R.S. 24-72-201 et seq., I request any policy, procedure, or guideline governing the use of the Verkada camera system, including: who has access to the footage, retention periods, circumstances under which footage may be shared with outside agencies, and any integration with Axon Evidence.com or other law enforcement platforms. If no such policy exists, I request confirmation that no policy has been adopted.
+
+**Request 4: Board Discussion of Surveillance**
+> Under C.R.S. 24-72-201 et seq., I request minutes, agendas, and any staff reports or presentations from the "at least six public meetings" between October 2024 and December 2025 where the camera proposal was discussed.
+
+## Other Ways to Get Answers
+
+- Ask at a board meeting during public comment: "Did the board know the Verkada cameras include facial recognition and AI person-tracking when it approved the purchase?"
+- Request the topic be placed on a future board meeting agenda for discussion
 
 ## Status
 

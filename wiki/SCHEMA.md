@@ -116,25 +116,38 @@ Include:
 
 ### Analysis (`analysis/`)
 
-Cross-cutting pages that reconstruct a record from multiple sources. Named descriptively: `surveillance-procurement-timeline.md`, `initiative-rejection-pattern.md`.
+Cross-cutting pages that synthesize across multiple sources and generate new understanding. Named descriptively: `surveillance-procurement-timeline.md`, `initiative-rejection-pattern.md`, `water-infrastructure-spending.md`.
 
-These aren't opinion pieces. They're factual reconstructions: "here is what the record shows, in order, with citations." Include:
+Analysis pages are where the wiki *thinks*, not just remembers. They serve two purposes:
 
+**Factual reconstructions:** "Here is what the record shows, in order, with citations." Timelines, comparisons, side-by-side analyses.
+
+**Emergent insights:** Connections between facts that no single source contains. "The town's response to citizen complaints follows the same pattern as its response to CORA requests: delay, deflect, and recharacterize the request." These insights should emerge naturally from the accumulated record and be stated neutrally with citations.
+
+Include:
 - What the record shows (chronological or thematic)
 - Source citations for every claim
 - Where the record is incomplete (link to relevant open questions)
+- **What this connects to** -- how this analysis relates to other patterns in the wiki
+- **What would change this analysis** -- what new information could strengthen, weaken, or overturn the finding
+
+**Analysis pages are living documents.** After every ingest, the LLM should revisit relevant analysis pages and ask: "Does this new source change, strengthen, or challenge any existing analysis?" If so, update the page. If a new cross-cutting insight has emerged that didn't exist before, create a new analysis page.
 
 ### Open Questions (`open-questions/`)
 
-Gaps in the public record that a reasonable citizen might want answered. Named descriptively: `verkada-approval-process.md`, `executive-session-recordings.md`.
+Gaps in the public record that a reasonable citizen might want answered. Named descriptively: `verkada-approval-process.md`, `water-rate-projections.md`.
 
 Include:
 - The question, stated plainly
 - What the existing record shows (and doesn't show)
-- What public information could answer it (e.g., a CORA request, a board agenda item, a budget document)
+- What public information could answer it
+- **Suggested CORA requests** -- specific, actionable records requests that could fill the gap, with enough detail that a citizen could submit them. Include: what records to request, from whom, the relevant date range, and the specific CORA citation (C.R.S. 24-72-201 et seq.)
+- **Other ways to get answers** -- board meeting public comment, budget hearings, direct questions to trustees
 - Status: open, partially answered, resolved
 
-These aren't accusations. "How was the Verkada purchase approved?" is a legitimate civic question regardless of the answer.
+These aren't accusations. "How was the Verkada purchase approved?" is a legitimate civic question regardless of the answer. The CORA suggestions make the questions actionable, not just rhetorical.
+
+The wiki should actively generate new open questions as sources accumulate. After every ingest, ask: "What does the record not explain? What would a resident reading this want to know next?"
 
 ## Workflows
 
@@ -152,10 +165,14 @@ When Pete adds a raw source and asks to ingest it:
 8. **Surface open questions** -- if the source reveals gaps, create or update open question pages.
 9. **Update index.md** and **append to log.md**.
 
+**10. Revisit analysis pages** -- for every analysis page that touches the same issues, ask: does this new source change, strengthen, or challenge the existing analysis? Update if so.
+**11. Generate new questions** -- ask: what does this source leave unexplained? What would a citizen reading this want to know next? Create new open question pages with CORA suggestions.
+
 **Adapt to source type:**
 - Short documents (letters, posts, filings): full ingest in one pass.
 - Meeting transcripts: summarize by agenda item, pull key quotes and votes, note timestamps.
 - Court filing collections: process as a case, not individual documents. Build a litigation timeline.
+- Budget documents: extract specific line items, compare across fiscal years, note changes in fund balances, staffing levels, and debt obligations. Update spending-related issue pages.
 - Batch ingest: when processing many related documents at once, do entity/issue updates after all source pages are created to avoid redundant edits.
 
 ### Query
@@ -167,6 +184,18 @@ When Pete asks a question:
 3. Answer with citations to wiki pages and underlying sources.
 4. If the answer reveals a gap, note it and suggest whether it warrants an open question page.
 5. If the answer produces something worth keeping (a timeline, a comparison, a reconstruction), offer to file it in `analysis/`.
+
+### Reflect
+
+Periodic synthesis. The wiki's most valuable output. Ask after every few ingests, or when the wiki reaches a new threshold of accumulated knowledge:
+
+1. **New connections** -- what patterns have emerged that no existing analysis page captures? What connects issues that are currently siloed?
+2. **Strengthened or weakened claims** -- which analysis pages are now better supported? Which have been challenged by new evidence?
+3. **New questions** -- what does the accumulated record now make you curious about that you weren't before? What CORA requests would be most revealing?
+4. **Narrative threads** -- what story is the record telling that a citizen new to all of this would want to understand? Is there an analysis page that would help them see it?
+5. **The "so what"** -- for each open question, ask: if we got the answer, what would it change? Prioritize the questions whose answers would matter most.
+
+The goal is not to editorialize. It is to let the facts generate their own momentum. If the record shows something, the wiki should help people see it. If the record has gaps, the wiki should help people know what to ask for.
 
 ### Lint
 

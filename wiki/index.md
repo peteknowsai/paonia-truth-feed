@@ -34,6 +34,8 @@ See [[SCHEMA]] for conventions and workflows.
 - [[initiative-process|Citizen Initiative Process]] -- Two rejections, Rule 106 drafted, split initiatives prepared
 - [[retaliation-pattern|Pattern of Consequences for Raising Concerns]] -- Four individuals, four outcomes
 - [[surveillance|Surveillance and Cameras]] -- $50K Verkada, zero public comment, initiative fight
+- [[water-infrastructure|Water Infrastructure and Debt]] -- $9.74M loan, rate increases through 2045, tank rehab
+- [[town-spending|Town Spending and Budget]] -- $16.16M budget, 69% external, staffing growth, capital priorities
 
 ## Sources
 
@@ -76,4 +78,8 @@ See [[SCHEMA]] for conventions and workflows.
 
 - [[complaint-response-process|Is There a Functioning Complaint Process?]] -- Partially addressed: Hunter acknowledged gap
 - [[bowman-termination-circumstances|What Were the Circumstances of Bowman's Termination?]] -- 23-day gap, no public documentation
-- [[verkada-approval-process|How Was the Verkada Surveillance System Approved?]] -- $50K, no public comment documented
+- [[verkada-approval-process|How Was the Verkada Surveillance System Approved?]] -- $50K, no public comment, CORA requests drafted
+- [[water-rate-projections|How Much Will Water Rates Increase?]] -- $263K/year through 2045, no public projections
+- [[budget-dependency-risk|What Happens If Grant Funding Decreases?]] -- 69% dependency, mayor acknowledges risk
+- [[admin-compensation-structure|What Is the Administrator's Full Compensation?]] -- Dual role, costs spread across fund pages
+- [[finance-committee-effectiveness|Has the Finance Committee Ever Flagged Anything?]] -- Oversight mechanism with unknown track record

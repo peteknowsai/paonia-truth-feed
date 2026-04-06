@@ -183,8 +183,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "5bcfc93c16c0b1dc",
+  "active": "86190e8470202a38",
   "lastOpenFiles": [
+    "open-questions/finance-committee-effectiveness.md",
+    "open-questions/admin-compensation-structure.md",
+    "open-questions/budget-dependency-risk.md",
+    "open-questions/water-rate-projections.md",
+    "issues/town-spending.md",
+    "issues/water-infrastructure.md",
     "issues/surveillance.md",
     "issues/retaliation-pattern.md",
     "issues/public-records-access.md",
@@ -204,12 +210,6 @@
     "sources/meeting-2024-11-12.md",
     "sources/fb-03-legal-analysis-libelous.md",
     "sources/fb-02-they-didnt-edit-a-word.md",
-    "sources/meeting-2024-11-04.md",
-    "events/2026-03-25-ten-things-flyer.md",
-    "open-questions/complaint-response-process.md",
-    "open-questions/verkada-approval-process.md",
-    "open-questions/bowman-termination-circumstances.md",
-    "sources/citation-sheet.md",
-    "sources/board-letter-2026-03-30.md"
+    "sources/meeting-2024-11-04.md"
   ]
 }
