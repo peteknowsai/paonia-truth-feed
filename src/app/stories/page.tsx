@@ -1,11 +1,30 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { useQuery } from "convex/react";
+import { api } from "../../../convex/_generated/api";
 import { getStoryPages } from "@/lib/wiki";
 import PageVoting from "@/components/PageVoting";
 
-export const metadata = { title: "Stories - Paonia Truth Nuggets" };
+const stories = getStoryPages();
+const PER_PAGE = 25;
 
 export default function StoriesPage() {
-  const stories = getStoryPages();
+  const scores = useQuery(api.pageVotes.getAllScores) ?? {};
+  const [page, setPage] = useState(1);
+
+  const sorted = [...stories].sort((a, b) => {
+    const scoreA = scores[a.slug] ?? 0;
+    const scoreB = scores[b.slug] ?? 0;
+    if (scoreB !== scoreA) return scoreB - scoreA;
+    const dateA = a.updated || a.created || "";
+    const dateB = b.updated || b.created || "";
+    return dateB.localeCompare(dateA);
+  });
+
+  const totalPages = Math.ceil(sorted.length / PER_PAGE);
+  const visible = sorted.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
   return (
     <div>
@@ -13,7 +32,7 @@ export default function StoriesPage() {
         Stories from the Public Record
       </h1>
 
-      {stories.map((p) => {
+      {visible.map((p) => {
         const href =
           p.directory === "analysis"
             ? `/articles/${p.slug}`
@@ -54,6 +73,40 @@ export default function StoriesPage() {
           </div>
         );
       })}
+
+      {totalPages > 1 && (
+        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginTop: "1.5rem" }}>
+          <button
+            onClick={() => setPage((p) => Math.max(1, p - 1))}
+            disabled={page === 1}
+            style={{
+              padding: "0.25rem 0.75rem",
+              border: "1px solid #ccc",
+              background: page === 1 ? "#f5f5f5" : "#fff",
+              cursor: page === 1 ? "default" : "pointer",
+              fontFamily: "inherit",
+            }}
+          >
+            Prev
+          </button>
+          <span style={{ fontSize: "0.9rem" }}>
+            {page} / {totalPages}
+          </span>
+          <button
+            onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+            disabled={page === totalPages}
+            style={{
+              padding: "0.25rem 0.75rem",
+              border: "1px solid #ccc",
+              background: page === totalPages ? "#f5f5f5" : "#fff",
+              cursor: page === totalPages ? "default" : "pointer",
+              fontFamily: "inherit",
+            }}
+          >
+            Next
+          </button>
+        </div>
+      )}
     </div>
   );
 }

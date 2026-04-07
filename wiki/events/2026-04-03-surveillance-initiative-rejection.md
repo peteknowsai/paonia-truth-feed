@@ -1,7 +1,7 @@
 ---
 title: Surveillance Camera Initiative Rejected
 type: event
-created: 2026-04-06
+created: 2026-04-03
 updated: 2026-04-06
 tags: [initiative, surveillance, vetter, rejection]
 sources: [fb-05-initiative-rejected-again, rejection-response-to-vetter]

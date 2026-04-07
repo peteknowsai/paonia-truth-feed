@@ -1,7 +1,7 @@
 ---
 title: Brunner Removal Hearing and Vote
 type: event
-created: 2026-04-05
+created: 2024-08-15
 updated: 2026-04-05
 tags: [brunner, board, vote, removal, hearing]
 sources: [board-letter-2026-03-30]

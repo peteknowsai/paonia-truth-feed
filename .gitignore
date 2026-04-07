@@ -53,5 +53,10 @@ src/lib/wiki-cache.json
 download.html
 download.txt
 
-# Claude scheduled tasks
+# Raw transcript VTTs (large, regenerable)
+raw/transcripts/
+
+# Claude scheduled tasks and watcher state
 .claude/scheduled_tasks.lock
+.claude/watcher-state.json
+.claude/watcher-log.md

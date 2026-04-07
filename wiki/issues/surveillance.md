@@ -4,7 +4,7 @@ type: issue
 created: 2026-04-05
 updated: 2026-04-06
 tags: [surveillance, cameras, verkada, privacy]
-sources: [board-letter-2026-03-30, verkada-10-things, hunter-rebuttal-flyer, meeting-2024-11-12]
+sources: [board-letter-2026-03-30, verkada-10-things, hunter-rebuttal-flyer, meeting-2024-11-12, guardian-flock-cameras-privacy]
 ---
 
 # Surveillance and Cameras
@@ -63,6 +63,10 @@ The board's response states: "These are not nefarious face recognition, or priva
 
 - `camera-ban` -- Surveillance camera prohibition
 - `robot-moratorium` -- Autonomous surveillance ban
+
+## National Context
+
+Cities across the country are canceling or pausing surveillance camera contracts over privacy concerns and ICE data-sharing risks. Mountain View, Santa Cruz, South Pasadena, Flagstaff, and Denver have all terminated or paused contracts. Security researchers demonstrated cameras could be hacked by pushing a button three times. The EFF calls it a systemic problem beyond any single vendor. [[guardian-flock-cameras-privacy|Guardian investigation (Apr 2026)]]
 
 ## See Also
 

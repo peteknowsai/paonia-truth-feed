@@ -1,7 +1,7 @@
 ---
 title: STR Citizen Initiative Rejected
 type: event
-created: 2026-04-05
+created: 2025-05-28
 updated: 2026-04-05
 tags: [initiative, str, short-term-rental, vetter, buchner, rejection]
 sources: [board-letter-2026-03-30]

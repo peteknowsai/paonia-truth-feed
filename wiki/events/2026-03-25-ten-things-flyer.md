@@ -1,7 +1,7 @@
 ---
 title: '"10 Things" Flyer Distributed'
 type: event
-created: 2026-04-06
+created: 2026-03-25
 updated: 2026-04-06
 tags: [flyer, ten-things, first-amendment]
 sources: [citation-sheet, fb-01-appeal-to-neighbors]

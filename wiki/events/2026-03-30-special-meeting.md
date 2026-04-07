@@ -1,7 +1,7 @@
 ---
 title: Special Meeting - Board Response to 10 Things Flyer
 type: event
-created: 2026-04-05
+created: 2026-03-30
 updated: 2026-04-05
 tags: [board, meeting, special-meeting, flyer, libelous, smith, hunter]
 sources: [board-letter-2026-03-30]

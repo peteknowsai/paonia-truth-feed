@@ -1,7 +1,7 @@
 ---
 title: Kaja Bowman Termination
 type: event
-created: 2026-04-05
+created: 2025-10-09
 updated: 2026-04-05
 tags: [bowman, termination, retaliation, smith, wynn]
 sources: [board-letter-2026-03-30]

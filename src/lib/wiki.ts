@@ -22,7 +22,15 @@ export function getAllPages(): WikiPage[] {
 }
 
 export function getPagesByDirectory(dir: string): WikiPage[] {
-  return pages.filter((p) => p.directory === dir);
+  const filtered = pages.filter((p) => p.directory === dir);
+  if (dir === "events") {
+    return filtered.sort((a, b) => {
+      const dateA = a.created || a.updated || "";
+      const dateB = b.created || b.updated || "";
+      return dateB.localeCompare(dateA);
+    });
+  }
+  return filtered;
 }
 
 export function getPage(dir: string, slug: string): WikiPage | undefined {

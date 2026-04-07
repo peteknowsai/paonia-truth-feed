@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "open-questions/bowman-termination-circumstances.md",
+                "file": "open-questions/finance-committee-effectiveness.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bowman-termination-circumstances"
+              "title": "finance-committee-effectiveness"
             }
           }
         ]
@@ -185,31 +185,31 @@
   },
   "active": "5bcfc93c16c0b1dc",
   "lastOpenFiles": [
-    "issues/str-rights.md",
-    "issues/robot-moratorium.md",
-    "issues/camera-ban.md",
-    "people/clayton-buchner.md",
-    "sources/attorney-outreach-emails.md",
-    "sources/board-letter-2026-03-30.md",
-    "open-questions/bowman-termination-circumstances.md",
-    "open-questions/finance-committee-effectiveness.md",
-    "open-questions/admin-compensation-structure.md",
-    "open-questions/budget-dependency-risk.md",
-    "open-questions/water-rate-projections.md",
-    "issues/town-spending.md",
+    "sources/guardian-flock-cameras-privacy.md",
     "issues/water-infrastructure.md",
-    "issues/surveillance.md",
+    "index.md",
+    "sources/v5-cover-letter.md",
+    "sources/verkada-10-things.md",
+    "events/2025-09-08-planning-commission-meeting.md",
+    "people/stefen-wynn.md",
+    "issues/str-rights.md",
+    "events/011620-master-plan-meeting-3-part-1---arts-culture-parks-recreation-aand-trails.md",
+    "events/031920-mayoral-debate-part-2.md",
+    "events/4620-special-meeting-via-gotomeeting-april-62020-630pm.md",
+    "events/42820-regular-board-meeting.md",
+    "events/052620-regular-board-meeting---may-26-2020---630pm.md",
+    "events/051220-regular-board-meeting-tuesday-may-12-2020.md",
+    "events/060920-one-delta-county-presentation-and-regular-board-of-trustees-meeting---june-9-2020-6pm.md",
+    "events/041420-regular-board-meeting.md",
+    "events/2019-water-issue-community-meeting-ii.md",
+    "events/2020-06-22-062220-planning-commission-zoom-meeting.md",
+    "events/063020-special-meeting---june-30-2020-530pm.md",
+    "events/2020-12-15---trustees-regular-meeting-630pm.md",
+    "events/12821---paonia-advisory-water-committee-meeting.md",
+    "events/2021-01-14-011421-lets-talk-short-term-rentals-strs.md",
+    "events/012621town-council-meeting-630pm.md",
+    "events/011221-town-council-meeting.md",
     "issues/retaliation-pattern.md",
-    "issues/public-records-access.md",
-    "issues/initiative-process.md",
-    "analysis/discrepancies-register.md",
-    "issues/board-oversight.md",
-    "analysis/master-timeline.md",
-    "analysis/the-brunner-standard.md",
-    "analysis/what-the-board-did-not-dispute.md",
-    "sources/meeting-2024-11-20.md",
-    "people/commissioner-watson.md",
-    "sources/lucy-hunter-response-2026-03-31.md",
-    "sources/mayor-report-agenda-packet.md"
+    "issues/town-spending.md"
   ]
 }

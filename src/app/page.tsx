@@ -45,38 +45,52 @@ export default function HomePage() {
       {/* Stories */}
       <section>
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {stories.map((p) => {
-            const href =
-              p.directory === "analysis" ? `/articles/${p.slug}` : p.route;
-            const dateLabel = p.updated || p.created || "";
-            const parts = dateLabel.split("-");
-            const shortDate =
-              parts.length >= 2
-                ? `${new Date(dateLabel).toLocaleString("en", { month: "short" })}-${parts[0].slice(2)}`
-                : dateLabel;
+          {[...stories]
+            .sort((a, b) => {
+              const dateA = a.created || "";
+              const dateB = b.created || "";
+              return dateB.localeCompare(dateA);
+            })
+            .slice(0, 15)
+            .map((p) => {
+              const href =
+                p.directory === "analysis" ? `/articles/${p.slug}` : p.route;
+              const dateLabel = p.created || "";
+              const parts = dateLabel.split("-");
+              const shortDate =
+                parts.length >= 2
+                  ? `${new Date(dateLabel).toLocaleString("en", { month: "short" })}-${parts[0].slice(2)}`
+                  : dateLabel;
 
-            return (
-              <li
-                key={p.slug}
-                style={{
-                  display: "flex",
-                  alignItems: "baseline",
-                  gap: "0.5rem",
-                  marginBottom: "0.35rem",
-                  fontSize: "1rem",
-                }}
-              >
-                <span style={{ color: "#666", flexShrink: 0 }}>
-                  [{shortDate}]
-                </span>
-                <Link href={href} style={{ flex: 1, fontWeight: "bold" }}>
-                  {p.title}
-                </Link>
-                <GemVote pageSlug={p.slug} />
-              </li>
-            );
-          })}
+              return (
+                <li
+                  key={p.slug}
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    gap: "0.5rem",
+                    marginBottom: "0.35rem",
+                    fontSize: "1rem",
+                  }}
+                >
+                  <span style={{ color: "#666", flexShrink: 0 }}>
+                    [{shortDate}]
+                  </span>
+                  <Link href={href} style={{ flex: 1, fontWeight: "bold" }}>
+                    {p.title}
+                  </Link>
+                  <GemVote pageSlug={p.slug} />
+                </li>
+              );
+            })}
         </ul>
+        {stories.length > 15 && (
+          <p style={{ marginTop: "0.75rem" }}>
+            <Link href="/stories" style={{ fontWeight: "bold" }}>
+              All stories ({stories.length}) &rarr;
+            </Link>
+          </p>
+        )}
       </section>
 
       {/* Initiatives */}
@@ -196,13 +210,20 @@ export default function HomePage() {
       <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
         <div className="section-header">RECENT EVENTS</div>
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {events.map((p) => (
+          {events.slice(0, 15).map((p) => (
             <li key={p.slug} style={{ marginBottom: "0.35rem" }}>
               <span style={{ color: "#666" }}>{p.created}</span>{" "}
               <Link href={p.route}>{p.title}</Link>
             </li>
           ))}
         </ul>
+        {events.length > 15 && (
+          <p style={{ marginTop: "0.75rem" }}>
+            <Link href="/wiki" style={{ fontWeight: "bold" }}>
+              All events ({events.length}) &rarr;
+            </Link>
+          </p>
+        )}
       </section>
 
       {/* Full Wiki */}

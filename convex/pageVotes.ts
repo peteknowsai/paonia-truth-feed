@@ -48,6 +48,18 @@ export const getCounts = query({
   },
 });
 
+export const getAllScores = query({
+  args: {},
+  handler: async (ctx) => {
+    const votes = await ctx.db.query("pageVotes").collect();
+    const scores: Record<string, number> = {};
+    for (const v of votes) {
+      scores[v.pageSlug] = (scores[v.pageSlug] ?? 0) + (v.vote === "up" ? 1 : -1);
+    }
+    return scores;
+  },
+});
+
 export const getUserVote = query({
   args: { pageSlug: v.string(), userId: v.string() },
   handler: async (ctx, args) => {
