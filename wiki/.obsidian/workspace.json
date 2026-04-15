@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "open-questions/finance-committee-effectiveness.md",
+                "file": "pattern-of-retaliation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "finance-committee-effectiveness"
+              "title": "pattern-of-retaliation"
             }
           }
         ]
@@ -185,6 +185,9 @@
   },
   "active": "5bcfc93c16c0b1dc",
   "lastOpenFiles": [
+    "sources/stelter-str-oped-2026-04-07.md",
+    "pattern-of-retaliation.md",
+    "open-questions/finance-committee-effectiveness.md",
     "sources/guardian-flock-cameras-privacy.md",
     "issues/water-infrastructure.md",
     "index.md",
@@ -207,9 +210,6 @@
     "events/2020-12-15---trustees-regular-meeting-630pm.md",
     "events/12821---paonia-advisory-water-committee-meeting.md",
     "events/2021-01-14-011421-lets-talk-short-term-rentals-strs.md",
-    "events/012621town-council-meeting-630pm.md",
-    "events/011221-town-council-meeting.md",
-    "issues/retaliation-pattern.md",
-    "issues/town-spending.md"
+    "events/012621town-council-meeting-630pm.md"
   ]
 }

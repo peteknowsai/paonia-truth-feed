@@ -2,9 +2,9 @@
 title: Stefen Wynn
 type: person
 created: 2026-04-05
-updated: 2026-04-05
-tags: [wynn, town-administrator, neptune-beach]
-sources: [board-letter-2026-03-30, reporter-package-email-coverup, original-draft-with-libelous]
+updated: 2026-04-08
+tags: [wynn, town-administrator, neptune-beach, verkada, surveillance]
+sources: [board-letter-2026-03-30, reporter-package-email-coverup, original-draft-with-libelous, cora-c26-09-verkada-audit-logs, verkada-usage-patterns]
 ---
 
 # Stefen Wynn
@@ -42,6 +42,18 @@ Sources: News4Jax (2023-06-27), WOKV (2023-01-18). Court filings in `raw/documen
 
 ### Special meeting response (2026)
 - Coordinated with [[lucy-hunter|Trustee Hunter]] and [[clayton-buchner|Clayton Buchner]] on Hunter's unsigned counter-flyer responding to Pete's 10 Things flyer. [[board-letter-2026-03-30|source]]
+
+### Verkada procurement and usage (2025–2026)
+
+- **Signed the Mitchell and Company Verkada quote on 2025-08-18** ($50,288 total, 23 cameras, 47 estimated labor hours), acting as Town Administrator & Treasurer. [[cora-c26-09-verkada-audit-logs|source]]
+- Holds **Organization Admin** role in the Town's Verkada system, the highest permission level. [[cora-c26-09-verkada-audit-logs|source]]
+- **545 total events** logged in the Verkada audit log between 2025-10-03 and 2026-03-26, including 484 live stream events. [[verkada-usage-patterns|source]]
+
+Specific dated sessions:
+
+- **2026-03-03 (Tuesday, 11:04 – 11:17 AM MDT)**: 204 events in 13 minutes, viewing every camera in the Town's Verkada system. The same session includes administrative actions: 3 User Permissions Set events, 3 User Permissions Modified events, 3 User Roles Modified events, 3 Key Contact Updated events, and 1 Communication Recipient Updated event. [[verkada-usage-patterns|source]]
+- **2026-03-13 (Friday, 11:29 – 11:43 AM MDT)**: 13 events on Front Desk, Shop Door, and Shop Parking Lot cameras including **4 "Video History Streamed" events on Front Desk** (reviewing recorded past footage of the Town Hall counter) and 2 "Camera Audio Changed" events on Front Desk. This session began immediately after [[samira-vetter|Vetter]]'s session on the same cameras ending at 11:28 AM. [[verkada-usage-patterns|source]]
+- **2026-03-26 (Thursday, 12:10 PM MDT)**: 22 events including **3 "Audit Log Related Actions" events** — Wynn accessed the Verkada audit log itself. This occurred one day after the [[ten-things-flyer|10 Things flyer]] was distributed, four days before the [[2026-03-30-special-meeting|special meeting]] where the board issued its response, and 12 days before the audit log was produced in response to [[cora-c26-09-verkada-audit-logs|CORA C 26-09]]. [[verkada-usage-patterns|source]]
 
 ## Open Questions
 

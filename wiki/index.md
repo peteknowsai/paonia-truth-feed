@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Last updated: 2026-04-06
+> Last updated: 2026-04-08
 
 The Paonia civic transparency wiki. All pages maintained by LLM; sources curated by Pete.
 
@@ -17,6 +17,7 @@ See [[SCHEMA]] for conventions and workflows.
 - [[cory-heiniger|Cory Heiniger]] -- Former Public Works Director, resigned with accusations against Wynn
 - [[lucy-hunter|Lucy Hunter]] -- Trustee, counter-flyer, only board member to respond to complaint
 - [[commissioner-watson|Commissioner Watson]] -- Planning Commissioner, independently corroborates hostile environment
+- [[ruben-santiago|Ruben Santiago]] -- Assistant Town Clerk, largest user of the Verkada system (16,653 events, 1,670 Community Room views)
 
 ## Events
 
@@ -58,6 +59,7 @@ See [[SCHEMA]] for conventions and workflows.
 - [[mayor-report-agenda-packet|Mayor's Report - Agenda Packet]] -- Proposed taxpayer-funded ads, "libelous flyer"
 - [[reporter-package-email-coverup|Reporter Package: Email Coverup Timeline]] -- Nov 4 email deception, CFOIC confirmation
 - [[cora-libelous-communications|CORA Request: Libelous Communications]] -- Seeking drafts, advice, and communications behind "libelous"
+- [[cora-c26-09-verkada-audit-logs|CORA C 26-09: Verkada Audit Logs Response]] -- 57,460 audit log rows, contract, no written policy, $167.90 fee
 - [[meeting-2024-11-04|Planning Commission Meeting (2024-11-04)]] -- Wynn's "oh we do have an email" moment on camera
 - [[meeting-2024-11-12|Board Budget Work Session (2024-11-12)]] -- Verkada camera discussion, $50K budget
 - [[meeting-2024-11-20|Planning Commission Work Session (2024-11-20)]] -- Walk-out threat, stonewalling, resignation catalyst
@@ -73,12 +75,16 @@ See [[SCHEMA]] for conventions and workflows.
 - [[what-the-board-did-not-dispute|What the Board Did Not Dispute]] -- 10 claims, zero factual sources disputed. All disagreements are interpretation.
 - [[the-brunner-standard|The Brunner Standard]] -- The conduct standard set by removing Brunner, applied to Wynn and Vetter's documented actions.
 - [[discrepancies-register|Discrepancies Register]] -- Every factual conflict in the record. 9 documented, 5 unresolved.
+- [[verkada-usage-patterns|Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)]] -- 57,460 audit log rows analyzed. Clerk's office = 53% of activity. Community Room = 1,938 views. Four weekend archives of the public meeting room.
+- [[facial-recognition-proof|Facial Recognition Is Enabled on the Town's Verkada System]] -- Contradicts the March 30 board letter. Oct 22-23 configuration events, "Ruben's Dashboard," Blurred Faces archive.
+- [[wynn-memo-vs-audit-log|Wynn's April 14 Memorandum vs the Audit Log]] -- Point-by-point comparison: 130 events vs "two isolated entries," 65 distinct days vs "October testing," "disabled today" vs "never enabled."
 
 ## Open Questions
 
 - [[complaint-response-process|Is There a Functioning Complaint Process?]] -- Partially addressed: Hunter acknowledged gap
 - [[bowman-termination-circumstances|What Were the Circumstances of Bowman's Termination?]] -- 23-day gap, no public documentation
-- [[verkada-approval-process|How Was the Verkada Surveillance System Approved?]] -- $50K, no public comment, CORA requests drafted
+- [[verkada-approval-process|How Was the Verkada Surveillance System Approved?]] -- $50,288, no public comment, partially answered by CORA C 26-09
+- [[march-20-community-room-archives|Why Were Four Community Room Archives Created on March 20-21, 2026?]] -- Assistant Clerk created four permanent archives of the public meeting room over a weekend; purpose metadata not produced
 - [[water-rate-projections|How Much Will Water Rates Increase?]] -- $263K/year through 2045, no public projections
 - [[budget-dependency-risk|What Happens If Grant Funding Decreases?]] -- 69% dependency, mayor acknowledges risk
 - [[admin-compensation-structure|What Is the Administrator's Full Compensation?]] -- Dual role, costs spread across fund pages

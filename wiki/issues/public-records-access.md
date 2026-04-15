@@ -2,9 +2,9 @@
 title: Public Records Access (CORA)
 type: issue
 created: 2026-04-05
-updated: 2026-04-06
+updated: 2026-04-09
 tags: [cora, transparency, public-records, vetter, cfoic]
-sources: [board-letter-2026-03-30, reporter-package-email-coverup, cora-libelous-communications]
+sources: [board-letter-2026-03-30, reporter-package-email-coverup, cora-libelous-communications, cora-c26-09-verkada-audit-logs, cora-tracking-log]
 ---
 
 # Public Records Access (CORA)
@@ -36,7 +36,10 @@ Access to public records through the Colorado Open Records Act (CORA), including
 The town has:
 1. One judicial finding of CORA bad faith (Brunner case)
 2. One CORA denial confirmed improper by the CFOIC Executive Director (McCarthy audit logs)
-3. One pending CORA request targeting the "libelous" decision-making process
+3. Multiple pending CORA requests as of April 2026, with extensions taken on simple records requests
+4. One fulfilled but heavily redacted CORA response (C 26-09 Verkada) with $167.90 in fees for what was largely automated exports
+
+For a running record of every CORA request, deadlines, fees, extensions, and outcomes, see [[cora-tracking-log|CORA Request Tracking Log]].
 
 ## Key People
 

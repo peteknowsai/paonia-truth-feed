@@ -107,6 +107,20 @@ Every place in the wiki where the record contradicts itself, where a public stat
 
 ---
 
+## 10. "Charges of financial malfeasance" vs. what Pete actually wrote
+
+**HCS article (Marty Durlin, April 2026):** "the charges of financial malfeasance made by McCarthy against Wynn"
+
+**Record:** Pete's flyer states: "The town's savings are disappearing. FY2026 fund balances projected to drop 23% ($5.4M to $4.1M). Bridge Reserve down 73.5%." It cites FY2026 Budget p.5. The word "malfeasance" does not appear in the flyer, the citation sheet, or any of Pete's four Facebook posts. [[ten-things-flyer|source]] [[citation-sheet|source]]
+
+Pete's flyer also states Wynn "controls all the money, alone" and notes the historical embezzlement (2007-2012), but frames this as a structural risk ("last time Paonia concentrated financial authority in one person"), not an accusation that Wynn committed fraud.
+
+**Significance:** "Malfeasance" is a legal term meaning corrupt official conduct. Reporting that fund balances are declining per the adopted budget is a factual observation, not a criminal accusation. The reframing escalates a budget critique into an allegation of corruption that Pete never made.
+
+**Status:** Unresolved. HCS has not cited a source for the word "malfeasance."
+
+---
+
 ## See Also
 
 - [[what-the-board-did-not-dispute]]

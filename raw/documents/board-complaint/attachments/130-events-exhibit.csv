@@ -1,0 +1,131 @@
+date,message_code,user_name,user_email,details_summary
+2025-10-03,IDENTITY_LIST,Troy Martin,tmartin@peak2peakcommunications.com,{}
+2025-10-08,IDENTITY_LIST,Troy Martin,tmartin@peak2peakcommunications.com,{}
+2025-10-22,IDENTITY_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-22,LPOI_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-22,IDENTITY_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-22,IDENTITY_PEOPLE_LIST_BULK_GET,Ruben Santiago,rubens@townofpaonia.com,"{""entity_ids"":[""[REDACTED ORGANIZATIONAL ID]""]}"
+2025-10-22,IDENTITY_PEOPLE_LIST_BULK_GET,Ruben Santiago,rubens@townofpaonia.com,"{""entity_ids"":[""[REDACTED ORGANIZATIONAL ID]""]}"
+2025-10-22,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-10-23,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-10-23,ARCHIVE_START,Matt Laiminger,mlaimingerppd@townofpaonia.com,"{""archive_group_id"":null,""filter_type"":""4~1af7d81c"",""label"":""Ballot Box Observation Footage"",""public"":false,""tags"":[""Blurred Faces""]}"
+2025-10-23,IDENTITY_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,IDENTITY_PEOPLE_LIST_BULK_GET,Ruben Santiago,rubens@townofpaonia.com,"{""entity_ids"":[""[REDACTED ORGANIZATIONAL ID]""]}"
+2025-10-23,IDENTITY_LIST,Derek Heiniger,derekh_ppw@townofpaonia.com,{}
+2025-10-23,IDENTITY_PEOPLE_LIST_BULK_GET,Ruben Santiago,rubens@townofpaonia.com,"{""entity_ids"":[""[REDACTED ORGANIZATIONAL ID]""]}"
+2025-10-23,LPOI_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,ALERT_RULE_CREATED,Ruben Santiago,rubens@townofpaonia.com,"{""alert_rule"":""{\""filter_id\"":\""\"",\""organization_id\"":\""\"",\""filter_name\"":\""\"",\""description\"":\""\"",\""event_types\"":null,\""device_types\"":null,\""owner_id\"":\""\"",\""timezone\"":\""\"",\""notify_on_event_e"
+2025-10-23,IDENTITY_PEOPLE_LIST_BULK_GET,Ruben Santiago,rubens@townofpaonia.com,"{""entity_ids"":[""[REDACTED ORGANIZATIONAL ID]""]}"
+2025-10-23,LPOI_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,IDENTITY_PEOPLE_LIST_BULK_GET,Ruben Santiago,rubens@townofpaonia.com,"{""entity_ids"":[""[REDACTED ORGANIZATIONAL ID]""]}"
+2025-10-23,IDENTITY_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,IDENTITY_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,IDENTITY_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,IDENTITY_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,IDENTITY_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,ALERT_RULE_UPDATED,Ruben Santiago,rubens@townofpaonia.com,"{""alert_rule"":""{\""filter_id\"":\""73fe69a5-99cd-4eba-9089-6f13b0cf0e3c\"",\""organization_id\"":\""[REDACTED ORGANIZATIONAL ID]\"",\""filter_name\"":\""Crowd Out Front\"",\""description\"":\""\"",\""event_types\"":[\"""
+2025-10-23,IDENTITY_LIST,Derek Heiniger,derekh_ppw@townofpaonia.com,{}
+2025-10-23,ANALYTICS_DASHBOARD_CREATED,Ruben Santiago,rubens@townofpaonia.com,"{""dashboardid"":""59ccf207-0205-4cb3-aec3-ef0d17a72a29"",""dashboardinfo"":{""dashboardname"":""Untitled Dashboard"",""rolegrants"":[],""siteids"":[""8e8377df-84f8-4c32-8bdd-c030a54cb042""],""timezone"":""America/Denve"
+2025-10-23,ALERT_RULE_UPDATED,Ruben Santiago,rubens@townofpaonia.com,"{""alert_rule"":""{\""filter_id\"":\""73fe69a5-99cd-4eba-9089-6f13b0cf0e3c\"",\""organization_id\"":\""[REDACTED ORGANIZATIONAL ID]\"",\""filter_name\"":\""Crowd Out Front\"",\""description\"":\""\"",\""event_types\"":[\"""
+2025-10-23,LPOI_LIST,Ruben Santiago,rubens@townofpaonia.com,{}
+2025-10-23,ANALYTICS_DASHBOARD_MODIFIED,Ruben Santiago,rubens@townofpaonia.com,"{""dashboardid"":""59ccf207-0205-4cb3-aec3-ef0d17a72a29"",""dashboardinfo"":{""dashboardname"":""Ruben's Dashboard"",""rolegrants"":[],""rolerevokes"":[],""siteids"":[""8e8377df-84f8-4c32-8bdd-c030a54cb042""],""timezone"
+2025-10-23,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-10-24,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-10-27,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-10-28,IDENTITY_LIST,Derek Heiniger,derekh_ppw@townofpaonia.com,{}
+2025-11-04,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-06,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-06,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-07,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-08,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-10,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-11,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-12,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-15,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-18,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-19,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-19,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-26,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-26,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-11-30,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-01,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-02,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-04,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-05,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-08,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-08,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-11,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-13,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2025-12-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-03,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-05,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-05,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-07,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-08,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-09,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-09,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-09,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-09,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-10,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-11,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-11,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-12,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-12,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-16,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-16,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-20,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-20,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-20,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-22,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-24,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-24,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-24,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-24,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-27,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-29,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-29,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-30,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-01-31,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-02,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-03,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-03,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-03,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-03,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-05,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-08,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-09,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-11,IDENTITY_LIST,Troy Martin,tmartin@peak2peakcommunications.com,{}
+2026-02-12,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-12,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-17,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-19,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-20,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-21,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-21,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-25,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-25,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-26,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-28,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-28,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-02-28,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-03,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-05,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-05,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-06,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-06,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-06,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-08,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-10,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-11,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-12,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-14,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-16,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}
+2026-03-16,IDENTITY_LIST,Matt Laiminger,mlaimingerppd@townofpaonia.com,{}

@@ -4,6 +4,34 @@ Chronological record of wiki operations.
 
 ---
 
+## [2026-04-15] ingest | Wynn's Verkada Rebuttal Memorandum & Factual Corrections
+
+**Raw files:**
+- `raw/documents/their-responses/wynn-verkada-memo-2026-04-14.md` — Transcription of the seven-page memo Town Administrator Wynn submitted at the April 14 meeting
+- `raw/documents/board-complaint/factual-corrections-2026-04-15.md` — Pete's one-page written correction filed with the Board on April 15
+- `raw/documents/board-complaint/attachments/130-events-exhibit.csv` — CSV of the 130 POI / analytics / alert / Blurred Faces events from the audit log
+- `raw/documents/board-complaint/attachments/laiminger-identity-list-chronology.csv` — 65 distinct days of face-identity-database access under Chief Laiminger's account
+- `raw/meeting-agendas/2026-04-14/` — Work session agenda, regular agenda, full packet
+
+**Pages created (5):**
+
+Sources:
+- `sources/wynn-verkada-memo-2026-04-14.md`
+- `sources/factual-corrections-2026-04-15.md`
+
+Events:
+- `events/2026-04-14-regular-board-meeting.md`
+
+Analysis:
+- `analysis/wynn-memo-vs-audit-log.md` — Point-by-point comparison of the memo's factual claims to the audit log
+
+**Key findings:**
+- Memo characterizes the POI-related activity as "two isolated audit log entries"; the audit log contains at least 130 events across 8 event codes directly tied to People Analytics and facial-recognition surfaces.
+- Memo attests that features "were disabled" on April 14, 2026, but does not state whether they were enabled at any prior time. CORA response does not cover March 27 – April 14 period, so any toggle-off event is not visible in produced records.
+- October 23, 2025 `ARCHIVE_START` event with tag `"Blurred Faces"` (per Verkada docs, requires face detection) is not addressed in the memo.
+- 100 `IDENTITY_LIST` events under Chief Laiminger's account across 65 distinct days, October 22, 2025 through March 16, 2026, is characterized in the memo as "testing in October 2025."
+- Memo endorses adoption of Trustees Hunter and Mejorado's draft ordinance.
+
 ## [2026-04-05] init | Wiki scaffolded
 
 Created directory structure and schema. Directories: `wiki/` (people, events, issues, sources, analysis, open-questions, assets) and `raw/` (meeting-minutes, articles, documents, correspondence). 87 raw files copied from Desktop (81MB).
@@ -153,3 +181,53 @@ Created 4 new pages: 3 analysis pages and 1 new person page.
 - By the standard used to remove Brunner, Wynn's documented conduct meets or exceeds the threshold on every measure.
 - 9 discrepancies documented in the record, including the Verkada facial recognition contradiction and the "voted to edit, published unedited" sequence.
 - Watson independently corroborates the hostile environment from a position the board cannot dismiss as a grievance.
+
+## [2026-04-08] ingest | CORA C 26-09 Verkada Audit Logs Response
+
+**Raw files:**
+- `raw/documents/cora-requests/c26-09-response/C 26-09 Response.pdf` (33 pages)
+- `raw/documents/cora-requests/c26-09-response/Verkada_Audit Log_REDACTED.xlsx` (32,338 rows)
+- `raw/documents/cora-requests/c26-09-response/VERKADA- Audit Logs_REDACTED.xlsx` (25,122 rows)
+
+The Town's response to CORA C 26-09 (Verkada camera records), delivered 2026-04-07 after a $167.90 fee. The response produced the Mitchell and Company contract, 16 camera configuration screenshots, a user management screenshot, and two audit log exports covering 2025-10-03 to 2026-03-26.
+
+**New source page (1):**
+- `sources/cora-c26-09-verkada-audit-logs.md` -- Full summary of what was produced, what was redacted, and what was not produced
+
+**New analysis page (1):**
+- `analysis/verkada-usage-patterns.md` -- Statistical reconstruction of Verkada usage from the 57,460 audit log rows
+
+**New person page (1):**
+- `people/ruben-santiago.md` -- Assistant Town Clerk; largest single user of the Verkada system
+
+**New open question (1):**
+- `open-questions/march-20-community-room-archives.md` -- Why were four permanent archives of the public meeting room created by the Assistant Clerk over the weekend of March 20-21, 2026?
+
+**Updated pages:**
+- `issues/surveillance.md` -- Added "Documented Usage (CORA C 26-09)" section, expanded timeline, updated key people
+- `people/samira-vetter.md` -- Added Verkada usage section with dated sessions, CORA C 26-09 administration section
+- `people/stefen-wynn.md` -- Added Verkada procurement and usage section including March 3 sweep, March 13 Front Desk review, March 26 audit log check
+- `open-questions/verkada-approval-process.md` -- Partially answered; total cost, contract, vendor, retention, and no-policy confirmed
+- `index.md` -- Added Santiago, CORA C 26-09 source, verkada-usage-patterns analysis, and march-20-community-room-archives question
+
+**Key findings from the audit log exports:**
+
+1. **The Town Clerk's office accounts for 53% of all Verkada activity.** Assistant Town Clerk Ruben Santiago alone accounts for 51.5% of all events (16,653 of 32,338).
+
+2. **The Community Room camera has been live-streamed 1,938 times.** Santiago accounts for 1,670 of those views. The Community Room is Town Hall's public meeting space where the Board, Planning Commission, and public committees meet and where citizens make public comment.
+
+3. **Santiago's Community Room viewing pattern does not match a meeting-minutes workflow.** Sunday is the highest day of the week (342 views). 35% of views occur on weekends. 428 views occur after 5 PM. 408 views occur before 9 AM. 93.6% are Live Stream Started (real-time), only 4.8% are Video History Streamed (retrospective).
+
+4. **Santiago created four permanent archives of the Community Room camera on Friday 2026-03-20 afternoon and Saturday 2026-03-21 morning.** The Friday session included three audio-toggle events. Archive Action Taken permanently preserves clips beyond the 30-day retention window. The archive metadata (name, description, case number) was not produced.
+
+5. **Wynn swept every camera in 13 minutes on 2026-03-03** (204 events, 11:04-11:17 AM) concurrent with User Permissions Set, User Permissions Modified, User Roles Modified, and Key Contact Updated administrative actions.
+
+6. **Vetter swept every camera in 14 minutes on 2026-03-25** (78 events, 8:42-8:56 AM) the morning the 10 Things flyer was distributed, including 18 views of the Grand Ave. exterior camera facing the front of Town Hall.
+
+7. **Wynn accessed the Verkada audit log on 2026-03-26**, one day after the flyer was distributed, 4 days before the special meeting response, and 12 days before the audit log was produced in response to CORA C 26-09.
+
+8. **The Town has no written policy governing Verkada use.** The clerk's response to item 4 (written policies, procedures, or guidelines) refers back to Verkada device configuration screenshots. No policy document was produced because none exists.
+
+9. **The "purpose" metadata requested in item 3 was not produced.** The audit logs show Archive Action Taken events but not the archive labels, descriptions, case numbers, or notes associated with them.
+
+10. **The redaction rationale is inconsistent with the redactions applied.** The clerk claimed redactions were needed to prevent phishing and social engineering, but internal user IDs (UUIDs that cannot be phished) were redacted while full names and email addresses (the actual phishing surface) were left visible.
