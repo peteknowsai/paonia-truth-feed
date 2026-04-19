@@ -10,6 +10,18 @@ Unprocessed sources waiting for ingest. Watchers append new items here. Items ar
 - [ ] [Paonia Hires STR Committee Facilitator, Says No to Cleanup Day](https://www.highcountryspotlight.com/local_news/civically_engaged/paonia-hires-str-committee-facilitator-says-no-to-cleanup-day/article_8c2aa440-bf55-4f62-abbe-e63be688a72f.html) -- HCS: Scott Brown selected, cleanup days tabled (found 2026-04-06)
 - [ ] [Paonia STR Committee Forwards Two Facilitator Candidates](https://www.highcountryspotlight.com/local_news/civically_engaged/paonia-short-term-rental-committee-forwards-two-facilitator-candidates-to-trustees/article_315fc327-58d3-41c0-8718-ddc806cd55db.html) -- HCS: Ad Hoc Committee evaluates facilitator candidates (found 2026-04-06)
 
+- [ ] [Cleanup Days Tabled; Board Opens Advisory Board Seats](https://www.deltacountyindependent.com/news/cleanup-days-program-tabled-board-opens-seats-on-two-advisory-bodies/article_da0e210e-995c-43e5-a3df-b36147386ed0.html) -- DCI: 3-2 vote to postpone cleanup days to 2027, ZBA and Planning Commission seats open (found 2026-04-07)
+- [ ] [Paonia Comprehensive Plan Earns National Planning Award](https://www.deltacountyindependent.com/news/paonia-comprehensive-plan-earns-national-planning-award/article_a982b96e-094b-4af5-97a5-227aa862c84a.html) -- DCI: APA Merit Award for 2025 comp plan, Wynn quoted praising collaboration (found 2026-04-07)
+- [ ] [HCS: "10 Things" Response Debated by Trustees](https://www.highcountryspotlight.com/local_news/civically_engaged/10-things-paonia-should-know-about-its-town-administrator-response-debated-by-trustees/article_3e341f0d-0258-46a8-94fb-688ea776451f.html) -- HCS/Durlin: Detailed account of Mar 30 special meeting, flyer response debate, 35 attendees, ballot box vandalism mentioned (found 2026-04-07)
+
+### CivicClerk Events
+
+- [ ] CivicClerk Event 498: Regular Town Board Meeting (2026-04-14, agenda 422) -- upcoming meeting, no YouTube yet
+- [ ] CivicClerk Event 561: Ad Hoc STR Committee Meeting (2026-04-07, agenda 429) -- today's meeting
+- [ ] CivicClerk Event 524: Planning Commission (2026-04-06, agenda 421) -- yesterday's meeting
+- [ ] CivicClerk Event 562: Special Town Board Meeting (2026-03-30, agenda 430) -- flyer response meeting, no YouTube yet
+- [ ] CivicClerk Event 510: Regular Town Board Meeting (2026-03-24, agenda 418) -- STR/sweeper/cleanup meeting, no YouTube yet
+
 ### Town Emails (via gws)
 
 - [ ] Vetter: "Citizen Initiative Response" (2026-04-03) -- Rejection letter for surveillance initiative, PDF attached. `raw/correspondence/town-emails-2026-03/citizen-initiative-response-2026-04-03.md` (found 2026-04-06)

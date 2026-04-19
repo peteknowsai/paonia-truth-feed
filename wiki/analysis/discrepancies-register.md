@@ -2,7 +2,7 @@
 title: Discrepancies Register
 type: analysis
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-19
 tags: [discrepancies, contradictions, analysis]
 sources: []
 ---
@@ -121,8 +121,21 @@ Pete's flyer also states Wynn "controls all the money, alone" and notes the hist
 
 ---
 
+## 11. "Controls all the money, alone" vs. "blatantly false"
+
+**Flyer claim (item #3):** Wynn "controls all the money, alone." Consolidated Administrator and Treasurer into one role. Prepares the budget. Historical context: the 2007-2012 embezzlement of $480K under a similar concentration of authority. [[ten-things-flyer|source]]
+
+**Town's response:** "This is blatantly false." Cites four controls: Finance Committee (Mayor + 1 Trustee) reviews every invoice, Caselle accounting software, Professional Management Solutions (third-party), and Board-set salary. [[hunter-rebuttal-flyer|source]] [[original-draft-with-libelous|source]]
+
+**Record:** Three of the four flyer facts are undisputed — Wynn holds both Administrator and Treasurer roles (Resolutions 2023-07, 2023-08); he prepares the budget; the 2007-2012 embezzlement happened under controls. Of the four controls the Town cites, three lack public evidence of actual function: no Finance Committee invoice-review log is published; Caselle user permissions and audit trails are the subject of three pending CORA requests (filed April 1, April 12, and April 19, 2026); PMS's actual scope of work is undocumented on the record. Board approval of salary is documented. See [[who-controls-the-money|full analysis]].
+
+**Status:** Unresolved. "Blatantly false" is an assertion about controls whose effectiveness has not been independently verified. The pending Caselle CORA requests are the mechanism that will show which characterization the record supports.
+
+---
+
 ## See Also
 
 - [[what-the-board-did-not-dispute]]
 - [[the-brunner-standard]]
 - [[board-oversight]]
+- [[who-controls-the-money]]
