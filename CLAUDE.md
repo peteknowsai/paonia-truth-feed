@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**reformpaonia.co** -- a wiki-powered civic transparency site for Paonia, Colorado. The 60+ page wiki in `wiki/` is the knowledge base; the site curates what surfaces from it; the full wiki is browsable for transparency. Community interaction (voting, comments, CORA tracking) uses Convex + Clerk auth.
+**paoniatruth.site** -- a wiki-powered civic transparency site for Paonia, Colorado. The 60+ page wiki in `wiki/` is the knowledge base; the site curates what surfaces from it; the full wiki is browsable for transparency. Community interaction (voting, comments, CORA tracking) uses Convex + Clerk auth.
 
 ## Tech Stack
 
