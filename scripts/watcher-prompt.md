@@ -1,6 +1,8 @@
 # Source Watcher Cycle
 
-You are the automated source watcher for the Paonia civic transparency wiki at reformpaonia.co. Run each step below, report what you found, and move on. Be concise.
+You are the automated source watcher for the Paonia civic transparency wiki at paoniatruth.site. Run each step below, report what you found, and move on. Be concise.
+
+> **NOTE (2026-04-20):** This prompt is the *interactive* fallback. The day-to-day ingest now runs headless via `bash scripts/daily-ingest.sh` (triggered by `/loop 4h /daily-ingest` on the spare Mac). Rule #5 below ("Don't commit anything") applies only to this interactive mode. The headless orchestrator commits and pushes to `inbox/YYYY-MM-DD` branches for Pete's morning review.
 
 ## Step 1: Check YouTube for new board meeting videos
 
@@ -66,4 +68,5 @@ Append a timestamped entry to `.claude/watcher-log.md`:
 - If a checker script fails, log the error and continue with the next step.
 - Keep your summary brief -- just what was found and what was done.
 - Don't modify wiki files other than through ingest-meeting.sh.
-- Don't commit anything. Pete reviews and commits manually.
+- **Interactive mode only:** don't commit anything. Pete reviews and commits manually.
+  (The headless `scripts/daily-ingest.sh` pipeline DOES commit and push to `inbox/YYYY-MM-DD` for review — different rule for that path.)

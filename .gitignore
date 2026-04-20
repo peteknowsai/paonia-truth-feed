@@ -60,3 +60,6 @@ raw/transcripts/
 .claude/scheduled_tasks.lock
 .claude/watcher-state.json
 .claude/watcher-log.md
+
+# Claude Code local tools (gstack etc.) — not project code, don't commit
+.claude/skills/
