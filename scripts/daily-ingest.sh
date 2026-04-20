@@ -32,16 +32,30 @@ mkdir -p "$STAGING"
 
 echo "=== daily-ingest $TODAY start $(date -u +%H:%M:%SZ) ==="
 
-# ---- 0. Reset worktree to a clean inbox/$TODAY branch off origin/main ----
+# ---- 0. Prepare a clean inbox/$TODAY branch, accumulating today's earlier runs ----
 # Must happen BEFORE writing any files. Otherwise the summarizer's writes to
 # raw/INBOX.md and .claude/daily-ingest-heartbeat.md would block the checkout
 # on the next cycle ("local changes would be overwritten").
-# The worktree is dedicated to this pipeline, so discarding local changes is
-# always safe -- any locally-modified file is a leftover from a prior run.
+#
+# Branch strategy:
+#   - First run of the day: origin/inbox/$TODAY does not exist, start from origin/main.
+#   - Subsequent runs of the same day: continue origin/inbox/$TODAY so earlier runs'
+#     content accumulates. Without this, each run wipes the prior run's additions.
+#   - New day: $TODAY changes, branch doesn't exist, fresh start from origin/main.
+#
+# The worktree is dedicated to this pipeline, so discarding local changes (from a
+# crashed prior run) is always safe.
 git fetch origin --quiet || true
 git reset --hard HEAD --quiet 2>/dev/null || true
 git clean -fd --quiet 2>/dev/null || true
-git checkout -B "inbox/$TODAY" origin/main --quiet
+
+if git show-ref --verify --quiet "refs/remotes/origin/inbox/$TODAY"; then
+  echo "Continuing today's inbox branch (accumulating run)" >&2
+  git checkout -B "inbox/$TODAY" "origin/inbox/$TODAY" --quiet
+else
+  echo "Starting today's inbox branch from origin/main (first run of the day)" >&2
+  git checkout -B "inbox/$TODAY" origin/main --quiet
+fi
 
 # ---- 1. Run the four watchers ----
 # Each writes JSON to a staging file. Non-zero exit is tolerated here because
