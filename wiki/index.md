@@ -27,6 +27,7 @@ See [[SCHEMA]] for conventions and workflows.
 - [[2026-03-25-ten-things-flyer|10 Things Flyer Distributed (2026-03-25)]] -- Sourced citizen flyer, triggered 5-day response
 - [[2026-03-30-special-meeting|Special Meeting (2026-03-30)]] -- Board response, 5-1 vote, "libelous," unedited publication
 - [[2026-04-03-surveillance-initiative-rejection|Surveillance Initiative Rejected (2026-04-03)]] -- Second initiative rejected, same pattern
+- [[2026-04-13-str-initiative-approval|STR Initiative Approved (2026-04-13)]] -- First citizen initiative approved by Vetter; 57 signatures needed
 
 ## Issues
 
