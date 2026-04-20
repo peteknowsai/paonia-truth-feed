@@ -11,9 +11,11 @@ if [[ ! -f "$STATE_FILE" ]]; then
   echo '{}' > "$STATE_FILE"
 fi
 
-# Check auth first
+# Check auth first. gws prints a "Using keyring backend: keyring" diagnostic line
+# before its JSON output, so grep is used (tolerant of the prefix). The Python steps
+# below use _extract_json() to slice off that prefix before json.loads.
 auth_check=$(gws gmail users getProfile --params '{"userId":"me"}' 2>&1 || true)
-if echo "$auth_check" | grep -q '"error"'; then
+if echo "$auth_check" | grep -qE '"error"[[:space:]]*:[[:space:]]*"(auth|invalid_grant|unauthorized)"'; then
   echo '{"error":"auth","message":"Gmail token expired. Run: ! gws gmail auth login"}'
   exit 0
 fi
@@ -39,12 +41,26 @@ else:
 query="(from:townofpaonia.com OR from:paoniagov.com) after:${last_date}"
 result=$(gws gmail users messages list --params "{\"userId\":\"me\",\"q\":\"${query}\",\"maxResults\":20}" 2>&1 || echo '{}')
 
-# Parse messages and fetch details
+# Parse messages and fetch details. gws prepends a "Using keyring backend: keyring"
+# diagnostic line to its output, so _extract_json finds the first '{' or '[' and
+# parses from there.
 python3 -c "
 import json, subprocess, sys
 from datetime import datetime, timezone
 
-result = json.loads('''$result''')
+def _extract_json(text):
+    for i, ch in enumerate(text):
+        if ch in '{[':
+            return text[i:]
+    return text
+
+result_raw = '''$result'''
+try:
+    result = json.loads(_extract_json(result_raw))
+except json.JSONDecodeError:
+    print('[]')
+    sys.exit(0)
+
 state_file = '$STATE_FILE'
 
 with open(state_file) as f:
@@ -61,7 +77,7 @@ for msg in messages:
         continue
     known_ids.add(msg_id)
 
-    # Fetch message details
+    # Fetch message details (same keyring prefix issue)
     try:
         detail = subprocess.run(
             ['gws', 'gmail', 'users', 'messages', 'get',
@@ -69,7 +85,7 @@ for msg in messages:
                                      'metadataHeaders': ['From', 'Subject', 'Date']})],
             capture_output=True, text=True, timeout=10
         )
-        data = json.loads(detail.stdout)
+        data = json.loads(_extract_json(detail.stdout))
     except Exception:
         continue
 
