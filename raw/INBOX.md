@@ -31,6 +31,26 @@ Unprocessed sources waiting for ingest. Watchers append new items here. Items ar
 - [ ] Vetter: "C 26-09 Public Records Request" 7-day extension (2026-03-26) -- Extension notice for CORA request. `raw/correspondence/town-emails-2026-03/cora-c26-09-extension-2026-03-26.md` (found 2026-04-06)
 - [ ] Vetter: "C 26-09" receipt (2026-03-25) -- CORA request received, deadline Mar 27. `raw/correspondence/town-emails-2026-03/cora-c26-09-receipt-2026-03-25.md` (found 2026-04-06)
 
+
+## Pending (auto-ingested 2026-04-20)
+
+- [ ] **Paonia Town Clerk response to CORA request C 26-10** [conf 5/5]
+  - Town Clerk Samira Vetter sent a response to public records request C 26-10 with an attachment.
+  - Quote: "Please see the attached response to you public records request, C 26-10. Best, Samira Samira M. Vetter, CMC Paonia Town Clerk/Human Resources"
+  - Source: gmail://19d9480e70e69a43
+- [ ] **Town Clerk response on Short-Term Lodging citizen initiative petition** [conf 4/5]
+  - Paonia Town Clerk Samira Vetter sent an attached response regarding the Citizen Initiated Petition on Short-Term Lodging.
+  - Quote: "Please see the attached response to your Citizen Initiated Petition on Short-Term Lodging. Best, Samira Samira M. Vetter, CMC Paonia Town Clerk/Human Resources"
+  - Source: gmail://19d88e3eac77c8e5
+- [ ] **Town Clerk response to camera-prohibition citizen initiative petition** [conf 5/5]
+  - Paonia Town Clerk Samira Vetter sent a response to the submitted citizen initiative petition prohibiting cameras on public property.
+  - Quote: "Please see the attached response to your submission of a citizen initiative petition about prohibiting cameras on public property. Best, Samira Samira M. Vetter, CMC Paonia Town Clerk/Human Resources"
+  - Source: gmail://19d88bd2decc1017
+- [ ] **Paonia Town Clerk sends CORA extension notice for request C26-12** [conf 5/5]
+  - Paonia Town Clerk Samira Vetter emailed an extension notice for CORA request C26-12 with an attached extension document.
+  - Quote: "Please see the attached extension for your CORA request, C26-12. Best, Samira Samira M. Vetter, CMC Paonia Town Clerk/Human Resources"
+  - Source: gmail://19d876fa0a64a056
+
 ## Ingested
 
 *Checked items move here after wiki ingest.*
