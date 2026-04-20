@@ -51,6 +51,22 @@ Unprocessed sources waiting for ingest. Watchers append new items here. Items ar
   - Quote: "Please see the attached extension for your CORA request, C26-12. Best, Samira Samira M. Vetter, CMC Paonia Town Clerk/Human Resources"
   - Source: gmail://19d876fa0a64a056
 
+
+## Pending (auto-ingested 2026-04-20)
+
+- [ ] **Paonia trustees table camera ordinance amid packed meeting** [conf 4/5]
+  - Paonia Board of Trustees tabled a draft ordinance governing the town's Verkada security camera system and considered turning off some cameras after residents packed Tuesday's meeting.
+  - Quote: "Dozens of residents packed Tuesday night's Paonia Board of Trustees meeting to weigh in on a draft ordinance governing the town's Verkada security camera system."
+  - Source: https://www.deltacountyindependent.com/news/paonia-trustees-table-camera-ordinance-consider-turning-off-some-cameras-as-residents-pack-meeting/article_668d6b8b-44bd-4ef7-b23b-52af4a142dbd.html
+- [ ] **Paonia water tank relining 90% done; contractor hit with $750/day liquidated damages** [conf 5/5]
+  - Paonia's 2M-gallon treated water tank relining is ~90% complete; contractor missed substantial completion deadline and is being assessed $750/day in liquidated damages.
+  - Quote: "The Town of Paonia's 2-million-gallon treated water tank is approximately 90% complete on its relining project, but the contractor has missed the substantial completion deadline and is being assessed $750 per day in liquidated damages, Town Administrator Stefen Wynn reported"
+  - Source: https://www.deltacountyindependent.com/news/water-tank-relining-nearing-completion-as-contractor-racks-up-liquidated-damages/article_f29700bb-6506-4672-8a18-6241cba42181.html
+- [ ] **Paonia moves forward on grant applications, Smith Center reopening, Arbor Day** [conf 5/5]
+  - Paonia is pursuing a FEMA grant for backup generators at Town Hall and the water and wastewater treatment plants after a prior application was denied.
+  - Quote: "The Town of Paonia is pursuing a FEMA grant to fund backup generators at Town Hall, the water treatment plant and the wastewater treatment plant after a previous application was denied."
+  - Source: https://www.deltacountyindependent.com/news/paonia-moves-forward-on-grant-applications-smith-center-reopening-arbor-day/article_6ee94a5a-3b98-4687-9250-b1fee7b6ce2c.html
+
 ## Ingested
 
 *Checked items move here after wiki ingest.*
