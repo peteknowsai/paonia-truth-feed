@@ -76,11 +76,12 @@ python3 scripts/ingest-summarize.py \
   --date       "$TODAY"
 
 # ---- 5. Commit + push branch ----
-# Branch convention: inbox/YYYY-MM-DD. Each 4h run force-updates the same day's branch.
-# --force-with-lease is safer than --force: fails if someone pushed to this branch
-# from another machine since our last fetch.
+# Branch convention: inbox/YYYY-MM-DD. Each 4h run force-resets this branch to
+# origin/main, replays the day's changes on top, and force-pushes. Starting from
+# origin/main every run means the inbox branch always contains the latest merged
+# work from Pete's dev machine plus today's automated additions -- no drift.
 git fetch origin --quiet || true
-git checkout -B "inbox/$TODAY"
+git checkout -B "inbox/$TODAY" origin/main
 git add raw/ wiki/events/ .claude/daily-ingest-heartbeat.md 2>/dev/null || true
 
 if ! git diff --cached --quiet; then
@@ -93,7 +94,5 @@ else
   echo "No changes to commit this run" >&2
 fi
 
-# Return to main so next run starts clean.
-git checkout main --quiet 2>/dev/null || true
-
+# Stay on inbox/$TODAY. Next run will reset from origin/main again.
 echo "=== daily-ingest $TODAY done $(date -u +%H:%M:%SZ) ==="
