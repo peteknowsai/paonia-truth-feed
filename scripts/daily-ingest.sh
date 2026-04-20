@@ -32,6 +32,17 @@ mkdir -p "$STAGING"
 
 echo "=== daily-ingest $TODAY start $(date -u +%H:%M:%SZ) ==="
 
+# ---- 0. Reset worktree to a clean inbox/$TODAY branch off origin/main ----
+# Must happen BEFORE writing any files. Otherwise the summarizer's writes to
+# raw/INBOX.md and .claude/daily-ingest-heartbeat.md would block the checkout
+# on the next cycle ("local changes would be overwritten").
+# The worktree is dedicated to this pipeline, so discarding local changes is
+# always safe -- any locally-modified file is a leftover from a prior run.
+git fetch origin --quiet || true
+git reset --hard HEAD --quiet 2>/dev/null || true
+git clean -fd --quiet 2>/dev/null || true
+git checkout -B "inbox/$TODAY" origin/main --quiet
+
 # ---- 1. Run the four watchers ----
 # Each writes JSON to a staging file. Non-zero exit is tolerated here because
 # one watcher failing should not take down the others. The summarizer reads
@@ -76,12 +87,9 @@ python3 scripts/ingest-summarize.py \
   --date       "$TODAY"
 
 # ---- 5. Commit + push branch ----
-# Branch convention: inbox/YYYY-MM-DD. Each 4h run force-resets this branch to
-# origin/main, replays the day's changes on top, and force-pushes. Starting from
-# origin/main every run means the inbox branch always contains the latest merged
-# work from Pete's dev machine plus today's automated additions -- no drift.
-git fetch origin --quiet || true
-git checkout -B "inbox/$TODAY" origin/main
+# Branch was already reset to origin/main at the top. Just stage + commit + push
+# the day's changes. --force-with-lease is safer than --force: fails if someone
+# pushed to this branch from another machine since our last fetch.
 git add raw/ wiki/events/ .claude/daily-ingest-heartbeat.md 2>/dev/null || true
 
 if ! git diff --cached --quiet; then
@@ -94,5 +102,4 @@ else
   echo "No changes to commit this run" >&2
 fi
 
-# Stay on inbox/$TODAY. Next run will reset from origin/main again.
 echo "=== daily-ingest $TODAY done $(date -u +%H:%M:%SZ) ==="
