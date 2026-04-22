@@ -31,6 +31,14 @@ Unprocessed sources waiting for ingest. Watchers append new items here. Items ar
 - [ ] Vetter: "C 26-09 Public Records Request" 7-day extension (2026-03-26) -- Extension notice for CORA request. `raw/correspondence/town-emails-2026-03/cora-c26-09-extension-2026-03-26.md` (found 2026-04-06)
 - [ ] Vetter: "C 26-09" receipt (2026-03-25) -- CORA request received, deadline Mar 27. `raw/correspondence/town-emails-2026-03/cora-c26-09-receipt-2026-03-25.md` (found 2026-04-06)
 
+
+## Pending (auto-ingested 2026-04-21)
+
+- [ ] **Paonia Town Clerk responds to CORA public records request** [conf 5/5]
+  - Town Clerk Samira Vetter sent a response to a CORA public records request with attached records.
+  - Quote: "Please see the attached Response to your CORA Public Records Request. Best, Samira Samira M. Vetter, CMC Paonia Town Clerk/Human Resources"
+  - Source: gmail://19db2c440a5de0fe
+
 ## Ingested
 
 *Checked items move here after wiki ingest.*
