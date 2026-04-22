@@ -31,6 +31,14 @@ Unprocessed sources waiting for ingest. Watchers append new items here. Items ar
 - [ ] Vetter: "C 26-09 Public Records Request" 7-day extension (2026-03-26) -- Extension notice for CORA request. `raw/correspondence/town-emails-2026-03/cora-c26-09-extension-2026-03-26.md` (found 2026-04-06)
 - [ ] Vetter: "C 26-09" receipt (2026-03-25) -- CORA request received, deadline Mar 27. `raw/correspondence/town-emails-2026-03/cora-c26-09-receipt-2026-03-25.md` (found 2026-04-06)
 
+
+## Pending (auto-ingested 2026-04-22)
+
+- [ ] **Crowd Confronts Paonia Board and Staff Over Verkada Cameras** [conf 4/5]
+  - More than 30 residents objected to Paonia's Verkada camera installation, citing privacy concerns and lack of transparency.
+  - Quote: "More than 30 individuals objected to Paonia's Verkada camera installation, citing privacy concerns and lack of transparency."
+  - Source: https://www.highcountryspotlight.com/local_news/civically_engaged/crowd-confronts-paonia-board-and-staff-over-verkada-cameras/article_ee52d20f-0ba7-47fb-ab28-1a8703e9e775.html
+
 ## Ingested
 
 *Checked items move here after wiki ingest.*
