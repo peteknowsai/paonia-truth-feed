@@ -39,6 +39,14 @@ Unprocessed sources waiting for ingest. Watchers append new items here. Items ar
   - Quote: "More than 30 individuals objected to Paonia's Verkada camera installation, citing privacy concerns and lack of transparency."
   - Source: https://www.highcountryspotlight.com/local_news/civically_engaged/crowd-confronts-paonia-board-and-staff-over-verkada-cameras/article_ee52d20f-0ba7-47fb-ab28-1a8703e9e775.html
 
+
+## Pending (auto-ingested 2026-04-22)
+
+- [ ] **CORA response from Paonia Town Clerk** [conf 5/5]
+  - Paonia Town Clerk Samira Vetter sent a response to a CORA public records request with an attached document.
+  - Quote: "Please see the attached response to your CORA public records request. Best, Samira Samira M. Vetter, CMC Paonia Town Clerk/Human Resources"
+  - Source: gmail://19db7661106753cb
+
 ## Ingested
 
 *Checked items move here after wiki ingest.*
