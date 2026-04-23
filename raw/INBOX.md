@@ -31,6 +31,14 @@ Unprocessed sources waiting for ingest. Watchers append new items here. Items ar
 - [ ] Vetter: "C 26-09 Public Records Request" 7-day extension (2026-03-26) -- Extension notice for CORA request. `raw/correspondence/town-emails-2026-03/cora-c26-09-extension-2026-03-26.md` (found 2026-04-06)
 - [ ] Vetter: "C 26-09" receipt (2026-03-25) -- CORA request received, deadline Mar 27. `raw/correspondence/town-emails-2026-03/cora-c26-09-receipt-2026-03-25.md` (found 2026-04-06)
 
+
+## Pending (auto-ingested 2026-04-23)
+
+- [ ] **[UNVERIFIED-QUOTE] Paonia Clerk acknowledges CORA request received April 23, 2026** [LOW-CONFIDENCE 1/5]
+  - Town Clerk confirms receipt of CORA request on April 23, 2026 with a response deadline of April 28, 2026; deposit may be required.
+  - Quote: "Your has been received by the Clerk's office today, April 23, 2026 and has a deadline of April 28, 2026. Depending on the number of emails, I will be contacting you about a deposit."
+  - Source: gmail://19dbadd8c436c3b0
+
 ## Ingested
 
 *Checked items move here after wiki ingest.*
