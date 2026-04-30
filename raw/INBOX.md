@@ -16,6 +16,7 @@ Unprocessed sources waiting for ingest. Watchers append new items here. Items ar
 
 ### CivicClerk Events
 
+- [~] CivicClerk Event 511: Regular Town Board Meeting (2026-04-28, agenda 423) -- packet ingested for cameras (H.8/H.9) and water tanks (H.10/H.11) only; other items not processed. See `wiki/events/2026-04-28-regular-board-meeting.md` (found 2026-04-27)
 - [ ] CivicClerk Event 498: Regular Town Board Meeting (2026-04-14, agenda 422) -- upcoming meeting, no YouTube yet
 - [ ] CivicClerk Event 561: Ad Hoc STR Committee Meeting (2026-04-07, agenda 429) -- today's meeting
 - [ ] CivicClerk Event 524: Planning Commission (2026-04-06, agenda 421) -- yesterday's meeting

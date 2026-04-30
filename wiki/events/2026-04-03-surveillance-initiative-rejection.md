@@ -1,23 +1,26 @@
 ---
-title: Surveillance Camera Initiative Rejected
+title: Surveillance Camera Initiative Rejected (Three Times)
 type: event
 created: 2026-04-03
-updated: 2026-04-06
-tags: [initiative, surveillance, vetter, rejection]
-sources: [fb-05-initiative-rejected-again, rejection-response-to-vetter]
+updated: 2026-04-29
+tags: [initiative, surveillance, vetter, rejection, rule-106]
+sources: [fb-05-initiative-rejected-again, rejection-response-to-vetter, clerk-rejection-2026-04-03, clerk-rejection-2026-04-13, clerk-rejection-2026-04-27, rule-106-petition-draft]
 ---
 
-# Surveillance Camera Initiative Rejected
+# Surveillance Camera Initiative Rejected (Three Times)
 
-**Date:** 2026-04-03
-**Type:** Citizen initiative rejection by Town Clerk
+**Dates:** 2026-04-03, 2026-04-13, 2026-04-27
+**Type:** Pattern of citizen initiative rejections by Town Clerk
 
 ## Timeline
 
 - **2026-03-27**: Pete McCarthy submitted a citizen initiative petition to ban surveillance cameras on public property.
-- **2026-04-03**: [[samira-vetter|Town Clerk Vetter]] rejected the petition on six grounds.
-- **2026-04-03**: Pete submitted a formal written response rebutting all six grounds and demanding acceptance within 5 business days.
-- **~2026-04-06**: Pete resubmitted a revised, narrowed version removing disputed provisions. Also prepared three split single-subject initiatives as an alternative approach.
+- **2026-04-03**: [[clerk-rejection-2026-04-03|Town Clerk Vetter rejected]] the petition on six grounds.
+- **2026-04-03**: Pete submitted a [[rejection-response-to-vetter|formal written response]] rebutting all six grounds and demanding acceptance within 5 business days.
+- **~2026-04-06**: Pete resubmitted a revised, narrowed version removing disputed provisions ("Paonia Surveillance Camera Prohibition Ordinance").
+- **2026-04-13**: Vetter [[clerk-rejection-2026-04-13|rejected the revised petition]] on a new theory: "purely executive acts."
+- **~2026-04-20**: Pete submitted a third, broadened version ("Surveillance Policy Ordinance") framed as a policy declaration rather than a prohibition.
+- **2026-04-27**: Vetter [[clerk-rejection-2026-04-27|rejected the third version]] on yet another theory: "managerial and operational function." The letter contained a copy-paste error referencing the wrong petition by name and was not emailed until April 28 after Pete sent a five-day-deadline demand.
 
 ## Rejection Grounds and Responses
 
@@ -30,18 +33,25 @@ sources: [fb-05-initiative-rejected-again, rejection-response-to-vetter]
 | Injunctive relief is "judicial" | Creates citizen cause of action | Creating causes of action is legislative |
 | Voter approval for amendment "invalid" | Section 7 | Even if invalid, severability clause should save the rest |
 
-## Pattern
+## Pattern: Three Rejections, Three Different Theories
 
-This is the second citizen initiative rejected by Vetter. Both followed the same framework: characterize provisions as "administrative" to place them beyond citizen initiative authority. In both cases, the specific textual basis for rejection has been disputed:
-- STR initiative (2025-05-28): "no fees" characterized as "dictating fees"
-- Camera initiative (2026-04-03): "body cams exempt" characterized as "regulating body cams"
+The Clerk's stated grounds for rejection have shifted with each version:
 
-## Next Steps (as of document date)
+| Rejection | Date | Stated theory |
+|---|---|---|
+| #1 (original) | 2026-04-03 | "Administrative function" (six grounds) |
+| #2 (narrowed) | 2026-04-13 | "Purely executive acts" |
+| #3 (broadened policy) | 2026-04-27 | "Managerial and operational function" |
 
-- Formal response demanding acceptance within 5 business days
-- Rule 106 petition drafted for Delta County District Court
-- Revised narrowed petition resubmitted
-- Three split single-subject petitions prepared
+Each time Pete narrowed or rewrote the petition to address the prior rejection, the Clerk shifted to a new doctrinal label rather than evaluating the revised text. None of the three rejections cite Colorado caselaw distinguishing legislative from administrative action.
+
+This is also the second subject area on which Vetter has rejected an initiative on "administrative" grounds:
+- STR initiative ([[2025-05-28-str-initiative-rejection]]): "no fees" characterized as "dictating fees"
+- Camera initiative (three rejections, 2026-04-03 → 2026-04-27)
+
+## Next Steps
+
+- [[rule-106-petition-draft|Rule 106 petition]] in preparation for filing in Delta County District Court (deadline ~May 25-26, 2026, running 28 days from the April 27/28 rejection).
 
 ## See Also
 

@@ -2,9 +2,9 @@
 title: CORA Request Tracking Log
 type: analysis
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-24
 tags: [cora, transparency, public-records, vetter, tracking, log]
-sources: [reporter-package-email-coverup, cora-libelous-communications, cora-c26-09-verkada-audit-logs, board-letter-2026-03-30]
+sources: [reporter-package-email-coverup, cora-libelous-communications, cora-c26-09-verkada-audit-logs, cora-c26-11-libelous-communications-response, cora-c26-12-m365-audit-logs-response, pattern-of-cora-obstruction, board-letter-2026-03-30]
 ---
 
 # CORA Request Tracking Log
@@ -13,7 +13,7 @@ A running record of every Colorado Open Records Act request submitted by Pete Mc
 
 This page exists because the pattern of how the Town responds to records requests is itself a story, and because individual requests can get lost in the shuffle without a single place to track them.
 
-**Last updated: 2026-04-09 (Thursday)**
+**Last updated: 2026-04-24 (Friday)**
 
 ## Summary Table
 
@@ -24,8 +24,8 @@ This page exists because the pattern of how the Town responds to records request
 | (no #) | 2025-06-25 | Records of improper executive session | **DENIED** | n/a | $0 | Town denied citing executive session privilege. Filed strategically to put the improper use on the record. |
 | **C 26-09** | 2026-03-23 | Verkada Camera System (contract, retention policy, audit logs, written policies) | **FULFILLED** 2026-04-08 | Apr 7 (with extension) | **$167.90** | 5 hours billed for what was largely automated exports. See [[cora-c26-09-verkada-audit-logs]]. |
 | (no #) | 2026-04-01 | Caselle ERP User Access Report | **PENDING — extended** | **Apr 16** (max) | n/a | Vetter took 7-day extension on Apr 7. Standard deadline was Apr 7. |
-| **C 26-11** | 2026-04-06 | Communications re: Board's March 30 Response Letter | **PENDING** | **Apr 10 (Friday)** | n/a | Standard 3-day deadline. |
-| (no #) | 2026-04-07 | M365 Audit Logs and Retention Policy | **PENDING** | **Apr 13 (Monday)** | n/a | Standard 3-day deadline. |
+| **C 26-11** | 2026-04-06 | Communications re: Board's March 30 Response Letter | **FULFILLED** 2026-04-21 (nominal) | Apr 22 (with extension) | $0 | 4 emails produced — 2 were Pete's own. No trustee-to-trustee comms. No drafts. Buchner advice withheld as privileged. See [[cora-c26-11-libelous-communications-response]]. |
+| **C 26-12** | 2026-04-07 | M365 Unified Audit Log export + retention policy | **FULFILLED** 2026-04-22 (nominal) | Apr 22 (with extension) | $0 | 6 monthly files. "March 2026" file is a duplicate of April. Every file capped at 50,000 rows. AuditData column 100% redacted. See [[cora-c26-12-m365-audit-logs-response]]. |
 
 ## Statutory Framework
 
@@ -95,26 +95,35 @@ This is the kind of CORA filing that exists in the record specifically to make a
 - **Status as of 2026-04-09**: PENDING. No records produced. Within the extended window.
 - **Notable**: The underlying request is a single ERP system user access report — the kind of report most IT staff can produce in 30 minutes using standard reporting tools. Taking a 7-day extension on this is hard to justify as "extenuating circumstances" under the statute.
 
-### 2026-04-06 — CORA C 26-11 — Communications re: Board's March 30 Response Letter — **PENDING**
+### 2026-04-06 — CORA C 26-11 — Communications re: Board's March 30 Response Letter — **FULFILLED (NOMINAL)**
 
 - **Filed**: 2026-04-06 (Mon) at 11:22 AM MDT
 - **Acknowledged**: 2026-04-07 (Tue) at 9:03 AM MDT — Vetter assigned C 26-11, declared deadline of **April 10, 2026**
-- **Standard deadline**: **2026-04-10 (Friday)** — 3 working days from receipt on Apr 7
-- **Maximum extended deadline**: 2026-04-22 (Wednesday) if extension is taken
-- **Status as of 2026-04-09**: PENDING. Standard deadline tomorrow.
+- **Standard deadline**: 2026-04-10 (Friday) — 3 working days from receipt on Apr 7 (missed)
+- **Extension taken**: by Apr 10 — new deadline 2026-04-22
+- **Fulfilled**: 2026-04-21 (letter dated Apr 21) — used virtually the full extension
 - **Subject**: Three categories of records — (1) all communications between Mayor Smith, Wynn, Buchner, and trustees regarding Pete's flyer March 25-30, 2026; (2) all drafts, revisions, tracked changes of the board's response letter; (3) all legal opinions or advice from Buchner regarding use of "libelous," "libel," or "defamation."
-- **Source**: [[cora-libelous-communications]]
-- **Strategic significance**: This request seeks the internal communications that would prove or disprove whether [[stefen-wynn|Wynn]] knew the cameras had facial recognition when he helped coordinate the March 30 letter. See [[wynn-knowledge-of-cameras]] for the broader context.
+- **What was produced**: Four emails — Pete's own 3/30 complaint, Paige's 3:37 PM forward of it to Wynn, Lucy's 3/26 "My Flyer" email to Paige, and Lucy's 3/30 individual-capacity reply to Pete. No trustee-to-trustee communications. No scheduling emails for the March 30 special meeting. No drafts or tracked changes (response points to the two already-public published versions). All Buchner advice withheld under attorney-client privilege (no privilege log provided).
+- **Source**: [[cora-libelous-communications]] (original request), [[cora-c26-11-libelous-communications-response]] (response analysis)
+- **Assessment**: Production is implausibly thin for a six-day window in which the Board convened a special meeting and produced a jointly-signed letter. See [[pattern-of-cora-obstruction]].
 
-### 2026-04-07 — M365 Audit Logs and Retention Policy — **PENDING**
+### 2026-04-07 — CORA C 26-12 — M365 Audit Logs and Retention Policy — **FULFILLED (NOMINAL)**
 
 - **Filed**: 2026-04-07 (Tue) at 11:08 AM MDT
 - **Acknowledged**: 2026-04-08 (Wed) at 9:13 AM MDT — Vetter declared deadline of **April 13, 2026**
-- **Standard deadline**: **2026-04-13 (Monday)** — 3 working days from receipt on Apr 8
-- **Maximum extended deadline**: 2026-04-22 (Wednesday) if extension is taken
-- **Status as of 2026-04-09**: PENDING. Standard deadline Monday.
+- **Standard deadline**: 2026-04-13 (Monday) — 3 working days from receipt on Apr 8 (missed)
+- **Extension taken**: by Apr 13 — new deadline 2026-04-22
+- **Fulfilled**: 2026-04-22 (letter dated Apr 22) — used the full extension
 - **Subject**: Two-item request — (1) Complete M365 Unified Audit Log export for all available dates, CSV format; (2) Town's current M365 audit log retention policy and licensing tier
-- **Strategic significance**: The same M365 audit logs the Town denied in 2024 (claimed "not in custody") are now requested again, this time with a focus on system-generated metadata that cannot be selectively redacted. The 2024 denial was confirmed improper by CFOIC. A second denial would be evidence of an ongoing pattern.
+- **What was produced**: Six monthly Excel files labeled Nov 2025 through April 2026. Confirmation of M365 Business Premium licensing and 180-day audit retention.
+- **Production defects**:
+  - The "March 2026" file (`Redacted_TownOfPaonia_Audit_Log_Mar2026.xlsx`) contains April 1-9 2026 data — **identical to the April file** (verified by matching RecordIds). March 2026 data was not produced.
+  - Every monthly file is capped at exactly 50,000 rows (the Microsoft Purview UI export cap), not a complete month.
+  - The `AuditData` column (the JSON payload containing email subjects, recipients, IP addresses, session IDs, accessed item IDs) is 100% redacted across all files.
+  - The April file stops at April 9, even though delivery was April 22.
+  - Earliest data is Nov 1 2025 even though 180-day retention at Apr 22 should include late October 2025.
+- **Source**: [[cora-c26-12-m365-audit-logs-response]] (response analysis)
+- **Assessment**: The one month whose data would independently test the C 26-11 communications production was replaced with a duplicate of a different month. See [[pattern-of-cora-obstruction]].
 
 ## Patterns and Observations
 
@@ -138,13 +147,14 @@ For each recent request, Vetter acknowledges receipt one calendar day after the 
 
 In the [[bill-brunner|Brunner CORA case]], Judge Steven Schultz found the Town "failed to exercise reasonable diligence or reasonable inquiry" and ordered the Town to pay Brunner's legal costs. This is a judicial finding of CORA bad faith on the record. The Town has not changed its CORA practices since.
 
-## Open Items as of 2026-04-09
+## Open Items as of 2026-04-24
 
-| Request | Action Required | By When |
+| Request | Action Required | Notes |
 |---|---|---|
-| Caselle ERP (Apr 1) | Receive records or formal denial | Apr 16 (max extended deadline) |
-| C 26-11 (Apr 6) | Receive records or extension notice | **Apr 10 (Friday) — TOMORROW** |
-| M365 Audit Logs (Apr 7) | Receive records or extension notice | Apr 13 (Monday) |
+| Caselle ERP (Apr 1) | Follow up on production status | Past extended deadline of Apr 16 without confirmation |
+| C 26-11 (Apr 6) | File CFOIC complaint; demand privilege log for Buchner withholdings | Fulfilled Apr 21 with implausibly thin production |
+| C 26-12 (Apr 7) | File CFOIC complaint re: mislabeled March file; demand targeted re-export | Fulfilled Apr 22 with mislabeled March, capped rows, blanket AuditData redaction |
+| New: targeted M365 export | Re-file CORA for `Send`/`SendAs` events Mar 25-30 with AuditData included | See recommendations in [[pattern-of-cora-obstruction]] |
 
 ## Escalation Paths
 
@@ -157,9 +167,12 @@ If a CORA request goes past the maximum statutory deadline (10 working days from
 
 ## See Also
 
+- [[pattern-of-cora-obstruction]] — Analysis across the three 2026 CORA responses
 - [[public-records-access]] — Issue page on CORA access patterns
 - [[cora-c26-09-verkada-audit-logs]] — The Verkada CORA response
-- [[cora-libelous-communications]] — The "libelous" communications CORA request
+- [[cora-c26-11-libelous-communications-response]] — The libelous-communications CORA response
+- [[cora-c26-12-m365-audit-logs-response]] — The M365 audit-log CORA response
+- [[cora-libelous-communications]] — The original libelous-communications CORA request
 - [[reporter-package-email-coverup]] — The 2024 M365 audit log denial documentation
 - [[samira-vetter]] — Town Clerk and records custodian
 - [[bill-brunner]] — Subject of the prior CORA bad faith ruling

@@ -63,3 +63,6 @@ raw/transcripts/
 
 # Claude Code local tools (gstack etc.) — not project code, don't commit
 .claude/skills/
+
+# Working scratch directory (per CLAUDE.md global rules)
+/scratch/
