@@ -3,386 +3,489 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Simplest Closed-Loop Camera — Town of Paonia Infrastructure</title>
+<title>Camera Options for Town Infrastructure — Decision Brief</title>
 <style>
   :root {
-    --ink: #1a1a1a;
-    --muted: #555;
-    --line: #d8d8d2;
-    --paper: #fbfbf8;
+    --ink: #1c1c1c;
+    --muted: #5c5c5c;
+    --line: #dcdcd6;
+    --bg: #f4f4f0;
+    --card: #ffffff;
     --accent: #1f4d3a;
-    --warn-bg: #fdf3e7;
-    --warn-line: #d99a3a;
-    --good-bg: #eef4ee;
-    --good-line: #1f4d3a;
+    --accent-soft: #e9f0ec;
+    --flag: #b8842b;
+    --flag-soft: #faf2e3;
+    --rec: #1f4d3a;
   }
   * { box-sizing: border-box; }
   body {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: var(--ink);
-    background: var(--paper);
-    line-height: 1.55;
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 48px 28px 80px;
+    background: var(--bg);
+    line-height: 1.5;
+    margin: 0;
+    padding: 32px 20px 80px;
   }
-  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; }
-  h2 {
-    font-size: 1.2rem;
-    margin: 38px 0 10px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid var(--ink);
+  .wrap { max-width: 880px; margin: 0 auto; }
+  .mono {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   }
-  h3 { font-size: 1.02rem; margin: 22px 0 6px; }
-  .kicker {
-    font-family: "Courier New", monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.72rem;
-    color: var(--accent);
-    margin-bottom: 6px;
-  }
-  .meta {
-    font-family: "Courier New", monospace;
-    font-size: 0.78rem;
-    color: var(--muted);
-    margin: 0 0 28px;
-  }
-  p, li { font-size: 0.97rem; }
-  a { color: var(--accent); }
-  .box {
-    border: 1px solid var(--line);
-    border-left: 5px solid var(--accent);
-    background: #fff;
-    padding: 16px 20px;
-    margin: 20px 0;
-    border-radius: 2px;
-  }
-  .box.good { border-left-color: var(--good-line); background: var(--good-bg); }
-  .box.warn { border-left-color: var(--warn-line); background: var(--warn-bg); }
-  .box h3 { margin-top: 0; }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 18px 0;
-    font-size: 0.9rem;
-  }
-  th, td {
-    border: 1px solid var(--line);
-    padding: 8px 10px;
-    text-align: left;
-    vertical-align: top;
-  }
-  th { background: #efefe9; font-family: "Courier New", monospace; font-size: 0.8rem; }
-  .price { font-family: "Courier New", monospace; font-weight: bold; white-space: nowrap; }
-  .tag {
-    display: inline-block;
-    font-family: "Courier New", monospace;
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 2px 7px;
-    border-radius: 3px;
+
+  /* cover */
+  .cover {
     background: var(--accent);
     color: #fff;
+    border-radius: 6px;
+    padding: 36px 36px 30px;
+    margin-bottom: 22px;
+  }
+  .cover .label {
+    font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-bottom: 12px;
+  }
+  .cover h1 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 14px; font-weight: 700; }
+  .cover .sub { font-size: 0.95rem; opacity: 0.9; margin: 0; }
+  .cover .meta {
+    font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+    font-size: 0.74rem;
+    opacity: 0.7;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+  }
+
+  /* sections */
+  .section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 26px 32px 28px;
+    margin-bottom: 18px;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .section-num {
+    font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .section-head h2 { font-size: 1.18rem; margin: 0; font-weight: 700; }
+  h3 { font-size: 1rem; margin: 18px 0 6px; }
+  p { margin: 8px 0; font-size: 0.95rem; }
+  ul, ol { margin: 8px 0; padding-left: 22px; }
+  li { font-size: 0.95rem; margin: 5px 0; }
+  .lead { font-size: 0.98rem; color: var(--muted); margin-top: 0; }
+
+  /* requirement cards */
+  .reqs { display: flex; gap: 12px; margin: 14px 0 4px; flex-wrap: wrap; }
+  .req {
+    flex: 1 1 200px;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 12px 14px;
+    background: #fcfcfa;
+  }
+  .req .t { font-weight: 700; font-size: 0.92rem; }
+  .req .d { font-size: 0.85rem; color: var(--muted); margin-top: 3px; }
+
+  /* table */
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 0.86rem; }
+  th, td { border: 1px solid var(--line); padding: 9px 11px; text-align: left; vertical-align: top; }
+  thead th {
+    background: #efefe9;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  tbody th {
+    background: #f7f7f3;
+    font-weight: 600;
+    width: 130px;
+    font-size: 0.82rem;
+  }
+  .col-rec { background: var(--accent-soft); }
+  thead .col-rec { background: var(--accent); color: #fff; }
+  .col-out { color: var(--muted); }
+  .pill {
+    display: inline-block;
+    font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 2px 6px;
+    border-radius: 3px;
     vertical-align: middle;
   }
-  .tag.alt { background: #777; }
-  ol li, ul li { margin: 5px 0; }
-  .steps { counter-reset: step; list-style: none; padding-left: 0; }
-  .steps li {
-    counter-increment: step;
-    position: relative;
-    padding-left: 38px;
-    margin: 12px 0;
+  .pill.rec { background: #fff; color: var(--accent); }
+  .pill.out { background: #ccc; color: #444; }
+
+  /* callout boxes */
+  .box { border-radius: 5px; padding: 16px 20px; margin: 16px 0; }
+  .box.rec { background: var(--accent-soft); border: 1px solid #c2d4ca; border-left: 5px solid var(--rec); }
+  .box.flag { background: var(--flag-soft); border: 1px solid #e6d3aa; border-left: 5px solid var(--flag); }
+  .box h3 { margin-top: 0; }
+
+  /* metrics */
+  .metrics { display: flex; gap: 14px; margin: 16px 0; flex-wrap: wrap; }
+  .metric {
+    flex: 1 1 150px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 14px 16px;
+    background: #fcfcfa;
   }
-  .steps li::before {
-    content: counter(step);
-    position: absolute;
-    left: 0; top: 0;
-    width: 26px; height: 26px;
-    background: var(--ink);
-    color: #fff;
-    font-family: "Courier New", monospace;
-    font-size: 0.85rem;
+  .metric .n {
+    font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .metric .k { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+
+  /* two-column do / don't */
+  .split { display: flex; gap: 16px; flex-wrap: wrap; }
+  .split > div { flex: 1 1 280px; }
+  .split h3 { margin-top: 0; }
+
+  /* towns */
+  .towns { display: flex; gap: 12px; flex-wrap: wrap; margin: 12px 0; }
+  .town {
+    flex: 1 1 180px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 12px 14px;
+    background: #fcfcfa;
+  }
+  .town .place { font-weight: 700; font-size: 0.9rem; }
+  .town .fact { font-size: 0.84rem; color: var(--muted); margin-top: 3px; }
+
+  /* buy table */
+  .price { font-family: "SFMono-Regular", Consolas, Menlo, monospace; font-weight: 700; white-space: nowrap; }
+
+  /* next steps */
+  ol.steps { counter-reset: s; list-style: none; padding-left: 0; margin: 12px 0; }
+  ol.steps li {
+    counter-increment: s;
+    position: relative;
+    padding-left: 40px;
+    margin: 10px 0;
+    font-size: 0.95rem;
+  }
+  ol.steps li::before {
+    content: counter(s);
+    position: absolute; left: 0; top: -1px;
+    width: 27px; height: 27px;
+    background: var(--accent); color: #fff;
     border-radius: 50%;
+    font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+    font-size: 0.85rem; font-weight: 700;
     display: flex; align-items: center; justify-content: center;
   }
-  .footnote { font-size: 0.83rem; color: var(--muted); }
-  hr { border: none; border-top: 1px solid var(--line); margin: 36px 0; }
-  .small { font-size: 0.85rem; color: var(--muted); }
+
+  a { color: var(--accent); }
+  .sources { font-size: 0.8rem; color: var(--muted); }
+  .sources a { word-break: break-word; }
+
   @media print {
-    body { background: #fff; padding: 0; max-width: 100%; }
-    .box { break-inside: avoid; }
-    table { break-inside: avoid; }
+    body { background: #fff; padding: 0; }
+    .section, .cover { break-inside: avoid; border: 1px solid #ccc; }
+    .cover { background: #1f4d3a !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   }
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<div class="kicker">Recommendation — Prepared for the Board of Trustees</div>
-<h1>The Simplest Camera That Can't Betray Us:<br>Records to a Card, We Pull It, We Play It</h1>
-<p class="meta">Prepared 2026-05-14 &nbsp;·&nbsp; Cheapest option &nbsp;·&nbsp; No internet &nbsp;·&nbsp; No app &nbsp;·&nbsp; Town holds the footage</p>
-
-<div class="box good">
-  <h3>The bottom line</h3>
-  <p>Buy a <strong>non-cellular trail camera</strong> — roughly <strong>$60–$130 each</strong>.
-  It mounts on a wall, runs on batteries, and records to a memory card <em>inside the
-  camera</em>. There is no app, no WiFi, no account, and no internet connection — the camera
-  has <strong>no networking parts at all</strong>. To review video, a staff member pulls the
-  card and plays it on any computer. It is the cheapest option, the easiest to maintain, and
-  the only one where "closed loop" is a physical fact rather than a setting we have to trust.
-  <strong>Start here.</strong> We can always add more later; we can't easily un-trust a
-  system that's already on the network.</p>
+<div class="cover">
+  <div class="label">Decision Brief · Town of Paonia</div>
+  <h1>Camera Options for Town Infrastructure</h1>
+  <p class="sub">Evaluating a closed-loop replacement after the removal of the cloud-based system —
+  with a recommendation and the cost reasoning behind it.</p>
+  <div class="meta">Prepared 2026-05-14 &nbsp;·&nbsp; For Board review</div>
 </div>
 
-<h2>Why this, and not the "nicer" systems</h2>
-<p>The fancier camera systems all let you watch the footage on your phone. That sounds like
-a feature — but think about what it means: <strong>if the video reaches your phone, the
-camera reached the internet to send it there.</strong> Once a device can do that, "it stays
-local" is a promise the manufacturer is making to us, not a fact we can verify. That is the
-exact situation that got the Verkada cameras taken down.</p>
-<p>A trail camera can't make that promise <em>because it can't break it.</em> It has no WiFi
-chip, no cellular radio, no network port. The footage physically cannot leave the memory
-card until a person walks up and removes it. That's not a security setting — it's the
-absence of the ability. That is what "the Town has total custody" actually looks like.</p>
-
-<h2>This is a record, not surveillance — and it's how towns actually do this</h2>
-<p>A monitoring system needs someone watching screens. Paonia doesn't have that, doesn't
-need it, and the community has made clear it doesn't want it. <strong>What we're building
-is something different: a record.</strong> The camera sits there. Nobody watches it. It's a
-quiet witness. If something happens at the site — tampering, vandalism, dumping, an
-accident, a dispute about what occurred — someone walks over, pulls the card, and finds out
-what happened. The rest of the time it does nothing and bothers no one.</p>
-<p>That distinction matters, and the research backs it up: studies of camera programs find
-they help resolve incidents two ways — real-time monitoring <em>and</em> identifying what
-happened "after the fact through recorded video." <strong>The second one delivers the value
-without the monitoring room, the staff, or the surveillance footprint.</strong> For a small
-town keeping an eye on a piece of infrastructure, after-the-fact review <em>is</em> the
-whole job.</p>
-<p>And this isn't a fringe idea — it's the mainstream municipal playbook for exactly this
-kind of problem:</p>
-<ul>
-  <li><strong>Seattle</strong> ran an official Illegal Dumping Camera Pilot: motion-activated
-  cameras that simply capture footage for later review — no live monitoring. It worked, and
-  the city expanded it.</li>
-  <li><strong>Milwaukee</strong> deployed hidden <strong>trail cameras</strong> — the exact
-  category recommended here — at problem sites. Cheap, unmonitored, and they produced real
-  results ($15,000 and $10,000 fines from two cases). The program is expanding from 10
-  cameras to over 100.</li>
-  <li><strong>Springfield (MA), St. Louis, and Camden (NJ)</strong> all run the same model —
-  modest cameras, footage reviewed after an incident — and all report citations and cases
-  that came out of it.</li>
-</ul>
-<p>The common thread: none of these depend on a person watching a feed. The camera records;
-someone reviews it when there's a reason to. That's the model that fits a town our size —
-and a non-cellular trail camera is the simplest, cheapest tool that does exactly that.</p>
-
-<div class="box warn">
-  <h3>The contrast — and it's happening right now</h3>
-  <p>The same week as our meeting, residents in <strong>Amarillo, Texas</strong> packed a
-  council meeting to push back on a proposed <strong>Verkada</strong> purchase: cloud-based,
-  a 10-year license, $128,000, tied into the city's other "AI mass surveillance" contracts.
-  Towns all over the country are having the <em>exact</em> argument Paonia just had. A
-  simple, offline, Town-owned camera isn't us falling behind — it's us being <em>ahead</em>
-  of a fight other places are still stuck in.</p>
+<!-- 01 -->
+<div class="section">
+  <div class="section-head"><span class="section-num">01</span><h2>The decision in front of the Board</h2></div>
+  <p class="lead">The Board has removed the prior cloud-based cameras and agreed to look at a
+  replacement the Town fully owns and controls. This brief sets the requirements, compares the
+  realistic options, and recommends one.</p>
+  <h3>What a replacement has to meet</h3>
+  <div class="reqs">
+    <div class="req">
+      <div class="t">Custody</div>
+      <div class="d">Footage stored on Town-owned hardware, on Town property — not on a vendor's servers.</div>
+    </div>
+    <div class="req">
+      <div class="t">No internet path</div>
+      <div class="d">The system cannot send video off-site, because it is not connected to anything that reaches the internet.</div>
+    </div>
+    <div class="req">
+      <div class="t">No subscription</div>
+      <div class="d">Bought once and owned. No recurring fee that can lapse or lock the footage.</div>
+    </div>
+  </div>
 </div>
 
-<h2>Why we can't just "get a Ring camera"</h2>
-<p>This comes up every time, so it's worth being direct. The popular consumer cameras are
-the <em>opposite</em> of what the Board asked for:</p>
-
-<table>
-  <tr>
-    <th>Product</th>
-    <th>Why it fails the test</th>
-  </tr>
-  <tr>
-    <td><strong>Ring</strong> (Amazon)</td>
-    <td>Footage is stored on Amazon's servers and <strong>requires a paid subscription</strong>
-    to record at all. Amazon has handed footage to police without a warrant and without the
-    owner's consent. This is cloud custody by a third party — the Verkada problem with a
-    different logo.</td>
-  </tr>
-  <tr>
-    <td><strong>Nest</strong> (Google)</td>
-    <td>Cloud-dependent, subscription for real recording, footage on Google's servers. Google
-    has also disclosed footage to law enforcement without the owner's consent.</td>
-  </tr>
-  <tr>
-    <td><strong>Wyze</strong> and similar cheap WiFi cams</td>
-    <td>Cloud-tied, app-dependent, and has had repeated incidents where customers saw
-    <em>other people's</em> camera feeds. Not something to put on public infrastructure.</td>
-  </tr>
-  <tr>
-    <td><strong>"View it on your phone" camera kits</strong> (incl. the wired NVR kits)</td>
-    <td>Even the ones that store video locally reach out to the manufacturer's servers so the
-    phone app works. If you can see it remotely, it's online. The phone feature <em>is</em>
-    the hole.</td>
-  </tr>
-  <tr>
-    <td><strong>"4G / cellular / no-WiFi" cameras</strong></td>
-    <td>"No WiFi" is a trap — these still phone home over a cellular connection. "No internet"
-    has to mean <em>no internet</em>, not "a different internet."</td>
-  </tr>
-</table>
-
-<h2>What to buy</h2>
-<p>The category is <strong>"non-cellular trail camera"</strong> (also sold as "no-WiFi trail
-camera" or "SD-card game camera"). These are built for exactly this — mount it, it watches,
-it records to a card, you collect the card. Any of these are solid:</p>
-
-<table>
-  <tr>
-    <th>Model</th>
-    <th>Notes</th>
-    <th>Cost</th>
-  </tr>
-  <tr>
-    <td><strong>Browning Strike Force HD Pro X</strong></td>
-    <td>Well-regarded, fast trigger, long battery life, rugged weatherproof case. A reliable
-    default pick.</td>
-    <td class="price">~$110–130</td>
-  </tr>
-  <tr>
-    <td><strong>GardePro A60</strong></td>
-    <td>Built for long, unattended deployments — efficient on batteries, takes large memory
-    cards. Good value.</td>
-    <td class="price">~$60–80</td>
-  </tr>
-  <tr>
-    <td><strong>Stealth Cam / Moultrie</strong> — any <em>non-cellular</em> model</td>
-    <td>Widely available; just confirm the listing says non-cellular / SD-card, not "cellular"
-    or "WiFi."</td>
-    <td class="price">~$60–100</td>
-  </tr>
-  <tr>
-    <td>Each camera also needs: a <strong>microSD or SD card</strong> (128–256 GB, ~$15–25)
-    and <strong>batteries</strong> (AA, or a rechargeable pack).</td>
-    <td>One 256 GB card holds weeks of motion-triggered clips before it loops over the
-    oldest.</td>
-    <td class="price">~$25</td>
-  </tr>
-</table>
-
-<p class="small">Where to look: Amazon —
-<a href="https://www.amazon.com/non-cellular-trail-cameras/s?k=non+cellular+trail+cameras">"non cellular trail cameras"</a>.
-The one rule when buying: <strong>the listing must say non-cellular / no-WiFi / SD-card.</strong>
-If it mentions an app, a SIM card, "live view," or a monthly plan — wrong one, put it back.</p>
-
-<div class="box good">
-  <h3>Total cost to start</h3>
-  <p><strong>2–3 cameras, fully equipped: about $250–$450, one time.</strong> No monthly fee,
-  ever. Compare that to a cloud system's subscription, which never stops.</p>
+<!-- 02 -->
+<div class="section">
+  <div class="section-head"><span class="section-num">02</span><h2>The options at a glance</h2></div>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th class="col-out">Cloud system <span class="pill out">Removed</span></th>
+        <th>Networked closed-loop kit</th>
+        <th class="col-rec">Standalone recording camera <span class="pill rec">Recommended</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>How it works</th>
+        <td class="col-out">Cameras stream to the vendor's servers; viewed by app or web.</td>
+        <td>Wired cameras feed a local recorder kept on an isolated network; viewed on a monitor on-site.</td>
+        <td class="col-rec">Camera records to a memory card inside it. Card is pulled and reviewed on a computer.</td>
+      </tr>
+      <tr>
+        <th>Footage held by</th>
+        <td class="col-out">The vendor, off-site.</td>
+        <td>The Town, on local hardware.</td>
+        <td class="col-rec">The Town — on the card, in the camera.</td>
+      </tr>
+      <tr>
+        <th>Internet connection</th>
+        <td class="col-out">Required.</td>
+        <td>Must be deliberately kept offline; the isolation has to be maintained.</td>
+        <td class="col-rec">None. No network hardware exists in the device.</td>
+      </tr>
+      <tr>
+        <th>Upfront cost</th>
+        <td class="col-out">High. (Amarillo TX, 2026: $128,404 for 18 cameras.)</td>
+        <td>~$500–$1,000 for 4 cameras, a recorder, and a monitor.</td>
+        <td class="col-rec">~$250–$450 for 3 cameras, ready to run.</td>
+      </tr>
+      <tr>
+        <th>Ongoing cost</th>
+        <td class="col-out">Annual license, indefinitely.</td>
+        <td>Staff time to maintain; periodic drive and hardware replacement.</td>
+        <td class="col-rec">Batteries and memory cards only — minimal.</td>
+      </tr>
+      <tr>
+        <th>Staffing</th>
+        <td class="col-out">Vendor-managed.</td>
+        <td>Needs a technical owner to set up, verify, and maintain the network isolation.</td>
+        <td class="col-rec">None. Any staff member can mount it and pull a card.</td>
+      </tr>
+      <tr>
+        <th>Live monitoring</th>
+        <td class="col-out">Yes.</td>
+        <td>Yes, on-site.</td>
+        <td class="col-rec">No — footage is reviewed after an incident.</td>
+      </tr>
+      <tr>
+        <th>Status</th>
+        <td class="col-out">Removed by the Board.</td>
+        <td>Workable, but not cost-justified at this scale — see Section 03.</td>
+        <td class="col-rec">Recommended — see Section 04.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<h2>Be straight about the trade-off</h2>
-<p>This is the simple, cheap, trustworthy option — and simple means it does less. Worth
-saying out loud so nobody's surprised:</p>
-<ul>
-  <li><strong>No live view.</strong> Nobody watches a feed. To see footage, someone goes to
-  the camera and pulls the card. That's the cost of it being truly offline — and it's a fair
-  trade.</li>
-  <li><strong>It records motion events, not 24/7.</strong> The camera wakes on movement and
-  records a clip. For watching a gate, a yard, or a piece of equipment, that's usually what
-  you actually want — and it makes the card last far longer.</li>
-  <li><strong>Batteries need changing</strong> every few months depending on activity. A
-  small solar pack or rechargeable batteries cuts that down.</li>
-  <li><strong>Image quality is good, not cinematic.</strong> Fine for "what happened here,"
-  not for reading fine print at a distance.</li>
-</ul>
-<p>If, after living with it, the Town decides it needs continuous 24/7 recording or central
-storage, that's a known upgrade path — see the footnote. But none of that is a reason to
-wait. Start with the simple thing that everyone can trust on day one.</p>
+<!-- 03 -->
+<div class="section">
+  <div class="section-head"><span class="section-num">03</span><h2>Why not the full closed-loop system</h2></div>
+  <p>The Town <em>could</em> build a true networked closed-loop system — wired cameras feeding a
+  local recorder, on a network deliberately isolated from the internet. It is technically sound
+  and it would meet the three requirements. It is not recommended, for three reasons:</p>
 
-<h2>How to set it up — the whole process</h2>
-<ol class="steps">
-  <li><strong>Put a memory card in and load the batteries.</strong> That's the hardware
-  done.</li>
-  <li><strong>Set the date and time</strong> using the buttons and little screen on the
-  camera itself. (This matters — it timestamps the footage. No phone or computer needed.)</li>
-  <li><strong>Mount it on the wall</strong> at the infrastructure site, pointed at what
-  matters. It needs no power outlet and no cable.</li>
-  <li><strong>That's it.</strong> It is now recording. There is no account to make, no app
-  to install, no network to join.</li>
-</ol>
+  <h3>1. It needs a technical owner the Town doesn't have</h3>
+  <p>"Closed-loop" is only true if the network isolation is set up correctly and re-verified over
+  time. That is a standing responsibility, not a one-time install. The Town has no dedicated IT
+  staff to carry it, and a system that depends on someone remembering to maintain it will not stay
+  closed-loop for long.</p>
 
-<h3>How to get the footage</h3>
-<p>When you need to review video: open the camera, take out the memory card, and put it in a
-computer (most laptops have a slot, or use a $10 card reader). The clips are ordinary video
-files — double-click to play. Put the card back when done. To keep a clip as evidence, copy
-the file to a Town computer and note the date, time, and who pulled it.</p>
+  <h3>2. The real cost is ongoing, not upfront</h3>
+  <p>The recorder and cameras are inexpensive to buy. The expense is the years that follow —
+  hard drives wear out under constant recording and get replaced, hardware is serviced, and the
+  isolation is checked. A low purchase price becomes a recurring obligation on the Town's budget
+  and staff time.</p>
 
-<h2>Adopt a one-page footage policy at the same meeting</h2>
-<p>Alongside approving the cameras, the Board should adopt a short written policy:
-<strong>how long footage is kept, who is allowed to pull a card and view it, how each
-viewing is logged, and how a clip is produced if someone files a records request.</strong>
-This protects the public from misuse and protects the Town by setting the rules before
-there's an incident. And note the upside of holding the footage ourselves: when video is a
-public record, the Town can answer a CORA request <em>directly</em> — there's no vendor in
-the way.</p>
+  <h3>3. It pays for a capability the Town won't use</h3>
+  <p>The advantage of a networked system is live monitoring. The Town has no one assigned to watch
+  a feed, and the community has not asked for one. Spending money and staff time on monitoring
+  that won't be used is not a sound use of funds.</p>
 
-<h2>Maintenance — what little there is</h2>
-<ul>
-  <li><strong>Change the batteries</strong> every few months (or use rechargeables / a small
-  solar pack).</li>
-  <li><strong>Swap or clear the card</strong> when it's full — it loops over the oldest
-  footage on its own, so this is only needed if you want to archive.</li>
-  <li><strong>No software, no updates, no patches, no passwords to rotate.</strong> An
-  offline device with no network has nothing to maintain on that front. That is the point.</li>
-</ul>
+  <div class="box flag">
+    <strong>Bottom line:</strong> a networked system is more expensive to <em>own</em> than to
+    <em>buy</em>, and the part it adds — live monitoring — is the part the Town doesn't need.
+  </div>
+</div>
 
-<hr>
+<!-- 04 -->
+<div class="section">
+  <div class="section-head"><span class="section-num">04</span><h2>Recommendation: standalone recording cameras</h2></div>
+  <p>A standalone recording camera — sold as a <strong>non-cellular trail camera</strong> — mounts
+  on a wall, runs on batteries, and records to a memory card inside the device. It has no app, no
+  WiFi, no account, and no network hardware of any kind. To review footage, a staff member pulls
+  the card and plays it on any computer.</p>
 
-<h2>Read more / sources</h2>
+  <div class="box rec">
+    <h3>Why it fits the Town</h3>
+    <ul style="margin-bottom:0;">
+      <li><strong>Custody is physical, not a setting.</strong> Footage cannot leave the card until
+      a person removes it. There is no vendor and no network to trust.</li>
+      <li><strong>No ongoing cost or staffing.</strong> Nothing to maintain, no drives to replace,
+      no isolation to verify, no software to update.</li>
+      <li><strong>It does the one job the Town needs:</strong> a record to review after an
+      incident — see Section 05.</li>
+      <li><strong>Lowest cost, by a wide margin</strong> — both to buy and to own.</li>
+    </ul>
+  </div>
 
-<h3 style="margin-top:8px;">Towns already using the record-and-review model</h3>
-<ul class="footnote">
-  <li>Seattle — Illegal Dumping Camera Pilot (motion-activated, reviewed after the fact) —
-    <a href="https://www.seattle.gov/utilities/protecting-our-environment/seattle-clean-city/illegal-dumping/enforcement-cameras">seattle.gov</a></li>
-  <li>Milwaukee — hidden <em>trail cameras</em> at dumping sites, expanding 10 → 100+ —
-    <a href="https://www.wpr.org/news/milwaukee-using-hidden-cameras-and-reward-offers-to-combat-illegal-dumping">WPR</a></li>
-  <li>Springfield, MA — mobile cameras used to identify illegal dumping; multiple citations —
-    <a href="https://www.springfield-ma.gov/cos/news-story?tx_news_pi1%5Bnews%5D=17119">springfield-ma.gov</a></li>
-  <li>St. Louis — alleyway cameras credited with ~200 dumping arrests in a year —
-    <a href="https://www.stltoday.com/news/local/metro/st-louis-trash-cameras-snap-surprising-catch/article_698e66ca-7f65-11e1-afc3-001a4bcf6878.html">St. Louis Post-Dispatch</a></li>
-  <li>Camden, NJ — camera program; 23 investigations, 12 charged —
-    <a href="https://www.audacy.com/kywnewsradio/news/local/camden-fights-illegal-dumping-with-cameras-cash-rewards">KYW Newsradio</a></li>
-  <li>The contrast — Amarillo, TX residents push back on a cloud Verkada purchase (May 2026) —
-    <a href="https://www.newschannel10.com/2026/05/13/public-concerns-raised-over-new-surveillance-camera-proposal/">NewsChannel 10</a></li>
-  <li>Research — CCTV aids crime clearance both via live monitoring and after-the-fact review —
-    <a href="https://www.tandfonline.com/doi/full/10.1080/2578983X.2020.1816023">Nordic Journal of Criminology</a></li>
-</ul>
+  <p>This is a record, not a surveillance system. No one watches a live feed. The camera sits in
+  place; if something happens at the site — tampering, vandalism, an accident, a dispute over what
+  occurred — a staff member pulls the card and reviews what was recorded.</p>
+</div>
 
-<h3>Buying</h3>
-<ul class="footnote">
-  <li>Buying guide — non-cellular trail cameras (what to look for) —
-    <a href="https://gardepro.com/blogs/gardepro-blogs/best-non-cellular-trail-camera">GardePro guide</a>,
-    <a href="https://fieldandstream.com/outdoor-gear/hunting-gear/trail-cameras/best-trail-cameras">Field &amp; Stream roundup</a></li>
-  <li>Amazon — search "non cellular trail cameras" —
-    <a href="https://www.amazon.com/non-cellular-trail-cameras/s?k=non+cellular+trail+cameras">amazon.com</a></li>
-</ul>
+<!-- 05 -->
+<div class="section">
+  <div class="section-head"><span class="section-num">05</span><h2>This is a standard municipal approach</h2></div>
+  <p>Reviewing recorded footage after an incident — rather than monitoring a live feed — is the
+  established model for towns and cities addressing site-specific problems. Examples:</p>
+  <div class="towns">
+    <div class="town">
+      <div class="place">Seattle, WA</div>
+      <div class="fact">Official Illegal Dumping Camera Pilot — motion-activated cameras, footage
+      reviewed after the fact, no live monitoring. Worked; the city expanded it.</div>
+    </div>
+    <div class="town">
+      <div class="place">Milwaukee, WI</div>
+      <div class="fact">Deployed hidden trail cameras — the same device class recommended here — at
+      problem sites. Produced enforcement results; expanding from 10 cameras to 100+.</div>
+    </div>
+    <div class="town">
+      <div class="place">Springfield, MA</div>
+      <div class="fact">Mobile cameras used to identify illegal dumping after the fact; multiple
+      citations issued.</div>
+    </div>
+    <div class="town">
+      <div class="place">St. Louis, MO</div>
+      <div class="fact">Locally-recorded alleyway cameras credited with roughly 200 cases over one
+      year — all from after-the-fact review.</div>
+    </div>
+  </div>
+  <p class="lead" style="margin-bottom:0;">For reference on the alternative: Amarillo, TX is
+  weighing a cloud camera contract at $128,404 for 18 cameras on a 10-year license — the cost
+  profile this recommendation is built to avoid.</p>
+</div>
 
-<h3>Why the consumer cameras fail the test</h3>
-<ul class="footnote">
-  <li>Why Ring footage reaches police without a warrant —
-    <a href="https://reason.com/2022/07/26/police-can-access-your-ring-camera-footage-without-a-warrant/">Reason</a></li>
-  <li>It's not just Ring — Google, SimpliSafe and others can share footage without consent —
-    <a href="https://www.consumerreports.org/home-garden/home-security-cameras/ring-google-simplisafe-could-share-footage-with-police-a1047736080/">Consumer Reports</a></li>
-  <li>What to do if police ask for your footage — and why local storage changes the answer —
-    <a href="https://www.consumerreports.org/legal-rights/police-ask-for-video-doorbell-recordings-what-to-do-faq-a8950763605/">Consumer Reports</a></li>
-</ul>
+<!-- 06 -->
+<div class="section">
+  <div class="section-head"><span class="section-num">06</span><h2>What it does — and what it doesn't</h2></div>
+  <div class="split">
+    <div>
+      <h3>What it does</h3>
+      <ul>
+        <li>Records video at the site, day and night.</li>
+        <li>Keeps footage in the Town's physical possession.</li>
+        <li>Provides a record to review after an incident.</li>
+        <li>Runs unattended with no network and no subscription.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>What it doesn't</h3>
+      <ul>
+        <li>No live viewing — footage is reviewed by pulling the card.</li>
+        <li>Records motion events, not continuous 24/7 video.</li>
+        <li>Batteries need changing every few months.</li>
+        <li>Image quality is good for identification, not high-detail at distance.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="lead" style="margin-bottom:0;">These limits are the trade for a system with no
+  network, no vendor, and no ongoing cost. For watching a piece of infrastructure, they are
+  acceptable — and if continuous recording is ever needed, that is a separate future decision.</p>
+</div>
 
-<p class="footnote" style="margin-top:28px;">
-<strong>Footnote — the upgrade path, if it's ever wanted.</strong> If the Town later decides
-it needs continuous 24/7 recording or one central place to review everything, the next step
-up is wired cameras feeding a local recorder box that is <em>physically never connected to
-the internet</em> (~$350–500 for a 4-camera kit). It keeps the same "footage stays in Town
-hands" principle but requires the network isolation to be set up and verified correctly.
-That's a deliberate decision for another day — the deeper comparison is in the companion
-document <em>camera-options-matrix.md</em>. None of it is a reason to delay starting with
-the simple cameras now.
-</p>
+<!-- 07 -->
+<div class="section">
+  <div class="section-head"><span class="section-num">07</span><h2>What to buy and what it costs</h2></div>
+  <table>
+    <thead>
+      <tr><th>Item</th><th>Notes</th><th>Cost</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Non-cellular trail camera<br><span class="lead">e.g. Browning Strike Force HD Pro X, GardePro A60, or Stealth Cam / Moultrie non-cellular models</span></td>
+        <td>Mounts on a wall, battery-powered, records to a card. The one rule when buying: the
+        listing must say <strong>non-cellular / no-WiFi / SD-card</strong> — not "cellular,"
+        "WiFi," or "live view."</td>
+        <td class="price">$60–$130 ea</td>
+      </tr>
+      <tr>
+        <td>Memory card (per camera)</td>
+        <td>128–256 GB. Holds weeks of motion clips before looping over the oldest.</td>
+        <td class="price">~$20 ea</td>
+      </tr>
+      <tr>
+        <td>Batteries (per camera)</td>
+        <td>Standard AA, or a rechargeable pack. Replaced every few months.</td>
+        <td class="price">~$10 ea</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="metrics">
+    <div class="metric"><div class="n">$250–$450</div><div class="k">Total upfront — 3 cameras, fully equipped</div></div>
+    <div class="metric"><div class="n">$0 / yr</div><div class="k">Subscription or license cost</div></div>
+    <div class="metric"><div class="n">Minimal</div><div class="k">Ongoing — batteries and cards only</div></div>
+  </div>
+</div>
 
+<!-- 08 -->
+<div class="section">
+  <div class="section-head"><span class="section-num">08</span><h2>Recommended next steps</h2></div>
+  <ol class="steps">
+    <li>Approve the purchase of standalone recording cameras for the priority infrastructure
+    site(s) — a starting budget of roughly <strong>$250–$450</strong> covers three cameras.</li>
+    <li>Adopt a one-page footage policy at the same meeting: how long footage is kept, who may
+    pull and view a card, how each viewing is logged, and how a clip is produced in response to a
+    records request.</li>
+    <li>Assign a staff member responsibility for mounting the cameras, setting the date/time, and
+    retrieving cards when footage is needed.</li>
+    <li>Review after the first few months and decide whether coverage is sufficient or should be
+    expanded.</li>
+  </ol>
+</div>
+
+<!-- sources -->
+<div class="section">
+  <div class="section-head"><span class="section-num">—</span><h2>Sources</h2></div>
+  <div class="sources">
+    <p style="margin-top:0;"><strong>Towns using after-the-fact review:</strong>
+      <a href="https://www.seattle.gov/utilities/protecting-our-environment/seattle-clean-city/illegal-dumping/enforcement-cameras">Seattle Illegal Dumping Camera Pilot</a> ·
+      <a href="https://www.wpr.org/news/milwaukee-using-hidden-cameras-and-reward-offers-to-combat-illegal-dumping">Milwaukee trail cameras (WPR)</a> ·
+      <a href="https://www.springfield-ma.gov/cos/news-story?tx_news_pi1%5Bnews%5D=17119">Springfield, MA</a> ·
+      <a href="https://www.stltoday.com/news/local/metro/st-louis-trash-cameras-snap-surprising-catch/article_698e66ca-7f65-11e1-afc3-001a4bcf6878.html">St. Louis Post-Dispatch</a></p>
+    <p><strong>Cloud-system cost reference:</strong>
+      <a href="https://www.newschannel10.com/2026/05/13/public-concerns-raised-over-new-surveillance-camera-proposal/">Amarillo, TX camera proposal (NewsChannel 10)</a></p>
+    <p><strong>Buying guidance:</strong>
+      <a href="https://www.amazon.com/non-cellular-trail-cameras/s?k=non+cellular+trail+cameras">Amazon — non-cellular trail cameras</a> ·
+      <a href="https://fieldandstream.com/outdoor-gear/hunting-gear/trail-cameras/best-trail-cameras">Field &amp; Stream roundup</a></p>
+  </div>
+</div>
+
+</div>
 </body>
 </html>
