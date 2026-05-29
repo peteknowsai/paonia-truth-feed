@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Paonia Should Hire Its Next Administrator — A Citizen Proposal</title>
+<meta name="description" content="A citizen proposal for how the Town of Paonia should run its town administrator search. Published by paoniatruth.site. Not an official Town of Paonia website.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="How Paonia Should Hire Its Next Administrator">
+<meta property="og:description" content="A citizen proposal. Hire local, run it in public, and put residents on the committee — instead of a $15–30K national search firm.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,560;0,9..144,600;1,9..144,400;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:      #faf7f0;
+    --paper-deep: #f1ebdc;
+    --ink:        #211f1a;
+    --ink-soft:   #4d483d;
+    --muted:      #8c8676;
+    --pine:       #1e4435;
+    --pine-deep:  #16332732;
+    --ochre:      #ab5d27;
+    --rule:       #ddd5c2;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Newsreader", Georgia, serif;
+    font-optical-sizing: auto;
+    font-size: 19px;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: #1e44351f; }
+
+  /* ---------- Shell ---------- */
+  .shell { max-width: 712px; margin: 0 auto; padding: 0 30px; }
+
+  /* ---------- Nameplate — site identity (load-bearing: keeps the page
+       honestly marked as a citizens' project, not the town government) ---- */
+  .nameplate {
+    padding: 30px 0 19px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .np-mark {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: clamp(19px, 3.2vw, 24px);
+    line-height: 1.2;
+    color: var(--pine);
+    margin: 0 0 9px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .np-mark::before {
+    content: "";
+    flex: none;
+    width: 9px; height: 9px;
+    background: var(--ochre);
+    transform: rotate(45deg);
+  }
+  .np-sub {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.56;
+    color: var(--ink-soft);
+    max-width: 64ch;
+  }
+  .np-sub strong { font-weight: 600; color: var(--ink); }
+  .np-sub a { color: var(--pine); }
+
+  /* ---------- Masthead ---------- */
+  header.mast { padding: 44px 0 0; }
+  .eyebrow {
+    font-family: "Fraunces", serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin: 0 0 22px;
+  }
+  .eyebrow::before {
+    content: ""; display: inline-block;
+    width: 26px; height: 1.5px; background: var(--ochre);
+    vertical-align: middle; margin-right: 11px;
+    position: relative; top: -3px;
+  }
+  h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 560;
+    font-size: clamp(35px, 6.4vw, 53px);
+    line-height: 1.08;
+    letter-spacing: -0.012em;
+    margin: 0 0 26px;
+    text-wrap: balance;
+  }
+  .dateline {
+    font-size: 15.5px;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 13px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+  }
+  .dateline b { font-weight: 600; color: var(--ink); }
+  .dateline .sep { color: var(--rule); }
+
+  /* ---------- Standfirst ---------- */
+  .standfirst {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    font-size: clamp(21px, 3vw, 25px);
+    line-height: 1.46;
+    color: var(--ink);
+    margin: 40px 0 8px;
+    text-wrap: pretty;
+  }
+
+  /* ---------- Body ---------- */
+  main { padding: 8px 0 0; }
+  p { margin: 0 0 22px; text-wrap: pretty; }
+  main > section > p:first-of-type { margin-top: 0; }
+
+  .section {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid var(--rule);
+  }
+  .sec-num {
+    font-family: "Fraunces", serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ochre);
+    letter-spacing: 0.06em;
+    margin: 0 0 6px;
+  }
+  h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 560;
+    font-size: clamp(25px, 3.6vw, 31px);
+    line-height: 1.16;
+    letter-spacing: -0.01em;
+    margin: 0 0 24px;
+    text-wrap: balance;
+  }
+  h3 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 20.5px;
+    line-height: 1.3;
+    margin: 38px 0 12px;
+  }
+  h3 .h3num {
+    color: var(--ochre);
+    font-variant-numeric: lining-nums;
+    margin-right: 4px;
+  }
+
+  strong { font-weight: 600; }
+  em { font-style: italic; }
+  a { color: var(--pine); }
+
+  ul { margin: 0 0 22px; padding: 0; list-style: none; }
+  ul li {
+    position: relative;
+    padding-left: 26px;
+    margin: 0 0 13px;
+  }
+  ul li::before {
+    content: "";
+    position: absolute; left: 4px; top: 13px;
+    width: 7px; height: 7px;
+    border: 1.5px solid var(--ochre);
+    transform: rotate(45deg);
+  }
+
+  /* ---------- Callout (the two daylight points) ---------- */
+  .callout {
+    background: var(--paper-deep);
+    border-left: 3px solid var(--pine);
+    padding: 24px 28px 4px;
+    margin: 28px 0;
+  }
+  .callout .ctitle {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--pine);
+    margin: 0 0 8px;
+  }
+  .callout p { margin-bottom: 20px; }
+
+  /* ---------- Pull quote ---------- */
+  .pull {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: clamp(23px, 3.4vw, 29px);
+    line-height: 1.34;
+    color: var(--pine);
+    margin: 36px 0;
+    padding-left: 26px;
+    border-left: 3px solid var(--ochre);
+    text-wrap: pretty;
+  }
+
+  /* ---------- The asks ---------- */
+  .asks {
+    margin-top: 14px;
+    border: 1px solid var(--rule);
+    background: #fffdf8;
+  }
+  .ask {
+    display: flex;
+    gap: 22px;
+    padding: 22px 30px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .ask:last-child { border-bottom: none; }
+  .ask-n {
+    flex: none;
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1;
+    color: var(--ochre);
+    font-variant-numeric: lining-nums;
+    width: 38px;
+    text-align: center;
+  }
+  .ask-t { font-size: 17.5px; line-height: 1.6; }
+  .ask-t strong { color: var(--ink); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin-top: 64px;
+    background: var(--ink);
+    color: #c9c3b2;
+  }
+  .foot-inner {
+    max-width: 712px;
+    margin: 0 auto;
+    padding: 44px 30px 56px;
+    font-size: 15px;
+    line-height: 1.62;
+  }
+  .foot-notice {
+    font-family: "Fraunces", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ece7da;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #3a362d;
+  }
+  .foot-notice .dot { color: var(--ochre); }
+  footer a { color: #e9b78c; }
+  .foot-meta { color: #97917f; font-size: 14px; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 560px) {
+    body { font-size: 18px; }
+    .shell { padding: 0 22px; }
+    header.mast { padding-top: 50px; }
+    .notice-inner { flex-direction: column; gap: 9px; padding: 14px 22px; }
+    .ask { padding: 20px 22px; gap: 16px; }
+    .ask-n { font-size: 28px; width: 30px; }
+    .callout { padding: 20px 22px 2px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- =================== NAMEPLATE · site identity =================== -->
+  <div class="nameplate">
+    <p class="np-mark">The Paonia People's Website</p>
+    <p class="np-sub">
+      An independent website published by residents of Paonia through
+      <strong>paoniatruth.site</strong>. This is <strong>not an official Town
+      of Paonia website</strong>, and is not operated by or affiliated with
+      Paonia town government. The Town's official website is
+      <a href="https://townofpaonia.colorado.gov">townofpaonia.colorado.gov</a>.
+    </p>
+  </div>
+
+  <!-- ===================== MASTHEAD ===================== -->
+  <header class="mast">
+    <p class="eyebrow">A Citizen Proposal</p>
+    <h1>How Paonia Should Hire Its Next Administrator</h1>
+    <div class="dateline">
+      <span>Published by <b>paoniatruth.site</b></span>
+      <span class="sep">·</span>
+      <span>May&nbsp;22,&nbsp;2026</span>
+      <span class="sep">·</span>
+      <span>A proposal and an opinion — not a Town of Paonia document</span>
+    </div>
+  </header>
+
+  <!-- ===================== STANDFIRST ===================== -->
+  <p class="standfirst">
+    Paonia is about to hire the most powerful unelected position in town
+    government. How we run that search is itself a decision — and right now the
+    Board is poised to make it the old way, by default. There is a better way,
+    and this is what it looks like.
+  </p>
+
+  <main>
+
+    <!-- ===================== 1 ===================== -->
+    <section class="section">
+      <p class="sec-num">01</p>
+      <h2>Where things stand</h2>
+
+      <p>
+        Town Administrator Stefen Wynn's three-year contract is not being
+        renewed. A Town finance memo dated May&nbsp;19,&nbsp;2026 — subject line
+        <strong>“Town Administrator terms of nonrenewal”</strong> — projects his
+        compensation running through <strong>mid-July&nbsp;2026</strong>. On
+        <strong>May&nbsp;22,&nbsp;2026</strong> the Board held a special meeting
+        to consider an interim administrator and “the process for hiring a
+        full-time administrator.”
+      </p>
+
+      <p>
+        The packet for that meeting tells you which way the wind is blowing: it
+        attaches the City of Florence, Colorado's 2022 City Manager search RFP
+        as a <strong>template</strong>. The plan, by default, is a conventional
+        <strong>national executive search</strong> run by a hired consulting
+        firm.
+      </p>
+
+      <p>Two things about that default deserve daylight.</p>
+
+      <div class="callout">
+        <p class="ctitle">The cost is hidden</p>
+        <p>
+          The finance memo proposes paying an executive search firm out of the
+          “Legal, Engineering and Professional Services” budget line — but it
+          <strong>names no figure</strong>. Colorado town-administrator searches
+          commonly run <strong>$15,000–$30,000 or more</strong>. The Board
+          should not vote to hire a consultant whose price is not in the packet.
+          <em>Disclose the cost first.</em>
+        </p>
+      </div>
+
+      <div class="callout">
+        <p class="ctitle">We have done this before</p>
+        <p>
+          Wynn was hired in 2023 through exactly this process — a national
+          search, four finalists flown in from out of state. The Delta County
+          Independent's own headline that season was “Paonia readies to conduct
+          interviews <em>again</em>.” The national-search model is not a
+          guarantee of anything. It is just the familiar option.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 2 ===================== -->
+    <section class="section">
+      <p class="sec-num">02</p>
+      <h2>The old way, and what it optimizes for</h2>
+
+      <p>
+        A national executive search firm is paid to do three things: source
+        candidates, screen them, and structure a process. It does those things
+        competently. But look at what the model is <em>built</em> to optimize
+        for:
+      </p>
+
+      <ul>
+        <li><strong>The longest résumé</strong>, sourced from the widest
+          possible geography.</li>
+        <li><strong>A candidate profile</strong> shaped in closed sessions with
+          the firm.</li>
+        <li><strong>A hiring committee</strong> that — in the Florence template
+          the Board attached — is “2&nbsp;Council and 3&nbsp;Staff.”
+          <strong>Zero citizen seats.</strong></li>
+      </ul>
+
+      <p>
+        What it does <em>not</em> optimize for is the thing Paonia actually
+        needs: someone already rooted here, who knows this valley, who shares
+        this community's values on day one rather than learning them from a
+        relocation package. A nationwide search for an administrator
+        structurally cannot deliver that. It is searching for the wrong thing.
+      </p>
+    </section>
+
+    <!-- ===================== 3 ===================== -->
+    <section class="section">
+      <p class="sec-num">03</p>
+      <h2>The moment we are in</h2>
+
+      <p>
+        This matters more in 2026 than it would have in 2016. We are in the
+        middle of the largest change in how knowledge work is done since the
+        industrial revolution — and the Town is about to spend public money as
+        if nothing has changed.
+      </p>
+
+      <p>Two consequences follow directly:</p>
+
+      <ul>
+        <li><strong>Running a search is no longer specialized, gatekept
+          labor.</strong> Sourcing candidates, screening applications,
+          designing a fair and lawful hiring process — a firm used to be the
+          only practical way to get that done. It is not anymore. A committee
+          of residents, working with modern tools and in the open, can run a
+          rigorous search themselves.</li>
+        <li><strong>A capable local hire no longer needs a decades-long
+          municipal résumé.</strong> The knowledge-heavy parts of the
+          administrator's job — financial systems, grant research, code and
+          compliance lookup, drafting — are increasingly tool-augmented. What
+          <em>cannot</em> be augmented is judgment, integrity, and being
+          genuinely invested in Paonia. Hire for those, and the rest is
+          trainable.</li>
+      </ul>
+
+      <p>
+        This proposal — published, transparent, costed, sitting in public — is
+        itself the demonstration. It is the kind of work a town can now do for
+        itself.
+      </p>
+    </section>
+
+    <!-- ===================== 4 ===================== -->
+    <section class="section">
+      <p class="sec-num">04</p>
+      <h2>The new way</h2>
+
+      <h3><span class="h3num">1.</span> Grow and train a local</h3>
+      <p>
+        Take a capable Paonia resident, give them the job, and <strong>invest
+        in training them</strong> the way the town would otherwise invest in a
+        consultant's fee. The money is roughly comparable. The difference is
+        where it lands at the end: a national search sends $15K–$30K out of
+        town with a firm; a training investment of the same size stays here,
+        in a neighbor who is still here in ten years.
+      </p>
+
+      <p class="pull">
+        This is the heart of it: a chance for the people of Paonia to take
+        ownership of their own government, instead of handing that choice to
+        outsiders.
+      </p>
+
+      <h3><span class="h3num">2.</span> Unbundle the role</h3>
+      <p>
+        The current job is <strong>Town Administrator <em>and</em>
+        Treasurer</strong> — and the finance memo shows the salary split across
+        <strong>four separate funds</strong>: 25% Administration, 35% Water, 35%
+        Sewer, 5% Trash. That split is more than accounting. It is a sign that
+        one title has been carrying several distinct jobs, and concentrating a
+        great deal of authority — administrative <em>and</em> financial — in a
+        single person. Residents have already raised this publicly.
+      </p>
+      <p>
+        The search is the moment to fix it. Rather than recruiting one
+        hard-to-find super-administrator, the Board should consider:
+      </p>
+      <ul>
+        <li>A <strong>full-time Town Administrator</strong> focused on
+          operations and management.</li>
+        <li>A <strong>separate finance/treasurer function</strong> — part-time,
+          contracted, or shared — so that the person spending the money is not
+          the same person reporting on it.</li>
+        <li>Utility-heavy duties scoped honestly against that 70% Water/Sewer
+          load.</li>
+      </ul>
+      <p>
+        Unbundling widens the candidate pool — more locals can do <em>one</em>
+        of these jobs well than can do all of them — improves financial
+        oversight, and reduces the single-point-of-failure risk the Town just
+        lived through.
+      </p>
+
+      <h3><span class="h3num">3.</span> A Citizen Search Advisory Committee</h3>
+      <p>
+        The Board hires the administrator — that is its statutory job, and this
+        proposal does not change that. But the Board should not run the search
+        alone, and it should not outsource it to a firm. It should appoint a
+        <strong>Citizen Search Advisory Committee</strong> with a real, defined
+        role.
+      </p>
+      <ul>
+        <li><strong>Purpose.</strong> Help define the candidate profile, review
+          applications, screen candidates, run public candidate forums, and
+          <strong>recommend finalists to the Board</strong>.</li>
+        <li><strong>Seating.</strong> Members selected through a transparent,
+          published application process against stated criteria — not by
+          self-nomination and not by invitation. The roster, and the reason
+          each member was chosen, is public.</li>
+        <li><strong>Composition.</strong> A mix of residents reflecting the
+          community — including someone with municipal-finance literacy and
+          someone from the utility ratepayer base. Trustees and staff may sit
+          alongside citizens, but citizens hold real screening authority, not a
+          ceremonial seat.</li>
+        <li><strong>Conflict rules.</strong> Anyone with a personal stake in the
+          outcome — including the author of this proposal — applies through the
+          same process as everyone else and recuses where appropriate. The
+          committee's credibility depends on no one crowning themselves.</li>
+      </ul>
+
+      <h3><span class="h3num">4.</span> Run the whole thing in public</h3>
+      <p>
+        Publish the job description, the candidate profile, the selection
+        criteria, the timeline, and the finalist forum schedule — online, as
+        the process happens. Colorado open-meetings and candidate-confidentiality
+        law set the boundaries; within them, default to daylight. A transparent
+        search is one residents can trust the result of.
+      </p>
+    </section>
+
+    <!-- ===================== 5 ===================== -->
+    <section class="section">
+      <p class="sec-num">05</p>
+      <h2>What we ask the Board</h2>
+
+      <div class="asks">
+        <div class="ask">
+          <div class="ask-n">1</div>
+          <div class="ask-t"><strong>Disclose the cost</strong> of any
+            executive search firm — in dollars — <em>before</em> voting to hire
+            one.</div>
+        </div>
+        <div class="ask">
+          <div class="ask-n">2</div>
+          <div class="ask-t"><strong>Direct staff to prepare a side-by-side
+            comparison</strong>: a national search firm versus growing and
+            training a qualified local hire, including the cost of each.</div>
+        </div>
+        <div class="ask">
+          <div class="ask-n">3</div>
+          <div class="ask-t"><strong>Appoint a Citizen Search Advisory
+            Committee</strong> with real screening authority and a transparent,
+            criteria-based seating process.</div>
+        </div>
+        <div class="ask">
+          <div class="ask-n">4</div>
+          <div class="ask-t"><strong>Direct that the search consider
+            unbundling</strong> the combined Administrator/Treasurer role rather
+            than recruiting a single position by default.</div>
+        </div>
+        <div class="ask">
+          <div class="ask-n">5</div>
+          <div class="ask-t">Keep the <strong>interim</strong> appointment short
+            and clearly time-bound, so it does not quietly become the
+            answer.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6 ===================== -->
+    <section class="section">
+      <p class="sec-num">06</p>
+      <h2>The record behind this</h2>
+      <p>
+        Every factual claim on this page — the nonrenewal memo, the meeting
+        packet, the budget figures, the 2023 hiring history — is documented,
+        with source files, at
+        <a href="https://paoniatruth.site/initiatives/admin-search">paoniatruth.site/initiatives/admin-search</a>.
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="foot-inner">
+    <p class="foot-notice">
+      <span class="dot">●</span>&nbsp; This is not the official Town of Paonia
+      website. It is a citizen proposal published by paoniatruth.site. The
+      Town's official website is
+      <a href="https://townofpaonia.colorado.gov">townofpaonia.colorado.gov</a>.
+    </p>
+    <p class="foot-meta">
+      Published by <a href="https://paoniatruth.site">paoniatruth.site</a> — a
+      civic transparency project for Paonia, Colorado. This page is opinion and
+      advocacy, offered for public discussion.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

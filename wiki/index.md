@@ -28,6 +28,7 @@ See [[SCHEMA]] for conventions and workflows.
 - [[2026-03-30-special-meeting|Special Meeting (2026-03-30)]] -- Board response, 5-1 vote, "libelous," unedited publication
 - [[2026-04-03-surveillance-initiative-rejection|Surveillance Initiative Rejected (2026-04-03)]] -- Second initiative rejected, same pattern
 - [[2026-04-13-str-initiative-approval|STR Initiative Approved (2026-04-13)]] -- First citizen initiative approved by Vetter; 57 signatures needed
+- [[clerk-rejection-2026-04-27|Surveillance Policy Ordinance Rejected (2026-04-27)]] -- Third surveillance rejection. New theory ("managerial and operational"). Letter contains copy-paste defect. Trigger for Rule 106 filing.
 
 ## Issues
 
@@ -79,6 +80,7 @@ See [[SCHEMA]] for conventions and workflows.
 - [[verkada-usage-patterns|Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)]] -- 57,460 audit log rows analyzed. Clerk's office = 53% of activity. Community Room = 1,938 views. Four weekend archives of the public meeting room.
 - [[facial-recognition-proof|Facial Recognition Is Enabled on the Town's Verkada System]] -- Contradicts the March 30 board letter. Oct 22-23 configuration events, "Ruben's Dashboard," Blurred Faces archive.
 - [[wynn-memo-vs-audit-log|Wynn's April 14 Memorandum vs the Audit Log]] -- Point-by-point comparison: 130 events vs "two isolated entries," 65 distinct days vs "October testing," "disabled today" vs "never enabled."
+- [[clerk-rejection-vs-playbook-2026-04-27|Clerk Rejection vs. Drafting Playbook (April 27, 2026)]] -- The April 20 petition followed every applicable drafting rule. Vetter rejected on subject-matter grounds anyway. Three doctrinal labels in 24 days. Trigger for Rule 106.
 
 ## Open Questions
 

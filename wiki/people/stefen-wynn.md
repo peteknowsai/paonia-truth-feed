@@ -2,15 +2,15 @@
 title: Stefen Wynn
 type: person
 created: 2026-04-05
-updated: 2026-04-08
-tags: [wynn, town-administrator, neptune-beach, verkada, surveillance]
-sources: [board-letter-2026-03-30, reporter-package-email-coverup, original-draft-with-libelous, cora-c26-09-verkada-audit-logs, verkada-usage-patterns]
+updated: 2026-05-22
+tags: [wynn, town-administrator, neptune-beach, verkada, surveillance, nonrenewal]
+sources: [board-letter-2026-03-30, reporter-package-email-coverup, original-draft-with-libelous, cora-c26-09-verkada-audit-logs, verkada-usage-patterns, admin-search-special-meeting-2026-05-22]
 ---
 
 # Stefen Wynn
 
-**Role:** Town Administrator, Town of Paonia
-**Status:** Current (as of 2026-04-05)
+**Role:** Town Administrator & Treasurer, Town of Paonia
+**Status:** Contract not being renewed; compensation projected through mid-July 2026 (as of 2026-05-22)
 
 ## Background
 
@@ -54,6 +54,13 @@ Specific dated sessions:
 - **2026-03-03 (Tuesday, 11:04 – 11:17 AM MDT)**: 204 events in 13 minutes, viewing every camera in the Town's Verkada system. The same session includes administrative actions: 3 User Permissions Set events, 3 User Permissions Modified events, 3 User Roles Modified events, 3 Key Contact Updated events, and 1 Communication Recipient Updated event. [[verkada-usage-patterns|source]]
 - **2026-03-13 (Friday, 11:29 – 11:43 AM MDT)**: 13 events on Front Desk, Shop Door, and Shop Parking Lot cameras including **4 "Video History Streamed" events on Front Desk** (reviewing recorded past footage of the Town Hall counter) and 2 "Camera Audio Changed" events on Front Desk. This session began immediately after [[samira-vetter|Vetter]]'s session on the same cameras ending at 11:28 AM. [[verkada-usage-patterns|source]]
 - **2026-03-26 (Thursday, 12:10 PM MDT)**: 22 events including **3 "Audit Log Related Actions" events** — Wynn accessed the Verkada audit log itself. This occurred one day after the [[ten-things-flyer|10 Things flyer]] was distributed, four days before the [[2026-03-30-special-meeting|special meeting]] where the board issued its response, and 12 days before the audit log was produced in response to [[cora-c26-09-verkada-audit-logs|CORA C 26-09]]. [[verkada-usage-patterns|source]]
+
+### Contract nonrenewal (2026)
+
+- In early May 2026 the Board voted to **pause Wynn's reappointment for 30 days**. Residents publicly questioned whether the combined Administrator/Treasurer role should continue in its current form.
+- A Town finance memo dated **May 19, 2026** carries the subject line **"Town Administrator terms of nonrenewal."** Wynn was hired in 2023 on a three-year contract; the memo projects his compensation running through **mid-July 2026**, with a total remaining cost of **$88,252.83** including a **$12,946.15** accrued time-off payout. [[admin-search-special-meeting-2026-05-22|source]]
+- A **special meeting was held May 22, 2026** to consider an interim administrator and the process for hiring a permanent replacement. [[2026-05-22-special-meeting|event]]
+- Wynn was originally hired in 2023 following a **national executive search** (four finalists: Kevin Flanagan, Angela Lawrence, Patrick Marsh, Stefen Wynn). See [[admin-search]] for the citizen proposal on how the replacement search should be run differently.
 
 ## Open Questions
 

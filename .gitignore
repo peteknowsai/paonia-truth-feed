@@ -66,3 +66,6 @@ raw/transcripts/
 
 # Working scratch directory (per CLAUDE.md global rules)
 /scratch/
+
+# AI agent worktrees (scratch — never commit)
+.claude/worktrees/

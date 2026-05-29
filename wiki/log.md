@@ -4,6 +4,44 @@ Chronological record of wiki operations.
 
 ---
 
+## [2026-05-09] ingest | April 27 Surveillance Initiative Rejection — Playbook Quote-Check + CORA Tracker Updates
+
+**Raw files (existing, re-verified):**
+- `raw/documents/initiative-fight/2026-04-28-rejection.pdf` — Town Clerk Vetter's April 27 rejection of the Surveillance Policy Ordinance citizen initiative (received April 28 via email after written deadline demand)
+- `raw/documents/cora-responses/c26-17-caselle-extension.pdf` — 7-day extension on CORA C 26-17 (Caselle Permissions and Audit Log)
+- `raw/documents/cora-responses/Redacted_TownOfPaonia_Audit_Log_Mar2026_from_excel.xlsx` — Corrected March 2026 M365 audit log (replacement for the duplicate-of-April file in the original C 26-12 production)
+- `raw/documents/cora-responses/C-26-15-Response.pdf` — May 8 production of Wynn's outbound emails on November 4, 2024 (Word-doc-assembled, dropped Sent timestamps for several emails)
+
+**Pages created:**
+- `analysis/clerk-rejection-vs-playbook-2026-04-27.md` — quote-check of each rejection ground against the playbook, conclusion: petition followed every applicable drafting rule, rejection is on subject-matter grounds, trigger for Rule 106
+
+**Pages updated:**
+- `issues/initiative-process.md` — added April 13 and April 27 rejections, doctrinal-label rotation table, Rule 106 status (filing intended next week per 2026-05-08)
+- `index.md` — surfaced April 27 rejection in Events; surfaced playbook quote-check in Analysis
+- `analysis/cora-tracking-log.md` — added C 26-15 (fulfilled with defective format), three pending follow-ups: native-files re-request for four specific Wynn outbound emails, Get-InboxRule current state, and unredacted AuditData for five UpdateInboxRules burst dates
+
+**Key findings from cross-month audit log analysis (Nov 2025 – Apr 9 2026):**
+
+1. **Wynn is the only user generating UpdateInboxRules events across five months of audit data.** 6,357 total events, all attributed to one account.
+2. **Activity is bulk-clustered in seconds-to-minutes.** Dec 19, 2025: 240 events in 1 second. Apr 3, 2026: 951 events in 2 minutes. Pattern is characteristic of programmatic activity, not manual rule editing.
+3. **Apr 3, 2026 burst falls on the first business day after the Board's March 30 libel letter.** Apr 9, 2026 burst is the last day captured before the 50,000-row export cap.
+4. **AuditData (which would contain the rule definitions) is 100% redacted in the C 26-12 production** under C.R.S. § 24-72-204(2)(a)(VIII).
+
+**Key findings from C 26-15 (Wynn outbound, Nov 4, 2024) review:**
+
+1. **Production was assembled in Microsoft Word, not printed from Outlook.** PDF metadata shows title "Microsoft Word - C 26-15 Response," author SamiraV, exported via Adobe Acrobat 64-bit 26.1.21529.
+2. **Four of Wynn's outbound emails on Nov 4, 2024 are produced without their Sent timestamps.** The forward of Pete's 1:13 PM Planning Commission Comments to Mayor/Trustees/Planning Commission, the reply to Samira Vetter's 12:32 PM message, the email referencing Mary Bachran's October invoice, and the P-Hill tower extension thread.
+3. **Two outbound emails do retain timestamps.** 11:10 AM FW-to-self (Cooleys HVAC) and 1:59 PM RE: Paonia Hydrogeologic study cultural survey (to Alpine Archaeology / Wright Water Engineers, asking about USFS clearance for brush clearing under WaterSMART grant).
+
+**Key findings from April 27 rejection analysis:**
+
+1. **The Clerk's theory of why surveillance cannot be initiated has changed three times in 24 days** while Pete's underlying subject has not.
+2. **The April 27 letter contains a copy-paste error** identifying Pete's submission as "Paonia Short-Term Lodging Policy" rather than the Surveillance Policy Ordinance — boilerplate recycling from the prior STR rejection.
+3. **The April 27 letter cites no Colorado caselaw** despite directly applicable holdings in *McKee*, *Brooks*, *Margolis*, *Vagneur*, and *Montrose*.
+4. **The contract-rescission ground sweeps too broadly** — under that theory, no citizen initiative on any subject can constrain a Town contract that already exists.
+
+---
+
 ## [2026-04-15] ingest | Wynn's Verkada Rebuttal Memorandum & Factual Corrections
 
 **Raw files:**

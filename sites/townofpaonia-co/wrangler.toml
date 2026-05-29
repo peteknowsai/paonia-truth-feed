@@ -1,0 +1,18 @@
+# Standalone single-page site served at www.townofpaonia.co
+# Citizen "admin-search" proposal. Separate Worker from paonia-truth-feed.
+name = "townofpaonia-co"
+compatibility_date = "2025-05-01"
+
+# Preview URL (*.workers.dev) — for review before the custom domain is live.
+workers_dev = true
+
+# Assets-only Worker: serves ./public/index.html at /
+[assets]
+directory = "./public"
+
+# Custom domain. Zone townofpaonia.co is on this Cloudflare account; the
+# pre-existing www DNS record was removed, so wrangler provisions the record
+# + edge cert automatically.
+[[routes]]
+pattern = "www.townofpaonia.co"
+custom_domain = true
