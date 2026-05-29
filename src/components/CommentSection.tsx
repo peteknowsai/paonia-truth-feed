@@ -41,21 +41,23 @@ export default function CommentSection({ pageSlug }: { pageSlug: string }) {
   };
 
   return (
-    <div style={{ marginTop: "1.5rem", borderTop: "1px solid #ccc", paddingTop: "0.75rem" }}>
-      <div className="section-header">Comments</div>
+    <div style={{ marginTop: "2.5rem", borderTop: "1px solid var(--rule)", paddingTop: "1.5rem" }}>
+      <p className="section-label">Comments</p>
 
       {user && (
-        <form onSubmit={handleSubmit} style={{ marginBottom: "1rem" }}>
+        <form onSubmit={handleSubmit} style={{ marginBottom: "1.5rem" }}>
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Add a comment..."
+            placeholder="Add a comment…"
             rows={3}
             style={{
               width: "100%",
-              padding: "0.5rem",
-              border: "1px solid #999",
-              fontFamily: "inherit",
+              padding: "0.65rem 0.75rem",
+              border: "1px solid var(--rule)",
+              background: "var(--paper-card)",
+              color: "var(--ink)",
+              fontFamily: "var(--serif-body)",
               fontSize: "1rem",
               resize: "vertical",
             }}
@@ -63,23 +65,25 @@ export default function CommentSection({ pageSlug }: { pageSlug: string }) {
           <button
             type="submit"
             disabled={!text.trim()}
+            className="font-display"
             style={{
-              marginTop: "0.25rem",
-              padding: "0.25rem 0.75rem",
-              border: "1px solid #999",
-              background: "white",
-              cursor: "pointer",
-              fontFamily: "inherit",
+              marginTop: "0.5rem",
+              padding: "0.5rem 1.1rem",
+              border: "none",
+              background: text.trim() ? "var(--accent)" : "var(--paper-deep)",
+              color: text.trim() ? "#fff" : "var(--muted)",
+              cursor: text.trim() ? "pointer" : "default",
+              fontWeight: 600,
               fontSize: "0.9rem",
             }}
           >
-            post
+            Post comment
           </button>
         </form>
       )}
 
       {!user && (
-        <p style={{ fontSize: "0.9rem", color: "#666", marginBottom: "0.75rem" }}>
+        <p style={{ fontSize: "0.95rem", color: "var(--ink-soft)", marginBottom: "1rem" }}>
           Sign in to comment.
         </p>
       )}
@@ -87,20 +91,22 @@ export default function CommentSection({ pageSlug }: { pageSlug: string }) {
       {comments && comments.length > 0 ? (
         <div>
           {comments.map((c: any) => (
-            <div key={c._id} style={{ marginBottom: "0.75rem", paddingBottom: "0.5rem", borderBottom: "1px solid #eee" }}>
-              <div style={{ fontSize: "0.85rem", color: "#666" }}>
-                <strong style={{ color: "black" }}>{c.username}</strong> -- {formatDate(c.createdAt)}
+            <div key={c._id} style={{ marginBottom: "1.1rem", paddingBottom: "0.9rem", borderBottom: "1px solid var(--rule-soft)" }}>
+              <div style={{ fontSize: "0.88rem", color: "var(--muted)" }}>
+                <strong style={{ color: "var(--ink)" }}>{c.username}</strong>
+                <span style={{ color: "var(--rule)" }}>{"  ·  "}</span>
+                {formatDate(c.createdAt)}
                 {user && c.userId === user.id && (
                   <button
                     onClick={() => handleDelete(c._id)}
                     style={{
-                      marginLeft: "0.5rem",
+                      marginLeft: "0.6rem",
                       border: "none",
                       background: "none",
-                      color: "#999",
+                      color: "var(--accent)",
                       cursor: "pointer",
                       fontFamily: "inherit",
-                      fontSize: "0.8rem",
+                      fontSize: "0.82rem",
                       textDecoration: "underline",
                     }}
                   >
@@ -108,12 +114,12 @@ export default function CommentSection({ pageSlug }: { pageSlug: string }) {
                   </button>
                 )}
               </div>
-              <div style={{ fontSize: "1rem", marginTop: "0.25rem" }}>{c.content}</div>
+              <div style={{ fontSize: "1rem", marginTop: "0.3rem", lineHeight: 1.55 }}>{c.content}</div>
             </div>
           ))}
         </div>
       ) : (
-        <p style={{ fontSize: "0.9rem", color: "#999" }}>No comments yet.</p>
+        <p style={{ fontSize: "0.95rem", color: "var(--muted)" }}>No comments yet.</p>
       )}
     </div>
   );

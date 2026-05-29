@@ -27,10 +27,25 @@ export default function StoriesPage() {
   const visible = sorted.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
   return (
-    <div>
-      <h1 style={{ fontSize: "1.25rem", fontWeight: "bold", marginBottom: "1rem" }}>
+    <div className="shell" style={{ paddingTop: "2.5rem", paddingBottom: "2rem" }}>
+      <p className="eyebrow" style={{ marginBottom: "0.75rem" }}>Sorted by the room</p>
+      <h1
+        className="font-display"
+        style={{
+          fontWeight: 560,
+          fontSize: "clamp(2rem, 5vw, 3rem)",
+          lineHeight: 1.06,
+          letterSpacing: "-0.02em",
+          margin: "0 0 0.75rem",
+          textWrap: "balance",
+        }}
+      >
         Stories from the Public Record
       </h1>
+      <p style={{ color: "var(--ink-soft)", maxWidth: "44ch", margin: "0 0 2rem" }}>
+        Every entry is drawn from public records and public meetings. Vote to push
+        what matters to the top.
+      </p>
 
       {visible.map((p) => {
         const href =
@@ -39,68 +54,117 @@ export default function StoriesPage() {
             : p.route;
 
         return (
-          <div
+          <article
             key={p.slug}
             style={{
-              marginBottom: "1rem",
-              paddingBottom: "0.75rem",
-              borderBottom: "1px solid #eee",
+              marginBottom: "1.5rem",
+              paddingBottom: "1.5rem",
+              borderBottom: "1px solid var(--rule)",
             }}
           >
-            <div style={{ display: "flex", alignItems: "flex-start", gap: "0.75rem" }}>
+            <div style={{ display: "flex", alignItems: "flex-start", gap: "1rem" }}>
               <PageVoting pageSlug={p.slug} />
-              <div>
-                <Link href={href} style={{ fontWeight: "bold", fontSize: "1rem" }}>
-                  {p.title}
-                </Link>
-                <span
+              <div style={{ minWidth: 0 }}>
+                <p
+                  className="topic-tag"
+                  style={{ margin: "0 0 0.3rem" }}
+                >
+                  {p.directory}
+                </p>
+                <Link
+                  href={href}
+                  className="font-display"
                   style={{
-                    fontSize: "0.85rem",
-                    color: "#666",
-                    marginLeft: "0.5rem",
+                    display: "block",
+                    fontWeight: 560,
+                    fontSize: "1.4rem",
+                    lineHeight: 1.18,
+                    letterSpacing: "-0.01em",
+                    color: "var(--ink)",
                   }}
                 >
-                  ({p.directory})
-                </span>
-                <div style={{ fontSize: "0.9rem", color: "#333", marginTop: "0.15rem" }}>
-                  {p.description}
-                </div>
-                <div style={{ fontSize: "0.8rem", color: "#999", marginTop: "0.15rem" }}>
-                  updated {p.updated || p.created}
-                </div>
+                  {p.title}
+                </Link>
+                {p.description && (
+                  <p
+                    style={{
+                      fontSize: "1rem",
+                      color: "var(--ink-soft)",
+                      margin: "0.4rem 0 0",
+                    }}
+                  >
+                    {p.description}
+                  </p>
+                )}
+                <p
+                  style={{
+                    fontSize: "0.85rem",
+                    color: "var(--muted)",
+                    margin: "0.5rem 0 0",
+                  }}
+                >
+                  Updated {p.updated || p.created}
+                </p>
               </div>
             </div>
-          </div>
+          </article>
         );
       })}
 
       {totalPages > 1 && (
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginTop: "1.5rem" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            marginTop: "2rem",
+          }}
+        >
           <button
             onClick={() => setPage((p) => Math.max(1, p - 1))}
             disabled={page === 1}
             style={{
-              padding: "0.25rem 0.75rem",
-              border: "1px solid #ccc",
-              background: page === 1 ? "#f5f5f5" : "#fff",
+              padding: "0.35rem 1rem",
+              border: "1px solid var(--rule)",
+              background: page === 1 ? "var(--paper-deep)" : "var(--paper-card)",
+              color: page === 1 ? "var(--muted)" : "var(--ink)",
               cursor: page === 1 ? "default" : "pointer",
-              fontFamily: "inherit",
+              fontFamily: "var(--serif-display)",
+              fontSize: "12.5px",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
             }}
           >
             Prev
           </button>
-          <span style={{ fontSize: "0.9rem" }}>
+          <span
+            className="font-display"
+            style={{
+              fontSize: "12.5px",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              color: "var(--muted)",
+            }}
+          >
             {page} / {totalPages}
           </span>
           <button
             onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
             disabled={page === totalPages}
             style={{
-              padding: "0.25rem 0.75rem",
-              border: "1px solid #ccc",
-              background: page === totalPages ? "#f5f5f5" : "#fff",
+              padding: "0.35rem 1rem",
+              border: "1px solid var(--rule)",
+              background:
+                page === totalPages ? "var(--paper-deep)" : "var(--paper-card)",
+              color: page === totalPages ? "var(--muted)" : "var(--ink)",
               cursor: page === totalPages ? "default" : "pointer",
-              fontFamily: "inherit",
+              fontFamily: "var(--serif-display)",
+              fontSize: "12.5px",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
             }}
           >
             Next

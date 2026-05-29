@@ -1,12 +1,17 @@
 import Link from "next/link";
 import {
   getInitiativePages,
-  getPage,
-  getPagesByDirectory,
-  getStoryPages,
   getActionPages,
-  getCategories,
+  getStoryPages,
+  getPage,
 } from "@/lib/wiki";
+import { hero, threads, timeline, cast } from "@/content/story";
+import {
+  ThreadImage,
+  ThreadCard,
+  StoryTimeline,
+  CastGrid,
+} from "@/components/editorial";
 import GemVote from "@/components/GemVote";
 import InitiativeVoting from "@/components/InitiativeVoting";
 
@@ -14,242 +19,200 @@ function countDiscrepancies(content: string): number {
   return (content.match(/\n## /g) || []).length;
 }
 
+const sectionStyle: React.CSSProperties = {
+  paddingTop: "3.25rem",
+  paddingBottom: "0.5rem",
+  borderTop: "1px solid var(--rule)",
+  marginTop: "3.25rem",
+};
+
 export default function HomePage() {
   const initiatives = getInitiativePages();
-  const stories = getStoryPages();
   const actions = getActionPages();
-  const people = getPagesByDirectory("people");
-  const issues = getPagesByDirectory("issues");
-  const analysis = getPagesByDirectory("analysis");
-  const events = getPagesByDirectory("events").sort((a, b) =>
-    (b.updated || b.created).localeCompare(a.updated || a.created)
-  );
-  const categories = getCategories();
+  const stories = getStoryPages().slice(0, 8);
   const discrepanciesPage = getPage("analysis", "discrepancies-register");
   const discrepancyCount = discrepanciesPage
     ? countDiscrepancies(discrepanciesPage.content)
     : 0;
 
   return (
-    <div style={{ maxWidth: "640px" }}>
-      {/* Quick links */}
+    <>
+      {/* ===================== HERO ===================== */}
+      <section style={{ background: "var(--paper)", borderBottom: "1px solid var(--rule)" }}>
+        <div
+          className="shell hero-grid"
+          style={{
+            paddingTop: "3rem",
+            paddingBottom: "3rem",
+            display: "grid",
+            gridTemplateColumns: "minmax(0, 1.15fr) minmax(0, 1fr)",
+            gap: "2.5rem",
+            alignItems: "center",
+          }}
+        >
+          <div>
+            <p className="eyebrow" style={{ marginBottom: "1.1rem" }}>{hero.eyebrow}</p>
+            <h1
+              className="font-display"
+              style={{
+                fontWeight: 560,
+                fontSize: "clamp(2.1rem, 5vw, 3.4rem)",
+                lineHeight: 1.05,
+                letterSpacing: "-0.015em",
+                margin: "0 0 1.25rem",
+                textWrap: "balance",
+              }}
+            >
+              {hero.headline}
+            </h1>
+            <p style={{ fontSize: "1.12rem", lineHeight: 1.6, color: "var(--ink-soft)", margin: "0 0 1.75rem" }}>
+              {hero.dek}
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem 1rem", alignItems: "center" }}>
+              <Link
+                href="/story"
+                className="font-display"
+                style={{
+                  background: "var(--accent)",
+                  color: "#fff",
+                  padding: "0.7rem 1.35rem",
+                  fontWeight: 600,
+                  fontSize: "1rem",
+                }}
+              >
+                Read the full story →
+              </Link>
+              <Link href="#timeline" className="font-display" style={{ fontWeight: 600 }}>
+                Jump to the timeline
+              </Link>
+            </div>
+          </div>
+          <div>
+            <ThreadImage src={hero.image} alt={hero.imageAlt} label="Paonia, Colorado" aspect="4 / 3" />
+          </div>
+        </div>
+      </section>
+
+      {/* discrepancies hook */}
       {discrepancyCount > 0 && (
-        <div style={{ marginBottom: "1.5rem", fontSize: "1rem" }}>
-          <Link href="/articles/discrepancies-register" style={{ fontWeight: "bold" }}>
-            {discrepancyCount} times the record contradicts the officials
-          </Link>
-          {" -- side-by-side, fully sourced"}
+        <div style={{ background: "var(--civic-deep)", color: "#ece7da" }}>
+          <div className="shell" style={{ paddingTop: "0.85rem", paddingBottom: "0.85rem", fontSize: "0.98rem" }}>
+            <Link href="/articles/discrepancies-register" style={{ color: "#fff", fontWeight: 600 }}>
+              {discrepancyCount} times the public record contradicts what officials said
+            </Link>
+            <span style={{ color: "#a9b6bf" }}> — side-by-side, every entry sourced →</span>
+          </div>
         </div>
       )}
 
-      {/* Stories */}
-      <section>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {[...stories]
-            .sort((a, b) => {
-              const dateA = a.created || "";
-              const dateB = b.created || "";
-              return dateB.localeCompare(dateA);
-            })
-            .slice(0, 15)
-            .map((p) => {
-              const href =
-                p.directory === "analysis" ? `/articles/${p.slug}` : p.route;
-              const dateLabel = p.created || "";
-              const parts = dateLabel.split("-");
-              const shortDate =
-                parts.length >= 2
-                  ? `${new Date(dateLabel).toLocaleString("en", { month: "short" })}-${parts[0].slice(2)}`
-                  : dateLabel;
-
-              return (
-                <li
-                  key={p.slug}
-                  style={{
-                    display: "flex",
-                    alignItems: "baseline",
-                    gap: "0.5rem",
-                    marginBottom: "0.35rem",
-                    fontSize: "1rem",
-                  }}
-                >
-                  <span style={{ color: "#666", flexShrink: 0 }}>
-                    [{shortDate}]
-                  </span>
-                  <Link href={href} style={{ flex: 1, fontWeight: "bold" }}>
-                    {p.title}
-                  </Link>
-                  <GemVote pageSlug={p.slug} />
-                </li>
-              );
-            })}
-        </ul>
-        {stories.length > 15 && (
-          <p style={{ marginTop: "0.75rem" }}>
-            <Link href="/stories" style={{ fontWeight: "bold" }}>
-              All stories ({stories.length}) &rarr;
-            </Link>
-          </p>
-        )}
-      </section>
-
-      {/* Initiatives */}
-      <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
-        <div className="section-header">ACTIVE INITIATIVES</div>
-        <p style={{ fontSize: "1rem", color: "#666", marginBottom: "1rem" }}>
-          Community-driven proposals for Paonia governance reform
-        </p>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {initiatives.map((p) => (
-            <li key={p.slug} style={{ marginBottom: "0.75rem" }}>
-              <div style={{ flex: 1 }}>
-                <span style={{ fontWeight: "bold" }}>{p.title}</span>{" "}
-                <Link href={`/initiatives/${p.slug}`} style={{ color: "#666" }}>
-                  [learn more]
-                </Link>
-                <InitiativeVoting initiativeId={p.slug} />
-              </div>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      {/* CORA Call to Action */}
-      <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
-        <div className="section-header">GET ANSWERS</div>
-        <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-          Colorado's Open Records Act (CORA) gives you the right to request
-          public documents from your town government. We've drafted the requests.
-          You just need to send them.
-        </p>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {actions.map((p) => (
-            <li key={p.slug} style={{ marginBottom: "0.5rem" }}>
-              <Link href={`/actions/${p.slug}`}>{p.title}</Link>
-            </li>
-          ))}
-        </ul>
-        <p style={{ fontSize: "1rem", marginTop: "1rem" }}>
-          Each question includes pre-written CORA requests citing the exact
-          statute (C.R.S. 24-72-201).{" "}
-          <a href="/cora-request-form.pdf" target="_blank" style={{ fontWeight: "bold" }}>
-            Download the official form (PDF)
-          </a>
-          , fill in your name, copy the request language, and email to{" "}
-          <strong>town@townofpaonia.com</strong>. The first hour of research is
-          free. They have 3 business days to respond.
-        </p>
-      </section>
-
-      {/* People */}
-      <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
-        <div className="section-header">PEOPLE</div>
-        <p style={{ fontSize: "1rem", color: "#666", marginBottom: "0.75rem" }}>
-          Elected officials and town staff. Voting records, public statements, and documented actions.
-        </p>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {people.map((p) => (
-            <li key={p.slug} style={{ marginBottom: "0.35rem" }}>
-              <Link href={p.route}>{p.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      {/* Issues */}
-      <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
-        <div className="section-header">ISSUES</div>
-        <p style={{ fontSize: "1rem", color: "#666", marginBottom: "0.75rem" }}>
-          Ongoing governance concerns with sourced timelines.
-        </p>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {issues.map((p) => (
-            <li key={p.slug} style={{ marginBottom: "0.35rem" }}>
-              <Link href={p.route}>{p.title}</Link>
-              {p.tags.includes("initiative") && (
-                <span style={{ color: "#666" }}> [initiative]</span>
-              )}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      {/* Analysis */}
-      <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
-        <div className="section-header">ANALYSIS</div>
-        <p style={{ fontSize: "1rem", color: "#666", marginBottom: "0.75rem" }}>
-          Cross-cutting patterns, discrepancies, and the full timeline.
-        </p>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {analysis.map((p) => (
-            <li key={p.slug} style={{ marginBottom: "0.35rem" }}>
-              <Link href={`/articles/${p.slug}`}>{p.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      {/* Discrepancies highlight */}
-      {discrepancyCount > 0 && (
-        <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
-          <div className="section-header">
-            DISCREPANCIES REGISTER
+      <div className="shell">
+        {/* ===================== THREADS ===================== */}
+        <section style={{ ...sectionStyle, marginTop: "3rem" }}>
+          <p className="section-label">The Story So Far · Five Threads</p>
+          <div className="thread-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "1.5rem" }}>
+            <ThreadCard thread={threads[0]} featured />
+            {threads.slice(1).map((t) => (
+              <ThreadCard key={t.id} thread={t} />
+            ))}
           </div>
-          <p style={{ fontSize: "1rem", marginBottom: "0.75rem" }}>
-            {discrepancyCount} documented cases where public statements by town
-            officials contradict the public record. Every entry shows both sides
-            and cites the source documents.
-          </p>
-          <Link href="/articles/discrepancies-register">
-            Read the full register &rarr;
-          </Link>
         </section>
-      )}
 
-      {/* Recent Events */}
-      <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
-        <div className="section-header">RECENT EVENTS</div>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {events.slice(0, 15).map((p) => (
-            <li key={p.slug} style={{ marginBottom: "0.35rem" }}>
-              <span style={{ color: "#666" }}>{p.created}</span>{" "}
-              <Link href={p.route}>{p.title}</Link>
-            </li>
-          ))}
-        </ul>
-        {events.length > 15 && (
-          <p style={{ marginTop: "0.75rem" }}>
-            <Link href="/wiki" style={{ fontWeight: "bold" }}>
-              All events ({events.length}) &rarr;
-            </Link>
-          </p>
-        )}
-      </section>
-
-      {/* Full Wiki */}
-      <section style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #ccc" }}>
-        <div className="section-header">THE FULL RECORD</div>
-        <p style={{ fontSize: "1rem", marginBottom: "0.75rem" }}>
-          Every claim on this site is sourced from public documents, meetings,
-          and court records.
-        </p>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {categories.map((cat) => (
-            <li key={cat.dir} style={{ marginBottom: "0.35rem" }}>
-              <Link href={cat.route}>
-                {cat.label} ({cat.count})
+        {/* ===================== TIMELINE ===================== */}
+        <section id="timeline" style={sectionStyle}>
+          <p className="section-label">The Record, In Order</p>
+          <div className="timeline-grid" style={{ display: "grid", gridTemplateColumns: "minmax(0, 0.8fr) minmax(0, 1.2fr)", gap: "2.5rem" }}>
+            <div>
+              <h2 className="font-display" style={{ fontWeight: 560, fontSize: "1.9rem", lineHeight: 1.12, margin: "0 0 0.75rem" }}>
+                How we got here
+              </h2>
+              <p style={{ color: "var(--ink-soft)", margin: "0 0 1.25rem" }}>
+                The pivotal moments, from the 2023 hire to the 2026 nonrenewal.
+                Each entry links to the sourced record.
+              </p>
+              <Link href="/timeline" className="font-display" style={{ fontWeight: 600 }}>
+                See the complete timeline →
               </Link>
-            </li>
-          ))}
-        </ul>
-        <p style={{ marginTop: "0.75rem" }}>
-          <Link href="/timeline">Full timeline</Link>
-          {" | "}
-          <Link href="/wiki">Browse all pages</Link>
-          {" | "}
-          <Link href="/about">About this site</Link>
-        </p>
-      </section>
-    </div>
+            </div>
+            <StoryTimeline entries={timeline} />
+          </div>
+        </section>
+
+        {/* ===================== CAST ===================== */}
+        <section style={sectionStyle}>
+          <p className="section-label">The Cast</p>
+          <h2 className="font-display" style={{ fontWeight: 560, fontSize: "1.9rem", lineHeight: 1.12, margin: "0 0 1.5rem" }}>
+            Who&apos;s who
+          </h2>
+          <CastGrid members={cast} />
+        </section>
+
+        {/* ===================== LATEST + ACTION ===================== */}
+        <section style={sectionStyle}>
+          <div className="latest-grid" style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.3fr) minmax(0, 1fr)", gap: "2.5rem" }}>
+            {/* Latest from the record */}
+            <div>
+              <p className="section-label">Latest From the Record</p>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                {stories.map((p) => {
+                  const href = p.directory === "analysis" ? `/articles/${p.slug}` : p.route;
+                  return (
+                    <li
+                      key={p.slug}
+                      style={{ display: "flex", gap: "0.85rem", alignItems: "baseline", padding: "0.7rem 0", borderBottom: "1px solid var(--rule-soft)" }}
+                    >
+                      <span className="font-display" style={{ color: "var(--muted)", fontSize: "0.78rem", flexShrink: 0, width: "4.2rem", letterSpacing: "0.03em" }}>
+                        {(p.created || "").slice(0, 7)}
+                      </span>
+                      <Link href={href} style={{ flex: 1, fontWeight: 500 }}>{p.title}</Link>
+                      <GemVote pageSlug={p.slug} />
+                    </li>
+                  );
+                })}
+              </ul>
+              <p style={{ marginTop: "1rem" }}>
+                <Link href="/stories" className="font-display" style={{ fontWeight: 600 }}>All stories →</Link>
+              </p>
+            </div>
+
+            {/* Take action / CORA */}
+            <aside>
+              <p className="section-label">Take Action</p>
+              <div style={{ background: "var(--paper-deep)", borderLeft: "3px solid var(--accent)", padding: "1.25rem 1.4rem" }}>
+                <p style={{ margin: "0 0 0.9rem", fontSize: "0.98rem", lineHeight: 1.55 }}>
+                  Colorado&apos;s Open Records Act gives you the right to request public
+                  documents. We&apos;ve drafted the requests — you just send them.
+                </p>
+                <ul className="ed-list" style={{ marginBottom: "0.9rem" }}>
+                  {actions.map((p) => (
+                    <li key={p.slug}>
+                      <Link href={`/actions/${p.slug}`}>{p.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+                <p style={{ margin: 0, fontSize: "0.9rem" }}>
+                  <a href="/cora-request-form.pdf" target="_blank" rel="noreferrer" className="font-display" style={{ fontWeight: 600 }}>
+                    Download the CORA form (PDF) →
+                  </a>
+                </p>
+              </div>
+
+              {initiatives.length > 0 && (
+                <div style={{ marginTop: "2rem" }}>
+                  <p className="section-label">Active Initiatives</p>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {initiatives.map((p) => (
+                      <li key={p.slug} style={{ marginBottom: "0.9rem" }}>
+                        <Link href={`/initiatives/${p.slug}`} style={{ fontWeight: 500 }}>{p.title}</Link>
+                        <InitiativeVoting initiativeId={p.slug} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </aside>
+          </div>
+        </section>
+      </div>
+    </>
   );
 }

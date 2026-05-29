@@ -7,14 +7,16 @@ interface BreadcrumbItem {
 
 export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
   return (
-    <div style={{ fontSize: "0.9rem", marginBottom: "0.75rem", color: "#666" }}>
+    <div style={{ fontSize: "0.9rem", marginBottom: "1rem", color: "var(--muted)" }}>
       {items.map((item, i) => (
         <span key={i}>
-          {i > 0 && " / "}
+          {i > 0 && (
+            <span style={{ color: "var(--rule)", margin: "0 0.45rem" }}>/</span>
+          )}
           {item.href ? (
             <Link href={item.href}>{item.label}</Link>
           ) : (
-            <span style={{ color: "black" }}>{item.label}</span>
+            <span style={{ color: "var(--ink-soft)" }}>{item.label}</span>
           )}
         </span>
       ))}

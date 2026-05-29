@@ -36,7 +36,7 @@ export default function CoraInterest({ questionSlug }: { questionSlug: string })
         {isInterested ? "interested" : "I want to know this too"} ({count})
       </button>
       {!user && (
-        <span style={{ fontSize: "0.85rem", color: "#666", marginLeft: "0.5rem" }}>
+        <span style={{ fontSize: "0.85rem", color: "var(--muted)", marginLeft: "0.5rem" }}>
           Sign in to track
         </span>
       )}

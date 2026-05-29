@@ -1,53 +1,46 @@
 import Link from "next/link";
 import { SignedIn, SignedOut, UserButton, SignInButton, SignUpButton } from "@clerk/nextjs";
+import { channels } from "@/content/story";
 
 export default function SiteHeader() {
   return (
-    <header style={{ padding: "0.75rem 1rem", marginBottom: "1.5rem" }}>
-      <div style={{ maxWidth: "960px", margin: "0 auto" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "0.5rem" }}>
-          <h1 style={{ fontSize: "1.25rem", fontWeight: "normal", margin: 0 }}>
-            <Link href="/" style={{ textDecoration: "none", color: "black" }}>
-              💎 PAONIA TRUTH NUGGETS
-            </Link>
-          </h1>
-          <div style={{ fontSize: "0.85rem" }}>
+    <header className="mast">
+      <div className="shell">
+        <div className="mast-top">
+          <Link href="/" className="mast-mark">
+            <span className="gem" aria-hidden>◆</span> Paonia&nbsp;Truth
+          </Link>
+          <div className="mast-account">
+            <Link href="/about" style={{ marginRight: "1.1rem" }}>About</Link>
             <SignedIn>
-              <div style={{ position: "relative", display: "inline-block", cursor: "pointer" }}>
-                <span style={{ fontFamily: "inherit", fontSize: "0.85rem", textDecoration: "underline" }}>
-                  account
-                </span>
-                <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", opacity: 0, width: "100%", height: "100%", overflow: "hidden" }}>
-                  <div style={{ transform: "scale(10)", transformOrigin: "center center" }}>
-                    <UserButton />
-                  </div>
-                </div>
-              </div>
+              <span style={{ position: "relative", display: "inline-block", top: "0.35rem" }}>
+                <UserButton afterSignOutUrl="/" />
+              </span>
             </SignedIn>
             <SignedOut>
               <SignInButton mode="modal">
-                <button style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: "0.85rem", textDecoration: "underline", padding: 0 }}>
-                  sign in
+                <button style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: "0.85rem", color: "var(--civic)", padding: 0 }}>
+                  Sign in
                 </button>
               </SignInButton>
-              {" / "}
+              {" · "}
               <SignUpButton mode="modal">
-                <button style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: "0.85rem", textDecoration: "underline", padding: 0 }}>
-                  register
+                <button style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: "0.85rem", color: "var(--civic)", padding: 0 }}>
+                  Register
                 </button>
               </SignUpButton>
             </SignedOut>
           </div>
         </div>
-        <nav style={{ marginTop: "0.5rem" }}>
-          <Link href="/stories">stories</Link>
-          <Link href="/initiatives">initiatives</Link>
-          <Link href="/actions">actions</Link>
-          <Link href="/timeline">timeline</Link>
-          <Link href="/wiki">wiki</Link>
-          <Link href="/about">about</Link>
-        </nav>
       </div>
+      <nav className="channel-nav" aria-label="Topics">
+        <div className="shell channel-nav-inner">
+          {channels.map((c) => (
+            <Link key={c.href} href={c.href}>{c.label}</Link>
+          ))}
+          <Link href="/wiki" style={{ marginLeft: "auto", color: "#a9d0b3" }}>The Full Record</Link>
+        </div>
+      </nav>
     </header>
   );
 }

@@ -23,7 +23,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   if (!page) notFound();
 
   return (
-    <div>
+    <div className="shell-narrow" style={{ paddingTop: "2.5rem", paddingBottom: "2rem" }}>
       <Breadcrumb
         items={[
           { label: "home", href: "/" },
@@ -32,16 +32,40 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         ]}
       />
 
-      <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
+      <p className="eyebrow" style={{ marginTop: "1.5rem", marginBottom: "0.75rem" }}>
+        Analysis
+      </p>
+      <h1
+        className="font-display"
+        style={{
+          fontWeight: 560,
+          fontSize: "clamp(2rem, 5vw, 3rem)",
+          lineHeight: 1.06,
+          letterSpacing: "-0.02em",
+          margin: "0 0 0.9rem",
+          textWrap: "balance",
+        }}
+      >
+        {page.title}
+      </h1>
+
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "1rem",
+          fontSize: "0.9rem",
+          color: "var(--muted)",
+          margin: "0 0 1.5rem",
+        }}
+      >
         <PageVoting pageSlug={slug} />
-        <h1 style={{ fontSize: "1.25rem", fontWeight: "bold" }}>{page.title}</h1>
+        <span>Updated {page.updated || page.created}</span>
       </div>
 
-      <div style={{ fontSize: "0.85rem", color: "#666", marginBottom: "0.75rem" }}>
-        Updated {page.updated || page.created}
-      </div>
+      <hr className="rule" style={{ margin: "0 0 2rem" }} />
 
-      <WikiContent content={page.content} />
+      <WikiContent content={page.content} stripFirstH1 />
 
       <BacklinksSection backlinks={page.backlinks} />
 

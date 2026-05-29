@@ -10,13 +10,11 @@ export default function BacklinksSection({ backlinks }: { backlinks: Backlink[] 
   if (backlinks.length === 0) return null;
 
   return (
-    <div style={{ marginTop: "1.5rem", paddingTop: "0.75rem", borderTop: "1px solid #ccc" }}>
-      <div style={{ fontSize: "0.9rem", fontWeight: "bold", marginBottom: "0.5rem", color: "#666" }}>
-        REFERENCED BY
-      </div>
-      <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+    <div style={{ marginTop: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid var(--rule)" }}>
+      <h2 className="section-label">Referenced By</h2>
+      <ul className="ed-list">
         {backlinks.map((bl) => (
-          <li key={bl.slug} style={{ fontSize: "1rem", marginBottom: "0.25rem" }}>
+          <li key={bl.slug}>
             <Link href={bl.route}>{bl.title}</Link>
           </li>
         ))}

@@ -28,7 +28,7 @@ export default async function InitiativePage({ params }: { params: Promise<{ slu
   if (!page) notFound();
 
   return (
-    <div>
+    <div className="shell-narrow" style={{ paddingTop: "2.5rem", paddingBottom: "2rem" }}>
       <Breadcrumb
         items={[
           { label: "home", href: "/" },
@@ -37,17 +37,30 @@ export default async function InitiativePage({ params }: { params: Promise<{ slu
         ]}
       />
 
-      <h1 style={{ fontSize: "1.25rem", fontWeight: "bold", marginBottom: "0.25rem" }}>
+      <p className="eyebrow" style={{ marginTop: "1.5rem", marginBottom: "0.75rem" }}>
+        Initiative
+      </p>
+      <h1
+        className="font-display"
+        style={{
+          fontWeight: 560,
+          fontSize: "clamp(1.9rem, 4.5vw, 2.6rem)",
+          lineHeight: 1.08,
+          letterSpacing: "-0.01em",
+          margin: "0 0 0.5rem",
+          textWrap: "balance",
+        }}
+      >
         {page.title}
       </h1>
 
-      <div style={{ fontSize: "0.85rem", color: "#666", marginBottom: "0.75rem" }}>
+      <div style={{ fontSize: "0.85rem", color: "var(--muted)", marginBottom: "1.5rem" }}>
         Updated {page.updated || page.created}
       </div>
 
       <InitiativeVoting initiativeId={slug} />
 
-      <WikiContent content={page.content} />
+      <WikiContent content={page.content} stripFirstH1 />
 
       <BacklinksSection backlinks={page.backlinks} />
 

@@ -51,7 +51,10 @@ export default async function WikiPageView({
   if (!page) notFound();
 
   return (
-    <div>
+    <div
+      className="shell-narrow"
+      style={{ paddingTop: "2.5rem", paddingBottom: "2rem" }}
+    >
       <Breadcrumb
         items={[
           { label: "home", href: "/" },
@@ -64,24 +67,33 @@ export default async function WikiPageView({
         ]}
       />
 
+      <p
+        className="eyebrow"
+        style={{ marginTop: "1.25rem", marginBottom: "0.45rem" }}
+      >
+        {page.type}
+      </p>
+
       <div
         style={{
           fontSize: "0.85rem",
-          color: "#666",
-          marginBottom: "0.75rem",
+          color: "var(--muted)",
+          marginBottom: "1.5rem",
         }}
       >
-        {page.type} -- created {page.created} -- updated{" "}
-        {page.updated || page.created}
+        Created {page.created} &middot; Updated {page.updated || page.created}
         {page.tags.length > 0 && (
-          <span>
-            {" "}
-            -- tags: {page.tags.join(", ")}
+          <span style={{ display: "block", marginTop: "0.6rem" }}>
+            {page.tags.map((tag) => (
+              <span key={tag} className="topic-tag">
+                {tag}
+              </span>
+            ))}
           </span>
         )}
       </div>
 
-      <WikiContent content={page.content} />
+      <WikiContent content={page.content} stripFirstH1 />
 
       <BacklinksSection backlinks={page.backlinks} />
 

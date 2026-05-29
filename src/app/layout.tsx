@@ -6,20 +6,20 @@ import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Paonia Truth Nuggets",
+  title: "Paonia Truth — Who Runs Paonia, and Who Answers For It",
   description:
-    "A public record of local government in Paonia, Colorado.",
+    "An independent, fully sourced public record of local government in Paonia, Colorado.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
   ),
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>",
+    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◆</text></svg>",
   },
   openGraph: {
-    title: "Paonia Truth Nuggets",
+    title: "Paonia Truth — Who Runs Paonia, and Who Answers For It",
     description:
-      "A public record of local government in Paonia, Colorado.",
-    siteName: "Paonia Truth Nuggets",
+      "An independent, fully sourced public record of local government in Paonia, Colorado.",
+    siteName: "Paonia Truth",
     type: "website",
     locale: "en_US",
   },
@@ -36,9 +36,7 @@ export default function RootLayout({
         <body>
           <ConvexClientProvider>
             <SiteHeader />
-            <main style={{ maxWidth: "640px", margin: "0 auto", padding: "0 2rem 2rem" }}>
-              {children}
-            </main>
+            <main>{children}</main>
             <SiteFooter />
           </ConvexClientProvider>
         </body>

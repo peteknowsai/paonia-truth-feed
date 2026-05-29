@@ -8,10 +8,23 @@ export default function AboutPage() {
   const categories = getCategories();
 
   return (
-    <div>
-      <h1 style={{ fontSize: "1.25rem", fontWeight: "bold", marginBottom: "0.75rem" }}>
+    <div className="shell-narrow" style={{ paddingTop: "2.5rem", paddingBottom: "2rem" }}>
+      <p className="eyebrow" style={{ marginBottom: "1rem" }}>What This Is</p>
+      <h1
+        className="font-display"
+        style={{
+          fontWeight: 560,
+          fontSize: "clamp(2.1rem, 5vw, 3rem)",
+          lineHeight: 1.06,
+          letterSpacing: "-0.02em",
+          margin: "0 0 1.5rem",
+          textWrap: "balance",
+        }}
+      >
         About This Site
       </h1>
+
+      <hr className="rule" style={{ margin: "0 0 2rem" }} />
 
       <div className="wiki-content">
         <p>

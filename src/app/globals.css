@@ -1,233 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,560;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&display=swap');
 @import "tailwindcss";
 
+/* ============================================================
+   Paonia Truth — editorial design system
+   Newsprint · civic-blue · brick-red. Fraunces + Newsreader.
+   Tokens live here; everything tints off these variables.
+   ============================================================ */
+:root {
+  --paper:       #f6f3ec;
+  --paper-deep:  #ece4d4;
+  --paper-card:  #fffdf8;
+  --ink:         #1a1916;
+  --ink-soft:    #44403a;
+  --muted:       #6f6757;
+  --civic:       #1f3a4d;
+  --civic-deep:  #142735;
+  --accent:      #b1432a;
+  --accent-deep: #8f3320;
+  --rule:        #ddd5c4;
+  --rule-soft:   #e7e0d0;
+
+  --serif-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --serif-body:    "Newsreader", Georgia, "Times New Roman", serif;
+
+  --maxw: 1180px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
 body {
-  font-family: 'Courier Prime', 'Courier New', monospace;
-  font-size: 16px;
-  background: white;
-  color: black;
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: unset;
-  line-height: 1.6;
+  font-family: var(--serif-body);
+  font-optical-sizing: auto;
+  font-size: 18px;
+  line-height: 1.68;
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Remove all animations */
-* {
-  animation: none !important;
-  transition: none !important;
+::selection { background: #1f3a4d22; }
+
+a { color: var(--civic); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 2px; }
+a:visited { color: var(--civic); }
+
+*:focus-visible { outline: 2px solid var(--civic); outline-offset: 2px; }
+
+img { max-width: 100%; display: block; }
+
+/* ---------- Display type ---------- */
+.font-display { font-family: var(--serif-display); }
+
+/* ---------- Eyebrow / section labels ---------- */
+.eyebrow {
+  font-family: var(--serif-display);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+.section-label, .section-header {
+  font-family: var(--serif-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-bottom: 0.5rem;
+  margin: 0 0 1.1rem;
+  border-bottom: 1px solid var(--rule);
 }
 
-/* Craigslist link colors */
-a {
-  color: #00e;
-}
-
-a:visited {
-  color: #551a8b;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Focus styles */
-*:focus {
-  outline: 1px solid black;
-  outline-offset: 2px;
-}
-
-/* Remove all rounded corners */
-* {
-  border-radius: 0 !important;
-}
-
-/* Markdown content */
-.wiki-content h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 1.5rem 0 0.5rem;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.25rem;
-}
-
-.wiki-content h2 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin: 1.25rem 0 0.5rem;
-}
-
-.wiki-content h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin: 1rem 0 0.25rem;
-}
-
-.wiki-content p {
-  margin: 0.5rem 0;
-}
-
-.wiki-content ul, .wiki-content ol {
-  margin: 0.5rem 0;
-  padding-left: 1.5rem;
-}
-
-.wiki-content li {
-  margin: 0.25rem 0;
-}
-
-.wiki-content ul li {
-  list-style-type: disc;
-}
-
-.wiki-content ol li {
-  list-style-type: decimal;
-}
-
-.wiki-content blockquote {
-  border-left: 3px solid #666;
-  padding-left: 0.75rem;
-  margin: 0.75rem 0;
-  color: #333;
-}
-
-.wiki-content table {
-  border-collapse: collapse;
-  margin: 0.75rem 0;
-  width: 100%;
-}
-
-.wiki-content th, .wiki-content td {
-  border: 1px solid #999;
-  padding: 0.25rem 0.5rem;
-  text-align: left;
-}
-
-.wiki-content th {
-  background: #eee;
-  font-weight: bold;
-}
-
-.wiki-content code {
-  background: #f0f0f0;
-  padding: 0.1rem 0.3rem;
-  font-size: 0.9em;
-}
-
-.wiki-content pre {
-  background: #f0f0f0;
-  padding: 0.75rem;
-  overflow-x: auto;
-  margin: 0.75rem 0;
-}
-
-.wiki-content pre code {
-  background: none;
-  padding: 0;
-}
-
-.wiki-content hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 1rem 0;
-}
-
-.wiki-content strong {
-  font-weight: bold;
-}
-
-/* Status badges */
-.badge {
+/* ---------- Topic tags ---------- */
+.topic-tag {
   display: inline-block;
-  padding: 0.1rem 0.4rem;
-  font-size: 0.75rem;
-  font-weight: bold;
+  font-family: var(--serif-display);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  border: 1px solid;
+  color: var(--accent);
+}
+.topic-tag + .topic-tag { margin-left: 0.7rem; }
+
+/* ---------- Shell / layout helpers ---------- */
+.shell { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+.shell-narrow { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+.rule { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+/* ---------- Bulleted editorial list (rhombus marker) ---------- */
+.ed-list { margin: 0; padding: 0; list-style: none; }
+.ed-list li { position: relative; padding-left: 1rem; margin: 0 0 0.7rem; line-height: 1.5; }
+.ed-list li::before {
+  content: ""; position: absolute; left: 0; top: 0.6em;
+  width: 6px; height: 6px; background: var(--accent); transform: rotate(45deg);
 }
 
-.badge-rejected {
-  color: #991b1b;
-  border-color: #991b1b;
-  background: #fee2e2;
-}
+/* ============================================================
+   Wiki / markdown content — serif editorial reading column
+   ============================================================ */
+.wiki-content { font-size: 18px; line-height: 1.7; }
+.wiki-content h1 { font-family: var(--serif-display); font-weight: 560; font-size: 2rem; line-height: 1.12; margin: 2rem 0 0.75rem; }
+.wiki-content h2 { font-family: var(--serif-display); font-weight: 560; font-size: 1.5rem; line-height: 1.18; margin: 2rem 0 0.6rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); }
+.wiki-content h3 { font-family: var(--serif-display); font-weight: 600; font-size: 1.2rem; margin: 1.5rem 0 0.4rem; }
+.wiki-content p { margin: 0.85rem 0; }
+.wiki-content ul, .wiki-content ol { margin: 0.85rem 0; padding-left: 1.4rem; }
+.wiki-content li { margin: 0.3rem 0; }
+.wiki-content ul li { list-style-type: disc; }
+.wiki-content ol li { list-style-type: decimal; }
+.wiki-content blockquote { border-left: 3px solid var(--accent); padding: 0.1rem 0 0.1rem 1rem; margin: 1.1rem 0; color: var(--ink-soft); font-style: italic; }
+.wiki-content table { border-collapse: collapse; margin: 1.1rem 0; width: 100%; font-size: 0.95rem; }
+.wiki-content th, .wiki-content td { border: 1px solid var(--rule); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+.wiki-content th { background: var(--paper-deep); font-weight: 600; }
+.wiki-content code { background: var(--paper-deep); padding: 0.1rem 0.3rem; font-size: 0.88em; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+.wiki-content pre { background: var(--civic-deep); color: #e8e3d6; padding: 1rem; overflow-x: auto; margin: 1.1rem 0; }
+.wiki-content pre code { background: none; padding: 0; color: inherit; }
+.wiki-content hr { border: none; border-top: 1px solid var(--rule); margin: 1.6rem 0; }
+.wiki-content strong { font-weight: 600; }
+.wiki-content a { color: var(--civic); text-decoration: underline; text-underline-offset: 2px; text-decoration-color: #1f3a4d55; }
 
-.badge-pending {
-  color: #92400e;
-  border-color: #92400e;
-  background: #fef3c7;
-}
+/* ============================================================
+   Status badges (restyled, kept for compatibility)
+   ============================================================ */
+.badge { display: inline-block; padding: 0.12rem 0.5rem; font-family: var(--serif-display); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid; }
+.badge-rejected { color: #8f3320; border-color: #8f3320; background: #b1432a14; }
+.badge-pending  { color: #8a5a16; border-color: #8a5a16; background: #f3e6c8; }
+.badge-active   { color: #1f3a4d; border-color: #1f3a4d; background: #1f3a4d12; }
+.badge-open     { color: #1f3a4d; border-color: #1f3a4d; background: #1f3a4d12; }
 
-.badge-active {
-  color: #065f46;
-  border-color: #065f46;
-  background: #d1fae5;
-}
+/* ============================================================
+   Vote buttons (restyled)
+   ============================================================ */
+.vote-btn { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.2rem 0.6rem; border: 1px solid var(--rule); background: var(--paper-card); color: var(--ink); cursor: pointer; font-family: var(--serif-body); font-size: 0.95rem; }
+.vote-btn:hover { background: var(--paper-deep); }
+.vote-btn.active-up   { background: #1f3a4d12; border-color: var(--civic); }
+.vote-btn.active-down { background: #b1432a14; border-color: var(--accent); }
 
-.badge-open {
-  color: #1e40af;
-  border-color: #1e40af;
-  background: #dbeafe;
-}
+/* ============================================================
+   Site header (editorial masthead)
+   ============================================================ */
+.mast { background: var(--paper); border-bottom: 2px solid var(--ink); }
+.mast-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.9rem 0; }
+.mast-mark { font-family: var(--serif-display); font-weight: 600; font-size: 1.45rem; line-height: 1; letter-spacing: -0.01em; color: var(--ink); display: inline-flex; align-items: center; gap: 0.5rem; }
+.mast-mark:hover { text-decoration: none; }
+.mast-mark .gem { color: var(--accent); }
+.mast-account { font-size: 0.85rem; color: var(--ink-soft); }
+.mast-account a, .mast-account button { color: var(--civic); }
 
-/* Vote buttons */
-.vote-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  padding: 0.15rem 0.5rem;
-  border: 1px solid #999;
-  background: white;
-  color: black;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 1rem;
-}
+.channel-nav { background: var(--civic-deep); }
+.channel-nav-inner { display: flex; flex-wrap: wrap; gap: 0.4rem 1.6rem; padding: 0.55rem 0; }
+.channel-nav a { font-family: var(--serif-display); font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #d7d0c0; white-space: nowrap; }
+.channel-nav a:hover { color: #fff; text-decoration: none; }
 
-.vote-btn:hover {
-  background: #f0f0f0;
-}
+/* ============================================================
+   Site footer
+   ============================================================ */
+.site-foot { margin-top: 4rem; background: var(--civic-deep); color: #c6c0b1; }
+.site-foot-inner { padding: 3rem 0 3.5rem; font-size: 0.95rem; line-height: 1.6; }
+.site-foot a { color: #e3b39c; }
+.site-foot .foot-notice { font-family: var(--serif-display); font-size: 1rem; color: #ece7da; padding-bottom: 1.3rem; margin-bottom: 1.3rem; border-bottom: 1px solid #2f4150; }
+.site-foot .dot { color: var(--accent); }
 
-.vote-btn.active-up {
-  background: #d1fae5;
-  border-color: #065f46;
-}
-
-.vote-btn.active-down {
-  background: #fee2e2;
-  border-color: #991b1b;
-}
-
-/* Grid layout */
-.home-grid {
+/* ============================================================
+   Thread cards
+   ============================================================ */
+.thread-card--featured {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Nav */
-nav a {
-  margin-right: 1rem;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Section headers */
-.section-header {
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-bottom: 1px solid black;
-  padding-bottom: 0.25rem;
-  margin-bottom: 0.75rem;
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 860px) {
+  body { font-size: 17px; }
+  .shell, .shell-narrow { padding: 0 20px; }
+  .hero-grid,
+  .thread-grid,
+  .timeline-grid,
+  .latest-grid { grid-template-columns: 1fr !important; }
+  .thread-card--featured { grid-template-columns: 1fr; gap: 0; align-items: stretch; }
 }
