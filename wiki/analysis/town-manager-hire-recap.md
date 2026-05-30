@@ -38,7 +38,7 @@ The contract pays about **$72.50 an hour**, on the order of **$140,000 to $150,0
 
 ## The "democracy" moment
 
-When his record came up, Sund confirmed he once told a city finance director, "this is not a democracy," explaining it as direction from that board about who makes decisions. Minutes earlier, a former Paonia mayor told the Board from the floor, "we are a republic… so we are not a democracy." A town government is, in fact, a democratic institution, and how the people who run it talk about that is worth noticing. More: [[interim-tm-candidate-greg-sund|the analysis]].
+When his record came up, Sund confirmed he once told a city finance director, "this is not a democracy," explaining it as direction from that board about who makes decisions. Minutes later, a former Paonia mayor told the Board from the floor, "we are a republic… so we are not a democracy." A town government is, in fact, a democratic institution, and how the people who run it talk about that is worth noticing. More: [[interim-tm-candidate-greg-sund|the analysis]].
 
 ## What actually happened: no hire (yet)
 
