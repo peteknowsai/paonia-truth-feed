@@ -3,13 +3,13 @@ title: "They Knew It Was McCarthy — Then Called Him “Anonymous”"
 type: analysis
 created: 2026-05-30
 updated: 2026-05-30
-tags: [flyer, cora, m365-audit-log, anonymous-author, naming, board, analysis]
+tags: [flyer, cora, m365-audit-log, anonymous-author, naming, mayor, board, analysis]
 sources: [board-letter-2026-03-30, ten-things-flyer]
 ---
 
 # They Knew It Was McCarthy — Then Called Him "Anonymous"
 
-The [[board-letter-2026-03-30|Board's March 30 response letter]] characterized the author of the [[ten-things-flyer|"10 Things" flyer]] as anonymous. The Town's own Microsoft 365 unified audit log — which the Town produced under CORA matter C-26-12 — records internal communications that named McCarthy as the author days earlier. This page sets the records side by side, in order.
+The Mayor's report for the March 30 special meeting characterized the author of the [[ten-things-flyer|"10 Things" flyer]] as anonymous; the Board's published [[board-letter-2026-03-30|March 30 response letter]] then adopted that framing. The Town's own Microsoft 365 unified audit log — which the Town produced under CORA matter C-26-12 — records internal communications that named McCarthy as the author days earlier. This page sets the records side by side, in order.
 
 A note on sourcing: the timeline below rests on the email, calendar, and Microsoft Planner **subjects and timestamps** recorded in the audit log. The audit log captures mailbox, operation, timestamp, and subject; it does not record message recipients, and it does not contain the message bodies. The bodies, attachments, and full headers have not been produced. A pending CORA request for the response-letter drafting records ([[cora-tracking-log|C 26-25]]) seeks part of this material; the bodies behind the naming subjects below remain unproduced. Where a finding rests on a subject line rather than a produced body, that is noted.
 

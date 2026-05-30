@@ -123,15 +123,25 @@ export const threads: Thread[] = [
   },
   {
     id: "initiatives",
-    topic: "Initiatives & the Flyer",
-    title: "Four Rejected Initiatives — and a Flyer They Called “Anonymous”",
+    topic: "Citizen Initiatives",
+    title: "Four Initiatives, Four Rejections",
     dek:
-      "Four citizen initiatives rejected on shifting legal theories — and a fact-based flyer the Town privately knew was McCarthy’s, six days before its official report called the author “anonymous.”",
+      "The Town Clerk rejected four citizen ballot initiatives on the same recycled theory — a form-review power that does not reach subject matter.",
     summary:
-      "Across two subjects, the Clerk rejected four citizen ballot initiatives, each recycling the objection that the measure was “administrative, not legislative” — the last rejection carrying a copy-paste error that named the wrong initiative. Meanwhile a citizen's March 2026 flyer, “10 Things Paonia Should Know About Its Town Administrator” (“All facts from public records”), drew a special meeting within a week, where the Mayor's report called it “libelous” and proposed taxpayer-funded newspaper ads. A side-by-side analysis found the Board disputed none of the flyer's underlying cited facts. The Town's own Microsoft 365 records named the author while the flyer was still circulating — an internal email titled “Being Handed Out In Town by McCarthy” and a Planner task “C 26-11 McCarthy -Flyer” — six days before the Mayor's report called the author “anonymous.” A petition for judicial review of the rejections has been drafted.",
+      "Across two subjects, the Town Clerk rejected four citizen ballot initiatives, each recycling the objection that the measure was “administrative, not legislative” — the last rejection carrying a copy-paste error that named the wrong initiative. The Clerk's review under C.R.S. § 31-11-106 is limited to a petition's form; rejecting a measure on its subject matter exceeds that authority, and the controlling Colorado Supreme Court cases (Zwerdlinger; Vagneur) cut against the Town's theory. A petition for judicial review of the rejections has been drafted.",
+    pageSlugs: ["initiative-process", "samira-vetter"],
+  },
+  {
+    id: "flyer",
+    topic: "The Flyer",
+    title: "They Knew It Was McCarthy — Then Called Him “Anonymous”",
+    dek:
+      "A fact-based citizen flyer drew a special meeting in a week, where the Mayor's report called it “libelous” and its author “anonymous” — though the Town's own records had already named him.",
+    summary:
+      "A citizen's March 2026 flyer, “10 Things Paonia Should Know About Its Town Administrator” (“All facts from public records”), drew a special meeting within a week. The Mayor's report for that meeting called the flyer “libelous,” referred to its author as “anonymous,” and the Board weighed taxpayer-funded newspaper ads to rebut it — yet the Town's own Microsoft 365 records had named the author days earlier, in an internal email titled “Being Handed Out In Town by McCarthy” and a Planner task “C 26-11 McCarthy -Flyer.” A side-by-side analysis found the Board disputed none of the flyer's underlying cited facts.",
     image: "/img/story/initiatives.png",
     imageAlt: "A citizen flyer stapled to a public bulletin board.",
-    pageSlugs: ["they-knew-it-was-mccarthy", "initiative-process", "what-the-board-did-not-dispute", "ten-things-flyer", "2026-03-30-special-meeting"],
+    pageSlugs: ["they-knew-it-was-mccarthy", "what-the-board-did-not-dispute", "ten-things-flyer", "2026-03-30-special-meeting", "mayor-smith"],
   },
 ];
 

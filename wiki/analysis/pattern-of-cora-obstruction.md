@@ -109,7 +109,7 @@ The custodian's on-record position made the dodge explicit: the Town declined to
 
 ## An Adjacent Failure — Who They Said the Flyer Was About
 
-A separate transparency problem sits alongside these CORA responses. In its public March 30 letter the Board described the flyer at issue without naming its author, while the Town's internal records — recovered in the C 26-12 cure subject lines and elsewhere — show officials had identified Pete by name internally. The public framing and the internal record do not match. That contradiction is documented at [[they-knew-it-was-mccarthy]] and is relevant here only as context: the same custodial process that controlled what the CORA productions disclosed also controlled what the public letter disclosed.
+A separate transparency problem sits alongside these CORA responses. The Mayor's report for the March 30 special meeting described the flyer's author as anonymous, and the Board's public March 30 letter adopted that framing — while the Town's internal records — recovered in the C 26-12 cure subject lines and elsewhere — show officials had identified Pete by name internally. The public framing and the internal record do not match. That contradiction is documented at [[they-knew-it-was-mccarthy]] and is relevant here only as context: the same custodial process that controlled what the CORA productions disclosed also controlled what the public letter disclosed.
 
 ## The Extension Pattern
 

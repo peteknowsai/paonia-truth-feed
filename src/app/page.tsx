@@ -108,7 +108,7 @@ export default function HomePage() {
       <div className="shell">
         {/* ===================== THREADS ===================== */}
         <section style={{ ...sectionStyle, marginTop: "3rem" }}>
-          <p className="section-label">The Story So Far · Five Threads</p>
+          <p className="section-label">The Story So Far · Six Threads</p>
           <div className="thread-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "1.5rem" }}>
             <ThreadCard thread={threads[0]} featured />
             {threads.slice(1).map((t) => (

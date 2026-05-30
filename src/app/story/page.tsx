@@ -196,12 +196,12 @@ export default function StoryPage() {
         over a mislabeled file, and cap the export at the system&apos;s row limit.
       </p>
 
-      {/* ===== 5. Initiatives & Flyer ===== */}
-      <SectionHead num="05" topic="Initiatives & the Flyer" id="initiatives" title="Four Rejections and a Five-Day Response" imageId="initiatives" />
+      {/* ===== 5. Initiatives (Clerk) ===== */}
+      <SectionHead num="05" topic="Citizen Initiatives" id="initiatives" title="Four Initiatives, Four Rejections" imageId="initiatives" />
       <p>
         When residents tried to legislate directly, the door closed there too.
-        Across two subjects — short-term rentals and surveillance — the Clerk
-        rejected{" "}
+        Across two subjects — short-term rentals and surveillance — the Town
+        Clerk rejected{" "}
         <Link href={href("initiative-process")}>
           four citizen ballot initiatives
         </Link>
@@ -210,28 +210,49 @@ export default function StoryPage() {
         carried a copy-paste error that named the wrong initiative.
       </p>
       <p>
-        The contrast in tempo is the tell. A citizen&apos;s March 2026 flyer —{" "}
+        The Clerk&apos;s authority here is narrow. Under C.R.S. § 31-11-106 the
+        review is limited to a petition&apos;s <em>form</em>; rejecting a measure
+        on its subject matter steps beyond that power, and the controlling
+        Colorado Supreme Court cases — Zwerdlinger and Vagneur — cut against the
+        Town&apos;s theory. A petition asking a Delta County court to review the
+        rejections has been drafted. The question it raises is simple: when a
+        clerk can keep redefining what counts as &ldquo;legislative,&rdquo; what
+        is left of the citizen&apos;s right to petition?
+      </p>
+
+      {/* ===== 6. The Flyer (Mayor) ===== */}
+      <SectionHead num="06" topic="The Flyer" id="flyer" title="They Knew It Was McCarthy — Then Called Him “Anonymous”" imageId="flyer" />
+      <p>
+        In March 2026 a citizen flyer —{" "}
         <Link href={href("ten-things-flyer")}>
           &ldquo;10 Things Paonia Should Know About Its Town Administrator&rdquo;
         </Link>
         , captioned &ldquo;All facts from public records&rdquo; — drew a special
-        meeting within five days, where the Mayor&apos;s report called it
-        &ldquo;libelous&rdquo; and floated taxpayer-funded newspaper ads in
-        response. The Board voted to publish its rebuttal. Yet a careful{" "}
+        meeting within a week. The Mayor&apos;s report for that meeting called the
+        flyer &ldquo;libelous&rdquo; and floated taxpayer-funded newspaper ads in
+        response; the Board voted to publish a rebuttal. Yet a careful{" "}
         <Link href={href("what-the-board-did-not-dispute")}>
           side-by-side review
         </Link>{" "}
         found the Board disputed none of the flyer&apos;s underlying, cited facts.
       </p>
+      <Pull>They had his name six days before they called the author &ldquo;anonymous.&rdquo;</Pull>
       <p>
-        A petition asking a Delta County court to review the initiative rejections
-        has been drafted. The legal question it raises is simple: when a clerk can
-        keep redefining what counts as &ldquo;legislative,&rdquo; what is left of
-        the citizen&apos;s right to petition?
+        The report described the flyer&apos;s author as &ldquo;anonymous.&rdquo;
+        But the Town&apos;s own Microsoft 365 records — produced later under a
+        records request — show it already knew. By March 24, an internal email
+        titled &ldquo;Being Handed Out In Town by McCarthy&rdquo; had reached Town
+        leadership, and the Clerk&apos;s office had opened a Microsoft Planner task
+        titled &ldquo;C 26-11 McCarthy -Flyer.&rdquo; The &ldquo;anonymous&rdquo;
+        framing in the Mayor&apos;s March 30 report is{" "}
+        <Link href={href("they-knew-it-was-mccarthy")}>
+          contradicted by the Town&apos;s own records
+        </Link>
+        .
       </p>
 
       {/* ===== Epilogue ===== */}
-      <SectionHead num="06" topic="What Comes Next" id="next" title="A Different Kind of Search" imageId="administrator" />
+      <SectionHead num="07" topic="What Comes Next" id="next" title="A Different Kind of Search" imageId="administrator" />
       <p>
         The nonrenewal is not the end of the story so much as its hinge. The Town
         now has to hire its most powerful unelected official again — and how it
