@@ -2,9 +2,9 @@
 title: Pattern of Retaliation
 type: analysis
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-05-30
 tags: [retaliation, pattern, wynn, vetter, smith, surveillance, verkada]
-sources: [board-letter-2026-03-30, cora-c26-09-verkada-audit-logs, verkada-usage-patterns, meeting-2024-11-04, meeting-2024-11-12, meeting-2024-11-20, meeting-2024-12-02, neptune-beach-case]
+sources: [board-letter-2026-03-30, cora-c26-09-verkada-audit-logs, verkada-usage-patterns, meeting-2024-11-04, meeting-2024-11-12, meeting-2024-11-20, meeting-2024-12-02, neptune-beach-case, the-case-against-the-critic, inbox-rules-investigation-closed]
 ---
 
 # Pattern of Retaliation
@@ -70,6 +70,16 @@ This page synthesizes across primary sources. Each claim is cited. The list is c
 
 - On 2025-12-19 at 3:33 PM MST, [[ruben-santiago|Ruben Santiago]] created a permanent archive on TOP-HALL-CAM02 labeled **"Suzie Kaldis incident - 12/19/2025."** [[cora-c26-09-verkada-audit-logs|source]]
 - The nature of the "incident" and the relationship of Suzie Kaldis to the Town are not yet documented in the public record.
+
+## The 2026 Arc: Building a Case Against the Flyer's Author
+
+In late March 2026 a sourced flyer naming concerns about Town governance circulated in Paonia. Its author was [[the-case-against-the-critic|McCarthy]], the same person in case 2 above and an already-named, tracked CORA requester. [[they-knew-it-was-mccarthy|source]] What the Town's Microsoft 365 unified audit log records over the following weeks is a sequence of email and calendar items whose **subject lines** relabel the flyer, and an associated rally, as a question of threat, safety, bullying, and litigation.
+
+- Items in [[stefen-wynn|Wynn]]'s mailbox carry subjects moving from "safety" (Mar 12) to "CRCP 106 - Threatened Litigation" (Apr 2) to two "Threat of Litigation" items (Apr 7) to "Angry emails, maybe a threat?" (Apr 20). [[the-case-against-the-critic|source]]
+- Two threads sit in **Police Department** mailboxes rather than administrative or legal ones, placing a political flyer and a political rally inside a law-enforcement frame: a Chief–Officer thread characterizing social-media activity as "bullying and harassment" ahead of an expected crowd for the rally, and a thread framed around the rally, "Fear for Safety," and flyers posted "with my Image." [[the-case-against-the-critic|source]]
+- On the evening of Apr 8, two calendar invites were created minutes apart — an "Attorney Performance Appraisal review" and "Discuss Citizen Complaints re: Administrator," the latter being the only subject appearing jointly in Trustee [[lucy-hunter|Lucy Hunter]]'s, Wynn's, and the Town attorney's mailboxes. [[the-case-against-the-critic|source]]
+
+These are subject lines, timestamps, mailboxes, and operations — not produced message bodies. The log does not contain the bodies, so this establishes how the matter was *labeled* internally, not what was said inside or whether any conduct described amounted to a genuine threat. The bodies are the subject of pending requests (CORA C 26-28 to the Clerk and a CCJRA request to the Police Department). The full chronology, with its guardrails, is in [[the-case-against-the-critic]].
 
 ## The Verkada Infrastructure as Part of the Pattern
 
@@ -139,6 +149,10 @@ Seven documented cases across 19 months. The same senior officials appear in mul
 - What the Town Attorney [[clayton-buchner|Clayton Buchner]] was advised regarding the personnel file backdating in case 4
 - Whether the Board has received written notice of cases 5, 6, or 7 and declined to investigate
 
+## A Line of Inquiry That Did Not Hold
+
+For accuracy: an earlier theory treated large `UpdateInboxRules` bursts in [[stefen-wynn|Wynn]]'s Microsoft 365 mailbox — including a cluster on April 3, 2026, the first business day after the Board's March 30 letter — as possible mail suppression. The C 26-12 cure, produced May 27, 2026, delivered the full audit set (about 1.13 million rows) with the `AuditData` column un-redacted, and the theory did not survive it. The bursts are `ModifyMailboxRule` re-syncs from Wynn's own logged-in Outlook desktop client, the blank rule bodies are native M365 behavior rather than a Town redaction, every fully logged rule is an ordinary move-to-folder rule, and every forwarding target is an internal `@townofpaonia.com` address. The inbox-rule activity is benign and is **not** evidence of hidden or suppressed mail. This page does not rely on it. The full closeout is in [[inbox-rules-investigation-closed]].
+
 ## Related Litigation
 
 - **Brunner v. Town of Paonia** (Delta County District Court). Case 1 removal challenge. Active.
@@ -157,4 +171,7 @@ Seven documented cases across 19 months. The same senior officials appear in mul
 - [[cora-c26-09-verkada-audit-logs]]
 - [[verkada-usage-patterns]]
 - [[the-brunner-standard]]
+- [[the-case-against-the-critic]]
+- [[inbox-rules-investigation-closed]]
+- [[lucy-hunter]]
 - [[retaliation-pattern]] (short-form version in issues/)

@@ -2,9 +2,9 @@
 title: Master Timeline
 type: analysis
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-05-30
 tags: [timeline, overview]
-sources: [board-letter-2026-03-30, reporter-package-email-coverup, neptune-beach-case, meeting-2024-11-04, meeting-2024-11-20, meeting-2024-12-02, retraction-demand-2026-03-31, rejection-response-to-vetter]
+sources: [board-letter-2026-03-30, reporter-package-email-coverup, neptune-beach-case, meeting-2024-11-04, meeting-2024-11-20, meeting-2024-12-02, retraction-demand-2026-03-31, rejection-response-to-vetter, cora-c26-12-m365-audit-logs-response, cora-c26-11-libelous-communications-response]
 ---
 
 # Master Timeline
@@ -75,7 +75,9 @@ Every dated event from the wiki, in chronological order. Sources linked for each
 ## 2026 (March): The Flyer and Escalation
 
 - **~2026-03**: Town Attorney [[clayton-buchner|Buchner]]'s detailed legal analysis of the STR initiative, which existed at the time of rejection (May 2025), is released publicly. Nearly 10 months late. [[board-letter-2026-03-30|source]]
-- **2026-03-25**: Pete distributes "10 Things Paonia Should Know About Its Town Administrator" flyer. Every claim cited from public records. [[2026-03-25-ten-things-flyer|event]]
+- **2026-03-23**: The "10 Things Paonia Should Know About Its Town Administrator" flyer is created. The flyer PDF carries a CreationDate of March 23, 2026 in its metadata. The flyer carries McCarthy's name; every claim is cited to a public record. [[2026-03-25-ten-things-flyer|event]]
+- **2026-03-24, 11:07 AM MDT**: The Town's own records internally name McCarthy as the flyer's author. An email originating in the Deputy Clerk's mailbox carries the subject "Being Handed Out In Town by McCarthy"; the M365 audit log records the thread reaching leadership and trustee mailboxes within roughly the following hour. This is the earliest dated record in the set identifying the author, and it predates the Board's March 30 "anonymous author" characterization by six days. The finding rests on the audit-log subject line and timestamps; the message body is the subject of a pending records request. [[they-knew-it-was-mccarthy|source]]
+- **2026-03-25**: Pete distributes the "10 Things" flyer. [[2026-03-25-ten-things-flyer|event]]
 - **2026-03-26**: [[lucy-hunter|Trustee Hunter]] posts unsigned counter-flyer throughout town. Coordinated with Wynn ("to ensure her flyer content was 100% accurate") and Buchner. [[mayor-report-agenda-packet|source]]
 - **2026-03-27**: Pete submits citizen initiative petition to ban surveillance cameras on public property.
 - **2026-03-30**: Board holds special meeting to approve official response. Mayor's report calls flyer "libelous." Proposes taxpayer-funded display ads in three newspapers. Board votes 5-1 to publish. [[2026-03-30-special-meeting|event]]
@@ -92,6 +94,15 @@ Every dated event from the wiki, in chronological order. Sources linked for each
 - **2026-04-06**: Pete files CORA request for all communications about the "libelous" characterization, all drafts of the board's response, and all legal advice from Buchner on the use of "libelous." [[cora-libelous-communications|source]]
 - **2026-04-06**: Pete resubmits revised, narrowed surveillance initiative with disputed provisions removed. Three split single-subject initiatives prepared. Rule 106 petition drafted. [[v5-cover-letter|source]] [[split-initiatives|source]] [[rule-106-petition-draft|source]]
 - **2026-04-07**: Election day.
+
+## 2026 (May): CORA Productions and the Naming Record
+
+- **2026-05-08**: The Town produces Wynn's November 4, 2024 outbound emails (CORA C 26-15) as a 165-page PDF. Several outbound messages are produced without their "Sent:" timestamp; PDF metadata shows the file was assembled in Microsoft Word. [[cora-c26-15-wynn-sent-emails-nov4-2024|source]]
+- **2026-05-26**: Deputy Clerk [[ruben-santiago|Santiago]]'s response to the Finance Committee records request (CORA C 26-23) redirects to Board-packet payment-approval reports and produces no minutes, agendas, sign-in sheets, or logs, and no § 24-72-204(3) non-existence certification. On May 27 [[samira-vetter|Vetter]] states on the record, "I don't believe it is written down anywhere." Closed without addressing five of six requested categories. [[cora-c26-23-finance-committee-records|source]]
+- **2026-05-27**: The Town delivers the **C 26-12 cure** — the corrected M365 unified audit-log production. The cure cover letter admits four monthly exports had been missing from the April production, narrows the AuditData redactions from a 100% column-wide blanket to technical identifiers, and waives any additional charge. The cure data (retrieved and analyzed May 29) totals 10 uncapped CSVs, roughly 1.13 million rows, with AuditData largely un-redacted. The logged inbox-rule activity is benign: the bursts are `ModifyMailboxRule` resyncs for which Microsoft records no rule body, and every logged rule action is a move-to-folder with internal-only forwarding — no suppression mechanism appears in the data. The live question is now the scope and legality of the remaining redactions. [[cora-c26-12-cure-response|source]] [[redaction-audit-c26-12-cure|source]] [[inbox-rules-investigation-closed|source]]
+- **2026-05-27**: The Town produces native `.eml` files for the Nov 4, 2024 Wynn emails (CORA C 26-21, follow-up to C 26-15). Timestamps are recovered for two of the four targeted emails; the other two productions are wrong-direction substitutions (inbound messages tagged `MessageDirectionality: Incoming`). [[cora-c26-21-wynn-eml-native-files|source]]
+- **2026-05-28**: Pete files a CORA request for communications regarding Town Administrator [[stefen-wynn|Wynn]]'s non-renewal, communications with former Mayor Mary Bachran, and related executive-session records (period May 1–27, 2026). Acknowledged by Vetter May 29; stated deadline June 3. A parallel CCJRA request for police records concerning Wynn is filed the same day.
+- **2026-05-29 to 2026-05-30**: A batch of records requests built from the C 26-12 audit-log subjects is sent: the flyer response-letter drafting records (the Mayor's "I need comments /no later than 2:00" thread, the draft Mayor's report, the "Revised Letter to Citizens" with retained drafts); the special-meeting / Planner-task / flyer-"safety" thread (including the internal Microsoft Planner task titled "C 26-11 McCarthy -Flyer"); a Verkada audit-log continuation; and Wynn-authored "threat/safety" communications. The "C 26-11 McCarthy -Flyer" task title is a second internal record naming McCarthy as the flyer's author. [[they-knew-it-was-mccarthy|source]] [[the-case-against-the-critic|source]]
 
 ## Pending
 

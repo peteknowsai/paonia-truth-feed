@@ -92,10 +92,10 @@ export const threads: Thread[] = [
     dek:
       "Four people in four different roles raised concerns. Each was removed, resigned, or terminated.",
     summary:
-      "Bill Brunner, elected trustee in April 2024 with 67.7% of the vote, began exercising oversight and was removed 4–1 in August 2024 after Wynn submitted a resignation contingent on Brunner's removal. Planning commissioner Pete McCarthy filed a formal complaint in November 2024 and got zero replies, then resigned. Public Works Director Cory Heiniger resigned with accusations the Board did not investigate. Deputy Treasurer Kaja Bowman asked the Mayor about the complaint process in September 2025; the Mayor disclosed her name to Wynn, and Bowman was terminated 23 days later.",
+      "Bill Brunner, elected trustee in April 2024 with 67.7% of the vote, began exercising oversight and was removed 4–1 in August 2024 after Wynn submitted a resignation contingent on Brunner's removal. Planning commissioner Pete McCarthy filed a formal complaint in November 2024 and got zero replies, then resigned. Public Works Director Cory Heiniger resigned with accusations the Board did not investigate. Deputy Treasurer Kaja Bowman asked the Mayor about the complaint process in September 2025; the Mayor disclosed her name to Wynn, and Bowman was terminated 23 days later. In 2026 the same instinct turned outward: after a citizen's sourced flyer, the record shows officials assembling a “threat,” “safety,” and “litigation” narrative around its author.",
     image: "/img/story/retaliation.png",
     imageAlt: "Four chairs around a table, one tipped over and removed.",
-    pageSlugs: ["retaliation-pattern", "board-oversight", "bill-brunner", "kaja-bowman"],
+    pageSlugs: ["retaliation-pattern", "the-case-against-the-critic", "board-oversight", "bill-brunner", "kaja-bowman"],
   },
   {
     id: "surveillance",
@@ -116,22 +116,22 @@ export const threads: Thread[] = [
     dek:
       "A documented pattern of records obstruction — against a Town a judge had already found to have acted in CORA bad faith.",
     summary:
-      "A Delta County district judge found in the Brunner case that the Town “failed to exercise reasonable diligence or reasonable inquiry” and ordered it to pay his legal costs. In 2024 the Clerk denied a request for Microsoft 365 audit logs as “not in the Town's custody”; the Colorado Freedom of Information Coalition later confirmed the denial was improper, but the records were never produced and have aged out of retention. Three 2026 records responses show a repeating method: redact the substantive column, withhold records as nonexistent, deliver a mislabeled file, and cap exports at the system's row limit.",
+      "A Delta County district judge found in the Brunner case that the Town “failed to exercise reasonable diligence or reasonable inquiry” and ordered it to pay his legal costs. In 2024 the Clerk denied a request for Microsoft 365 audit logs as “not in the Town's custody”; the Colorado Freedom of Information Coalition later confirmed the denial was improper, but the records were never produced and have aged out of retention. Three 2026 records responses show a repeating method: redact the substantive column, withhold records as nonexistent, deliver a mislabeled file, and cap exports at the system's row limit. Ordered to cure the worst of it, the Town admitted four missing exports and released 1.13 million previously withheld rows — then redacted millions of values it has not justified under the records law.",
     image: "/img/story/records.png",
     imageAlt: "A stack of public documents with heavy black redaction bars.",
-    pageSlugs: ["public-records-access", "pattern-of-cora-obstruction", "samira-vetter"],
+    pageSlugs: ["public-records-access", "pattern-of-cora-obstruction", "redaction-audit-c26-12-cure", "samira-vetter"],
   },
   {
     id: "initiatives",
     topic: "Initiatives & the Flyer",
-    title: "Four Rejections and a Five-Day Response",
+    title: "Four Rejected Initiatives — and a Flyer They Called “Anonymous”",
     dek:
-      "Four citizen initiatives rejected on shifting legal theories — while a single flyer drew a special meeting within five days.",
+      "Four citizen initiatives rejected on shifting legal theories — and a fact-based flyer the Town privately knew was McCarthy’s, six days before its official report called the author “anonymous.”",
     summary:
-      "Across two subjects, the Clerk rejected four citizen ballot initiatives, each recycling the objection that the measure was “administrative, not legislative” — the last rejection carrying a copy-paste error that named the wrong initiative. Meanwhile a citizen's March 2026 flyer, “10 Things Paonia Should Know About Its Town Administrator” (“All facts from public records”), drew a special meeting within five days, where the Mayor's report called it “libelous” and proposed taxpayer-funded newspaper ads. A side-by-side analysis found the Board disputed none of the flyer's underlying cited facts. A petition for judicial review of the rejections has been drafted.",
+      "Across two subjects, the Clerk rejected four citizen ballot initiatives, each recycling the objection that the measure was “administrative, not legislative” — the last rejection carrying a copy-paste error that named the wrong initiative. Meanwhile a citizen's March 2026 flyer, “10 Things Paonia Should Know About Its Town Administrator” (“All facts from public records”), drew a special meeting within a week, where the Mayor's report called it “libelous” and proposed taxpayer-funded newspaper ads. A side-by-side analysis found the Board disputed none of the flyer's underlying cited facts. The Town's own Microsoft 365 records named the author while the flyer was still circulating — an internal email titled “Being Handed Out In Town by McCarthy” and a Planner task “C 26-11 McCarthy -Flyer” — six days before the Mayor's report called the author “anonymous.” A petition for judicial review of the rejections has been drafted.",
     image: "/img/story/initiatives.png",
     imageAlt: "A citizen flyer stapled to a public bulletin board.",
-    pageSlugs: ["initiative-process", "what-the-board-did-not-dispute", "ten-things-flyer", "2026-03-30-special-meeting"],
+    pageSlugs: ["they-knew-it-was-mccarthy", "initiative-process", "what-the-board-did-not-dispute", "ten-things-flyer", "2026-03-30-special-meeting"],
   },
 ];
 
@@ -150,8 +150,9 @@ export const timeline: TimelineEntry[] = [
   { date: "2025-08-12", label: "Board approves the Verkada camera system; zero public comment", slug: "surveillance" },
   { date: "2025-10-09", label: "Deputy Treasurer Bowman terminated, 23 days after her inquiry", slug: "kaja-bowman" },
   { date: "2025-10-22", label: "Verkada cameras installed across Town facilities", slug: "surveillance" },
-  { date: "2026-03-25", label: "Citizen distributes the “10 Things” flyer", slug: "ten-things-flyer" },
-  { date: "2026-03-30", label: "Special meeting; Mayor's report calls the flyer “libelous”", slug: "what-the-board-did-not-dispute" },
+  { date: "2026-03-24", label: "The “10 Things” flyer is circulating in town", slug: "ten-things-flyer" },
+  { date: "2026-03-24", label: "Town records already name McCarthy as the flyer's author — 11:07 AM", slug: "they-knew-it-was-mccarthy" },
+  { date: "2026-03-30", label: "Special meeting; Mayor's report calls the flyer “libelous,” its author “anonymous”", slug: "what-the-board-did-not-dispute" },
   { date: "2026-04-27", label: "Fourth citizen initiative rejected on a new legal theory", slug: "initiative-process" },
   { date: "2026-05-22", label: "Special meeting on Wynn's nonrenewal and the replacement search", slug: "admin-search" },
 ];
