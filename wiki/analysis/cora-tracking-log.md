@@ -2,7 +2,7 @@
 title: CORA Request Tracking Log
 type: analysis
 created: 2026-04-09
-updated: 2026-05-08
+updated: 2026-05-30
 tags: [cora, transparency, public-records, vetter, tracking, log]
 sources: [reporter-package-email-coverup, cora-libelous-communications, cora-c26-09-verkada-audit-logs, cora-c26-11-libelous-communications-response, cora-c26-12-m365-audit-logs-response, cora-c26-15-wynn-sent-emails-nov4-2024, pattern-of-cora-obstruction, board-letter-2026-03-30]
 ---
@@ -13,7 +13,7 @@ A running record of every Colorado Open Records Act request submitted by Pete Mc
 
 This page exists because the pattern of how the Town responds to records requests is itself a story, and because individual requests can get lost in the shuffle without a single place to track them.
 
-**Last updated: 2026-05-08 (Friday)**
+**Last updated: 2026-05-30 (Saturday)** — reconciled against Gmail. The "send Monday" batch was already sent May 29–30, so clocks are running now; statuses below corrected from DRAFTED to SENT/PENDING.
 
 ## Summary Table
 
@@ -23,14 +23,22 @@ This page exists because the pattern of how the Town responds to records request
 | (no #) | 2024-11-18 (in complaint) | M365 MailItemsAccessed for Nov 12 email | **NOT FULFILLED** | n/a | $0 | Embedded in formal Board complaint. Board took no action. |
 | (no #) | 2025-06-25 | Records of improper executive session | **DENIED** | n/a | $0 | Town denied citing executive session privilege. Filed strategically to put the improper use on the record. |
 | **C 26-09** | 2026-03-23 | Verkada Camera System (contract, retention policy, audit logs, written policies) | **FULFILLED** 2026-04-08 | Apr 7 (with extension) | **$167.90** | 5 hours billed for what was largely automated exports. See [[cora-c26-09-verkada-audit-logs]]. |
-| (no #) | 2026-04-01 | Caselle ERP User Access Report | **PENDING — extended** | **Apr 16** (max) | n/a | Vetter took 7-day extension on Apr 7. Standard deadline was Apr 7. |
+| **C 26-10** | 2026-04-01 | Caselle ERP User Access Report (Application Rights Report) | **FULFILLED** 2026-04-16 | Apr 16 (with extension) | not stated | Delivered on the extended deadline. Report run Apr 8 — reflects permissions as of Apr 8, not the Apr 1 filing date. Follow-on: C 26-17. |
 | **C 26-11** | 2026-04-06 | Communications re: Board's March 30 Response Letter | **FULFILLED** 2026-04-21 (nominal) | Apr 22 (with extension) | $0 | 4 emails produced — 2 were Pete's own. No trustee-to-trustee comms. No drafts. Buchner advice withheld as privileged. See [[cora-c26-11-libelous-communications-response]]. |
-| **C 26-12** | 2026-04-07 | M365 Unified Audit Log export + retention policy | **FULFILLED** 2026-04-22 (nominal) | Apr 22 (with extension) | $0 | 6 monthly files. "March 2026" file is a duplicate of April. Every file capped at 50,000 rows. AuditData column 100% redacted. See [[cora-c26-12-m365-audit-logs-response]]. |
-| **C 26-15** | 2026-04-20 | Wynn outbound emails on November 4, 2024 (sent only) | **FULFILLED** 2026-05-08 | May 8 (with extension) | $0 | 165-page PDF assembled in Microsoft Word and exported via Adobe Acrobat (per PDF metadata). Several outbound messages produced **without "Sent:" timestamp metadata**, depending on Outlook copy-paste behavior. See [[cora-c26-15-wynn-sent-emails-nov4-2024]]. |
-| (pending #) | 2026-05-08 | Native files / direct Outlook prints of four specific Wynn outbound emails on Nov 4, 2024 (timestamps missing in C 26-15 production) | **PENDING** | TBD | TBD | Surgical re-request itemizing each email by subject/recipient/body keyword. Targets only the four Wynn sends whose Sent timestamps were dropped in the Word-doc-assembled C 26-15 PDF. |
-| (pending #) | 2026-05-08 | Current configuration of all inbox rules on Wynn's mailbox (Get-InboxRule output) | **PENDING** | TBD | TBD | Triggered by 6,357 UpdateInboxRules events attributed solely to Wynn across Nov 2025 – Apr 2026 audit logs. Discrete PowerShell record. No exemption applies cleanly. |
-| (pending #) | 2026-05-08 | Unredacted AuditData payload for Wynn UpdateInboxRules events on 5 specific dates (Dec 19 2025; Jan 27, Feb 24, Apr 3, Apr 9 2026) | **PENDING** | TBD | TBD | Targeted re-request of the C 26-12 AuditData column for one user × one operation × five burst dates. Pre-empts the § 24-72-204(2)(a)(VIII) "security arrangements" redaction. |
-| (pending #) | 2026-05-09 | Finance Committee — meeting minutes, agendas, sign-in sheets, and any log/journal/tracking record the Committee maintains, January 1 2024 to present | **PENDING** | TBD | TBD | Tightly scoped to records the Committee itself produces; explicitly excludes email and financial-records marginalia to keep search within the first free hour. Includes "no responsive records" confirmation under § 24-72-204(3) to force a null result into writing. |
+| **C 26-12** | 2026-04-07 | M365 Unified Audit Log export + retention policy | **FULFILLED via CURE 2026-05-27** (cure data retrieved & analyzed 2026-05-29) | Apr 22 (with extension) | $0 | Original: "March" file a byte-identical duplicate of April; every file capped at 50,000 rows; AuditData 100% redacted. Cure delivered 10 uncapped CSVs (1.13M rows) with AuditData un-redacted; logged inbox-rule activity is benign (see Pattern 7). See [[cora-c26-12-m365-audit-logs-response]]. |
+| (no #) | 2026-04-06 (form date) | M365 Unified Audit Log + OneDrive/SharePoint version history + phone call logs + Teams metadata (four-item "system logs" request) | **UNCERTAIN** — never docketed | unknown | not stated | Form-dated Apr 6; no email filing trace and no acknowledgment found. No C-number ever assigned. Distinct from C 26-12 (which is the two-item audit-log + retention request). |
+| **C 26-17** | 2026-04-23 | Caselle permission-change communications (Oct 2024–Apr 2026) + Caselle Management Tracking Report (audit log) | **FULFILLED (PARTIAL)** 2026-05-11 | May 11 (with extension) | not stated | Item 1 (comms) produced as redacted PDF — only two Jul/Aug 2024 emails, predating the Oct-1-2024 scope. Item 2 (audit log) DENIED: "feature not used... record does not exist" — no statutory basis. Aug 5 email reveals a segregation-of-duties failure (Bowman gained invoice auto-approval). |
+| (no #) | 2026-05-05 | March 2026 M365 redaction cure (true March log + paginated beyond-50k export + unredacted AuditData / itemized § 204(4) log) | **RESPONDED** — absorbed into C 26-12 cure | never docketed (3-day would have been May 9; 10-day max May 20) | $0 (waived) | Triggered the cure. Vetter's May 6 email delivered the corrected March log + promise; never assigned a C-number; ClayB attorney copy bounced (MAILER-DAEMON). Items 2 and 3-B not confirmed produced. |
+| (no # — likely C 26-22) | 2026-05-12 | Current inbox rules on Wynn's mailbox (Get-InboxRule output) | **CLOSED — dropped** | (was May 26) | n/a | Closed 2026-05-30: the C 26-12 cure showed the rule activity is benign (desktop-Outlook resync, no mail suppression), so the request is not being pursued. The May 26 non-response stays on the record as a clean § 203(3)(b) violation but isn't worth chasing. Findings written up at [[inbox-rules-investigation-closed]]. |
+| (no #) | 2026-05-14 | Unredacted AuditData for Wynn UpdateInboxRules events on 5 burst dates (Dec 19 2025; Jan 27, Feb 24, Apr 3, Apr 9 2026) | **CLOSED — mooted** | May 28 (10-day max; never answered) | n/a | The cure delivered un-redacted AuditData for these events. They are `ModifyMailboxRule` events, for which Microsoft logs **no** rule body — so there were never rule definitions to un-redact. Closed 2026-05-30 alongside the dropped inbox-rules thread; see [[inbox-rules-investigation-closed]]. |
+| **C 26-15** | 2026-04-20 | Wynn outbound emails on November 4, 2024 (sent only) | **FULFILLED** 2026-05-08 | May 8 (with extension) | $0 | 165-page PDF assembled in Microsoft Word (per metadata). Several outbound messages produced **without "Sent:" timestamp metadata**. Partially resolved by follow-up C 26-21. See [[cora-c26-15-wynn-sent-emails-nov4-2024]]. |
+| **C 26-21** | 2026-05-20 | Native .eml files for four Wynn emails of Nov 4 2024 (timestamp recovery — follow-up to C 26-15) | **FULFILLED (PARTIAL — 2 of 4)** 2026-05-27 | **May 27** | none noted | Items (a) PC-comments forward and (c) "Invoice from Mary" produced as responsive Wynn-outbound .eml with timestamps recovered. Items (b) master-plan reply and (d) P-Hill are wrong-direction substitutions — inbound messages (Exchange MessageDirectionality: Incoming). Closed as fulfilled despite the substitution. |
+| **C 26-23** | 2026-05-13 (submitted; received May 20) | Finance Committee records (minutes, agendas, sign-in sheets, logs, charter), Jan 2024 – May 2026 | **RESPONDED (DISPUTED)** | **May 26** | $0.00 | Santiago's May 26 letter redirected to Board-packet Payment Approval Reports; produced no minutes/agendas/sign-in/logs; no § 204(3) certification. Vetter May 27: "I don't believe it is written down anywhere." Closed without addressing 5 of 6 categories. |
+| (pending # — likely **C 26-24**) | 2026-05-28 | Communications re: Town Administrator (Wynn) non-renewal; Bachran communications; related executive-session records (May 1–27, 2026) | **PENDING** | **June 3** (per Vetter) | none stated | Filed May 28; acknowledged by Vetter May 29 (deadline stated as June 3 — a strict 3-working-day count is June 2). Likely to draw privilege assertions or an extension. |
+| (pending # — likely **C 26-25**) | 2026-05-29 (sent) | **Flyer response-letter drafting records** — the "I need comments /no later than 2:00" thread, the Mayor's draft report, and the "Revised Letter to Citizens" with ALL retained drafts/revision trail | **SENT — PENDING** | **June 3** (3 wd) | TBD | Built from the C 26-12 audit-log subjects. Sent from Gmail draft `r-8459924144882024113`; Town C-number not yet assigned. |
+| (pending # — likely **C 26-26**) | 2026-05-30 (sent) | **Special meeting + Planner task + flyer "safety"** — "…Special Meeting…to set the record straight"; Microsoft Planner task "C 26-11 McCarthy -Flyer" + comments; "…Fear for Safety with Flyers Posted…with my Image" | **SENT — PENDING** | **June 4** (3 wd from Mon Jun 1 receipt) | TBD | Sent from Gmail draft `r-7459207121458941464`. |
+| (pending # — likely **C 26-27**) | 2026-05-30 (sent) | **Verkada audit-log continuation** — same export as C 26-09, Mar 26 2026 → present (covers the Mar 28 No Kings rally + post-Mar-26 Grand Ave) | **SENT — PENDING** | **June 4** (written cost estimate due) | $0 sought | Anti-fee framing baked in (written cost estimate required before any chargeable work). Sent from Gmail draft `r-5320712872439819788`. |
+| (pending # — likely **C 26-28**) | 2026-05-30 (sent ×2) | **Wynn "threat/safety" communications** — "…Meeker Resident…Safety" (Mar 12), "CRCP 106 - Threatened Litigation" (Apr 2), the two Apr 7 "Threat of Litigation" emails, "Angry emails, maybe a threat?" (Apr 20) | **SENT — PENDING** | **June 4** (3 wd) | TBD | Wynn-authored; the "case against McCarthy" arc. Sent from Gmail draft `r3888469732630765048` — **double-sent 01:18 & 01:22 on May 30; one is an accidental duplicate.** |
 
 ## Statutory Framework
 
@@ -91,14 +99,19 @@ This is the kind of CORA filing that exists in the record specifically to make a
 - **Source**: [[cora-c26-09-verkada-audit-logs]]
 - **Resulting analyses**: [[cameras-always-on-not-motion]], [[facial-recognition-proof]], [[community-room-surveillance]], [[audit-log-first-viewed-after-cora]], [[wynn-knowledge-of-cameras]], [[employee-surveillance-archives]], [[verkada-usage-patterns]]
 
-### 2026-04-01 — Caselle ERP User Access Report — **PENDING (EXTENDED)**
+### 2026-04-01 — CORA C 26-10 — Caselle ERP User Access Report — **FULFILLED**
 
 - **Filed**: 2026-04-01 (Wed) at 11:14 AM MDT
-- **Acknowledged**: 2026-04-02 (Thu) at 10:10 AM MDT — Vetter declared deadline of **April 7, 2026** (3 working days from receipt on Apr 2)
-- **Extension**: 2026-04-07 (Tue) at 12:58 PM MDT — Vetter sent "Extension notification" invoking the 7-day extension
-- **Maximum extended deadline**: **2026-04-16 (Thursday)** — 10 working days from Apr 2
-- **Status as of 2026-04-09**: PENDING. No records produced. Within the extended window.
-- **Notable**: The underlying request is a single ERP system user access report — the kind of report most IT staff can produce in 30 minutes using standard reporting tools. Taking a 7-day extension on this is hard to justify as "extenuating circumstances" under the statute.
+- **Acknowledged**: 2026-04-02 (Thu) by Vetter — receipt date Apr 2, standard deadline declared April 7, 2026
+- **Extension**: 2026-04-07 — 7-day extension invoked; extended maximum deadline **April 16, 2026** (10 working days from Apr 2)
+- **Fulfilled**: 2026-04-16 — delivered **on the extended deadline** (cover letter dated Apr 14; email delivery Apr 16). The report was run Apr 8 at 9:02 AM.
+- **Fee**: not stated in available records
+- **Subject**: The Caselle ERP "Application Rights Report" — who holds what permissions across all Caselle modules.
+- **What was produced**: The Application Rights Report showing every module task with Allowed Users and Denied Users. Users include Admin, arodarte (Ashley Rodarte), ProMgmt, ProSolutions, Ruben (Ruben Santiago), TManager ([[stefen-wynn|Stefen Wynn]]), and several denied users.
+- **Production note**: The report reflects the state of permissions as of **April 8** (the day it was run), not the April 1 filing date. No historical record of permission *changes* was produced — that was the subject of the follow-on request C 26-17.
+- **Correction to prior log**: An earlier draft of this log carried this matter as "PENDING — extended" and a separate claim circulated that it was fulfilled "May 9, three weeks past deadline." Both are wrong. Delivery was Apr 16, on the extended statutory deadline. The May 9 dates are file *download* timestamps, not the response date.
+- **Sources**: `raw/documents/cora-responses/C-26-10-Caselle-User-Access.pdf` and `.txt`
+- **Follow-up**: C 26-17 (Caselle permission-change communications + audit log).
 
 ### 2026-04-06 — CORA C 26-11 — Communications re: Board's March 30 Response Letter — **FULFILLED (NOMINAL)**
 
@@ -112,23 +125,89 @@ This is the kind of CORA filing that exists in the record specifically to make a
 - **Source**: [[cora-libelous-communications]] (original request), [[cora-c26-11-libelous-communications-response]] (response analysis)
 - **Assessment**: Production is implausibly thin for a six-day window in which the Board convened a special meeting and produced a jointly-signed letter. See [[pattern-of-cora-obstruction]].
 
-### 2026-04-07 — CORA C 26-12 — M365 Audit Logs and Retention Policy — **FULFILLED (NOMINAL)**
+### 2026-04-07 — CORA C 26-12 — M365 Audit Logs and Retention Policy — **FULFILLED (PARTIAL); CURE ISSUED 2026-05-27**
 
 - **Filed**: 2026-04-07 (Tue) at 11:08 AM MDT
 - **Acknowledged**: 2026-04-08 (Wed) at 9:13 AM MDT — Vetter declared deadline of **April 13, 2026**
 - **Standard deadline**: 2026-04-13 (Monday) — 3 working days from receipt on Apr 8 (missed)
 - **Extension taken**: by Apr 13 — new deadline 2026-04-22
-- **Fulfilled**: 2026-04-22 (letter dated Apr 22) — used the full extension
+- **Original fulfillment**: 2026-04-22 (letter dated Apr 22) — used the full extension
 - **Subject**: Two-item request — (1) Complete M365 Unified Audit Log export for all available dates, CSV format; (2) Town's current M365 audit log retention policy and licensing tier
-- **What was produced**: Six monthly Excel files labeled Nov 2025 through April 2026. Confirmation of M365 Business Premium licensing and 180-day audit retention.
-- **Production defects**:
+- **What was produced (Apr 22)**: Six monthly Excel files labeled Nov 2025 through April 2026. Confirmation of M365 Business Premium licensing and 180-day audit retention.
+- **Original production defects**:
   - The "March 2026" file (`Redacted_TownOfPaonia_Audit_Log_Mar2026.xlsx`) contains April 1-9 2026 data — **identical to the April file** (verified by matching RecordIds). March 2026 data was not produced.
   - Every monthly file is capped at exactly 50,000 rows (the Microsoft Purview UI export cap), not a complete month.
-  - The `AuditData` column (the JSON payload containing email subjects, recipients, IP addresses, session IDs, accessed item IDs) is 100% redacted across all files.
-  - The April file stops at April 9, even though delivery was April 22.
-  - Earliest data is Nov 1 2025 even though 180-day retention at Apr 22 should include late October 2025.
-- **Source**: [[cora-c26-12-m365-audit-logs-response]] (response analysis)
-- **Assessment**: The one month whose data would independently test the C 26-11 communications production was replaced with a duplicate of a different month. See [[pattern-of-cora-obstruction]].
+  - The `AuditData` column (the JSON payload containing email subjects, recipients, IP addresses, session IDs, accessed item IDs, and inbox-rule definitions) is 100% redacted across all files under a single column-wide citation of C.R.S. § 24-72-204(2)(a)(VIII).
+  - The April file stops at April 9; earliest data is Nov 1 2025 even though 180-day retention at Apr 22 should reach late October 2025.
+- **Cure arc**:
+  - **May 5** — Pete filed a supplemental cure request (logged separately below, never docketed) objecting to the blanket redaction and the missing March log.
+  - **May 6** — Vetter email (subject "C 26-12") delivered a corrected standalone March 2026 log (`Redacted_TownOfPaonia_Audit_Log_Mar2026_from_excel.xlsx`), acknowledged the IT vendor "inadvertently downloaded one incorrectly," acknowledged the 50,000-row cap as a known limitation, and committed to producing complete data.
+  - **May 26** — Vetter "Microsoft 365 Update" email: "reviewing and redacting the last 2 logs (March and April 2026) right now; hope to have them today or tomorrow."
+  - **May 27** — Formal **Cure Response** cover letter (Vetter, CMC): admits **four** monthly audit-log exports were missing due to a repeated export error; narrows AuditData redactions to technical identifiers only (OAuth/bearer tokens, unique token IDs, immutable IDs, correlation IDs, GUID-style identifiers, application/client/API IDs, TaskList values) while preserving timestamps, operations/events, workloads, user-activity context, and Town email addresses; waives any additional charge because the incomplete first production was not knowing. Cure data delivered as a SharePoint zip (`C 26-12 Cure M365 Audit Logs.zip`) behind an OTP identity-verification gate.
+- **Cure retrieved & analyzed (2026-05-29)**: The SharePoint zip (191 MB) was downloaded through the OTP gate and extracted — **10 CSVs, 1,134,799 rows**, AuditData genuinely un-redacted. Findings (full analysis: `raw/research/c26-12-cure-analysis.md`):
+  - **Un-cap confirmed**: the cure files are full monthly exports, not 50,000-row-capped. The four previously-missing short-window exports (`2025-12-02`, `2026-02_02`, `2026-03-27`, `202603_02`) fill real gaps — the monthly March file stops Mar 24; the short exports cover the late-March / Apr-1 window.
+  - **Redaction state**: narrowed to three tokens — `[REDACTED_ID]`, `[REDACTED_IP]`, `[REDACTED_TOKEN]` (GUIDs, IPs, session/token IDs). Over-redaction bug: the clock in the `CreationDate` column was redacted as `[REDACTED_IP]` in two files, though the ISO `CreationTime` inside AuditData survives (so timing is recoverable). No itemized § 204(4) per-redaction log was provided. **Whether these redactions are CORA-justified is now its own line of inquiry (see redaction audit).**
+- **Analytical significance (revised after cure analysis)**: Wynn is confirmed the **sole** tenant user generating `UpdateInboxRules` events across all 1.13M rows — **~19,543 total** (Nov 2025–May 2026), ~3× the earlier 6,357 estimate (the capped files undercounted). Bursts confirmed and larger: Dec 19 (513 in ~2s), Jan 27 (1,173), Feb 24 (2,180), Apr 3 (1,134 in ~44s, touching ~567 distinct rule IDs roughly twice each), Apr 9 (570 in ~3s). **But this is not a mail-suppression scheme on the evidence**: the bursts are overwhelmingly `ModifyMailboxRule` events, for which Microsoft logs no rule body (the blank `Parameters` is native M365 behavior, not Town redaction); every rule body that *is* logged (the `AddMailboxRule` events) is benign — "move to folder," and **every `ForwardTo` across all ten files is internal `@townofpaonia.com`**. No external forwarding, no auto-delete, no redirect, no self-granted mailbox permissions. Mechanics (OUTLOOK.EXE, internal RPC, `ExternalAccess:false`) point to Wynn's desktop Outlook bulk-resyncing a large existing rule set. See Pattern 7.
+- **Source**: [[cora-c26-12-m365-audit-logs-response]] (response analysis); cure cover letter `raw/documents/cora-responses/C-26-12-Cure-Response.pdf`; cure analysis `raw/research/c26-12-cure-analysis.md`
+- **Assessment**: The first production was both incomplete (four exports missing, admitted) and capped (50k/month); completeness arrived only after a supplemental objection and a free cure. That incompleteness pattern stands. The inbox-rules *content* concern is not borne out by the cured data — but the **scope and basis of the redactions** is the live question now. See [[pattern-of-cora-obstruction]].
+
+### 2026-04-06 (form date) — (no #) — Four-item "system logs" request — **STATUS UNCERTAIN / NEVER DOCKETED**
+
+- **Filed**: form dated 2026-04-06; no email filing trace and no acknowledgment located. Likely submitted in person or via the Town web portal. Exact submission date uncertain.
+- **C-number**: none ever assigned in any document on disk. This is a **separate request** from C 26-12 — the docketed C 26-12 response answers only the two-item audit-log + retention request and never mentions Teams, phone, or OneDrive.
+- **Subject (four items)**: (1) Complete M365 Unified Audit Log export, all available dates, all event types, CSV/JSON; (2) OneDrive/SharePoint version history for all files in personnel/HR folders; (3) complete call logs from the Town phone system; (4) Microsoft Teams chat and channel message metadata for all Town users (not message content).
+- **What was produced**: No response on disk maps cleanly to this four-item request. The M365 audit-log production answers C 26-12; no call logs, Teams metadata, or SharePoint version history have surfaced.
+- **Status**: Unknown. No acknowledgment, no deadline, no production confirmed. Logged here so its items (call logs, Teams metadata, SharePoint version history) are not assumed answered by the C 26-12 audit-log production.
+- **Source**: `raw/documents/cora-requests/cora-system-logs.pdf`
+
+### 2026-04-23 — CORA C 26-17 — Caselle Permission-Change Communications + Audit Log — **FULFILLED (PARTIAL)**
+
+- **Filed**: 2026-04-23 (emailed; form dated 2026-04-19). Town deemed received 2026-04-27.
+- **Acknowledged**: 2026-04-27 by Vetter — "received today, April 27, 2026; deadline April 30, 2026"
+- **Extension**: invoked Apr 30 (citing high volume and the need to work with a third party — Caselle/PMS — under C.R.S. 24-72-203(3)(b)(II) and (III)); new deadline **May 11, 2026**
+- **Fulfilled**: 2026-05-11 — delivered **on the deadline**
+- **Fee**: not stated
+- **Subject**: Two items — (1) all communications between Town staff, officials, or contractors (including PMS) regarding any changes to Caselle user permissions, access, rights, role assignments, or segregation of duties, Oct 1 2024 – Apr 19 2026; (2) the Caselle Connect Management Tracking Report (security audit log) filtered to changes in User Rights, Users, and Group Rights tables for the same window, as PDF or CSV.
+- **What was produced**:
+  - **Item 1** — a redacted PDF containing at minimum two internal email threads: (a) "RE: User name in Caselle" (Michelle Duran / PMS to Wynn and Kaja Bowman, Jul 17 2024) and (b) "RE: Invoice Approval" (Michelle Duran / PMS to Bowman and Wynn, Aug 5 2024), both with email addresses and a PMS phone number redacted.
+  - **Item 2** — **DENIED**: "This feature is not used and therefore the record does not exist."
+- **Defects**:
+  - The Item 2 denial asserts non-existence with no statutory withholding statement under C.R.S. 24-72-204(3) and no independent way to verify that Caselle's Management Tracking Report is in fact disabled — it is a standard module.
+  - Both produced emails (Jul and Aug 2024) **predate** the Oct 1 2024 scope window stated in the request; no document from Oct 1 2024 through Apr 19 2026 appears to have been produced for Item 1.
+  - Redactions on PMS contact information and email addresses carry no individual statutory justification per C.R.S. 24-72-204(3).
+- **Substantive significance**: The **Aug 5 2024** email shows that a PMS-initiated user-permission change caused [[kaja-bowman|Kaja Bowman]] (Staff Accountant) to gain auto-approval on invoices she herself entered — bypassing the control where Wynn (Town Manager) was supposed to approve invoices she created. This is a segregation-of-duties failure. See [[who-controls-the-money]].
+- **Sources**: `raw/documents/cora-requests/cora-caselle-permissions-and-audit-log.pdf`, `raw/documents/cora-responses/C-26-17-Caselle-Permissions-and-Audit-Log_Redacted.pdf`, `raw/documents/cora-responses/c26-17-caselle-extension.pdf`
+- **Follow-up**: None filed as of 2026-05-29. The "feature not used" denial warrants challenge.
+
+### 2026-05-05 — (no #) — March 2026 M365 Redaction Cure (supplemental to C 26-12) — **RESPONDED (absorbed into C 26-12 cure)**
+
+- **Filed**: 2026-05-05 (emailed evening; Town would deem received the next business day, May 6)
+- **Acknowledged**: never formally — no C-number, no statutory deadline. Vetter's May 6 standalone email (subject "C 26-12") delivered the corrected March log and promised the rest but did not docket the request.
+- **Subject (three items)**: (1) the true March 1-31 2026 unified audit log via paginated programmatic export, CSV; (2) a complete paginated export beyond the 50,000-row UI cap for all months Nov 2025–May 5 2026; (3) the AuditData column unredacted to the maximum permissible extent OR an itemized per-redaction log under C.R.S. § 24-72-204(4) naming RecordId, subfield(s), statutory subsection, and factual basis.
+- **What was produced**: The May 27 C 26-12 Cure Response is the Town's substantive answer, though never labeled with a new C-number. It admits four exports were missing, narrows AuditData redactions to technical identifiers, and waives fees. The cure expressly references Pete's objection: "since you objected to a blanket redaction approach, I completed a more detailed and time-consuming redaction review." Item 2 (paginated beyond-50k) and Item 3-B (itemized § 204(4) log) are **not** confirmed as produced.
+- **Defects**: No C-number despite the request being on the standard Town CORA form with all required fields; no statutory acknowledgment with a deemed-received date and deadline; the Town Attorney copy (ClayB@townofpaonia.com) bounced with a permanent delivery failure (MAILER-DAEMON, May 5). The Town treated it as informal correspondence and folded the substance into the C 26-12 cure rather than starting a CORA clock.
+- **Sources**: `raw/documents/cora-requests/cora-march-m365-redaction-cure.pdf` and `.md`; `raw/documents/cora-responses/C-26-12-Cure-Response.pdf`
+
+### 2026-05-12 — (no #) — Current inbox rules on Wynn's mailbox (Get-InboxRule output) — **CLOSED (dropped 2026-05-30)**
+
+- **Filed**: 2026-05-12
+- **Acknowledged**: 2026-05-20 by Vetter (SamiraV@townofpaonia.com) — bare acknowledgment, no C-number; stated deadline **May 26, 2026**
+- **Status as of 2026-05-29**: **OVERDUE** — three calendar days past the stated May 26 deadline. No production, no written denial, no extension (confirmed absent from inbox, spam, and trash).
+- **Subject**: The `Get-InboxRule -Mailbox StefenW@townofpaonia.com` output (or equivalent admin-center export) showing all currently configured inbox rules: name, enabled state, conditions, exceptions, actions, and any external forwarding addresses.
+- **Why filed**: Targets the anomaly of thousands of `UpdateInboxRules` audit events attributed solely to Wynn (~19,543, Nov 2025–May 2026), with rule definitions redacted in the original C 26-12 production. A discrete PowerShell record; no exemption applies cleanly to operational mailbox configuration.
+- **Significance after the C 26-12 cure (2026-05-29)**: The cured audit logs show the logged rule actions are benign (move-to-folder; internal-only forwarding) and the bursts are `ModifyMailboxRule` resyncs with no logged bodies — no evidence of mail suppression. This is **not** a smoking gun and is deprioritized. The statutory violation (no response by the May 26 deadline) stands on its own if Pete chooses to press it.
+- **Defect**: Vetter's acknowledgment noted she was out of the office for a week and the request sat unprocessed. That does not constitute a written extension under C.R.S. 24-72-203(3)(b) (which requires written notice within the original 3-day window). The custodian acknowledged a May 26 deadline and then went silent — a clean statutory violation.
+- **Follow-up**: **Dropped 2026-05-30.** The cure showed the rule activity is benign, so this is not being pursued; the missed May 26 deadline stays on the record as a procedural violation, but no § 204(5) notice will be filed. The investigation and its benign conclusion are written up at [[inbox-rules-investigation-closed]].
+
+### 2026-05-14 — (no #) — Unredacted AuditData for Wynn UpdateInboxRules on five burst dates — **MOOTED by C 26-12 cure**
+
+- **Filed**: 2026-05-14 (email sent 00:58 MDT; Town would deem received May 14). (An earlier draft of this log listed May 8 — that was a planning/intent date, not the filing.)
+- **Acknowledged**: never. No reply, no C-number.
+- **Deadline**: 3-day deadline was May 19; **10-day maximum was May 28 — already passed** as of May 29.
+- **Status**: **MOOTED** — the Town never acknowledged or answered this request directly (a procedural violation if pressed), but the C 26-12 cure (downloaded May 29) delivered the un-redacted AuditData for these exact events.
+- **Subject**: Unredacted `AuditData` JSON payload contents for all `UpdateInboxRules` events attributed to `StefenW@townofpaonia.com` on five dates — Dec 19 2025, Jan 27 2026, Feb 24 2026, Apr 3 2026, Apr 9 2026. These records were already located and exported once under C 26-12; this seeks an unredacted re-export of that subset. The `Parameters` subfield contains the rule definitions (names, conditions, actions, any forwarding/delete configurations).
+- **Why these five dates**: Each is a burst date from the cross-month audit log analysis. Apr 3 2026 (951 events in ~2 minutes) falls on the first business day after the Board's March 30 libel letter — the timing linkage between Wynn's mailbox-rule activity and the retaliatory correspondence is the core of the inbox-rules anomaly. See Pattern 7 and [[pattern-of-retaliation]].
+- **Answer from the cure**: The cure data was downloaded and analyzed on May 29. The five burst dates are dominated by `ModifyMailboxRule` events, for which Microsoft records **no** rule body — so the `Parameters` are empty at the source, not redacted. There is nothing further to un-redact for these specific events. The handful of `AddMailboxRule` bodies present are benign (move-to-folder; internal-only forwarding). This request is therefore substantively answered (negatively).
 
 ### 2026-04-20 — CORA C 26-15 — Wynn outbound emails on November 4, 2024 — **FULFILLED (DEFECTIVE FORMAT)**
 
@@ -141,46 +220,61 @@ This is the kind of CORA filing that exists in the record specifically to make a
 - **What was produced**: 165-page PDF (`C 26-15 Response.pdf`, 17.7 MB)
 - **Production defect — format**: PDF metadata shows the file was assembled in **Microsoft Word** (title field: `Microsoft Word - C 26-15 Response`; author: `SamiraV`) and exported via **Adobe Acrobat (64-bit) 26.1.21529** at 12:50 AM Mountain Time on 2026-05-08. This is not a direct print from Outlook. As a result, the production exhibits inconsistent header preservation:
   - The 11:10 AM "FW: Your new service plan from COOLEYS" (FW-to-self) and the 1:59 PM "RE: Paonia Hydrogeologic study cultural survey" (to Alpine Archaeology / Wright Water Engineers) retain a complete `From: Stefen Wynn` / `Sent: Monday, November 4, 2024 [time]` header.
-  - The forward of Pete McCarthy's 1:13 PM Planning Commission email to "Mayor, Trustees and Planning Commission," the reply to Mary Bachran's invoice ("Invoice from Mary for October. SW"), the reply to Samira Vetter's 12:32 PM "FW: healthy environments Master Plan revision" ("Hi Morgan, Can you print and prepare 10 copies of this attachment please? SW"), and the P-Hill tower extension correspondence are produced **without a top-level Sent timestamp**. The outbound message body and signature appear, but the header that would identify the precise send time was not carried into the Word document.
-- **Why timestamps cannot be recovered from M365 audit logs**: The Town's M365 audit retention is 180 days (per the C 26-12 response). November 4, 2024 is approximately 18 months prior to the production date — well outside retention. The native `.msg` / `.eml` files in Wynn's mailbox, or direct PDF prints from Outlook (File → Print → Save as PDF), are now the only sources for the missing send timestamps.
-- **Follow-up**: New CORA filed 2026-05-08 for Wynn's complete Nov 4, 2024 mailbox (sent + received) in native or direct-Outlook-print format. See pending row in summary table.
+  - The forward of Pete McCarthy's 1:13 PM Planning Commission email to "Mayor, Trustees and Planning Commission," the reply to Mary Bachran's invoice ("Invoice from Mary for October. SW"), the reply to Samira Vetter's 12:32 PM "FW: healthy environments Master Plan revision" ("Hi Morgan, Can you print and prepare 10 copies of this attachment please? SW"), and the P-Hill tower extension correspondence are produced **without a top-level Sent timestamp**.
+- **Why timestamps cannot be recovered from M365 audit logs**: The Town's M365 audit retention is 180 days (per the C 26-12 response). November 4, 2024 is approximately 18 months prior to the production date — well outside retention. The native `.msg` / `.eml` files in Wynn's mailbox, or direct PDF prints from Outlook, are now the only sources for the missing send timestamps.
+- **Follow-up — C 26-21**: Filed 2026-05-20 to recover the four missing timestamps in native `.eml` format. It **partially resolved** this defect — timestamps recovered for two of the four targeted emails (see C 26-21 below).
 - **Source**: [[cora-c26-15-wynn-sent-emails-nov4-2024]] (response analysis)
 
-### 2026-05-08 — CORA (pending #) — Native files / direct Outlook prints of four specific Wynn outbound emails on Nov 4, 2024 — **PENDING**
+### 2026-05-20 — CORA C 26-21 — Native .eml files for four Wynn emails of Nov 4, 2024 — **FULFILLED (PARTIAL — 2 of 4 responsive)**
 
-- **Filed**: 2026-05-08
-- **Subject**: Four specific emails Wynn sent on November 4, 2024 — each previously produced under C 26-15 but without its original send timestamp — requested in native `.msg` / `.eml` format or as direct PDF prints from Outlook
-- **Itemized targets**:
-  1. Wynn's forward of Pete McCarthy's "Planning Commission Meeting Comments - November 04, 2023" to Mayor, Trustees, and Planning Commission with cover note "Please see the email below from Commissioner McCarthy."
-  2. Wynn's reply to Samira Vetter's 12:32 PM "Fw: healthy environments Master Plan revision" beginning "Hi Morgan, Can you print and prepare 10 copies of this attachment please? SW."
-  3. Wynn's email referencing Mary Bachran's October invoice ("Invoice from Mary for October. SW").
-  4. Wynn's email regarding "P-Hill tower extension Paonia."
-- **Why surgical, not broad**: Asking for the entire Nov 4 mailbox would have triggered an open-ended search and likely fees beyond the first-hour-free threshold. Naming each known message by subject/recipient/body keyword scopes the work to four specific record retrievals — each one a discrete file the Town has already located once for C 26-15.
-- **Strategic note**: Filing as a new CORA rather than as a follow-up to C 26-15 to (a) avoid being denied as duplicative, (b) restart the statutory clock cleanly, and (c) document on paper that the original production was incomplete with respect to send-timestamp metadata.
-- **Status**: Pending acknowledgment
+- **Filed**: 2026-05-20 (submitted); received by the Clerk 2026-05-21. (An earlier draft of this log carried this as a May 8 "pending" matter — that was an intent date; actual filing was May 20.)
+- **Acknowledged**: 2026-05-21 (receipt stamped on the request form; no separate ack email in Gmail)
+- **Deadline**: **2026-05-27** (3 working days from May 21; no extension)
+- **Fulfilled**: 2026-05-27 — delivered within the deadline
+- **Fee**: none noted
+- **Subject**: Native `.eml` (or direct Outlook-PDF) files preserving complete header metadata for four emails Wynn sent on November 4, 2024 — all four produced under C 26-15 but with top-level send timestamps stripped: (a) Wynn's forward of McCarthy's Planning Commission comments; (b) Wynn's "Hi Morgan, print 10 copies... SW" reply to Vetter's 12:32 PM master-plan forward; (c) Wynn's "Invoice from Mary for October. SW" email; (d) Wynn's "P-Hill tower extension Paonia" email.
+- **What was produced** — four `.eml` files, only two genuinely Wynn-outbound:
+  - **(a) responsive** — `C106545E0C5FBD068AF13A8ABE5F767A.eml`: Wynn forwards McCarthy's PC comments; From: StefenW; Date header `Tue 5 Nov 2024 01:10:53 +0000` = **Nov 4 6:10 PM Mountain** (a Nov-4 send despite the UTC date rollover).
+  - **(c) responsive** — `60B177499A58440D79E8A013B567FC39.eml`: Wynn's "Invoice from Mary for October. SW." forward; From: StefenW; Date `Mon 4 Nov 2024 15:55:04 +0000` = **Nov 4 8:55 AM Mountain**.
+  - **(b) NON-RESPONSIVE** — `55856453240EA8FB230790ECB1A83086.eml` is Vetter's **inbound** message *to* Wynn (the email he was supposed to reply to), not his outbound "Hi Morgan, print 10 copies" reply.
+  - **(d) NON-RESPONSIVE** — `2F3CDF22176991B29A52C9E5C479CCF9.eml` is external contractor Lance Bleyhl's email to Delta County Planning, with Wynn merely on Cc; the Exchange header tags it `X-MS-Exchange-Organization-MessageDirectionality: Incoming`. No Wynn-sent P-Hill email was produced.
+- **Defects**: Items (b) and (d) are wrong-direction substitutions — the Town produced inbound messages received by Wynn instead of the outbound messages he sent, and closed the request as fulfilled. Open question: do Wynn-sent originals for (b) and (d) exist in the Exchange mailbox, or were they never sent from his account?
+- **Sources**: `raw/documents/cora-responses/C 26-21 Request McCarthy.pdf`, `C 26-21 Response.pdf`, and the four `.eml` files listed above
+- **Follow-up**: None filed as of 2026-05-29. A targeted re-request or cure could demand Wynn's outbound "Hi Morgan" reply and any Wynn-authored "P-Hill tower extension" email. The board complaint of 2026-05-05 (CORA obstruction) is relevant context.
 
-### 2026-05-08 — CORA (pending #) — Current configuration of inbox rules on Wynn's mailbox — **PENDING**
+### 2026-05-13 — CORA C 26-23 — Finance Committee Records — **RESPONDED (DISPUTED)**
 
-- **Filed**: 2026-05-08
-- **Subject**: Current `Get-InboxRule -Mailbox StefenW@townofpaonia.com` output (or equivalent admin-center export) showing all currently configured inbox rules on Wynn's mailbox, including for each rule: name, enabled state, conditions, exceptions, actions, and any external forwarding addresses
-- **Why filed**: Cross-month analysis of the C 26-12 audit log production reveals that Wynn is the **only user** in the Town tenant generating any `UpdateInboxRules` events. Total: 6,357 such events attributed solely to his account between November 2025 and April 9, 2026. Activity is bulk-clustered: 240 events in 1 second on Dec 19, 2025; 405 events in 2 minutes on Jan 27, 2026; 601 events on Feb 24, 2026; 951 events in 2 minutes on Apr 3, 2026 (the first business day after the Board's March 30 libel letter); 484 events on Apr 9, 2026 (the last day captured before the 50,000-row export cap). The AuditData containing the rule definitions is 100% redacted in the C 26-12 production, so there is no public visibility into what rules were being created or modified.
-- **What this CORA tests**: Whether Wynn's currently active rule set contains forwarding rules to external addresses, auto-delete rules targeting specific senders, or other automated mail-handling configurations on his Town email account. A discrete PowerShell record. No statutory exemption applies cleanly to operational mailbox configuration.
-- **Status**: Pending acknowledgment
+- **Filed**: form dated 2026-05-09; submitted to the Clerk 2026-05-13; received by the Clerk 2026-05-20 (the statutory clock ran from the May 20 received date)
+- **Acknowledged**: 2026-05-20 (Clerk's office stamp on the returned request form; no separate ack email)
+- **Deadline**: **2026-05-26** (no extension invoked) — the response was on-deadline
+- **Fee**: $0.00 (15 minutes search time, within the free hour; no pages produced)
+- **Subject**: All records of Town of Paonia Finance Committee meetings Jan 1 2024 – May 9 2026 — minutes, agendas, sign-in sheets, and any log/journal/tracking spreadsheet the Committee produces or maintains. The request expressly invoked § 24-72-204(3) and asked for written non-existence confirmation if records did not exist.
+- **What was produced**: [[ruben-santiago|Ruben Santiago]]'s May 26 letter redirected Pete to the Board meeting packets on the Town website — specifically the "Disbursements" entry (initialed Payment Approval Reports) — and offered an in-person appointment to review physical invoices. **No** minutes, agendas, sign-in sheets, or logs were produced. **No** § 24-72-204(3) non-existence statement was issued. The request was declared closed.
+- **Defects**:
+  1. **Redirect without production** — a Payment Approval Report (an accounting-system output with initials) is not a meeting minute, agenda, sign-in sheet, or deliberative log. Treating it as responsive to a request for meeting records is a substantive dodge.
+  2. **No § 204(3) certification** — neither the records nor the requested written non-existence confirmation was provided.
+  3. **Closed without basis** — the letter declared the request "closed" without addressing five of the six enumerated categories.
+  4. **Vetter May 27 admissions** (on the record in Gmail): "I don't believe it is written down anywhere" (no written Finance Committee procedures); "did not locate any resolution or document specific to committee roles" (Resolution 2024-09 offered as "closest," not as responsive); and a refusal to certify non-existence — "I can not say no such records exist because I provided you with a way to access the records that were responsive," a circular position (the existence of one record type does not preclude the non-existence of a different requested type).
+- **Follow-up**:
+  - **May 27, 2026** — Pete sent a 6-category itemized demand citing § 24-72-204(3), to Vetter and the full Board. Vetter replied the same day with the admissions above but maintained the closed-request position. (`raw/documents/cora-requests/cora-c26-23-follow-up.md`)
+  - **May 29, 2026 (drafted, not sent)** — a surgical follow-up reframed on C.R.S. § 24-72-204(4) (a grounds-for-denial demand rather than a non-existence certification), prepared as a Gmail draft to Vetter only and threaded into the C 26-23 reply chain. It boxes each missing category into produce / cite-an-exemption / concede-non-existence, and doubles as a § 24-72-204(5) heads-up. **Not yet sent — awaiting Pete's review.** (An earlier draft of this log mis-dated it "June 1"; it is a May 29 Gmail draft.)
+- **Sources**: `raw/documents/cora-responses/C 26-23 cora-finance-committee-records.pdf`, `C-26-23-Response_Signed.pdf`, `raw/documents/cora-requests/cora-c26-23-follow-up.md`
+- **See also**: [[finance-committee-effectiveness]], [[who-controls-the-money]]
 
-### 2026-05-08 — CORA (pending #) — Unredacted AuditData for UpdateInboxRules events on five burst dates — **PENDING**
+### 2026-05-28 — CORA (pending #) — Communications re: Town Administrator (Wynn) non-renewal — **PENDING**
 
-- **Filed**: 2026-05-08
-- **Subject**: Unredacted `AuditData` JSON payload contents for all `UpdateInboxRules` events attributed to user `StefenW@townofpaonia.com` on five specific dates: Dec 19 2025, Jan 27 2026, Feb 24 2026, Apr 3 2026, Apr 9 2026
-- **Why filed**: Targeted follow-up to C 26-12, which redacted the AuditData column in full under C.R.S. § 24-72-204(2)(a)(VIII) ("security arrangements"). The redaction covers approximately 250,000 rows. Because inbox rule definitions are operational mail-handling configuration rather than security infrastructure (rule names, conditions, and actions including any forwarding/redirect/delete behavior), the cited exemption does not credibly apply to this specific subset.
-- **Why these five dates**: Each is a "burst day" identified in cross-month audit log analysis where Wynn's account fired hundreds of UpdateInboxRules events within seconds-to-minutes — a pattern characteristic of bulk programmatic activity rather than manual rule editing. Apr 3, 2026 is the first business day after the Board's March 30 libel letter; Apr 9, 2026 is the last day of audit data captured before the 50,000-row cap.
-- **Strategic note**: The request narrowly scopes the unredact ask to one user × one operation × five dates. If the Town re-asserts the security-arrangements exemption against this narrowed request, the assertion is testable on the merits — rule definitions are not security infrastructure under any reasonable reading of § 24-72-204(2)(a)(VIII).
-- **Status**: Pending acknowledgment
+- **Filed**: 2026-05-28 (Thu) at 9:40 AM via email, with a CORA Request Form attached
+- **Acknowledged**: 2026-05-29 by Vetter (reply) — deadline stated as **June 3, 2026**. (A strict 3-working-day count from a May 28 filing would land on June 2; the Gmail acknowledgment states June 3, so June 3 is logged.) No C-number assigned in the acknowledgment.
+- **Subject**: All communications regarding Town Administrator [[stefen-wynn|Stefen Wynn]]'s non-renewal; all communications with former Mayor Mary Bachran; executive-session records related to these subjects. Period: May 1 – May 27, 2026.
+- **Status**: Pending — within the deadline.
+- **Outlook**: Given the subject matter (non-renewal, Bachran communications, executive sessions), this is likely to draw privilege assertions and/or an extension request.
+- **Source**: Gmail thread 19e6f3b52fd8b72d
 
 ## Patterns and Observations
 
 ### Pattern 1: Vetter uses extensions liberally on simple requests
 
-The Caselle ERP request is the clearest example. The underlying record is a single ERP system user access report, producible in 30 minutes by anyone with admin access to the Caselle system. Vetter took the maximum 7-day extension on April 7. This extends the deadline by a full week with no documented "extenuating circumstance" beyond the extension itself.
+The Caselle ERP request (C 26-10) is the clearest example. The underlying record is a single ERP system user access report, producible in 30 minutes by anyone with admin access to the Caselle system. Vetter took the maximum 7-day extension on April 7. This extends the deadline by a full week with no documented "extenuating circumstance" beyond the extension itself.
 
 ### Pattern 2: Maximum charging on automated requests
 
@@ -188,7 +282,7 @@ The Verkada CORA C 26-09 was billed at 5 hours of staff time ($167.90) for what 
 
 ### Pattern 3: 2024 denial that CFOIC confirmed was improper
 
-The M365 audit logs request from September 2024 was denied with a statutory citation (C.R.S. 24-72-203(2)(a)) that CFOIC's executive director confirmed in writing was the wrong basis for denial. The records were never produced. The same request — for the same type of records — has now been re-filed in April 2026 (the M365 audit logs request).
+The M365 audit logs request from September 2024 was denied with a statutory citation (C.R.S. 24-72-203(2)(a)) that CFOIC's executive director confirmed in writing was the wrong basis for denial. The records were never produced. The same request — for the same type of records — has now been re-filed in April 2026 (the M365 audit logs request, C 26-12).
 
 ### Pattern 4: Acknowledgment timing is at the edge of the standard window
 
@@ -198,14 +292,36 @@ For each recent request, Vetter acknowledges receipt one calendar day after the 
 
 In the [[bill-brunner|Brunner CORA case]], Judge Steven Schultz found the Town "failed to exercise reasonable diligence or reasonable inquiry" and ordered the Town to pay Brunner's legal costs. This is a judicial finding of CORA bad faith on the record. The Town has not changed its CORA practices since.
 
-## Open Items as of 2026-04-24
+### Pattern 6: Every production is partial on first pass; completeness only arrives under pressure
+
+No recent production has been complete the first time. **C 26-12** delivered a "March" file that was a byte-identical duplicate of April, capped every month at 50,000 rows, and redacted 100% of the AuditData column — and only after a supplemental objection did the Town admit (in the May 27 cure) that *four* exports were missing and produce a free, narrower-redaction cure. **C 26-21** produced two inbound emails in place of the two outbound Wynn emails actually requested, and closed the request as fulfilled anyway. **C 26-11** produced four emails — two of them Pete's own — for a six-day window in which the Board convened a special meeting and signed a joint letter. **C 26-15** produced outbound emails with their Sent timestamps stripped by Word-document assembly. The first production is consistently the floor, not the ceiling; the requester has to push to get the rest.
+
+### Pattern 7: The inbox-rules anomaly (real, but not a mail-suppression scheme)
+
+Wynn is the **only** user in the entire Town tenant generating `UpdateInboxRules` events — ~19,543 between November 2025 and May 2026 (the original capped files undercounted at 6,357), fired in bulk bursts: 513 in ~2 seconds on Dec 19 2025; 2,180 on Feb 24 2026; 1,134 in ~44 seconds on Apr 3 2026 (the first business day after the Board's March 30 libel letter, touching ~567 distinct rules roughly twice each); 570 on Apr 9. That one account carries ~567 inbox rules and re-stamps the whole set in seconds is genuinely unusual.
+
+The C 26-12 cure (retrieved and analyzed 2026-05-29) tested the darker reading and **did not support it**. The bursts are overwhelmingly `ModifyMailboxRule` events, for which Microsoft logs no rule body — so the blank rule definitions are native M365 behavior, not Town redaction; no request can surface contents that were never recorded. Every rule body M365 *does* log (the `AddMailboxRule` events) is benign: "move to folder," and **every `ForwardTo` across all ten cure files routes to an internal `@townofpaonia.com` address.** No external forwarding, no auto-delete, no redirect, no self-granted mailbox permissions anywhere. The mechanics — OUTLOOK.EXE over internal RPC, `ExternalAccess:false` — indicate Wynn's own desktop Outlook bulk-resyncing a large pre-existing rule store, not deliberate per-rule editing.
+
+This line of inquiry is now **closed**. The **Get-InboxRule** request (filed May 12) is dropped and the companion **five-burst-dates** request (filed May 14) is mooted — the cure showed the logged rule activity is benign, and the Apr-3-after-the-libel-letter timing is not corroborated by any suppression mechanism. The full write-up of what was checked and why it is benign is at [[inbox-rules-investigation-closed]]. The live records thread has shifted from the rules' *content* to the **scope and legality of the Town's redactions** — see [[redaction-audit-c26-12-cure]] and [[pattern-of-retaliation]].
+
+### Pattern 8: Redirect-and-close
+
+On the Finance Committee request (C 26-23), the Town produced an *adjacent* record — the initialed disbursement (Payment Approval) report from the Board packets — and declared the request closed, while producing none of the actually-requested minutes, agendas, sign-in sheets, or logs and refusing to certify their non-existence under § 24-72-204(3). Vetter's on-record position — "I can not say no such records exist because I provided you with a way to access the records that were responsive" — treats the existence of one record type as discharging a request for a different record type. See [[finance-committee-effectiveness]].
+
+## Open Items as of 2026-05-30
 
 | Request | Action Required | Notes |
 |---|---|---|
-| Caselle ERP (Apr 1) | Follow up on production status | Past extended deadline of Apr 16 without confirmation |
-| C 26-11 (Apr 6) | File CFOIC complaint; demand privilege log for Buchner withholdings | Fulfilled Apr 21 with implausibly thin production |
-| C 26-12 (Apr 7) | File CFOIC complaint re: mislabeled March file; demand targeted re-export | Fulfilled Apr 22 with mislabeled March, capped rows, blanket AuditData redaction |
-| New: targeted M365 export | Re-file CORA for `Send`/`SendAs` events Mar 25-30 with AuditData included | See recommendations in [[pattern-of-cora-obstruction]] |
+| Redaction audit (C 26-12 cure) | **Audit what's redacted & whether it's CORA-justified; recover what's recoverable** | Active focus. Catalog the `[REDACTED_ID]` / `[REDACTED_IP]` / `[REDACTED_TOKEN]` categories, test each against § 24-72-204(2)(a)(VIII), and recover over-redacted/inconsistent values (e.g. timestamps from surviving `CreationTime`). |
+| Inbox-rules / Get-InboxRule (no #, May 12) | **Dropped — closed** | Cure showed the rules are benign; not pursued. Findings written up at [[inbox-rules-investigation-closed]]. |
+| 5-burst-dates AuditData (no #, May 14) | **Closed — mooted** | Cure delivered the un-redacted AuditData; nothing to un-redact. See [[inbox-rules-investigation-closed]]. |
+| C 26-12 cure | **Done** — downloaded & analyzed 2026-05-29 | 1.13M rows, un-redacted; inbox-rule activity benign. Analysis: `raw/research/c26-12-cure-analysis.md`. |
+| C 26-23 § 204(4) follow-up | **Confirm sent** | Gmail draft (Vetter-only, threaded) prepared May 29; a "Re: C 26-23" send appears queued for ~June 1 — verify it went out. Boxes each category into produce / cite-exemption / concede non-existence. |
+| C 26-21 (May 20) | Reopen for non-responsive items (b) and (d) | Town substituted inbound emails for Wynn's outbound master-plan reply and P-Hill email. |
+| C 26-17 (Apr 23) | Challenge the "feature not used" denial of the Caselle audit log | No statutory withholding statement; Management Tracking Report is a standard module. |
+| Non-renewal CORA (pending #, May 28) | Watch for production or extension | Due June 3 per Vetter; likely to draw privilege/extension. |
+| Four-item "system logs" request (no #) | Confirm whether ever docketed | No C-number, no ack; call logs / Teams metadata / SharePoint version history never produced. |
+| 5 audit-log-derived requests (the May 29 batch) | **4 CORA SENT May 29–30 → PENDING (deadlines June 3–4)** | Likely C 26-25/26/27/28 (Town numbers pending). Built from the C 26-12 audit-log forensics on the flyer / "by McCarthy" naming / retaliation episode. CCJRA #2 (PD bullying thread) confirmed **SENT May 30** — folds into the June 1 Laiminger meeting (see below). |
 
 ## Escalation Paths
 
@@ -216,14 +332,45 @@ If a CORA request goes past the maximum statutory deadline (10 working days from
 3. **Written notice of intent to sue** under C.R.S. 24-72-204(5) — must give 14 days' written notice before filing in district court
 4. **District court action** for production and reasonable attorney fees (CORA includes a fee-shifting provision in favor of the prevailing requester)
 
+## Related (non-CORA) Matters
+
+These run under different statutes than CORA and are tracked here for context only.
+
+### CCJRA — Colorado Criminal Justice Records Act (C.R.S. § 24-72-301 to § 24-72-309)
+
+| Subject | Date Filed | Status | Notes |
+|---|---|---|---|
+| Police records re complaints concerning Stefen Wynn | 2026-05-28 | **PENDING** | Filed alongside the May 28 CORA non-renewal request. Acknowledged same day by Chief Matt Laiminger. $50 fee threshold noticed (he will notify before exceeding it). CCJRA has no fixed 3-day clock (§ 24-72-305). Pete set an in-person meeting with Laiminger for June 1. |
+| **CCJRA #2** — PD "Bullying and Harassment on Social Media in Advance of 500-600 Political Activists…Rally" thread (Laiminger ↔ Officer Henderson), plus the "No Kings Rally…Fear for Safety…with my Image" thread to the extent in PD custody | 2026-05-30 (sent) | **SENT — PENDING** | Confirmed sent 2026-05-30 (00:59 ET), subject "…PD communications re: flyer / social-media harassment" — covers the Henderson bullying thread, the No Kings rally thread, and any PD records framing the flyer/posts as bullying/harassment/threat, Mar 24–Apr 30 2026, each as the full thread. $50 fee threshold noticed. CCJRA has no fixed clock; folds into the June 1 Laiminger meeting. |
+
+### Citizen-Initiative Petitions — Surveillance Policy Ordinance (C.R.S. § 31-11-106)
+
+Four successive form-review rejections by the Clerk on shifting administrative-function theories, none citing caselaw. The clerk's § 31-11-106(3) review is limited to *form*; subject-matter rejection exceeds that authority. The controlling Colorado Supreme Court cases (*City of Aurora v. Zwerdlinger*, 571 P.2d 1074 (Colo. 1977); *Vagneur v. City of Aspen*, 295 P.3d 493 (Colo. 2013)) cut against the Town's theory.
+
+| Petition | Filed | Rejected | Theory cited | Notes |
+|---|---|---|---|---|
+| #1 (original) | ~2026-03-29 | 2026-04-03 | "administrative function" (6 grounds) | See [[initiative-process]]. |
+| #2 ("Revised Cameras") | ~2026-04-07 | 2026-04-13 | "purely executive acts" (3 grounds) | Narrowed to remove objectionable provisions. |
+| #3 | 2026-04-20 | 2026-04-27 (emailed Apr 28) | "managerial and operational function" (1 paragraph) | Rejection letter misnamed the petition as the "Short-Term Lodging Policy" — a template applied without reading the submission. |
+| #4 (corrected resubmission) | 2026-05-19 | 2026-05-28 | "managerial and operational function" | Rejected **one business day past** the § 31-11-106(3) 5-day deadline (deadline May 27). Near-identical language to the #3 rejection. |
+
+Pete filed a C.R.C.P. 106 notice of intent (mandamus, Delta County District Court) on April 29, 2026; it remains outstanding and is strengthened by the fourth rejection. (Separate June 2025 STR, "Robot Moratorium," and April 13 "Short-Term Lodging" petitions are distinct matters, not part of this surveillance series.)
+
 ## See Also
 
-- [[pattern-of-cora-obstruction]] — Analysis across the three 2026 CORA responses
+- [[pattern-of-cora-obstruction]] — Analysis across the 2026 CORA responses
 - [[public-records-access]] — Issue page on CORA access patterns
 - [[cora-c26-09-verkada-audit-logs]] — The Verkada CORA response
 - [[cora-c26-11-libelous-communications-response]] — The libelous-communications CORA response
 - [[cora-c26-12-m365-audit-logs-response]] — The M365 audit-log CORA response
+- [[cora-c26-15-wynn-sent-emails-nov4-2024]] — The Wynn Nov-4 outbound-emails CORA response
 - [[cora-libelous-communications]] — The original libelous-communications CORA request
 - [[reporter-package-email-coverup]] — The 2024 M365 audit log denial documentation
+- [[who-controls-the-money]] — Segregation-of-duties and financial-control analysis (C 26-17 context)
+- [[finance-committee-effectiveness]] — Open question the C 26-23 request targets
+- [[pattern-of-retaliation]] — Context for the Wynn inbox-rules anomaly and Nov-4 timeline
+- [[stefen-wynn]] — Town Administrator; subject of the audit-log, inbox-rules, and non-renewal matters
 - [[samira-vetter]] — Town Clerk and records custodian
+- [[ruben-santiago]] — Responding custodian on the Finance Committee request
+- [[initiative-process]] — The citizen-initiative petition process
 - [[bill-brunner]] — Subject of the prior CORA bad faith ruling

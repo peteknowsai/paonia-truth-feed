@@ -2,7 +2,7 @@
 title: Discrepancies Register
 type: analysis
 created: 2026-04-06
-updated: 2026-04-19
+updated: 2026-05-30
 tags: [discrepancies, contradictions, analysis]
 sources: []
 ---
@@ -33,13 +33,13 @@ Every place in the wiki where the record contradicts itself, where a public stat
 
 ---
 
-## 3. "Anonymous author(s)" vs. Pete publicly identified
+## 3. "Anonymous author(s)" vs. the Town's own records naming McCarthy
 
-**Mayor's report:** Refers to "the attached anonymous flyer" and "anonymous author(s)." [[mayor-report-agenda-packet|source]]
+**Mayor's report (March 30, 2026):** Refers to "the attached anonymous flyer" and the "anonymous author(s)." [[mayor-report-agenda-packet|source]]
 
-**Record:** Pete publicly claimed the flyer online before the special meeting and engaged directly with Trustee Hunter about it. The board was aware he was the author. [[board-letter-2026-03-30|source]]
+**Record:** The Town's own Microsoft 365 records show it identified the author days earlier. By March 24 — while the flyer was being handed out in town — an internal email titled "Being Handed Out In Town by McCarthy" had reached Town leadership by 11:07 AM, and the Town opened a Microsoft Planner task titled "C 26-11 McCarthy -Flyer." Six days later, the Mayor's official report still called the author "anonymous" while the Board weighed taxpayer-funded newspaper ads in response. [[they-knew-it-was-mccarthy|full analysis]] [[board-letter-2026-03-30|source]]
 
-**Status:** Unresolved. The mayor continued to use "anonymous" in an official document after Pete had publicly identified himself.
+**Status:** Contradicted by the Town's own records. The "anonymous" framing in an official document is irreconcilable with internal records that named McCarthy as the flyer circulated.
 
 ---
 
@@ -130,6 +130,16 @@ Pete's flyer also states Wynn "controls all the money, alone" and notes the hist
 **Record:** Three of the four flyer facts are undisputed — Wynn holds both Administrator and Treasurer roles (Resolutions 2023-07, 2023-08); he prepares the budget; the 2007-2012 embezzlement happened under controls. Of the four controls the Town cites, three lack public evidence of actual function: no Finance Committee invoice-review log is published; Caselle user permissions and audit trails are the subject of three pending CORA requests (filed April 1, April 12, and April 19, 2026); PMS's actual scope of work is undocumented on the record. Board approval of salary is documented. See [[who-controls-the-money|full analysis]].
 
 **Status:** Unresolved. "Blatantly false" is an assertion about controls whose effectiveness has not been independently verified. The pending Caselle CORA requests are the mechanism that will show which characterization the record supports.
+
+---
+
+## 12. Finance Committee records "accessible" vs. "not written down"
+
+**Town Clerk (C 26-23, May 2026):** Declined to certify that no responsive records exist, saying she "provided you with a way to access the records that were responsive" — pointing to the Board-packet payment-approval reports. [[cora-c26-23-finance-committee-records|source]]
+
+**Same response:** The Clerk also said she does "not believe it is written down anywhere," and the Town produced none of the requested minutes, agendas, sign-in sheets, logs, or charter. [[cora-c26-23-finance-committee-records|source]]
+
+**Status:** Unresolved. The response treats the records as both accessible (so non-existence cannot be certified) and as not existing in writing — and a payment-approval report is not the Committee's minutes, agendas, or logs.
 
 ---
 

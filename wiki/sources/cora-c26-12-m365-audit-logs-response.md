@@ -2,14 +2,16 @@
 title: "CORA C 26-12: M365 Unified Audit Log Response"
 type: source
 created: 2026-04-24
-updated: 2026-04-24
-tags: [cora, m365, audit-log, vetter, transparency, obstruction, redactions]
-sources: [cora-tracking-log, audit-log-first-viewed-after-cora, reporter-package-email-coverup]
+updated: 2026-05-30
+tags: [cora, m365, audit-log, vetter, transparency, obstruction, redactions, cure]
+sources: [cora-tracking-log, audit-log-first-viewed-after-cora, reporter-package-email-coverup, cora-c26-12-cure-response, redaction-audit-c26-12-cure, inbox-rules-investigation-closed]
 ---
 
 # CORA C 26-12: M365 Unified Audit Log Response
 
-**Raw files (under `raw/documents/cora-responses/`):**
+> **Status note (updated 2026-05-30):** This page documents the **first C 26-12 production, delivered April 22, 2026**, which the Town later admitted was defective. On **May 27, 2026** the Town issued a cure — it acknowledged four missing exports, delivered roughly 1.13 million un-redacted rows, and removed the blanket `AuditData` redaction. The cure is documented separately at [[cora-c26-12-cure-response]]. The structural problems described below are the record of the original, defective production; they are not the current state. See the "The Cure (May 27, 2026)" section at the bottom.
+
+**Raw files for the original production (under `raw/documents/cora-responses/`):**
 - `C 26-12 Response.pdf` — 2-page cover letter
 - `Redacted_TownOfPaonia_Audit_Log_Nov2025_v1.xlsx` — 50,000 rows, Nov 1 – Nov 30 2025
 - `Redacted_TownOfPaonia_Audit_Log_Dec2025.xlsx` — 50,000 rows, Dec 1 – Dec 31 2025
@@ -18,12 +20,13 @@ sources: [cora-tracking-log, audit-log-first-viewed-after-cora, reporter-package
 - `Redacted_TownOfPaonia_Audit_Log_Mar2026.xlsx` — **contains only April 1 – April 9 2026 (identical to the April file)**
 - `Redacted_TownOfPaonia_Audit_Log_Apr2026.xlsx` — 50,000 rows, **April 1 – April 9 2026 only (cuts off 13 days before delivery)**
 
-**Type:** CORA response package
+**Type:** CORA response package (first production)
 **Request filed:** 2026-04-07
 **Received by Clerk:** 2026-04-08
 **Standard deadline:** 2026-04-13 (missed)
 **Extended deadline:** 2026-04-22
-**Fulfilled:** 2026-04-22 (used the full extension)
+**First production delivered:** 2026-04-22 (used the full extension)
+**Cure delivered:** 2026-05-27 — see [[cora-c26-12-cure-response]]
 **Custodian:** [[samira-vetter|Samira Vetter]], Town Clerk / Official Custodian of Records
 **Requester:** Pete McCarthy
 **Fees:** None charged
@@ -44,7 +47,9 @@ Two items:
 - "User identifiers not associated with the Town of Paonia domain have been redacted."
 - Clerk claims "the records provided reflect the nature and timing of system activity."
 
-## Structural Problems With What Was Produced
+## Structural Problems With the First Production (April 22, 2026)
+
+The defects in this section describe the **original April 22, 2026 production**. The Town later acknowledged them and issued a cure on May 27, 2026 (below). They are preserved here because they are the record of how the request was first answered.
 
 ### 1. The "March 2026" file is a duplicate of the April 2026 file
 
@@ -124,20 +129,36 @@ Confirmed:
 
 The Town is operating on the shortest retention tier Microsoft offers for unified audit logs. Anything older than 180 days has already aged out. Records from the 2024 Planning Commission period — when Pete originally sought MailItemsAccessed data for the November 12, 2024 meeting and was told the records were "not in custody" — are permanently lost under this retention policy. See [[reporter-package-email-coverup]].
 
-## Significance
+## Significance of the First Production
 
 This is the second M365 unified audit log CORA Pete has filed. The first, in September 2024, was denied outright with a statutory citation CFOIC confirmed was improper. The records were never produced and have now aged out of retention.
 
-The second request has been nominally fulfilled, but:
+The April 22, 2026 production was nominally a fulfillment, but, as delivered:
 
 - The **specific month** whose audit log would corroborate or contradict the [[cora-c26-11-libelous-communications-response|C 26-11 communications response]] was replaced with a duplicate of April.
-- The **specific column** containing the substance of every audit event (AuditData) is blanketed out.
-- The total volume is **capped at 50,000 rows per month**, a Purview UI artifact, not a complete export.
+- The **specific column** containing the substance of every audit event (AuditData) was blanketed out.
+- The total volume was **capped at 50,000 rows per month**, a Purview UI artifact, not a complete export.
 
-The result is an audit log production that cannot be used to audit anything.
+As first produced, the audit log could not be used to audit anything. The Town later acknowledged these defects and cured them.
+
+## The Cure (May 27, 2026)
+
+On **May 27, 2026** the Town issued a cure to C 26-12. The full record is at [[cora-c26-12-cure-response]]; in summary:
+
+- **Four missing exports admitted.** The Town acknowledged that four exports had been omitted from the April production.
+- **Roughly 1.13 million un-redacted rows delivered.** The cure replaced the capped, mislabeled files with ten CSV exports — six monthly files (November 2025 through April 2026) plus four short-window gap-fill/overlap files — totaling about 1,134,799 audit records. This is far less truncated than the 50,000-row-capped original.
+- **The `AuditData` column un-redacted.** The blanket `[REDACTED]` on every row was removed. Operation context, user, workload, client application, mailbox owner, folder names, and rule metadata are now readable.
+- **Fees waived.**
+
+What the readable records show, and what they do not: with `AuditData` open, the inbox-rule activity attributed to [[stefen-wynn|Stefen Wynn]] could be examined directly. Every populated rule action in the data is a "move sender into folder" operation; there are no delete, external-forward, or redirect actions in any inbox-rule event, and no mailbox exfiltration appears across the 1.13 million records. The large `UpdateInboxRules` bursts are confirmed and, in the uncapped data, larger than previously estimated — but they are overwhelmingly `ModifyMailboxRule` resync events: pre-existing rule IDs re-stamped within seconds from Wynn's own Outlook desktop client. That is the mechanical signature of an Outlook rule-store resync, **not** mail suppression or hidden rules. This activity is benign — see [[inbox-rules-investigation-closed]]. The substance of a modified rule (its name and actions) is absent for those events because Microsoft never records the rule body for a modify/resync operation, not because the Town redacted it.
+
+What the cure did not resolve: it shipped **new over-broad redactions**. The clock time inside the `CreationDate` column was redacted as if it were an IP address, some cmdlet names were partially clipped, and the same identifier categories the Town claims as exempt sit in plaintext in hundreds of thousands of other rows. The redaction is over-broad as a category and inconsistent as applied. Full analysis: [[redaction-audit-c26-12-cure]].
 
 ## See Also
 
+- [[cora-c26-12-cure-response]] — the May 27, 2026 cure to this request
+- [[redaction-audit-c26-12-cure]] — analysis of the cure's over-broad redactions
+- [[inbox-rules-investigation-closed]] — why Wynn's inbox-rule bursts are benign
 - [[cora-tracking-log]] — Master CORA tracking
 - [[pattern-of-cora-obstruction]] — Analysis across three CORA responses
 - [[cora-c26-09-verkada-audit-logs]] — Verkada CORA
