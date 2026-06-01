@@ -2,7 +2,7 @@
 title: Discrepancies Register
 type: analysis
 created: 2026-04-06
-updated: 2026-05-30
+updated: 2026-05-31
 tags: [discrepancies, contradictions, analysis]
 sources: []
 ---
@@ -140,6 +140,18 @@ Pete's flyer also states Wynn "controls all the money, alone" and notes the hist
 **Same response:** The Clerk also said she does "not believe it is written down anywhere," and the Town produced none of the requested minutes, agendas, sign-in sheets, logs, or charter. [[cora-c26-23-finance-committee-records|source]]
 
 **Status:** Unresolved. The response treats the records as both accessible (so non-existence cannot be certified) and as not existing in writing — and a payment-approval report is not the Committee's minutes, agendas, or logs.
+
+---
+
+## 13. C 26-11 drafts "already publicly available" vs. the Town's own audit log naming non-published drafts
+
+**Town Clerk (C 26-11 response, 2026-04-21):** In response to the request for "all drafts, revisions, and tracked changes" of the March 30 Board letter, Vetter wrote that "The two drafts of the letter requested are already publicly available here:" and gave two URLs — the CivicClerk agenda-packet version and the townofpaonia.colorado.gov "Letter to Paonia Citizens - 03312026.pdf." Any communication involving the Town Attorney was withheld as privileged, with no privilege log. [[cora-c26-11-libelous-communications-response|source]]
+
+**Record:** The Town's own Microsoft 365 audit log — produced under C 26-12 — names additional, non-published draft threads sitting in officials' mailboxes in the same window: `Re: draft "letter from Trustee"` (3/27–3/28; `paiges`/`samirav`/`stefenw`), `Response to the Citizen's 10 things flyer . I Need comments /no later than 2:00 tomorrow` (3/28–3/31; `paiges`/`ptownlegal`), and `RE: PLease see the attached drafft Mayor's report for the Special Meeting` (3/27–3/29; `lucyh`/`paiges`/`samirav`). None of these is the CivicClerk or townofpaonia.colorado.gov published version, and none was produced or logged as withheld. [[cora-c26-12-m365-audit-logs-response|source]]
+
+**Caveat:** The audit log records only subject lines, timestamps, and which mailbox holds each item — not message bodies, authorship, or recipient lists. It cannot prove what these drafts said, only that they existed in those mailboxes at those times.
+
+**Status:** Contradicted by the Town's own records. The "already publicly available" framing equated "all drafts, revisions, and tracked changes" with the two finished published letters, while the Town's audit log shows non-published draft threads — some sitting only in non-attorney mailboxes — that the production neither disclosed nor logged. Separately, the C 26-12 audit-log production *itself* first omitted true March and post-April-9 (the windows holding these drafts and the April 21 post-closure deletions), completeness arriving only after objection.
 
 ---
 
