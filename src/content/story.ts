@@ -179,7 +179,7 @@ export const deckTiles: DeckTile[] = [
     image: "/img/story/brunner.png",
     imageAlt: "An empty chair pulled back from a council table, a tipped-over nameplate.",
     pageSlugs: ["bill-brunner", "the-brunner-standard", "retaliation-pattern"],
-    storyHref: "/story#retaliation",
+    storyHref: "/articles/removing-the-trustee",
   },
   {
     id: "bowman",
@@ -191,7 +191,7 @@ export const deckTiles: DeckTile[] = [
     image: "/img/story/bowman.png",
     imageAlt: "A cleared-out desk with a box of belongings and an empty office chair.",
     pageSlugs: ["kaja-bowman", "retaliation-pattern", "cory-heiniger"],
-    storyHref: "/story#retaliation",
+    storyHref: "/articles/fired-for-asking",
   },
   {
     id: "mccarthy",
@@ -203,7 +203,7 @@ export const deckTiles: DeckTile[] = [
     image: "/img/story/mccarthy.png",
     imageAlt: "A formal complaint letter left unopened on an official's empty desk.",
     pageSlugs: ["board-oversight", "what-the-board-did-not-dispute", "ten-things-flyer", "2026-03-30-special-meeting"],
-    storyHref: "/story#retaliation",
+    storyHref: "/articles/calling-the-record-libel",
   },
   {
     id: "initiatives",
@@ -215,7 +215,7 @@ export const deckTiles: DeckTile[] = [
     image: "/img/story/initiatives.png",
     imageAlt: "A citizen flyer stapled to a public bulletin board.",
     pageSlugs: ["initiative-process", "what-the-board-did-not-dispute"],
-    storyHref: "/story#initiatives",
+    storyHref: "/articles/four-rejected-initiatives",
   },
   {
     id: "records",
@@ -227,7 +227,7 @@ export const deckTiles: DeckTile[] = [
     image: "/img/story/records.png",
     imageAlt: "A stack of public documents with heavy black redaction bars.",
     pageSlugs: ["public-records-access", "pattern-of-cora-obstruction", "samira-vetter"],
-    storyHref: "/story#records",
+    storyHref: "/articles/records-they-wont-hand-over",
   },
   {
     id: "cameras",
@@ -239,7 +239,7 @@ export const deckTiles: DeckTile[] = [
     image: "/img/story/surveillance.png",
     imageAlt: "A surveillance camera mounted above a public meeting room.",
     pageSlugs: ["cameras-always-on-not-motion", "facial-recognition-proof", "final-published-letter", "wynn-knowledge-of-cameras"],
-    storyHref: "/story#surveillance",
+    storyHref: "/articles/false-claims-about-the-cameras",
   },
 ];
 
