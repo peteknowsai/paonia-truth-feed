@@ -2,9 +2,9 @@
 title: Stefen Wynn
 type: person
 created: 2026-04-05
-updated: 2026-05-22
+updated: 2026-06-11
 tags: [wynn, town-administrator, neptune-beach, verkada, surveillance, nonrenewal]
-sources: [board-letter-2026-03-30, reporter-package-email-coverup, original-draft-with-libelous, cora-c26-09-verkada-audit-logs, verkada-usage-patterns, admin-search-special-meeting-2026-05-22]
+sources: [board-letter-2026-03-30, reporter-package-email-coverup, original-draft-with-libelous, cora-c26-09-verkada-audit-logs, verkada-usage-patterns, admin-search-special-meeting-2026-05-22, neptune-beach-msj-2026]
 ---
 
 # Stefen Wynn
@@ -14,9 +14,11 @@ sources: [board-letter-2026-03-30, reporter-package-email-coverup, original-draf
 
 ## Background
 
-Prior to Paonia, Wynn served as City Manager of Neptune Beach, Florida. He was unanimously fired in January 2023 for "flagrant neglect of duty" and "willful misconduct which substantially impairs or damages the interests or reputation of the city." He filed a whistleblower retaliation lawsuit (Case No. 23-CA-8801, Duval County Circuit Court). Jury trial scheduled for the week of 2026-08-17.
+Prior to Paonia, Wynn served as City Manager of Neptune Beach, Florida (2020-01-06 to 2023-01-17). His only prior manager job was Albion, Indiana, population 2,300. He was unanimously fired by the Neptune Beach City Council in January 2023 for "flagrant neglect of duty" and "willful misconduct which substantially impairs or damages the interests or reputation of the city." He filed a whistleblower retaliation lawsuit (Case No. 23-CA-8801, Duval County Circuit Court). Jury trial scheduled for the week of 2026-08-17; the City's [[neptune-beach-msj-2026|motion for summary judgment]] (2026-05-25) is pending.
 
-Sources: News4Jax (2023-06-27), WOKV (2023-01-18). Court filings in `raw/documents/bowman-case/`.
+The City's summary judgment evidence includes two episodes with documented Paonia parallels: Wynn told the Council in December 2022 he was seeing the water tank site plan "for the first time today" when his own June 2022 emails show he had received the plan and dimensions and personally picked the tank's color (compare the [[reporter-package-email-coverup|2024-11-04 email deception]]); and the new Community Development Director declared that Wynn asked her, behind a closed door, to pre-screen water-tank records she was gathering for a public records request (compare his [[verkada-usage-patterns|2026-03-26 Verkada audit log review]] before the [[cora-c26-09-verkada-audit-logs|CORA C 26-09]] production).
+
+Sources: News4Jax (2023-06-27), WOKV (2023-01-18). Court filings in `raw/documents/bowman-case/`; see [[neptune-beach-case]] and [[neptune-beach-msj-2026]].
 
 ## Key Actions (Paonia)
 

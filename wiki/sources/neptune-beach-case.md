@@ -2,20 +2,20 @@
 title: Wynn v. City of Neptune Beach (Case No. 23-CA-8801)
 type: source
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-06-11
 tags: [wynn, neptune-beach, lawsuit, whistleblower, court, florida]
-sources: []
+sources: [neptune-beach-msj-2026]
 ---
 
 # Wynn v. City of Neptune Beach (Case No. 23-CA-8801)
 
-**Raw files:** `raw/documents/bowman-case/` (22 court filings + 1 letter)
+**Raw files:** `raw/documents/bowman-case/` (23 court filings + 1 letter)
 **Type:** Court case, whistleblower retaliation
 **Court:** Circuit Court, Fourth Judicial Circuit, Duval County, Florida
 **Filed:** 2023-05-16
 **Plaintiff:** Stefen Wynn (represented by Marie A. Mattox, Tallahassee)
 **Defendant:** City of Neptune Beach
-**Status:** Jury trial set for the week of 2026-08-17, four days allocated. Pretrial conference 2026-08-03.
+**Status:** Jury trial set for the week of 2026-08-17, four days allocated. Pretrial conference 2026-08-03. The City's [[neptune-beach-msj-2026|Amended Motion for Summary Judgment]] (filed 2026-05-25) is pending — if granted, the case ends without trial.
 
 ## Summary
 
@@ -54,6 +54,8 @@ sources: []
 | - | Neptune Beach files Answer and Affirmative Defenses to Second Amended Complaint |
 | - | Discovery: both sides exchange Requests to Produce |
 | 2026-03-11 | Second Amended Order setting jury trial for week of 2026-08-17 |
+| 2026-05-21 | Neptune Beach files Motion for Summary Judgment |
+| 2026-05-25 | Neptune Beach files [[neptune-beach-msj-2026\|Amended Motion for Summary Judgment]] (corrects three scrivener errors) |
 
 ## Key Details
 
@@ -74,11 +76,16 @@ The board complaint letter notes: "Two lawsuits, two jurisdictions, the same pat
 
 However, it is important to note that these are Wynn's allegations in his own lawsuit. Neptune Beach's side of the story is presented in their motions to dismiss and answer, which raise affirmative defenses. The case has not yet been tried.
 
+## The City's Side
+
+The City's fullest account is its [[neptune-beach-msj-2026|Amended Motion for Summary Judgment]] (2026-05-25). In brief: Wynn was the City's chief executive officer and therefore could not "blow the whistle" to himself about departments he supervised; his claimed disclosures were an auditor questionnaire on which he affirmatively denied awareness of fraud, and letters describing internal-controls work that was his own job; and the firing was for documented cause — the City's evidence shows he received the water tank site plan and dimensions in June 2022 and personally picked the tank's color, then told the Council in December 2022 he was seeing the site plan for the first time. See the source page for the full breakdown, including the Whitmore declaration (Wynn allegedly asking to pre-screen records gathered for a public records request) and the felony accusation against Councilor Key that the City Attorney concluded was wrongful.
+
 ## Files in Raw Collection
 
-22 court filings covering: complaint, amended complaints, motions to dismiss, motions to strike, responses, discovery requests and responses, orders, trial scheduling. Plus one letter to Paonia citizens dated 2026-03-31.
+23 court filings covering: complaint, amended complaints, motions to dismiss, motions to strike, responses, discovery requests and responses, orders, trial scheduling, and the amended motion for summary judgment. Plus one letter to Paonia citizens dated 2026-03-31.
 
 ## See Also
 
 - [[stefen-wynn]]
+- [[neptune-beach-msj-2026]]
 - [[retaliation-pattern]]

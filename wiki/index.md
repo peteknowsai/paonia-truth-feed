@@ -66,7 +66,8 @@ See [[SCHEMA]] for conventions and workflows.
 - [[meeting-2024-11-12|Board Budget Work Session (2024-11-12)]] -- Verkada camera discussion, $50K budget
 - [[meeting-2024-11-20|Planning Commission Work Session (2024-11-20)]] -- Walk-out threat, stonewalling, resignation catalyst
 - [[meeting-2024-12-02|Planning Commission Meeting (2024-12-02)]] -- Resignation read into record, Watson corroborates
-- [[neptune-beach-case|Wynn v. Neptune Beach (23-CA-8801)]] -- Whistleblower case, jury trial Aug 2026, 22 filings
+- [[neptune-beach-case|Wynn v. Neptune Beach (23-CA-8801)]] -- Whistleblower case, jury trial Aug 2026, 23 filings
+- [[neptune-beach-msj-2026|Neptune Beach Motion for Summary Judgment (2026-05-25)]] -- City's evidence: Wynn picked the tank color, then claimed he'd never seen the site plan
 - [[ten-things-flyer|Original "10 Things" Flyer]] -- The document that started it all, every claim sourced
 - [[hunter-rebuttal-flyer|Hunter's Rebuttal Flyer]] -- Unsigned counter-flyer, vetted by Wynn and Buchner
 - [[verkada-10-things|"10 Things About Paonia's Cameras"]] -- Verkada AI capabilities, breach history, FTC fine
