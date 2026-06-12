@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Paonia Procurement Map — 2024–2026</title>
+<style>
+  :root {
+    --ink: #141414;
+    --paper: #fafaf7;
+    --rule: #141414;
+    --flag: #a01818;
+    --flag-bg: #f7ebe9;
+    --counter: #1a5a2a;
+    --counter-bg: #eaf2ec;
+    --note: #1a3a6a;
+    --note-bg: #e9eef5;
+    --muted: #5a5a55;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+  body {
+    font-family: "Courier Prime", "Courier New", Courier, monospace;
+    font-size: 15px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 32px 22px 96px; }
+  header.masthead {
+    border: 3px solid var(--rule); padding: 22px 24px; margin-bottom: 30px;
+    background: var(--ink); color: var(--paper);
+  }
+  header.masthead .kicker {
+    text-transform: uppercase; letter-spacing: 3px; font-size: 11px; margin: 0 0 8px;
+  }
+  header.masthead h1 { margin: 0 0 10px; font-size: 30px; line-height: 1.15; }
+  header.masthead .standfirst { margin: 0; font-size: 14px; line-height: 1.5; }
+  header.masthead .byline {
+    margin: 14px 0 0; font-size: 11px; letter-spacing: 1px;
+    text-transform: uppercase; color: #c9c9c4;
+  }
+  h2 {
+    font-size: 20px; margin: 46px 0 6px; padding-bottom: 6px;
+    border-bottom: 3px solid var(--rule); text-transform: uppercase; letter-spacing: 1px;
+  }
+  h2 .num { color: var(--muted); margin-right: 8px; }
+  h3 { font-size: 16px; margin: 26px 0 6px; }
+  h4 { font-size: 14px; margin: 18px 0 4px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+  p { margin: 10px 0; }
+  a { color: var(--note); }
+  strong { font-weight: 700; }
+  .lede { font-size: 16px; }
+  ul, ol { margin: 10px 0; padding-left: 22px; }
+  li { margin: 5px 0; }
+  code, .mono { font-family: inherit; background: #ececE6; padding: 1px 4px; }
+
+  .box { border: 2px solid var(--rule); padding: 14px 16px; margin: 16px 0; }
+  .box .label {
+    text-transform: uppercase; letter-spacing: 2px; font-size: 11px; font-weight: 700;
+    margin: 0 0 6px;
+  }
+  .flag { border-color: var(--flag); background: var(--flag-bg); }
+  .flag .label { color: var(--flag); }
+  .counter { border-color: var(--counter); background: var(--counter-bg); }
+  .counter .label { color: var(--counter); }
+  .note { border-color: var(--note); background: var(--note-bg); }
+  .note .label { color: var(--note); }
+  .verdict { border: 3px solid var(--rule); background: #fff; padding: 18px 20px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th, td { border: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: var(--ink); color: var(--paper); text-transform: uppercase; letter-spacing: 1px; font-size: 11px; }
+  tr:nth-child(even) td { background: #f0f0ea; }
+  .num-cell { text-align: right; white-space: nowrap; }
+  .tag {
+    display: inline-block; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
+    padding: 1px 6px; border: 1px solid var(--rule); margin: 1px 0;
+  }
+  .tag.nobid { background: var(--flag-bg); color: var(--flag); border-color: var(--flag); }
+  .tag.bid { background: var(--counter-bg); color: var(--counter); border-color: var(--counter); }
+
+  .stat-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+  .stat {
+    flex: 1 1 150px; border: 2px solid var(--rule); padding: 10px 12px; background: #fff;
+  }
+  .stat .big { font-size: 26px; font-weight: 700; line-height: 1.1; }
+  .stat .cap { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-top: 4px; }
+
+  .thread { border: 2px solid var(--rule); margin: 14px 0; }
+  .thread .thead { background: var(--ink); color: var(--paper); padding: 8px 12px; font-weight: 700; }
+  .thread .tbody { padding: 4px 12px 10px; }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin: 7px 0; font-size: 12px; }
+  .bar-label { flex: 0 0 116px; }
+  .bar-track { flex: 1 1 auto; background: #e4e4dd; height: 18px; position: relative; border: 1px solid var(--rule); }
+  .bar-fill { background: var(--ink); height: 100%; }
+  .bar-fill.over { background: var(--flag); }
+  .bar-val { flex: 0 0 96px; text-align: right; white-space: nowrap; }
+
+  .toc { border: 2px solid var(--rule); padding: 14px 18px; margin-bottom: 24px; background: #fff; }
+  .toc ol { columns: 2; column-gap: 28px; margin: 6px 0 0; }
+  .toc a { text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+
+  footer { margin-top: 60px; border-top: 3px solid var(--rule); padding-top: 14px; font-size: 12px; color: var(--muted); }
+  .src { font-size: 11px; color: var(--muted); }
+  hr.soft { border: none; border-top: 1px dashed var(--muted); margin: 22px 0; }
+  @media (max-width: 620px) {
+    .toc ol { columns: 1; }
+    header.masthead h1 { font-size: 23px; }
+    .bar-label { flex-basis: 90px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <p class="kicker">A Working Investigative Document · paoniatruth.site</p>
+  <h1>The Paonia Procurement Map</h1>
+  <p class="standfirst">How the Town of Paonia bought things from January 2024 through May 2026 — every contract, change order, task order and sole-source award that appears in 76 Board of Trustees meeting packets, measured against the Town's own purchasing rules. What the pattern shows, and — just as carefully — what it does not.</p>
+  <p class="byline">Compiled May 14, 2026 · 76 meeting packets · ~150 contracting actions · $2.95M of itemized disbursements</p>
+</header>
+
+<div class="box note">
+  <p class="label">Read this first — the rigor rule</p>
+  <p style="margin:4px 0;">A single procurement document cannot tell you whether a bad outcome was caused by <strong>disorganization</strong> or by <strong>deliberate steering</strong> — the paperwork looks identical either way. This document's job is to gather the evidence that would <em>distinguish</em> them, not to declare a verdict the evidence can't support. Where you see the word "flag," read it as <em>"a question worth answering,"</em> not <em>"a finding of wrongdoing."</em> The conclusion in Section&nbsp;11 says exactly how far the evidence goes and where it stops.</p>
+</div>
+
+<nav class="toc">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#bottomline">The bottom line</a></li>
+    <li><a href="#method">How this was built</a></li>
+    <li><a href="#yardstick">The yardstick: the Town's own rules</a></li>
+    <li><a href="#chain">The procurement chain</a></li>
+    <li><a href="#patterns">Eight patterns</a></li>
+    <li><a href="#threads">The change-order threads</a></li>
+    <li><a href="#vendors">The vendor map</a></li>
+    <li><a href="#relationships">The relationship vendors</a></li>
+    <li><a href="#counter">What cuts the other way</a></li>
+    <li><a href="#ledger">The money ledger</a></li>
+    <li><a href="#verdict">The verdict</a></li>
+    <li><a href="#next">What we still don't know</a></li>
+  </ol>
+</nav>
+
+<!-- 1 -->
+<h2 id="bottomline"><span class="num">1</span>The bottom line</h2>
+<p class="lede">Across two and a half years and 76 meetings, the Town of Paonia ran a procurement system with two distinct faces.</p>
+<p>On <strong>hard, visible commodity and construction work</strong> — a water-tank rehab, janitorial service, street signs, an IT contract, playground chips — the Town frequently <em>did</em> competitively bid, drew real multi-firm fields, and took the low bid. That half is on the record and it matters.</p>
+<p>On <strong>high-value professional services and the big infrastructure-engineering and security contracts</strong> — legal, engineering, finance, HR, the water-program consultants, the camera system — the competitive process required by the Town's <em>own</em> code was bypassed again and again: through sole-source awards, through "suspend the rules" motions, through change orders that doubled contracts without a fresh bid, and through amounts sized to sit just under the threshold where the rules switch on.</p>
+<p>That selective pattern runs through a single chokepoint. The Town Administrator/Treasurer — <strong>hired in 2023 with no competitive search of his own</strong>, and the author of the very purchasing policy that names him as the sole-source approver — is the presenter, recommender, or signatory on the large majority of the no-bid awards. And at least <strong>five vendors in the pattern have documented personal or insider ties to Town officials</strong>, including one where the relationship is written into the sole-source justification itself.</p>
+<div class="box flag" style="margin-top:16px;">
+  <p class="label">What the evidence supports saying</p>
+  <p style="margin:4px 0;">The competitive-bid process — mandated by the Town's own Municipal Code and by Colorado statute — is <strong>routinely bypassed on exactly the contracts where it matters most</strong>, in ways that consistently favor a small set of out-of-area firms and pre-existing relationships, with one official as the single point of control over the entire chain.</p>
+</div>
+<div class="box counter">
+  <p class="label">What the evidence does NOT support saying</p>
+  <p style="margin:4px 0;">It does <strong>not</strong> show money flowing back to any official, a kickback, or a proven quid-pro-quo. "Pay-for-play" remains a <em>hypothesis the pattern is consistent with</em> — not a demonstrated fact. The disorganization is also genuine and pervasive, and disorganization can produce every red flag below on its own. Section&nbsp;12 lists the specific things that would move this from "steering-shaped pattern" to "proven."</p>
+</div>
+
+<!-- 2 -->
+<h2 id="method"><span class="num">2</span>How this was built</h2>
+<p>Every regular, special, and work-session packet of the Paonia Board of Trustees from <strong>January 9, 2024 through May 12, 2026</strong> was retrieved directly from the Town's CivicClerk portal — <strong>76 packets in all</strong>, the entire tenure of the current Town Administrator plus a baseline. Each was converted to text and read for every instance of money leaving the Town to an outside party: contracts, change orders, task orders, professional-services agreements, bid awards, quotes, leases, and the bi-weekly disbursement registers.</p>
+<div class="stat-row">
+  <div class="stat"><div class="big">76</div><div class="cap">Board packets, 2024–26</div></div>
+  <div class="stat"><div class="big">~150</div><div class="cap">Contracting actions extracted</div></div>
+  <div class="stat"><div class="big">2,809</div><div class="cap">Disbursement line items parsed</div></div>
+  <div class="stat"><div class="big">$2.95M</div><div class="cap">Itemized vendor payments</div></div>
+</div>
+<p><strong>Limits of this document, stated plainly:</strong></p>
+<ul>
+  <li>The disbursement ledger (Section 10) is built from the 23 packets whose check registers survived as readable text; capture is roughly 80%. It is <strong>directional</strong> — good for showing which vendors recur and at what scale, not a penny-exact audit.</li>
+  <li>Several original contracts pre-date the packet window or appear only as scanned images that did not convert — notably the <em>original</em> KLM, Markley's Precision, Viaflex, and Earthworx agreements, and the master engineering agreements under which task orders are issued. Where a procurement method "is not in the record," that is a statement about the public packets, not an accusation.</li>
+  <li>This is a <strong>working document</strong>. It names living people and describes serious patterns. It is built entirely from public records and is written to be checked.</li>
+</ul>
+
+<!-- 3 -->
+<h2 id="yardstick"><span class="num">3</span>The yardstick: the Town's own rules</h2>
+<p>The standard this map measures against is not an outside opinion. It is <strong>the Town of Paonia's own Purchasing Policy</strong> — drafted by the Town Administrator, adopted as Ordinance 2024-03 / Resolution 2024-14 on September 17, 2024, and now embedded in Municipal Code Chapter 4-6. Its thresholds:</p>
+<table>
+  <thead><tr><th>Purchase value</th><th>What the Town's own policy requires</th></tr></thead>
+  <tbody>
+    <tr><td class="num-cell">to $1,000</td><td>Nothing. No requisition, no competition.</td></tr>
+    <tr><td class="num-cell">$1,001–$5,000</td><td>Three documented quotes attached to the requisition.</td></tr>
+    <tr><td class="num-cell">$5,001–$10,000</td><td>Three written quotes <em>plus</em> prior Town Administrator approval. The Administrator may waive the quote requirement in writing.</td></tr>
+    <tr><td class="num-cell"><strong>$10,001 +</strong></td><td><strong>A formal, public bid process — solicitation posted ~30 days — plus Board of Trustees approval.</strong></td></tr>
+    <tr><td class="num-cell">sole-source > $5,000</td><td>Board approval required, after a favorable Administrator recommendation; a written Sole Source Justification form is required at $10,001+.</td></tr>
+    <tr><td class="num-cell">change orders</td><td>A project of $50,000+ with a change-order increase of 10%+ requires Administrator approval.</td></tr>
+  </tbody>
+</table>
+<p>Two more provisions matter enormously, because the pattern in Section 5 runs straight into them:</p>
+<div class="box flag">
+  <p class="label">The Town's policy bans exactly what the pattern does</p>
+  <p style="margin:4px 0;">&bull; <strong>Anti-splitting (Manual §2.3):</strong> "Departments are <strong>forbidden to artificially divide purchase requisitions to circumvent any competitive bidding requirement.</strong>"<br>
+  &bull; <strong>Consequence (Town Code):</strong> "Purchases outside this process are <strong>void and unenforceable</strong> under the Town Code."</p>
+</div>
+<p>Behind the Town's own rule sits Colorado statute. <strong>C.R.S. § 31-15-712</strong> requires competitive bidding for public-improvement construction at a far lower line — <strong>$5,000</strong> — and calls dividing a project to dodge that requirement <strong>"unlawful."</strong> (The section is captioned "cities"; whether it binds a statutory town like Paonia directly is a question for the Town Attorney — but the Town's own $10,001 policy applies regardless, and is the yardstick used throughout this document.)</p>
+<p class="src">Sources: Paonia Purchasing Policy Manual / Ord. 2024-03, transcribed verbatim in the 09-23-2025 and 12-09-2025 packets · C.R.S. § 31-15-712 (Justia / FindLaw / 2024 CRS Title 31).</p>
+
+<!-- 4 -->
+<h2 id="chain"><span class="num">4</span>The procurement chain</h2>
+<p>Every pattern in this document narrows to one node. The Town of Paonia consolidated its Town Administrator and Town Treasurer into a <strong>single position</strong> (Resolutions 2023-07 and 2023-08) and on <strong>July 11, 2023</strong> appointed Stefen Wynn to hold both.</p>
+<div class="box flag">
+  <p class="label">The first no-bid was the hire itself</p>
+  <p style="margin:4px 0;">No competitive-search record, candidate pool, interview process, or selection-committee documentation for that appointment appears anywhere in the public record reviewed. The Town hired him roughly six months after the Neptune Beach, Florida city council voted <em>unanimously</em> to fire him for "flagrant neglect of duty" — the cited trigger there being a failure to ensure permitting for a <strong>water tower</strong>. Paonia's signature infrastructure crisis of this period is a water tank.</p>
+</div>
+<p>From that seat, the same official:</p>
+<ul>
+  <li><strong>Wrote the purchasing policy</strong> — by the Town's own account, "through our Town Administrator's own initiative" — the policy that names the Town Administrator/Treasurer as the sole-source approver and the waiver authority.</li>
+  <li>Is the <strong>presenter, recommender, submitter, or signatory</strong> on the large majority of the contracting actions in this map — and was a scoring-panel member on the competitive RFPs too.</li>
+  <li><strong>Prepares the annual budget</strong> that contains his own compensation (the Board approves it).</li>
+  <li>Is one of only two "Position 1" signers on every Town bank account.</li>
+  <li>Is the recurring authorized executor — the motions repeatedly read <em>"authorize the Town Administrator to execute all necessary documents."</em></li>
+</ul>
+<p>None of that is, by itself, evidence of wrongdoing. Concentrating procurement authority in a small-town administrator is common and often unavoidable. It is recorded here because <strong>it is the structural precondition</strong> that makes every other pattern possible, and because the same person occupies every checkpoint that would otherwise catch the others.</p>
+
+<!-- 5 -->
+<h2 id="patterns"><span class="num">5</span>Eight patterns</h2>
+<p>These are the recurring shapes in the record. Each is documented; each also carries the most innocent reading available, because both readings produce the same paperwork.</p>
+
+<h3>1 — Professional services are essentially never competed</h3>
+<p>Legal, engineering, finance, planning, HR — across the entire window, the Town's high-value professional-services engagements rode existing relationships, "master agreements," referrals, or sole-source memos. Not one of the following had a documented competitive solicitation: the Town Attorney (Buchner; Kelly PC before him; the NSW water-attorney engagement; Butler Snow bond counsel), the standing water engineers (RESPEC, SGM), the finance contractor (Professional Management Solutions), the HR firm (New Focus HR), and the planning consultants (Phoenix Rising, Urban Rural Continuum, Sustainable Futures).</p>
+<div class="box counter"><p class="label">The fair reading</p><p style="margin:4px 0;">A town this size has few local specialty firms, and continuity with an engineer who knows the system has real value. <em>But</em> the Town's own policy still requires a formal bid above $10,001, and "we already know them" is not one of its listed exceptions.</p></div>
+
+<h3>2 — Change orders are the bid-avoidance mechanism</h3>
+<p>The single most consistent finding. Contracts are awarded at a modest figure, then enlarged — sometimes past <em>double</em> — through a sequence of change orders, none of which is ever competitively tested. See Section 6 for the four worst threads. The headline: a <strong>$97,860</strong> tank-inspection contract that reached <strong>$200,713</strong>, and a <strong>$64,634</strong> design contract that reached <strong>$197,734</strong>.</p>
+
+<h3>3 — "Not to exceed" ceilings are padded ~25% above the vendor's own quote</h3>
+<p>When the Board sets a not-to-exceed number, it has repeatedly set it about a quarter above the documented price:</p>
+<ul>
+  <li>SGM construction-management scope — approved at <strong>$384,058</strong> against SGM's own quoted total of <strong>$307,789</strong> (+24.8%).</li>
+  <li>Misco Water lagoon aerators — approved at <strong>$132,000</strong> against a staff estimate of <strong>~$105,846</strong> (+25%).</li>
+</ul>
+<p>A ceiling set that far above the real number is room a project can grow into without ever going back to the Board.</p>
+
+<h3>4 — Contracts move before the Board votes</h3>
+<p>Repeatedly, the vote was a formality after the fact:</p>
+<ul>
+  <li>Two RESPEC water awards <strong>signed by the vendor</strong> (Aug 15 and Aug 21, 2024) before the Aug 27 Board meeting.</li>
+  <li>The Sustainable Futures code-rewrite contract carried an "effective date" before the Board approved it.</li>
+  <li>A $1.5M VoTech building-purchase offer <strong>signed by the Mayor</strong> before any Board action (the Board later had to terminate it).</li>
+  <li>Rundle Construction's Notice of Award was issued December 15, 2025 — before the Board's late-December presentation and January ratification.</li>
+  <li>Roop Excavating's ~$30,000 tie-in work was, per the minutes, "done ahead of formal approval."</li>
+  <li>Earthworx change orders effective — and one invoiced — before the Board "accepted" them; the City of Delta inspection contract ratified <em>after</em> the prior one had lapsed.</li>
+</ul>
+
+<h3>5 — Amounts cluster at the thresholds; scopes get split</h3>
+<p>The recurring round number is <strong>$10,000</strong> — the exact line above which the Town's competitive process <em>and</em> its sole-source-justification requirement both switch on. The Urban Rural Continuum addendum and the SGM temporary-tank task order were each written at a tidy <strong>$10,000.00</strong>. The Net2Phone phone contract and the Istonish firewall ($9,290) were each <em>explicitly</em> justified in the staff report as "less than $10,001" — therefore no competition required. In 2024 a cluster of no-bid software buys landed just under $25,000 (iWorQ $17,600, RESPEC task order $21,600, Caselle $21,610). The SGM tank initiative was presented as a $10,000 design task <em>now</em> with a $212,300 tank purchase held back as a "Decision Later." The Smith Center was approved as one "up to $50,000" bucket spanning three separate scopes and vendors.</p>
+<div class="box flag"><p class="label">Against the Town's own words</p><p style="margin:4px 0;">The Town's policy expressly forbids "artificially divid[ing] purchase requisitions to circumvent any competitive bidding requirement." Splitting a $222,300 tank project into a $10K task and a $212K "later," or a $50K building rehab into sub-scopes, is the shape that rule describes.</p></div>
+
+<h3>6 — Big-ticket items procured by "suspending the rules"</h3>
+<ul>
+  <li><strong>Verkada camera system, $50,288</strong> — the August 12, 2025 motion <em>expressly waived</em> Town Code §4-6-80 "allowing for a sole source bid." A code waiver, on the record, to skip competition.</li>
+  <li><strong>TYMCO street sweeper, $394,500</strong> — the Board "suspended purchasing rules, answered 8 sole-source questions in the affirmative." The "comparison" offered was two <em>other</em> cities buying the <em>same</em> sole-source vendor — not competing brands.</li>
+  <li><strong>Precision Concrete Cutting, $42,831</strong> — declared sole-source on a single staff sentence, with no written Sole Source Justification form, though the Town's own policy requires one above $10,001.</li>
+</ul>
+
+<h3>7 — Vendors with personal or insider ties to Town officials</h3>
+<p>At least five. They get their own section — Section 8 — because this is the pattern that most cleanly separates "disorganized" from "steered."</p>
+
+<h3>8 — The paperwork does not hold together</h3>
+<p>Disorganization is itself a finding, because a procurement system this loose <em>cannot</em> reliably catch steering even if someone looked. A partial list from the record:</p>
+<ul>
+  <li>One SGM change order appears with <strong>three different dollar figures</strong> ($32,500 / $35,200 / $40,000) across the agenda, the attached memo, and a scorecard.</li>
+  <li>The water-tank construction award: staff report says <strong>$916,250</strong>, the motion the Board actually passed says <strong>$957,750</strong> — a $41,500 gap, unexplained.</li>
+  <li>The Safe-Streets consultant: the staff report and scoring sheet name <strong>KLJ</strong> as the top-scoring firm; the motion awards the work to <strong>Consor</strong> — which does not appear in the 8-firm scoring table at all.</li>
+  <li>A KLM change-order contract was drafted naming "<strong>The Landmark Resort</strong>" as the counterparty; the Board had to fix it by motion.</li>
+  <li>A RESPEC invoice booked at <strong>$450</strong> was actually <strong>$10,419.95</strong> — a 2,200% understatement caught only by chance before checks printed.</li>
+  <li>Multi-decade leases presented with blank staff reports; change orders approved with no dollar figure in the packet; the bi-weekly disbursement register absent from most packets entirely.</li>
+</ul>
+
+<!-- 6 -->
+<h2 id="threads"><span class="num">6</span>The change-order threads</h2>
+<p>Four contracts show the mechanism most clearly. The black bar is the original not-to-exceed; the red is what change orders added.</p>
+
+<div class="thread">
+  <div class="thead">KLM Engineering — 2-million-gallon water tank, coating inspection</div>
+  <div class="tbody">
+    <div class="bar-row"><span class="bar-label">Original NTE</span><span class="bar-track"><span class="bar-fill" style="width:48.8%"></span></span><span class="bar-val">$97,860</span></div>
+    <div class="bar-row"><span class="bar-label">+ CO #1</span><span class="bar-track"><span class="bar-fill" style="width:48.8%"></span><span class="bar-fill over" style="width:16.4%"></span></span><span class="bar-val">$130,795</span></div>
+    <div class="bar-row"><span class="bar-label">+ CO #2</span><span class="bar-track"><span class="bar-fill" style="width:48.8%"></span><span class="bar-fill over" style="width:32.8%"></span></span><span class="bar-val">$163,723</span></div>
+    <div class="bar-row"><span class="bar-label">+ CO #3</span><span class="bar-track"><span class="bar-fill" style="width:48.8%"></span><span class="bar-fill over" style="width:46.1%"></span></span><span class="bar-val">$190,423</span></div>
+    <div class="bar-row"><span class="bar-label">+ CO #4 &amp; #5</span><span class="bar-track"><span class="bar-fill" style="width:48.8%"></span><span class="bar-fill over" style="width:51.2%"></span></span><span class="bar-val"><strong>$200,713</strong></span></div>
+    <p style="font-size:12px;margin:8px 0 0;"><strong>+105% over the original.</strong> Five change orders, every one submitted or presented by the Town Administrator. A "final" change order (#4, "Mobilization and Final Inspection") was followed six days later by an <em>identical</em> $5,145 change order (#5). No single Board vote ever exposed the doubled figure to a competitive process; no competitive-bid record for the <em>original</em> $97,860 agreement is in the packets at all.</p>
+  </div>
+</div>
+
+<div class="thread">
+  <div class="thead">SGM — 5th &amp; Grand realignment, design engineering</div>
+  <div class="tbody">
+    <div class="bar-row"><span class="bar-label">Original design</span><span class="bar-track"><span class="bar-fill" style="width:32.7%"></span></span><span class="bar-val">$64,634</span></div>
+    <div class="bar-row"><span class="bar-label">+ CO #1</span><span class="bar-track"><span class="bar-fill" style="width:32.7%"></span><span class="bar-fill over" style="width:42.4%"></span></span><span class="bar-val">$148,534</span></div>
+    <div class="bar-row"><span class="bar-label">+ CO #2</span><span class="bar-track"><span class="bar-fill" style="width:32.7%"></span><span class="bar-fill over" style="width:60.2%"></span></span><span class="bar-val">$183,734</span></div>
+    <div class="bar-row"><span class="bar-label">+ CO #3</span><span class="bar-track"><span class="bar-fill" style="width:32.7%"></span><span class="bar-fill over" style="width:67.3%"></span></span><span class="bar-val"><strong>$197,734</strong></span></div>
+    <p style="font-size:12px;margin:8px 0 0;"><strong>+206% over the original.</strong> The change orders alone are more than twice the original contract. No competitive solicitation at any stage.</p>
+  </div>
+</div>
+
+<div class="thread">
+  <div class="thead">Markley's Precision Co. — 2MG water tank, relining construction</div>
+  <div class="tbody">
+    <div class="bar-row"><span class="bar-label">Original contract</span><span class="bar-track"><span class="bar-fill" style="width:91.3%"></span></span><span class="bar-val">$916,250</span></div>
+    <div class="bar-row"><span class="bar-label">+ CO #1–#3</span><span class="bar-track"><span class="bar-fill" style="width:91.3%"></span><span class="bar-fill over" style="width:8.7%"></span></span><span class="bar-val"><strong>~$1,003,417</strong></span></div>
+    <p style="font-size:12px;margin:8px 0 0;">+9.5% across three change orders. Notable not for the size of the overrun but for the cause: CO #1 ($44,895) covered standby costs caused by the <em>Town's own</em> delay, and CO #2 ($15,000) folded a brand-new subcontractor (Roop Excavating) into the project on a single quote. This contract <em>was</em> competitively bid (3 bids) — the change orders were not.</p>
+  </div>
+</div>
+
+<div class="thread">
+  <div class="thead">Earthworx Excavation — 2MG water tank pad, site civil work</div>
+  <div class="tbody">
+    <div class="bar-row"><span class="bar-label">Original contract</span><span class="bar-track"><span class="bar-fill" style="width:88%"></span></span><span class="bar-val">$336,278</span></div>
+    <div class="bar-row"><span class="bar-label">+ 6 change orders</span><span class="bar-track"><span class="bar-fill" style="width:88%"></span><span class="bar-fill over" style="width:12%"></span></span><span class="bar-val">$365K+</span></div>
+    <p style="font-size:12px;margin:8px 0 0;">At least <strong>six</strong> change orders on one contract. CO #1 and CO #2 were effective <em>before</em> the Board "accepted" them; CO #5 was invoiced before approval. This contract was also competitively bid — and, again, the change orders were not. (Two more change-order threads — Phoenix Rising's master plan, +30%, and Wright Water's hydrogeology study, +21.6% — follow the same shape.)</p>
+  </div>
+</div>
+
+<!-- 7 -->
+<h2 id="vendors"><span class="num">7</span>The vendor map</h2>
+<p>Two-thirds of all itemized spending in this period — <strong>$1.86M of the $2.95M</strong> in the readable disbursement registers — flows to a cluster of water-infrastructure firms. A small town's water program is running through <strong>eight or more separate engineering and construction firms</strong>, almost all from outside Delta County, most procured without a competitive process visible in the record.</p>
+<table>
+  <thead><tr><th>Vendor</th><th>Role</th><th class="num-cell">Visible $ (2024–26)</th><th>How procured</th></tr></thead>
+  <tbody>
+    <tr><td>Markley's Precision Construction</td><td>2MG tank relining — prime contractor</td><td class="num-cell">~$1.0M (w/ COs)</td><td><span class="tag bid">competitive</span> COs not</td></tr>
+    <tr><td>Wright Water Engineers</td><td>Hydrogeology; WaterSMART consultant</td><td class="num-cell">$511,876 NTE</td><td><span class="tag bid">RFQ</span> + no-bid addenda</td></tr>
+    <tr><td>Consor North America</td><td>Safe Streets for All consultant</td><td class="num-cell">$367,432 NTE</td><td>see §5.8 (KLJ/Consor)</td></tr>
+    <tr><td>RESPEC</td><td>Water CIP design / scoping engineer</td><td class="num-cell">$263K paid · 42 invoices</td><td><span class="tag nobid">task orders, no-bid</span></td></tr>
+    <tr><td>SGM (Schmueser Gordon Meyer)</td><td>Standing water engineer; reviews others' COs</td><td class="num-cell">$95K paid + task orders</td><td><span class="tag nobid">no-bid</span></td></tr>
+    <tr><td>KLM Engineering</td><td>Tank coating inspection</td><td class="num-cell">$200,713 NTE</td><td><span class="tag nobid">sole-source</span> (as "SGM subcontract")</td></tr>
+    <tr><td>Misco Water</td><td>Lagoon aerators</td><td class="num-cell">$115K paid</td><td><span class="tag bid">3 quotes</span> (not low)</td></tr>
+    <tr><td>Earthworx Excavation</td><td>Tank-pad site civil work</td><td class="num-cell">$336K + 6 COs</td><td><span class="tag bid">competitive</span> COs not</td></tr>
+    <tr><td>Professional Management Solutions</td><td>Outsourced finance / "internal control"</td><td class="num-cell">$53K paid · 55 invoices</td><td><span class="tag nobid">never bid</span></td></tr>
+    <tr><td>Mitchell &amp; Co. / Verkada</td><td>Camera system</td><td class="num-cell">$53K paid · $62K total</td><td><span class="tag nobid">§4-6-80 waived</span></td></tr>
+    <tr><td>TYMCO / Intermountain Sweeper</td><td>Street sweeper (lease-purchase)</td><td class="num-cell">$394,500</td><td><span class="tag nobid">"rules suspended"</span></td></tr>
+  </tbody>
+</table>
+<p style="font-size:12px;"><strong>Reading the map:</strong> the entire six-figure engineering / infrastructure / security tier is out of Delta County, mostly out of state, and concentrated under one official as submitter and executor. The clean, competitive, locally-comparable awards (street signs, an electrician, the janitorial contract) are smaller and more often run by <em>other</em> staff. That split — big &amp; no-bid &amp; routed through the Administrator vs. small &amp; bid &amp; run by others — is itself the pattern.</p>
+
+<!-- 8 -->
+<h2 id="relationships"><span class="num">8</span>The relationship vendors</h2>
+<p>Disorganization explains a missing form. It does not explain a vendor with a personal connection to the official who picked them. The record contains at least five.</p>
+
+<div class="box flag">
+  <p class="label">New Focus HR — the relationship is in the sole-source file itself</p>
+  <p style="margin:4px 0;">In June 2025 the Town sole-sourced its HR work — a $7,500 handbook, a $150/yr subscription, and <strong>open-ended HR consulting at $175/hour with no ceiling</strong> — to <strong>New Focus HR, an Indianapolis, Indiana firm</strong>. The contract was signed by Stefen Wynn. The Town's required "Sole Source Justification" attachment <em>is an email from the vendor</em>, and it reads, to Wynn: <em>"Stefen, I hope that you are enjoying your time in Indy? We look forward to attending the race on Sunday, although the temperatures may be a bit cool compared to <strong>past races</strong>."</em></p>
+  <p style="margin:4px 0;">Wynn's career and degree are from Indiana — Town Manager of Albion, Indiana (2016–2019); MPA from Indiana University South Bend. New Focus HR is Indiana-domiciled. The document the Town used to justify <em>skipping competition</em> is, on its face, evidence of a pre-existing personal relationship between the buyer and the seller. And it is not a one-off: New Focus HR appears in <strong>12 packets</strong> through February 2026. <span class="src">The firm advertises clients in Florida and Colorado — the two states Wynn worked in after Indiana; whether it followed him job-to-job is the open question.</span></p>
+</div>
+
+<table>
+  <thead><tr><th>Vendor</th><th>The tie</th><th>The award</th></tr></thead>
+  <tbody>
+    <tr><td>Paonia Car Wash</td><td>Owned by the Town's own <strong>Police Chief</strong></td><td>Town signed a services contract with him; the dollar amount was omitted from the minutes.</td></tr>
+    <tr><td>Sustainable Futures LLC</td><td>Principal is a <strong>former Interim Town Administrator</strong> of Paonia</td><td>$38,000 municipal-code-rewrite contract (an RFP was referenced, but only one proposal appears in the packet).</td></tr>
+    <tr><td>Grit and Grace</td><td>"A local company <strong>owned by a PD officer's wife</strong>" (Town's own staff report)</td><td>Became the Police Department's vehicle-sticker vendor; "the Town Administrator was consulted."</td></tr>
+    <tr><td>Farnsworth Construction</td><td>The vendor's own note: the Town Administrator "already has a Certificate of Insurance from FC <strong>from my project for a private residence</strong>" — i.e., did private work for Wynn personally</td><td>Recommended for the Delta Compost project; Board capped negotiation at $20,000 against a $9,975 bid.</td></tr>
+  </tbody>
+</table>
+<p style="font-size:12px;">Each of these, individually, has an innocent explanation — a small town has a small vendor pool, and recusal was noted in the car-wash case. But the Town's <em>own</em> purchasing policy contains a conflict-of-interest rule for exactly this situation, and the question the map raises is not "is any one of these damning" — it is "why are there <em>five</em>, and why does the procurement system have no working filter for them."</p>
+
+<!-- 9 -->
+<h2 id="counter"><span class="num">9</span>What cuts the other way</h2>
+<p>An honest map shows the evidence against its own thesis. There is real counter-evidence, and it is the reason this document does not allege corruption.</p>
+<div class="box counter">
+  <p class="label">Competitive bidding genuinely happens — and it happened a lot</p>
+  <ul style="margin:4px 0;">
+    <li>The <strong>2MG water tank construction</strong> itself drew 3 sealed bids; the low bidder won.</li>
+    <li>The <strong>Astonish IT contract</strong> ran a real RFQ that drew <strong>10 proposals</strong> with a staff scoring panel.</li>
+    <li>The <strong>ADA-consultant selection</strong> scored 7 firms; the lowest-cost firm also scored highest and won.</li>
+    <li>The <strong>janitorial contract</strong>, the <strong>tank-pad site civil work</strong>, the <strong>Hemlock brush-clearing</strong> RFP, <strong>playground chips</strong>, an <strong>electrician</strong> ($6,763 low bid of 3), and the <strong>Brimar street signs</strong> ($3,182 low bid of 3) were all competitively procured.</li>
+    <li>In August 2025 the Town opened <strong>four RFQs at once</strong> — and the Rundle Construction culvert contract carries a competitive Notice of Award.</li>
+  </ul>
+</div>
+<p>Other facts that cut against a steering reading:</p>
+<ul>
+  <li><strong>The pattern is selective, not total.</strong> "Wynn touches everything" is false — the cleanest, most competitive awards are frequently the ones <em>other</em> staff (Public Works, the Deputy Treasurer, the Clerk) ran.</li>
+  <li><strong>The Board shows friction.</strong> It terminated the VoTech offer, a trustee dissented on a Phoenix Rising change order, and the Board overrode staff to pick the <em>in-budget</em> garbage-cart option over the over-budget one staff recommended.</li>
+  <li><strong>Some sole-sources are legitimately grantor-driven</strong> — the Urban Rural Continuum housing addendum was sole-sourced because the state grantor (DOLA) authorized it.</li>
+  <li><strong>Out-of-area is not inherently suspicious</strong> — a town of 1,500 genuinely has no local tank-coating inspector or water-rights attorney.</li>
+  <li><strong>The change-order causes are often specific and plausible</strong> — buried concrete tanks, an unexpected cold snap, a contractor who demobilized. Subsurface surprises on an old tank site are real.</li>
+</ul>
+
+<!-- 10 -->
+<h2 id="ledger"><span class="num">10</span>The money ledger</h2>
+<p>From the 23 packets whose check registers were machine-readable: 2,809 payment line items, $2.95M. Top recipients (directional — see Section 2 caveats):</p>
+<table>
+  <thead><tr><th>Vendor</th><th class="num-cell">Total paid</th><th class="num-cell">Line items</th><th class="num-cell">Meetings</th></tr></thead>
+  <tbody>
+    <tr><td>Markley's Precision Construction</td><td class="num-cell">$638,998</td><td class="num-cell">2</td><td class="num-cell">2</td></tr>
+    <tr><td>US Bank (water-project debt service)</td><td class="num-cell">$378,808</td><td class="num-cell">4</td><td class="num-cell">2</td></tr>
+    <tr><td>RESPEC Company LLC</td><td class="num-cell">$262,599</td><td class="num-cell">42</td><td class="num-cell">9</td></tr>
+    <tr><td>Misco Water</td><td class="num-cell">$114,938</td><td class="num-cell">2</td><td class="num-cell">2</td></tr>
+    <tr><td>SGM Inc</td><td class="num-cell">$95,454</td><td class="num-cell">26</td><td class="num-cell">10</td></tr>
+    <tr><td>Colorado Water Resources</td><td class="num-cell">$90,597</td><td class="num-cell">5</td><td class="num-cell">2</td></tr>
+    <tr><td>KLM Engineering</td><td class="num-cell">$87,981</td><td class="num-cell">1</td><td class="num-cell">1</td></tr>
+    <tr><td>Wright Water Engineers</td><td class="num-cell">$75,043</td><td class="num-cell">4</td><td class="num-cell">4</td></tr>
+    <tr><td>Mitchell &amp; Company (Verkada)</td><td class="num-cell">$53,063</td><td class="num-cell">8</td><td class="num-cell">2</td></tr>
+    <tr><td><strong>Professional Management Solutions</strong></td><td class="num-cell">$52,898</td><td class="num-cell"><strong>55</strong></td><td class="num-cell">10</td></tr>
+  </tbody>
+</table>
+<div class="box note">
+  <p class="label">The control that is also a vendor</p>
+  <p style="margin:4px 0;">When residents asked who checks the Town's books, the Board's answer named <strong>Professional Management Solutions</strong> as its third-party financial "internal control." The ledger shows PMS is also a paid vendor of the Town — <strong>55 separate invoices</strong> over the period — and its multi-year finance contract was never competitively bid. A firm cannot be an independent check on the entity that is, at the same time, one of its recurring clients. This is a structural conflict, not an accusation — but it is the kind of structural conflict a functioning procurement system is supposed to prevent.</p>
+</div>
+
+<!-- 11 -->
+<h2 id="verdict"><span class="num">11</span>The verdict</h2>
+<div class="verdict">
+  <p style="margin-top:0;"><strong>It is both, and they are entangled.</strong></p>
+  <p>There is a genuinely disorganized procurement shop here — conflicting figures, blank staff reports, a contract naming the wrong town, an invoice off by 2,200%, registers missing from packets. That disorganization is real, and on its own it can generate every individual red flag in this document.</p>
+  <p>But disorganization is random. It does not have a <em>direction</em>. And this pattern has a direction: competition is bypassed specifically on the high-value professional-services and infrastructure contracts; the beneficiaries are a stable, small set of out-of-area firms and pre-existing relationships; the mechanism — change orders, threshold-hugging, "suspend the rules," sign-first-vote-later — recurs with the consistency of a practice, not an accident; and it all flows through one official who also wrote the rules and occupies every checkpoint that would catch it. Random disorganization does not reliably produce <em>five</em> vendors with personal ties to Town officials, or a sole-source justification that is literally an email about going to the races together.</p>
+  <p style="margin-bottom:0;"><strong>What the evidence establishes:</strong> Paonia's competitive-bid process — required by its own Municipal Code — is not a meaningful constraint on its largest contracts. It is bypassed routinely, selectively, and through repeatable methods, in favor of relationships, by a single point of control. That is a serious governance failure on the public record right now, regardless of motive. <strong>What the evidence does not yet establish</strong> is motive: there is no proof in these 76 packets of money flowing back to any official. The honest finding is a <em>steering-shaped pattern</em> — and a clear, finite list of what would confirm or dispel the steering itself.</p>
+</div>
+
+<!-- 12 -->
+<h2 id="next"><span class="num">12</span>What we still don't know — and how to find out</h2>
+<p>These are the specific, answerable questions that separate "steering-shaped pattern" from "proven." None requires litigation; most require only public records or out-of-town digging.</p>
+<ol>
+  <li><strong>Did New Focus HR follow Wynn?</strong> Whether that Indiana HR firm billed Albion, Indiana while Wynn ran it (2016–2019), or Neptune Beach, Florida during his tenure. If a vendor tracked an administrator across three states, that is no longer a coincidence. <em>(Public records in two other towns — no Paonia CORA needed.)</em></li>
+  <li><strong>The original contracts that aren't in the packets</strong> — the original KLM ($97,860), Markley's Precision ($916,250), Viaflex (~$320K), and Earthworx (~$374K) agreements, and the RESPEC/SGM master engineering agreements under which task orders are issued sole-source. Were any of them competitively bid?</li>
+  <li><strong>The Professional Management Solutions contract</strong> — its term, its price, and how a firm became both the Town's finance contractor and its cited "internal control."</li>
+  <li><strong>The Verkada contradiction</strong> — the April 2026 memo called it a "state bid"; the actual August 2025 motion "waived Code §4-6-80" for a sole-source. Both cannot be true. Get the 8/12/2025 minutes and the Mitchell &amp; Company contract.</li>
+  <li><strong>The KLJ → Consor substitution</strong> — why the Safe Streets contract went to a firm that was not in the scoring table.</li>
+  <li><strong>Cumulative SGM billings</strong> across every task order in the Wynn period — SGM both serves as the Town's engineer <em>and</em> reviews and recommends the change orders of the other contractors it works alongside.</li>
+  <li><strong>The Town Administrator's exact spending-authority dollar limit</strong> — referenced repeatedly, never stated. Pull Municipal Code Chapter 4-6 in full.</li>
+  <li><strong>The disbursement registers missing from ~50 packets</strong> — the native PDFs would complete the vendor ledger and show whether the missing registers hide anything the present ones don't.</li>
+  <li><strong>The open threads</strong> — the $212,300 temporary-tank purchase; which vendors actually get paid out of the Smith Center $50,000; the STR facilitator's final fee; the ~$1M BRIC generator procurement. Watch whether each goes to bid.</li>
+</ol>
+
+<footer>
+  <p><strong>The Paonia Procurement Map</strong> — a working investigative document, compiled May 14, 2026, from 76 Town of Paonia Board of Trustees meeting packets (Jan 2024 – May 2026) retrieved from the Town's CivicClerk portal, the Town's adopted Purchasing Policy, the bi-weekly disbursement registers, and the Board meeting record. Built to be checked. Every figure traces to a dated packet; every pattern carries its most innocent reading alongside its most concerning one. Nothing here is a finding of wrongdoing — it is a map of where the public's competitive-bid protections did and did not operate, and a list of the questions still open.</p>
+  <p class="src">Source files retained: <code>raw/research/contract-map/</code> — meeting manifest, 76 packets + extracted text, the disbursement ledger (CSV/JSON), six batch extractions, the transcript/wiki timeline, the legal baseline, and the New Focus HR thread file.</p>
+</footer>
+
+</div>
+</body>
+</html>

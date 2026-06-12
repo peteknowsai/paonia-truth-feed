@@ -1,0 +1,3310 @@
+[
+  {
+    "date": "2026-05-12",
+    "id": 499,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1374,
+    "agenda_fileId": 1373,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1373
+      ],
+      [
+        "Agenda Packet",
+        1374
+      ]
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "id": 568,
+    "name": "Ad Hoc Short-Term Rental Committee",
+    "packet_fileId": null,
+    "agenda_fileId": 1370,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1370
+      ]
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "id": 525,
+    "name": "Planning Commission",
+    "packet_fileId": 1371,
+    "agenda_fileId": 1367,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1367
+      ],
+      [
+        "Agenda Packet",
+        1371
+      ]
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "id": 511,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1366,
+    "agenda_fileId": 1362,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1362
+      ],
+      [
+        "Agenda Packet",
+        1366
+      ]
+    ]
+  },
+  {
+    "date": "2026-04-24",
+    "id": 565,
+    "name": "4/24/2026 Zoning Board of Adjustments",
+    "packet_fileId": 1359,
+    "agenda_fileId": 1346,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1346
+      ],
+      [
+        "Agenda Packet",
+        1359
+      ]
+    ]
+  },
+  {
+    "date": "2026-04-21",
+    "id": 537,
+    "name": "Tree Board",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2026-04-21",
+    "id": 567,
+    "name": "One Time Event",
+    "packet_fileId": 1344,
+    "agenda_fileId": 1342,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1342
+      ],
+      [
+        "Agenda Packet",
+        1344
+      ]
+    ]
+  },
+  {
+    "date": "2026-04-14",
+    "id": 498,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1340,
+    "agenda_fileId": 1336,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1336
+      ],
+      [
+        "Agenda Packet",
+        1340
+      ]
+    ]
+  },
+  {
+    "date": "2026-04-14",
+    "id": 566,
+    "name": "04/14/2026 Town Board Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 1337,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1337
+      ]
+    ]
+  },
+  {
+    "date": "2026-04-07",
+    "id": 561,
+    "name": "Ad Hoc Short Term Rental Committee Meeting",
+    "packet_fileId": 1331,
+    "agenda_fileId": 1330,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1330
+      ],
+      [
+        "Agenda Packet",
+        1331
+      ]
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "id": 524,
+    "name": "Planning Commission",
+    "packet_fileId": 1334,
+    "agenda_fileId": 1326,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1326
+      ],
+      [
+        "Agenda Packet",
+        1334
+      ]
+    ]
+  },
+  {
+    "date": "2026-03-30",
+    "id": 562,
+    "name": "3/30/2026 Special Town Board Meeting",
+    "packet_fileId": 1321,
+    "agenda_fileId": 1320,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1320
+      ],
+      [
+        "Agenda Packet",
+        1321
+      ]
+    ]
+  },
+  {
+    "date": "2026-03-24",
+    "id": 510,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1317,
+    "agenda_fileId": 1316,
+    "minutes_fileId": 1365,
+    "all_files": [
+      [
+        "Agenda",
+        1316
+      ],
+      [
+        "Agenda Packet",
+        1317
+      ],
+      [
+        "Minutes",
+        1365
+      ]
+    ]
+  },
+  {
+    "date": "2026-03-17",
+    "id": 536,
+    "name": "Tree Board",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2026-03-17",
+    "id": 560,
+    "name": "Ad Hoc Short Term Rental Committee Meeting",
+    "packet_fileId": 1311,
+    "agenda_fileId": 1310,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1310
+      ],
+      [
+        "Agenda Packet",
+        1311
+      ]
+    ]
+  },
+  {
+    "date": "2026-03-10",
+    "id": 497,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1306,
+    "agenda_fileId": 1300,
+    "minutes_fileId": 1318,
+    "all_files": [
+      [
+        "Agenda",
+        1300
+      ],
+      [
+        "Agenda Packet",
+        1306
+      ],
+      [
+        "Minutes",
+        1318
+      ]
+    ]
+  },
+  {
+    "date": "2026-03-03",
+    "id": 558,
+    "name": "One Time Event",
+    "packet_fileId": null,
+    "agenda_fileId": 1290,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1290
+      ]
+    ]
+  },
+  {
+    "date": "2026-03-03",
+    "id": 553,
+    "name": "3/3/2026 Ad Hoc Short Term Rental",
+    "packet_fileId": 1294,
+    "agenda_fileId": 1293,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1293
+      ],
+      [
+        "Agenda Packet",
+        1294
+      ]
+    ]
+  },
+  {
+    "date": "2026-03-02",
+    "id": 523,
+    "name": "Planning Commission",
+    "packet_fileId": 1287,
+    "agenda_fileId": 1286,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1286
+      ],
+      [
+        "Agenda Packet",
+        1287
+      ]
+    ]
+  },
+  {
+    "date": "2026-02-24",
+    "id": 509,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1295,
+    "agenda_fileId": 1284,
+    "minutes_fileId": 1307,
+    "all_files": [
+      [
+        "Agenda",
+        1284
+      ],
+      [
+        "Agenda Packet",
+        1295
+      ],
+      [
+        "Minutes",
+        1307
+      ]
+    ]
+  },
+  {
+    "date": "2026-02-17",
+    "id": 535,
+    "name": "Tree Board",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2026-02-17",
+    "id": 552,
+    "name": "2/17/2026 Ad Hoc Short Term Rental",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2026-02-17",
+    "id": 557,
+    "name": "Ad Hoc Short Term Rental Committee",
+    "packet_fileId": 1281,
+    "agenda_fileId": 1280,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1280
+      ],
+      [
+        "Agenda Packet",
+        1281
+      ]
+    ]
+  },
+  {
+    "date": "2026-02-10",
+    "id": 496,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1275,
+    "agenda_fileId": 1272,
+    "minutes_fileId": 1291,
+    "all_files": [
+      [
+        "Agenda",
+        1272
+      ],
+      [
+        "Agenda Packet",
+        1275
+      ],
+      [
+        "Minutes",
+        1291
+      ]
+    ]
+  },
+  {
+    "date": "2026-02-04",
+    "id": 556,
+    "name": "One Time Event",
+    "packet_fileId": null,
+    "agenda_fileId": 1268,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1268
+      ]
+    ]
+  },
+  {
+    "date": "2026-02-03",
+    "id": 551,
+    "name": "Ad Hoc Short-Term Rental Committee",
+    "packet_fileId": 1266,
+    "agenda_fileId": 1265,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1265
+      ],
+      [
+        "Agenda Packet",
+        1266
+      ]
+    ]
+  },
+  {
+    "date": "2026-02-02",
+    "id": 522,
+    "name": "Planning Commission",
+    "packet_fileId": 1262,
+    "agenda_fileId": 1258,
+    "minutes_fileId": 1332,
+    "all_files": [
+      [
+        "Agenda",
+        1258
+      ],
+      [
+        "Agenda Packet",
+        1262
+      ],
+      [
+        "Minutes",
+        1332
+      ]
+    ]
+  },
+  {
+    "date": "2026-01-27",
+    "id": 508,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1259,
+    "agenda_fileId": 1249,
+    "minutes_fileId": 1274,
+    "all_files": [
+      [
+        "Agenda",
+        1249
+      ],
+      [
+        "Agenda Packet",
+        1259
+      ],
+      [
+        "Minutes",
+        1274
+      ]
+    ]
+  },
+  {
+    "date": "2026-01-20",
+    "id": 534,
+    "name": "Tree Board",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2026-01-13",
+    "id": 495,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 1246,
+    "agenda_fileId": 1245,
+    "minutes_fileId": 1261,
+    "all_files": [
+      [
+        "Agenda",
+        1245
+      ],
+      [
+        "Agenda Packet",
+        1246
+      ],
+      [
+        "Minutes",
+        1261
+      ]
+    ]
+  },
+  {
+    "date": "2026-01-08",
+    "id": 550,
+    "name": "Zoning Board of Adjustments",
+    "packet_fileId": 1240,
+    "agenda_fileId": 1229,
+    "minutes_fileId": 1260,
+    "all_files": [
+      [
+        "Agenda",
+        1229
+      ],
+      [
+        "Agenda Packet",
+        1240
+      ],
+      [
+        "Minutes",
+        1260
+      ]
+    ]
+  },
+  {
+    "date": "2026-01-05",
+    "id": 521,
+    "name": "Planning Commission",
+    "packet_fileId": 1239,
+    "agenda_fileId": 1238,
+    "minutes_fileId": 1296,
+    "all_files": [
+      [
+        "Agenda",
+        1238
+      ],
+      [
+        "Agenda Packet",
+        1239
+      ],
+      [
+        "Minutes",
+        1296
+      ]
+    ]
+  },
+  {
+    "date": "2025-12-30",
+    "id": 549,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 1236,
+    "agenda_fileId": 1234,
+    "minutes_fileId": 1256,
+    "all_files": [
+      [
+        "Agenda",
+        1234
+      ],
+      [
+        "Agenda Packet",
+        1236
+      ],
+      [
+        "Minutes",
+        1256
+      ]
+    ]
+  },
+  {
+    "date": "2025-12-16",
+    "id": 412,
+    "name": "Tree Board",
+    "packet_fileId": 1231,
+    "agenda_fileId": 1230,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1230
+      ],
+      [
+        "Agenda Packet",
+        1231
+      ]
+    ]
+  },
+  {
+    "date": "2025-12-16",
+    "id": 548,
+    "name": "Annual Staff Holiday Lunch",
+    "packet_fileId": null,
+    "agenda_fileId": 1222,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1222
+      ]
+    ]
+  },
+  {
+    "date": "2025-12-09",
+    "id": 374,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1225,
+    "agenda_fileId": 1224,
+    "minutes_fileId": 1255,
+    "all_files": [
+      [
+        "Agenda",
+        1224
+      ],
+      [
+        "Agenda Packet",
+        1225
+      ],
+      [
+        "Minutes",
+        1255
+      ]
+    ]
+  },
+  {
+    "date": "2025-12-05",
+    "id": 547,
+    "name": "Town Board Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 1218,
+    "minutes_fileId": 1254,
+    "all_files": [
+      [
+        "Agenda",
+        1218
+      ],
+      [
+        "Minutes",
+        1254
+      ]
+    ]
+  },
+  {
+    "date": "2025-12-01",
+    "id": 400,
+    "name": "Planning Commission",
+    "packet_fileId": 1180,
+    "agenda_fileId": 1179,
+    "minutes_fileId": 1247,
+    "all_files": [
+      [
+        "Agenda",
+        1179
+      ],
+      [
+        "Agenda Packet",
+        1180
+      ],
+      [
+        "Minutes",
+        1247
+      ]
+    ]
+  },
+  {
+    "date": "2025-11-25",
+    "id": 386,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1182,
+    "agenda_fileId": 1176,
+    "minutes_fileId": 1227,
+    "all_files": [
+      [
+        "Agenda",
+        1176
+      ],
+      [
+        "Agenda Packet",
+        1182
+      ],
+      [
+        "Minutes",
+        1227
+      ]
+    ]
+  },
+  {
+    "date": "2025-11-18",
+    "id": 411,
+    "name": "Tree Board",
+    "packet_fileId": 1169,
+    "agenda_fileId": 1164,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1164
+      ],
+      [
+        "Agenda Packet",
+        1169
+      ]
+    ]
+  },
+  {
+    "date": "2025-11-10",
+    "id": 479,
+    "name": "11/10/2025 Budget Workshop + Regular Board Meeting",
+    "packet_fileId": 1163,
+    "agenda_fileId": 1162,
+    "minutes_fileId": 1183,
+    "all_files": [
+      [
+        "Agenda",
+        1162
+      ],
+      [
+        "Agenda Packet",
+        1163
+      ],
+      [
+        "Minutes",
+        1183
+      ]
+    ]
+  },
+  {
+    "date": "2025-11-03",
+    "id": 399,
+    "name": "Planning Commission",
+    "packet_fileId": 1153,
+    "agenda_fileId": 1152,
+    "minutes_fileId": 1226,
+    "all_files": [
+      [
+        "Agenda",
+        1152
+      ],
+      [
+        "Agenda Packet",
+        1153
+      ],
+      [
+        "Minutes",
+        1226
+      ]
+    ]
+  },
+  {
+    "date": "2025-10-28",
+    "id": 385,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1149,
+    "agenda_fileId": 1147,
+    "minutes_fileId": 1165,
+    "all_files": [
+      [
+        "Agenda",
+        1147
+      ],
+      [
+        "Agenda Packet",
+        1149
+      ],
+      [
+        "Minutes",
+        1165
+      ]
+    ]
+  },
+  {
+    "date": "2025-10-23",
+    "id": 494,
+    "name": "Town Facilities Tour for the Board of Trustees",
+    "packet_fileId": null,
+    "agenda_fileId": 1135,
+    "minutes_fileId": 1216,
+    "all_files": [
+      [
+        "Agenda",
+        1135
+      ],
+      [
+        "Minutes",
+        1216
+      ]
+    ]
+  },
+  {
+    "date": "2025-10-21",
+    "id": 424,
+    "name": "Tree Board",
+    "packet_fileId": 1143,
+    "agenda_fileId": 1142,
+    "minutes_fileId": 1233,
+    "all_files": [
+      [
+        "Agenda",
+        1142
+      ],
+      [
+        "Agenda Packet",
+        1143
+      ],
+      [
+        "Minutes",
+        1233
+      ]
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "id": 454,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1139,
+    "agenda_fileId": 1136,
+    "minutes_fileId": 1150,
+    "all_files": [
+      [
+        "Agenda",
+        1136
+      ],
+      [
+        "Agenda Packet",
+        1139
+      ],
+      [
+        "Minutes",
+        1150
+      ]
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "id": 398,
+    "name": "Planning Commission",
+    "packet_fileId": 1130,
+    "agenda_fileId": 1129,
+    "minutes_fileId": 1181,
+    "all_files": [
+      [
+        "Agenda",
+        1129
+      ],
+      [
+        "Agenda Packet",
+        1130
+      ],
+      [
+        "Minutes",
+        1181
+      ]
+    ]
+  },
+  {
+    "date": "2025-09-30",
+    "id": 493,
+    "name": "Town Board Budget Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 1124,
+    "minutes_fileId": 1253,
+    "all_files": [
+      [
+        "Agenda",
+        1124
+      ],
+      [
+        "Minutes",
+        1253
+      ]
+    ]
+  },
+  {
+    "date": "2025-09-30",
+    "id": 491,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 1123,
+    "agenda_fileId": 1122,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1122
+      ],
+      [
+        "Agenda Packet",
+        1123
+      ]
+    ]
+  },
+  {
+    "date": "2025-09-25",
+    "id": 492,
+    "name": "Town Board Budget Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 1117,
+    "minutes_fileId": 1252,
+    "all_files": [
+      [
+        "Agenda",
+        1117
+      ],
+      [
+        "Minutes",
+        1252
+      ]
+    ]
+  },
+  {
+    "date": "2025-09-23",
+    "id": 384,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1119,
+    "agenda_fileId": 1112,
+    "minutes_fileId": 1145,
+    "all_files": [
+      [
+        "Agenda",
+        1112
+      ],
+      [
+        "Agenda Packet",
+        1119
+      ],
+      [
+        "Minutes",
+        1145
+      ]
+    ]
+  },
+  {
+    "date": "2025-09-16",
+    "id": 423,
+    "name": "Tree Board",
+    "packet_fileId": 1105,
+    "agenda_fileId": 1104,
+    "minutes_fileId": 1232,
+    "all_files": [
+      [
+        "Agenda",
+        1104
+      ],
+      [
+        "Agenda Packet",
+        1105
+      ],
+      [
+        "Minutes",
+        1232
+      ]
+    ]
+  },
+  {
+    "date": "2025-09-09",
+    "id": 371,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1100,
+    "agenda_fileId": 1098,
+    "minutes_fileId": 1125,
+    "all_files": [
+      [
+        "Agenda",
+        1098
+      ],
+      [
+        "Agenda Packet",
+        1100
+      ],
+      [
+        "Minutes",
+        1125
+      ]
+    ]
+  },
+  {
+    "date": "2025-09-08",
+    "id": 397,
+    "name": "Planning Commission",
+    "packet_fileId": 1096,
+    "agenda_fileId": 1093,
+    "minutes_fileId": 1144,
+    "all_files": [
+      [
+        "Agenda",
+        1093
+      ],
+      [
+        "Agenda Packet",
+        1096
+      ],
+      [
+        "Minutes",
+        1144
+      ]
+    ]
+  },
+  {
+    "date": "2025-08-26",
+    "id": 383,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1087,
+    "agenda_fileId": 1082,
+    "minutes_fileId": 1102,
+    "all_files": [
+      [
+        "Agenda",
+        1082
+      ],
+      [
+        "Agenda Packet",
+        1087
+      ],
+      [
+        "Minutes",
+        1102
+      ]
+    ]
+  },
+  {
+    "date": "2025-08-19",
+    "id": 408,
+    "name": "Tree Board",
+    "packet_fileId": 1076,
+    "agenda_fileId": 1075,
+    "minutes_fileId": 1146,
+    "all_files": [
+      [
+        "Agenda",
+        1075
+      ],
+      [
+        "Agenda Packet",
+        1076
+      ],
+      [
+        "Minutes",
+        1146
+      ]
+    ]
+  },
+  {
+    "date": "2025-08-12",
+    "id": 370,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1074,
+    "agenda_fileId": 1072,
+    "minutes_fileId": 1088,
+    "all_files": [
+      [
+        "Agenda",
+        1072
+      ],
+      [
+        "Agenda Packet",
+        1074
+      ],
+      [
+        "Minutes",
+        1088
+      ]
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "id": 396,
+    "name": "Planning Commission",
+    "packet_fileId": 1065,
+    "agenda_fileId": 1064,
+    "minutes_fileId": 1131,
+    "all_files": [
+      [
+        "Agenda",
+        1064
+      ],
+      [
+        "Agenda Packet",
+        1065
+      ],
+      [
+        "Minutes",
+        1131
+      ]
+    ]
+  },
+  {
+    "date": "2025-07-30",
+    "id": 465,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 1062,
+    "agenda_fileId": 1060,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        1060
+      ],
+      [
+        "Agenda Packet",
+        1062
+      ]
+    ]
+  },
+  {
+    "date": "2025-07-22",
+    "id": 382,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1055,
+    "agenda_fileId": 1052,
+    "minutes_fileId": 1079,
+    "all_files": [
+      [
+        "Agenda",
+        1052
+      ],
+      [
+        "Agenda Packet",
+        1055
+      ],
+      [
+        "Minutes",
+        1079
+      ]
+    ]
+  },
+  {
+    "date": "2025-07-16",
+    "id": 451,
+    "name": "7/16/2025 Planning Commission",
+    "packet_fileId": 1047,
+    "agenda_fileId": 1041,
+    "minutes_fileId": 1066,
+    "all_files": [
+      [
+        "Agenda",
+        1041
+      ],
+      [
+        "Agenda Packet",
+        1047
+      ],
+      [
+        "Minutes",
+        1066
+      ]
+    ]
+  },
+  {
+    "date": "2025-07-15",
+    "id": 407,
+    "name": "Tree Board",
+    "packet_fileId": 1049,
+    "agenda_fileId": 1044,
+    "minutes_fileId": 1106,
+    "all_files": [
+      [
+        "Agenda",
+        1044
+      ],
+      [
+        "Agenda Packet",
+        1049
+      ],
+      [
+        "Minutes",
+        1106
+      ]
+    ]
+  },
+  {
+    "date": "2025-07-08",
+    "id": 369,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1035,
+    "agenda_fileId": 1034,
+    "minutes_fileId": 1078,
+    "all_files": [
+      [
+        "Agenda",
+        1034
+      ],
+      [
+        "Agenda Packet",
+        1035
+      ],
+      [
+        "Minutes",
+        1078
+      ]
+    ]
+  },
+  {
+    "date": "2025-07-03",
+    "id": 452,
+    "name": "Emergency Board Meeting",
+    "packet_fileId": 1032,
+    "agenda_fileId": 1031,
+    "minutes_fileId": 1057,
+    "all_files": [
+      [
+        "Agenda",
+        1031
+      ],
+      [
+        "Agenda Packet",
+        1032
+      ],
+      [
+        "Minutes",
+        1057
+      ]
+    ]
+  },
+  {
+    "date": "2025-06-24",
+    "id": 381,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1027,
+    "agenda_fileId": 1024,
+    "minutes_fileId": 1056,
+    "all_files": [
+      [
+        "Agenda",
+        1024
+      ],
+      [
+        "Agenda Packet",
+        1027
+      ],
+      [
+        "Minutes",
+        1056
+      ]
+    ]
+  },
+  {
+    "date": "2025-06-17",
+    "id": 406,
+    "name": "Tree Board",
+    "packet_fileId": null,
+    "agenda_fileId": 1020,
+    "minutes_fileId": 1086,
+    "all_files": [
+      [
+        "Agenda",
+        1020
+      ],
+      [
+        "Minutes",
+        1086
+      ]
+    ]
+  },
+  {
+    "date": "2025-06-17",
+    "id": 420,
+    "name": "Tree Board",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2025-06-10",
+    "id": 368,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1019,
+    "agenda_fileId": 1012,
+    "minutes_fileId": 1028,
+    "all_files": [
+      [
+        "Agenda",
+        1012
+      ],
+      [
+        "Agenda Packet",
+        1019
+      ],
+      [
+        "Minutes",
+        1028
+      ]
+    ]
+  },
+  {
+    "date": "2025-06-02",
+    "id": 394,
+    "name": "Planning Commission",
+    "packet_fileId": 1010,
+    "agenda_fileId": 1002,
+    "minutes_fileId": 1067,
+    "all_files": [
+      [
+        "Agenda",
+        1002
+      ],
+      [
+        "Agenda Packet",
+        1010
+      ],
+      [
+        "Minutes",
+        1067
+      ]
+    ]
+  },
+  {
+    "date": "2025-05-27",
+    "id": 380,
+    "name": "Town Board Meeting",
+    "packet_fileId": 1000,
+    "agenda_fileId": 998,
+    "minutes_fileId": 1022,
+    "all_files": [
+      [
+        "Agenda",
+        998
+      ],
+      [
+        "Agenda Packet",
+        1000
+      ],
+      [
+        "Minutes",
+        1022
+      ]
+    ]
+  },
+  {
+    "date": "2025-05-20",
+    "id": 430,
+    "name": "Tree Board Meeting",
+    "packet_fileId": 995,
+    "agenda_fileId": 993,
+    "minutes_fileId": 1085,
+    "all_files": [
+      [
+        "Agenda",
+        993
+      ],
+      [
+        "Agenda Packet",
+        995
+      ],
+      [
+        "Minutes",
+        1085
+      ]
+    ]
+  },
+  {
+    "date": "2025-05-15",
+    "id": 450,
+    "name": "5/15/2025 Training Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 990,
+    "minutes_fileId": 1007,
+    "all_files": [
+      [
+        "Agenda",
+        990
+      ],
+      [
+        "Minutes",
+        1007
+      ]
+    ]
+  },
+  {
+    "date": "2025-05-13",
+    "id": 367,
+    "name": "5/13/2025 Regular Board Meeting",
+    "packet_fileId": 1001,
+    "agenda_fileId": 986,
+    "minutes_fileId": 1021,
+    "all_files": [
+      [
+        "Agenda",
+        986
+      ],
+      [
+        "Agenda Packet",
+        1001
+      ],
+      [
+        "Minutes",
+        1021
+      ]
+    ]
+  },
+  {
+    "date": "2025-05-13",
+    "id": 449,
+    "name": "5/13/2025 Training Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 991,
+    "minutes_fileId": 1006,
+    "all_files": [
+      [
+        "Agenda",
+        991
+      ],
+      [
+        "Minutes",
+        1006
+      ]
+    ]
+  },
+  {
+    "date": "2025-05-05",
+    "id": 393,
+    "name": "Planning Commission",
+    "packet_fileId": 976,
+    "agenda_fileId": 975,
+    "minutes_fileId": 1077,
+    "all_files": [
+      [
+        "Agenda",
+        975
+      ],
+      [
+        "Agenda Packet",
+        976
+      ],
+      [
+        "Minutes",
+        1077
+      ]
+    ]
+  },
+  {
+    "date": "2025-04-24",
+    "id": 444,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 967,
+    "agenda_fileId": 966,
+    "minutes_fileId": 1003,
+    "all_files": [
+      [
+        "Agenda",
+        966
+      ],
+      [
+        "Agenda Packet",
+        967
+      ],
+      [
+        "Minutes",
+        1003
+      ]
+    ]
+  },
+  {
+    "date": "2025-04-22",
+    "id": 298,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 962,
+    "agenda_fileId": 961,
+    "minutes_fileId": 997,
+    "all_files": [
+      [
+        "Agenda",
+        961
+      ],
+      [
+        "Agenda Packet",
+        962
+      ],
+      [
+        "Minutes",
+        997
+      ]
+    ]
+  },
+  {
+    "date": "2025-04-15",
+    "id": 418,
+    "name": "Tree Board",
+    "packet_fileId": 958,
+    "agenda_fileId": 957,
+    "minutes_fileId": 1084,
+    "all_files": [
+      [
+        "Agenda",
+        957
+      ],
+      [
+        "Agenda Packet",
+        958
+      ],
+      [
+        "Minutes",
+        1084
+      ]
+    ]
+  },
+  {
+    "date": "2025-04-08",
+    "id": 268,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 950,
+    "agenda_fileId": 949,
+    "minutes_fileId": 971,
+    "all_files": [
+      [
+        "Agenda",
+        949
+      ],
+      [
+        "Agenda Packet",
+        950
+      ],
+      [
+        "Minutes",
+        971
+      ]
+    ]
+  },
+  {
+    "date": "2025-04-07",
+    "id": 338,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 952,
+    "agenda_fileId": 951,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        951
+      ],
+      [
+        "Agenda Packet",
+        952
+      ]
+    ]
+  },
+  {
+    "date": "2025-04-01",
+    "id": 36,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 48,
+    "agenda_fileId": 47,
+    "minutes_fileId": 970,
+    "all_files": [
+      [
+        "Agenda",
+        47
+      ],
+      [
+        "Agenda Packet",
+        48
+      ],
+      [
+        "Minutes",
+        970
+      ]
+    ]
+  },
+  {
+    "date": "2025-03-25",
+    "id": 236,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 598,
+    "agenda_fileId": 597,
+    "minutes_fileId": 968,
+    "all_files": [
+      [
+        "Agenda",
+        597
+      ],
+      [
+        "Agenda Packet",
+        598
+      ],
+      [
+        "Minutes",
+        968
+      ]
+    ]
+  },
+  {
+    "date": "2025-03-18",
+    "id": 364,
+    "name": "Paonia Tree Board",
+    "packet_fileId": 944,
+    "agenda_fileId": 943,
+    "minutes_fileId": 996,
+    "all_files": [
+      [
+        "Agenda",
+        943
+      ],
+      [
+        "Agenda Packet",
+        944
+      ],
+      [
+        "Minutes",
+        996
+      ]
+    ]
+  },
+  {
+    "date": "2025-03-11",
+    "id": 183,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 440,
+    "agenda_fileId": 439,
+    "minutes_fileId": 959,
+    "all_files": [
+      [
+        "Agenda",
+        439
+      ],
+      [
+        "Agenda Packet",
+        440
+      ],
+      [
+        "Minutes",
+        959
+      ]
+    ]
+  },
+  {
+    "date": "2025-03-03",
+    "id": 325,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 848,
+    "agenda_fileId": 847,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        847
+      ],
+      [
+        "Agenda Packet",
+        848
+      ]
+    ]
+  },
+  {
+    "date": "2025-02-25",
+    "id": 250,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 636,
+    "agenda_fileId": 635,
+    "minutes_fileId": 637,
+    "all_files": [
+      [
+        "Agenda",
+        635
+      ],
+      [
+        "Agenda Packet",
+        636
+      ],
+      [
+        "Minutes",
+        637
+      ]
+    ]
+  },
+  {
+    "date": "2025-02-18",
+    "id": 365,
+    "name": "Paonia Tree Board",
+    "packet_fileId": 946,
+    "agenda_fileId": 945,
+    "minutes_fileId": 947,
+    "all_files": [
+      [
+        "Agenda",
+        945
+      ],
+      [
+        "Agenda Packet",
+        946
+      ],
+      [
+        "Minutes",
+        947
+      ]
+    ]
+  },
+  {
+    "date": "2025-02-17",
+    "id": 18,
+    "name": "One Time Event",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2025-02-11",
+    "id": 208,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 514,
+    "agenda_fileId": 513,
+    "minutes_fileId": 515,
+    "all_files": [
+      [
+        "Agenda",
+        513
+      ],
+      [
+        "Agenda Packet",
+        514
+      ],
+      [
+        "Minutes",
+        515
+      ]
+    ]
+  },
+  {
+    "date": "2025-02-03",
+    "id": 320,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 835,
+    "agenda_fileId": 834,
+    "minutes_fileId": 1215,
+    "all_files": [
+      [
+        "Agenda",
+        834
+      ],
+      [
+        "Agenda Packet",
+        835
+      ],
+      [
+        "Minutes",
+        1215
+      ]
+    ]
+  },
+  {
+    "date": "2025-01-29",
+    "id": 329,
+    "name": "Planning Commission Work Session",
+    "packet_fileId": 853,
+    "agenda_fileId": 852,
+    "minutes_fileId": 1214,
+    "all_files": [
+      [
+        "Agenda",
+        852
+      ],
+      [
+        "Agenda Packet",
+        853
+      ],
+      [
+        "Minutes",
+        1214
+      ]
+    ]
+  },
+  {
+    "date": "2025-01-28",
+    "id": 211,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 523,
+    "agenda_fileId": 522,
+    "minutes_fileId": 524,
+    "all_files": [
+      [
+        "Agenda",
+        522
+      ],
+      [
+        "Agenda Packet",
+        523
+      ],
+      [
+        "Minutes",
+        524
+      ]
+    ]
+  },
+  {
+    "date": "2025-01-28",
+    "id": 163,
+    "name": "Board of Trustees Work Session",
+    "packet_fileId": 383,
+    "agenda_fileId": 382,
+    "minutes_fileId": 1251,
+    "all_files": [
+      [
+        "Agenda",
+        382
+      ],
+      [
+        "Agenda Packet",
+        383
+      ],
+      [
+        "Minutes",
+        1251
+      ]
+    ]
+  },
+  {
+    "date": "2025-01-21",
+    "id": 362,
+    "name": "Tree Board",
+    "packet_fileId": 941,
+    "agenda_fileId": 940,
+    "minutes_fileId": 942,
+    "all_files": [
+      [
+        "Agenda",
+        940
+      ],
+      [
+        "Agenda Packet",
+        941
+      ],
+      [
+        "Minutes",
+        942
+      ]
+    ]
+  },
+  {
+    "date": "2025-01-14",
+    "id": 230,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 580,
+    "agenda_fileId": 579,
+    "minutes_fileId": 581,
+    "all_files": [
+      [
+        "Agenda",
+        579
+      ],
+      [
+        "Agenda Packet",
+        580
+      ],
+      [
+        "Minutes",
+        581
+      ]
+    ]
+  },
+  {
+    "date": "2025-01-06",
+    "id": 314,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 822,
+    "agenda_fileId": 821,
+    "minutes_fileId": 1213,
+    "all_files": [
+      [
+        "Agenda",
+        821
+      ],
+      [
+        "Agenda Packet",
+        822
+      ],
+      [
+        "Minutes",
+        1213
+      ]
+    ]
+  },
+  {
+    "date": "2024-12-11",
+    "id": 82,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 181,
+    "agenda_fileId": 180,
+    "minutes_fileId": 1212,
+    "all_files": [
+      [
+        "Agenda",
+        180
+      ],
+      [
+        "Agenda Packet",
+        181
+      ],
+      [
+        "Minutes",
+        1212
+      ]
+    ]
+  },
+  {
+    "date": "2024-12-10",
+    "id": 197,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 481,
+    "agenda_fileId": 480,
+    "minutes_fileId": 482,
+    "all_files": [
+      [
+        "Agenda",
+        480
+      ],
+      [
+        "Agenda Packet",
+        481
+      ],
+      [
+        "Minutes",
+        482
+      ]
+    ]
+  },
+  {
+    "date": "2024-12-04",
+    "id": 1,
+    "name": "One Time Event",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2024-12-02",
+    "id": 342,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 884,
+    "agenda_fileId": 883,
+    "minutes_fileId": 1211,
+    "all_files": [
+      [
+        "Agenda",
+        883
+      ],
+      [
+        "Agenda Packet",
+        884
+      ],
+      [
+        "Minutes",
+        1211
+      ]
+    ]
+  },
+  {
+    "date": "2024-11-26",
+    "id": 209,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 517,
+    "agenda_fileId": 516,
+    "minutes_fileId": 518,
+    "all_files": [
+      [
+        "Agenda",
+        516
+      ],
+      [
+        "Agenda Packet",
+        517
+      ],
+      [
+        "Minutes",
+        518
+      ]
+    ]
+  },
+  {
+    "date": "2024-11-20",
+    "id": 336,
+    "name": "Planning Commission Work Session",
+    "packet_fileId": 871,
+    "agenda_fileId": 870,
+    "minutes_fileId": 1210,
+    "all_files": [
+      [
+        "Agenda",
+        870
+      ],
+      [
+        "Agenda Packet",
+        871
+      ],
+      [
+        "Minutes",
+        1210
+      ]
+    ]
+  },
+  {
+    "date": "2024-11-12",
+    "id": 202,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 496,
+    "agenda_fileId": 495,
+    "minutes_fileId": 497,
+    "all_files": [
+      [
+        "Agenda",
+        495
+      ],
+      [
+        "Agenda Packet",
+        496
+      ],
+      [
+        "Minutes",
+        497
+      ]
+    ]
+  },
+  {
+    "date": "2024-11-12",
+    "id": 129,
+    "name": "Town Board Work Session",
+    "packet_fileId": 316,
+    "agenda_fileId": 315,
+    "minutes_fileId": 1209,
+    "all_files": [
+      [
+        "Agenda",
+        315
+      ],
+      [
+        "Agenda Packet",
+        316
+      ],
+      [
+        "Minutes",
+        1209
+      ]
+    ]
+  },
+  {
+    "date": "2024-11-07",
+    "id": 135,
+    "name": "Town Board Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 329,
+    "minutes_fileId": 1208,
+    "all_files": [
+      [
+        "Agenda",
+        329
+      ],
+      [
+        "Minutes",
+        1208
+      ]
+    ]
+  },
+  {
+    "date": "2024-11-04",
+    "id": 340,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 879,
+    "agenda_fileId": 878,
+    "minutes_fileId": 1207,
+    "all_files": [
+      [
+        "Agenda",
+        878
+      ],
+      [
+        "Agenda Packet",
+        879
+      ],
+      [
+        "Minutes",
+        1207
+      ]
+    ]
+  },
+  {
+    "date": "2024-10-22",
+    "id": 198,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 484,
+    "agenda_fileId": 483,
+    "minutes_fileId": 485,
+    "all_files": [
+      [
+        "Agenda",
+        483
+      ],
+      [
+        "Agenda Packet",
+        484
+      ],
+      [
+        "Minutes",
+        485
+      ]
+    ]
+  },
+  {
+    "date": "2024-10-22",
+    "id": 141,
+    "name": "Town Board Work Session",
+    "packet_fileId": 340,
+    "agenda_fileId": 339,
+    "minutes_fileId": 1206,
+    "all_files": [
+      [
+        "Agenda",
+        339
+      ],
+      [
+        "Agenda Packet",
+        340
+      ],
+      [
+        "Minutes",
+        1206
+      ]
+    ]
+  },
+  {
+    "date": "2024-10-15",
+    "id": 334,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 865,
+    "agenda_fileId": 864,
+    "minutes_fileId": 866,
+    "all_files": [
+      [
+        "Agenda",
+        864
+      ],
+      [
+        "Agenda Packet",
+        865
+      ],
+      [
+        "Minutes",
+        866
+      ]
+    ]
+  },
+  {
+    "date": "2024-10-08",
+    "id": 206,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 508,
+    "agenda_fileId": 507,
+    "minutes_fileId": 509,
+    "all_files": [
+      [
+        "Agenda",
+        507
+      ],
+      [
+        "Agenda Packet",
+        508
+      ],
+      [
+        "Minutes",
+        509
+      ]
+    ]
+  },
+  {
+    "date": "2024-09-24",
+    "id": 185,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 445,
+    "agenda_fileId": 444,
+    "minutes_fileId": 446,
+    "all_files": [
+      [
+        "Agenda",
+        444
+      ],
+      [
+        "Agenda Packet",
+        445
+      ],
+      [
+        "Minutes",
+        446
+      ]
+    ]
+  },
+  {
+    "date": "2024-09-17",
+    "id": 77,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 167,
+    "agenda_fileId": 166,
+    "minutes_fileId": 168,
+    "all_files": [
+      [
+        "Agenda",
+        166
+      ],
+      [
+        "Agenda Packet",
+        167
+      ],
+      [
+        "Minutes",
+        168
+      ]
+    ]
+  },
+  {
+    "date": "2024-09-10",
+    "id": 307,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 801,
+    "agenda_fileId": 800,
+    "minutes_fileId": 802,
+    "all_files": [
+      [
+        "Agenda",
+        800
+      ],
+      [
+        "Agenda Packet",
+        801
+      ],
+      [
+        "Minutes",
+        802
+      ]
+    ]
+  },
+  {
+    "date": "2024-09-04",
+    "id": 247,
+    "name": "Joint Board of Trustees & Planning Commission Meeting",
+    "packet_fileId": 627,
+    "agenda_fileId": 626,
+    "minutes_fileId": 628,
+    "all_files": [
+      [
+        "Agenda",
+        626
+      ],
+      [
+        "Agenda Packet",
+        627
+      ],
+      [
+        "Minutes",
+        628
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-27",
+    "id": 174,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 413,
+    "agenda_fileId": 412,
+    "minutes_fileId": 414,
+    "all_files": [
+      [
+        "Agenda",
+        412
+      ],
+      [
+        "Agenda Packet",
+        413
+      ],
+      [
+        "Minutes",
+        414
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-27",
+    "id": 162,
+    "name": "Town Board Work Session",
+    "packet_fileId": 381,
+    "agenda_fileId": 380,
+    "minutes_fileId": 1205,
+    "all_files": [
+      [
+        "Agenda",
+        380
+      ],
+      [
+        "Agenda Packet",
+        381
+      ],
+      [
+        "Minutes",
+        1205
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-26",
+    "id": 165,
+    "name": "Town Board Work Session -",
+    "packet_fileId": 388,
+    "agenda_fileId": 387,
+    "minutes_fileId": 1204,
+    "all_files": [
+      [
+        "Agenda",
+        387
+      ],
+      [
+        "Agenda Packet",
+        388
+      ],
+      [
+        "Minutes",
+        1204
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-20",
+    "id": 45,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 74,
+    "agenda_fileId": 73,
+    "minutes_fileId": 75,
+    "all_files": [
+      [
+        "Agenda",
+        73
+      ],
+      [
+        "Agenda Packet",
+        74
+      ],
+      [
+        "Minutes",
+        75
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-19",
+    "id": 341,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 881,
+    "agenda_fileId": 880,
+    "minutes_fileId": 882,
+    "all_files": [
+      [
+        "Agenda",
+        880
+      ],
+      [
+        "Agenda Packet",
+        881
+      ],
+      [
+        "Minutes",
+        882
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-15",
+    "id": 93,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 213,
+    "agenda_fileId": 212,
+    "minutes_fileId": 214,
+    "all_files": [
+      [
+        "Agenda",
+        212
+      ],
+      [
+        "Agenda Packet",
+        213
+      ],
+      [
+        "Minutes",
+        214
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-13",
+    "id": 263,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 675,
+    "agenda_fileId": 674,
+    "minutes_fileId": 676,
+    "all_files": [
+      [
+        "Agenda",
+        674
+      ],
+      [
+        "Agenda Packet",
+        675
+      ],
+      [
+        "Minutes",
+        676
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-07",
+    "id": 317,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 826,
+    "agenda_fileId": 825,
+    "minutes_fileId": 827,
+    "all_files": [
+      [
+        "Agenda",
+        825
+      ],
+      [
+        "Agenda Packet",
+        826
+      ],
+      [
+        "Minutes",
+        827
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-05",
+    "id": 337,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 873,
+    "agenda_fileId": 872,
+    "minutes_fileId": 874,
+    "all_files": [
+      [
+        "Agenda",
+        872
+      ],
+      [
+        "Agenda Packet",
+        873
+      ],
+      [
+        "Minutes",
+        874
+      ]
+    ]
+  },
+  {
+    "date": "2024-08-01",
+    "id": 63,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": null,
+    "agenda_fileId": 127,
+    "minutes_fileId": 129,
+    "all_files": [
+      [
+        "Agenda",
+        127
+      ],
+      [
+        "Minutes",
+        129
+      ]
+    ]
+  },
+  {
+    "date": "2024-07-30",
+    "id": 146,
+    "name": "Joint Board of Trustee and Planning Commission - Training",
+    "packet_fileId": null,
+    "agenda_fileId": 349,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        349
+      ]
+    ]
+  },
+  {
+    "date": "2024-07-29",
+    "id": 333,
+    "name": "Planning Commission Work Session - Training with CIRSA",
+    "packet_fileId": null,
+    "agenda_fileId": 862,
+    "minutes_fileId": null,
+    "all_files": [
+      [
+        "Agenda",
+        862
+      ]
+    ]
+  },
+  {
+    "date": "2024-07-23",
+    "id": 275,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 708,
+    "agenda_fileId": 707,
+    "minutes_fileId": 709,
+    "all_files": [
+      [
+        "Agenda",
+        707
+      ],
+      [
+        "Agenda Packet",
+        708
+      ],
+      [
+        "Minutes",
+        709
+      ]
+    ]
+  },
+  {
+    "date": "2024-07-22",
+    "id": 353,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 916,
+    "agenda_fileId": 915,
+    "minutes_fileId": 917,
+    "all_files": [
+      [
+        "Agenda",
+        915
+      ],
+      [
+        "Agenda Packet",
+        916
+      ],
+      [
+        "Minutes",
+        917
+      ]
+    ]
+  },
+  {
+    "date": "2024-07-18",
+    "id": 86,
+    "name": "Joint Board of Trustees & Planning Commission Meeting - REVISED",
+    "packet_fileId": 192,
+    "agenda_fileId": 191,
+    "minutes_fileId": 193,
+    "all_files": [
+      [
+        "Agenda",
+        191
+      ],
+      [
+        "Agenda Packet",
+        192
+      ],
+      [
+        "Minutes",
+        193
+      ]
+    ]
+  },
+  {
+    "date": "2024-07-10",
+    "id": 150,
+    "name": "Town Board Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 357,
+    "minutes_fileId": 1250,
+    "all_files": [
+      [
+        "Agenda",
+        357
+      ],
+      [
+        "Minutes",
+        1250
+      ]
+    ]
+  },
+  {
+    "date": "2024-07-09",
+    "id": 304,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 792,
+    "agenda_fileId": 791,
+    "minutes_fileId": 793,
+    "all_files": [
+      [
+        "Agenda",
+        791
+      ],
+      [
+        "Agenda Packet",
+        792
+      ],
+      [
+        "Minutes",
+        793
+      ]
+    ]
+  },
+  {
+    "date": "2024-06-25",
+    "id": 199,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 487,
+    "agenda_fileId": 486,
+    "minutes_fileId": 488,
+    "all_files": [
+      [
+        "Agenda",
+        486
+      ],
+      [
+        "Agenda Packet",
+        487
+      ],
+      [
+        "Minutes",
+        488
+      ]
+    ]
+  },
+  {
+    "date": "2024-06-11",
+    "id": 213,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 529,
+    "agenda_fileId": 528,
+    "minutes_fileId": 530,
+    "all_files": [
+      [
+        "Agenda",
+        528
+      ],
+      [
+        "Agenda Packet",
+        529
+      ],
+      [
+        "Minutes",
+        530
+      ]
+    ]
+  },
+  {
+    "date": "2024-06-05",
+    "id": 315,
+    "name": "Planning Commission Meeting ****Canceled",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2024-06-04",
+    "id": 60,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 119,
+    "agenda_fileId": 118,
+    "minutes_fileId": 120,
+    "all_files": [
+      [
+        "Agenda",
+        118
+      ],
+      [
+        "Agenda Packet",
+        119
+      ],
+      [
+        "Minutes",
+        120
+      ]
+    ]
+  },
+  {
+    "date": "2024-06-04",
+    "id": 154,
+    "name": "Town Board Work Session",
+    "packet_fileId": 364,
+    "agenda_fileId": 363,
+    "minutes_fileId": 1203,
+    "all_files": [
+      [
+        "Agenda",
+        363
+      ],
+      [
+        "Agenda Packet",
+        364
+      ],
+      [
+        "Minutes",
+        1203
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-28",
+    "id": 170,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 401,
+    "agenda_fileId": 400,
+    "minutes_fileId": 402,
+    "all_files": [
+      [
+        "Agenda",
+        400
+      ],
+      [
+        "Agenda Packet",
+        401
+      ],
+      [
+        "Minutes",
+        402
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-15",
+    "id": 136,
+    "name": "Town Board Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 330,
+    "minutes_fileId": 1202,
+    "all_files": [
+      [
+        "Agenda",
+        330
+      ],
+      [
+        "Minutes",
+        1202
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-14",
+    "id": 216,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 538,
+    "agenda_fileId": 537,
+    "minutes_fileId": 539,
+    "all_files": [
+      [
+        "Agenda",
+        537
+      ],
+      [
+        "Agenda Packet",
+        538
+      ],
+      [
+        "Minutes",
+        539
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-13",
+    "id": 68,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 143,
+    "agenda_fileId": 142,
+    "minutes_fileId": 144,
+    "all_files": [
+      [
+        "Agenda",
+        142
+      ],
+      [
+        "Agenda Packet",
+        143
+      ],
+      [
+        "Minutes",
+        144
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-09",
+    "id": 126,
+    "name": "Joint Board of Trustees & Planning Commission Work Session",
+    "packet_fileId": 308,
+    "agenda_fileId": 307,
+    "minutes_fileId": 1201,
+    "all_files": [
+      [
+        "Agenda",
+        307
+      ],
+      [
+        "Agenda Packet",
+        308
+      ],
+      [
+        "Minutes",
+        1201
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-08",
+    "id": 66,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 137,
+    "agenda_fileId": 136,
+    "minutes_fileId": 138,
+    "all_files": [
+      [
+        "Agenda",
+        136
+      ],
+      [
+        "Agenda Packet",
+        137
+      ],
+      [
+        "Minutes",
+        138
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-06",
+    "id": 124,
+    "name": "Town Board Work Session",
+    "packet_fileId": 303,
+    "agenda_fileId": 302,
+    "minutes_fileId": 1200,
+    "all_files": [
+      [
+        "Agenda",
+        302
+      ],
+      [
+        "Agenda Packet",
+        303
+      ],
+      [
+        "Minutes",
+        1200
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-02",
+    "id": 79,
+    "name": "Special Town Board Meeting",
+    "packet_fileId": 173,
+    "agenda_fileId": 172,
+    "minutes_fileId": 1199,
+    "all_files": [
+      [
+        "Agenda",
+        172
+      ],
+      [
+        "Agenda Packet",
+        173
+      ],
+      [
+        "Minutes",
+        1199
+      ]
+    ]
+  },
+  {
+    "date": "2024-05-01",
+    "id": 352,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": null,
+    "agenda_fileId": 912,
+    "minutes_fileId": 914,
+    "all_files": [
+      [
+        "Agenda",
+        912
+      ],
+      [
+        "Minutes",
+        914
+      ]
+    ]
+  },
+  {
+    "date": "2024-04-23",
+    "id": 222,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 556,
+    "agenda_fileId": 555,
+    "minutes_fileId": 557,
+    "all_files": [
+      [
+        "Agenda",
+        555
+      ],
+      [
+        "Agenda Packet",
+        556
+      ],
+      [
+        "Minutes",
+        557
+      ]
+    ]
+  },
+  {
+    "date": "2024-04-16",
+    "id": 160,
+    "name": "Town Board Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 378,
+    "minutes_fileId": 1198,
+    "all_files": [
+      [
+        "Agenda",
+        378
+      ],
+      [
+        "Minutes",
+        1198
+      ]
+    ]
+  },
+  {
+    "date": "2024-04-09",
+    "id": 191,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 463,
+    "agenda_fileId": 462,
+    "minutes_fileId": 464,
+    "all_files": [
+      [
+        "Agenda",
+        462
+      ],
+      [
+        "Agenda Packet",
+        463
+      ],
+      [
+        "Minutes",
+        464
+      ]
+    ]
+  },
+  {
+    "date": "2024-04-08",
+    "id": 167,
+    "name": "Joint Board of Trustees/ Planning Commission Work Session",
+    "packet_fileId": 393,
+    "agenda_fileId": 392,
+    "minutes_fileId": 1197,
+    "all_files": [
+      [
+        "Agenda",
+        392
+      ],
+      [
+        "Agenda Packet",
+        393
+      ],
+      [
+        "Minutes",
+        1197
+      ]
+    ]
+  },
+  {
+    "date": "2024-04-03",
+    "id": 332,
+    "name": "Planning Commission Meeting - Remake",
+    "packet_fileId": 860,
+    "agenda_fileId": 859,
+    "minutes_fileId": 861,
+    "all_files": [
+      [
+        "Agenda",
+        859
+      ],
+      [
+        "Agenda Packet",
+        860
+      ],
+      [
+        "Minutes",
+        861
+      ]
+    ]
+  },
+  {
+    "date": "2024-04-03",
+    "id": 138,
+    "name": "Safe Routes to Apple Valley Park Walk & Roll Audit",
+    "packet_fileId": 333,
+    "agenda_fileId": 332,
+    "minutes_fileId": 1217,
+    "all_files": [
+      [
+        "Agenda",
+        332
+      ],
+      [
+        "Agenda Packet",
+        333
+      ],
+      [
+        "Minutes",
+        1217
+      ]
+    ]
+  },
+  {
+    "date": "2024-04-01",
+    "id": 35,
+    "name": "Zoning Board of Adjustments",
+    "packet_fileId": 46,
+    "agenda_fileId": 45,
+    "minutes_fileId": 1196,
+    "all_files": [
+      [
+        "Agenda",
+        45
+      ],
+      [
+        "Agenda Packet",
+        46
+      ],
+      [
+        "Minutes",
+        1196
+      ]
+    ]
+  },
+  {
+    "date": "2024-03-26",
+    "id": 257,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 657,
+    "agenda_fileId": 656,
+    "minutes_fileId": 658,
+    "all_files": [
+      [
+        "Agenda",
+        656
+      ],
+      [
+        "Agenda Packet",
+        657
+      ],
+      [
+        "Minutes",
+        658
+      ]
+    ]
+  },
+  {
+    "date": "2024-03-19",
+    "id": 155,
+    "name": "Joint Board of Trustees and Planning Commission Work Session",
+    "packet_fileId": 366,
+    "agenda_fileId": 365,
+    "minutes_fileId": 1195,
+    "all_files": [
+      [
+        "Agenda",
+        365
+      ],
+      [
+        "Agenda Packet",
+        366
+      ],
+      [
+        "Minutes",
+        1195
+      ]
+    ]
+  },
+  {
+    "date": "2024-03-13",
+    "id": 350,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 907,
+    "agenda_fileId": 906,
+    "minutes_fileId": 908,
+    "all_files": [
+      [
+        "Agenda",
+        906
+      ],
+      [
+        "Agenda Packet",
+        907
+      ],
+      [
+        "Minutes",
+        908
+      ]
+    ]
+  },
+  {
+    "date": "2024-03-12",
+    "id": 286,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 741,
+    "agenda_fileId": 740,
+    "minutes_fileId": 742,
+    "all_files": [
+      [
+        "Agenda",
+        740
+      ],
+      [
+        "Agenda Packet",
+        741
+      ],
+      [
+        "Minutes",
+        742
+      ]
+    ]
+  },
+  {
+    "date": "2024-03-06",
+    "id": 133,
+    "name": "Town Board Work Session",
+    "packet_fileId": null,
+    "agenda_fileId": 324,
+    "minutes_fileId": 1194,
+    "all_files": [
+      [
+        "Agenda",
+        324
+      ],
+      [
+        "Minutes",
+        1194
+      ]
+    ]
+  },
+  {
+    "date": "2024-03-03",
+    "id": 144,
+    "name": "Planning Commission Work Session",
+    "packet_fileId": 347,
+    "agenda_fileId": 346,
+    "minutes_fileId": 1193,
+    "all_files": [
+      [
+        "Agenda",
+        346
+      ],
+      [
+        "Agenda Packet",
+        347
+      ],
+      [
+        "Minutes",
+        1193
+      ]
+    ]
+  },
+  {
+    "date": "2024-02-27",
+    "id": 234,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 592,
+    "agenda_fileId": 591,
+    "minutes_fileId": 593,
+    "all_files": [
+      [
+        "Agenda",
+        591
+      ],
+      [
+        "Agenda Packet",
+        592
+      ],
+      [
+        "Minutes",
+        593
+      ]
+    ]
+  },
+  {
+    "date": "2024-02-13",
+    "id": 283,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 732,
+    "agenda_fileId": 731,
+    "minutes_fileId": 733,
+    "all_files": [
+      [
+        "Agenda",
+        731
+      ],
+      [
+        "Agenda Packet",
+        732
+      ],
+      [
+        "Minutes",
+        733
+      ]
+    ]
+  },
+  {
+    "date": "2024-02-07",
+    "id": 348,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 901,
+    "agenda_fileId": 900,
+    "minutes_fileId": 902,
+    "all_files": [
+      [
+        "Agenda",
+        900
+      ],
+      [
+        "Agenda Packet",
+        901
+      ],
+      [
+        "Minutes",
+        902
+      ]
+    ]
+  },
+  {
+    "date": "2024-01-30",
+    "id": 69,
+    "name": "Special Town Board Meeting ***CANCELLED***",
+    "packet_fileId": null,
+    "agenda_fileId": null,
+    "minutes_fileId": null,
+    "all_files": []
+  },
+  {
+    "date": "2024-01-23",
+    "id": 171,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 404,
+    "agenda_fileId": 403,
+    "minutes_fileId": 405,
+    "all_files": [
+      [
+        "Agenda",
+        403
+      ],
+      [
+        "Agenda Packet",
+        404
+      ],
+      [
+        "Minutes",
+        405
+      ]
+    ]
+  },
+  {
+    "date": "2024-01-17",
+    "id": 327,
+    "name": "Planning Commission Meeting",
+    "packet_fileId": 850,
+    "agenda_fileId": 849,
+    "minutes_fileId": 851,
+    "all_files": [
+      [
+        "Agenda",
+        849
+      ],
+      [
+        "Agenda Packet",
+        850
+      ],
+      [
+        "Minutes",
+        851
+      ]
+    ]
+  },
+  {
+    "date": "2024-01-09",
+    "id": 308,
+    "name": "Regular Town Board Meeting",
+    "packet_fileId": 804,
+    "agenda_fileId": 803,
+    "minutes_fileId": 805,
+    "all_files": [
+      [
+        "Agenda",
+        803
+      ],
+      [
+        "Agenda Packet",
+        804
+      ],
+      [
+        "Minutes",
+        805
+      ]
+    ]
+  }
+]

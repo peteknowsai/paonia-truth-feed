@@ -2,7 +2,7 @@
 title: "CORA C 26-11: Libelous Communications Response"
 type: source
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-31
 tags: [cora, libelous, communications, board, vetter, special-meeting, obstruction]
 sources: [cora-libelous-communications, board-letter-2026-03-30, retraction-demand-2026-03-31, mayor-report-agenda-packet]
 ---
@@ -126,6 +126,26 @@ Specifically, either:
 3. **Material does not exist because coordination happened off the record.** If seven elected officials coordinated a special meeting about a citizen without any written communication about scheduling, agenda, or response drafting, that is itself a process problem — a board that operates outside of records law is a board that cannot be held accountable through records law.
 
 Each of the three possibilities supports [[pattern-of-cora-obstruction|the same conclusion]]: the Board's March 30 action against Pete was developed through channels that are invisible to the public.
+
+### The audit log now NAMES the withheld drafts
+
+The Town's own Microsoft 365 unified audit log — produced under [[cora-c26-12-m365-audit-logs-response|C 26-12]] (cure dated 2026-05-27) — records, by subject and timestamp, draft and comment-collection threads from the same window that fit "all drafts, revisions, and tracked changes" but were not among the two already-published letters Vetter pointed to, and were not logged as withheld:
+
+- `Re: draft "letter from Trustee"` — 3/27 15:48 → 3/28 16:44; in the [[mayor-smith|paiges]], [[samira-vetter|samirav]], and [[stefen-wynn|stefenw]] mailboxes — a draft trustee letter circulating among the Mayor, the Clerk, and the Town Administrator, with no attorney on it.
+- `Response to the Citizen's 10 things flyer` — 3/28 20:47; paiges.
+- `Response to the Citizen's 10 things flyer . I Need comments /no later than 2:00 tomorrow` — 3/28 21:08 → 3/31 01:33; paiges and the `ptownlegal` Town legal mailbox — the comment-collection thread on the response letter itself.
+- `RE: PLease see the attached drafft Mayor's report for the Special Meeting` — 3/27 20:16 → 3/29 00:13; in the [[lucy-hunter|lucyh]], paiges, and samirav mailboxes — a same-window special-meeting drafting item with no attorney on it. The subject describes a Mayor's report; with no body in the log, whether it overlaps the published letter cannot be confirmed from the subject alone, so it is named as an undisclosed same-window drafting item rather than asserted as a letter draft.
+- `Revised Letter to Town of Paonia Citizens including the agreed upon changes approved by the BoT at t...` — 3/31 15:57 → 3/31 18:25; paiges, ptownlegal, rubens. *(Dated 3/31, one day after the request's "created prior to or on March 30" cutoff — noted for completeness, not claimed as squarely in-scope.)*
+
+**Caveats.** The audit log contains only subject lines, timestamps, operations, and the mailbox each item sits in — **no** message bodies and **no** To/Cc recipient lists. It proves these subjects existed in those mailboxes at those times; it does not establish their contents, authors, or direction. The drafts in the lucyh/paiges/samirav/stefenw mailboxes carry no attorney, so the work-product and attorney-client rationales do not reach them; the items touching `ptownlegal` may be defensible as privileged, but the Town provided no privilege log identifying any withheld record by date, author, recipient, and general subject (see [[clayton-buchner]]). The net finding: the Town equated "all drafts, revisions, and tracked changes" with the two finished, published versions, while its own records name draft and comment threads it neither produced nor logged. This is the basis for the follow-up request built on the C 26-12 audit-log subjects (see [[cora-tracking-log]]).
+
+### These were sent emails, not unsent drafts (verified 2026-06-01)
+
+A direct parse of the C 26-12 cure CSVs — independently re-derived by three verification agents — confirms each of these threads carries genuine `Send` events in the March 24–31 window, so they are **transmitted emails among officials**, not working drafts that were never sent: `Being Handed Out` (sent by RubenS and StefenW, 3/24–3/25), `letter from Trustee` (paiges 3/27, StefenW 3/28), the `Mayor's report for the Special Meeting` (paiges and SamiraV 3/27, LucyH 3/28), the `Response to the Citizen's 10 things flyer / I need comments` thread (paiges 3/28, PTownLegal 3/29), and the `Revised Letter to … Citizens` (paiges and RubenS 3/31). Because these messages sat in the Clerk's own mailbox among others, the custodian knew this drafting traffic existed when she certified that the only drafts were the two published versions. This is the verified, unassailable core of the incompleteness finding.
+
+### On the April 21 deletions — checked and not pursued
+
+An earlier pass flagged "three responsive emails moved to Deleted Items in the Clerk's mailbox within ~25 minutes on April 21, the day the request closed." **Verification against the raw logs does not support a targeted-concealment reading.** On April 21 the `samirav` mailbox shows a **164-message bulk inbox cleanup** (`MoveToDeletedItems` from `\Inbox`, ~14:41–20:04 UTC) that swept spam, newsletters, liquor-license renewals, lease documents, and routine business; the three flyer threads (`letter from Trustee` 15:28, `Being Handed Out` 15:50, `Mayor's report` 15:53 UTC — i.e. **9:28/9:50/9:53 a.m. Mountain**, not afternoon) are embedded within that indiscriminate sweep, deleted once each. All are recoverable `MoveToDeletedItems` from the Inbox; there is no `HardDelete` of any of these subjects. The honest read is routine inbox cleanup, not provable spoliation — consistent with the skeptical re-check in `raw/research/deletion-verification.md` — so the deletion angle is **not** part of the records-incompleteness case. The full verified timeline is at `raw/research/c26-11-withheld-drafts-timeline.md`. See [[pattern-of-cora-obstruction]] and [[discrepancies-register]].
 
 ## See Also
 

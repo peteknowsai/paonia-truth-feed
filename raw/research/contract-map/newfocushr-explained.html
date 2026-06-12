@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The HR Contract, Explained — New Focus HR</title>
+<style>
+  :root{
+    --ink:#1b1b1a; --paper:#fbfaf6; --muted:#6a6a62; --line:#1b1b1a;
+    --doc:#1a5a2a; --doc-bg:#e9f1ec;
+    --inf:#8a5a12; --inf-bg:#f6efe1;
+    --no:#5a5a55;  --no-bg:#eeeeea;
+    --flag:#9c1818; --flag-bg:#f6e9e8;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);}
+  body{font-family:"Courier Prime","Courier New",Courier,monospace;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:840px;margin:0 auto;padding:32px 22px 110px;}
+  header.mast{border:3px solid var(--line);padding:20px 22px;background:var(--ink);color:var(--paper);}
+  header.mast .kicker{text-transform:uppercase;letter-spacing:3px;font-size:11px;margin:0 0 8px;color:#c9c9c4;}
+  header.mast h1{margin:0 0 8px;font-size:30px;line-height:1.12;}
+  header.mast .sub{margin:0;font-size:13px;color:#d8d8d2;}
+  .forme{border:2px dashed var(--muted);padding:10px 14px;margin:18px 0;font-size:13px;color:var(--muted);}
+  h2{font-size:20px;margin:48px 0 4px;border-bottom:3px solid var(--line);padding-bottom:5px;text-transform:uppercase;letter-spacing:1px;}
+  h2 .n{color:var(--muted);margin-right:8px;}
+  p{margin:11px 0;}
+  strong{font-weight:700;}
+  .lead{font-size:16px;}
+
+  /* rigor badges */
+  .badge{display:inline-block;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;
+    padding:1px 6px;border:1px solid;font-weight:700;vertical-align:middle;white-space:nowrap;}
+  .b-doc{color:var(--doc);border-color:var(--doc);background:var(--doc-bg);}
+  .b-inf{color:var(--inf);border-color:var(--inf);background:var(--inf-bg);}
+  .b-no{color:var(--no);border-color:var(--no);background:var(--no-bg);}
+  .keylegend{font-size:12px;margin:14px 0;}
+  .keylegend .badge{margin-right:4px;}
+
+  .tldr{border:3px solid var(--line);background:#fff;padding:16px 20px;margin:20px 0;}
+  .tldr p{margin:8px 0;}
+  .tldr p:first-child{margin-top:0;} .tldr p:last-child{margin-bottom:0;}
+
+  /* players */
+  .players{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;}
+  .player{flex:1 1 220px;border:2px solid var(--line);background:#fff;padding:12px 14px;}
+  .player .role{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+  .player .name{font-size:17px;font-weight:700;margin:2px 0 6px;}
+  .player p{font-size:13px;margin:6px 0 0;}
+
+  /* geography */
+  .geo{border:2px solid var(--line);background:#fff;padding:24px 20px 16px;margin:18px 0;}
+  .georoute{display:flex;align-items:center;gap:8px;}
+  .geodot{flex:0 0 auto;text-align:center;}
+  .geodot .pin{width:18px;height:18px;border-radius:50%;background:var(--ink);margin:0 auto 6px;}
+  .geodot .pin.small{width:11px;height:11px;background:#fff;border:2px solid var(--ink);}
+  .geodot .lbl{font-size:12px;font-weight:700;line-height:1.2;}
+  .geodot .pop{font-size:10px;color:var(--muted);}
+  .geoline{flex:1 1 auto;border-top:3px dashed var(--muted);position:relative;height:0;margin-top:-14px;}
+  .geomiles{text-align:center;font-size:12px;color:var(--flag);font-weight:700;margin-top:6px;}
+  .geonote{font-size:12px;color:var(--muted);border-top:1px dashed var(--muted);margin-top:14px;padding-top:10px;}
+
+  /* timeline */
+  .timeline{margin:18px 0;padding-left:8px;}
+  .tl{display:flex;gap:14px;position:relative;}
+  .tl .when{flex:0 0 96px;text-align:right;font-weight:700;font-size:13px;padding-top:1px;}
+  .tl .track{flex:0 0 22px;position:relative;}
+  .tl .track::before{content:"";position:absolute;left:9px;top:0;bottom:-18px;width:3px;background:var(--ink);}
+  .tl:last-child .track::before{display:none;}
+  .tl .node{position:absolute;left:3px;top:4px;width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--ink);}
+  .tl.hot .node{background:var(--flag);border-color:var(--flag);}
+  .tl .what{flex:1 1 auto;padding-bottom:20px;}
+  .tl .what .h{font-weight:700;}
+  .tl .what p{margin:3px 0 0;font-size:13px;}
+  .gapcall{border:2px solid var(--flag);background:var(--flag-bg);color:var(--flag);
+    padding:8px 12px;margin:6px 0 20px 110px;font-size:13px;font-weight:700;}
+
+  /* two-box compare */
+  .compare{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;}
+  .cbox{flex:1 1 260px;border:2px solid var(--line);padding:13px 15px;}
+  .cbox.good{background:var(--doc-bg);border-color:var(--doc);}
+  .cbox.bad{background:var(--flag-bg);border-color:var(--flag);}
+  .cbox .ch{font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:700;margin:0 0 6px;}
+  .cbox.good .ch{color:var(--doc);} .cbox.bad .ch{color:var(--flag);}
+  .cbox .big{font-size:22px;font-weight:700;line-height:1.15;}
+  .cbox ul{margin:8px 0 0;padding-left:18px;font-size:13px;} .cbox li{margin:3px 0;}
+
+  /* questionnaire */
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px;}
+  th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top;}
+  th{background:var(--ink);color:var(--paper);font-size:10px;text-transform:uppercase;letter-spacing:1px;}
+  td .verdict{font-weight:700;font-size:11px;text-transform:uppercase;}
+  .v-no{color:var(--flag);} .v-meh{color:var(--inf);}
+
+  /* evidence cards */
+  .eq{border-left:5px solid var(--ink);background:#fff;padding:10px 16px;margin:14px 0;}
+  .eq blockquote{margin:0 0 6px;font-size:15px;font-style:italic;}
+  .eq .reads{font-size:13px;color:var(--ink);}
+  .eq .reads strong{color:var(--flag);}
+
+  /* indiana list */
+  .indiana{border:2px solid var(--line);background:#fff;padding:6px 0;margin:16px 0;}
+  .indiana .row{display:flex;gap:12px;padding:9px 16px;border-bottom:1px dashed var(--muted);}
+  .indiana .row:last-child{border-bottom:none;}
+  .indiana .k{flex:0 0 160px;font-weight:700;font-size:13px;}
+  .indiana .v{flex:1 1 auto;font-size:13px;}
+  .indiana .v em{color:var(--flag);font-style:normal;font-weight:700;}
+
+  /* confirmed / not */
+  .splitcols{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;}
+  .col{flex:1 1 280px;border:2px solid var(--line);padding:0;}
+  .col .colhead{padding:8px 14px;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#fff;}
+  .col.yes .colhead{background:var(--doc);}
+  .col.nope .colhead{background:var(--no);}
+  .col ul{margin:0;padding:12px 14px 12px 32px;font-size:13px;}
+  .col li{margin:6px 0;}
+
+  .readbox{border:3px solid var(--line);background:#fff;padding:18px 20px;margin:20px 0;}
+  .readbox h3{margin-top:0;}
+  .qlist{border:2px solid var(--line);background:var(--inf-bg);padding:8px 20px 8px 36px;margin:14px 0;}
+  .qlist li{margin:7px 0;font-size:14px;}
+
+  footer{margin-top:50px;border-top:3px solid var(--line);padding-top:12px;font-size:11px;color:var(--muted);}
+  @media(max-width:600px){
+    header.mast h1{font-size:23px;}
+    .tl .when{flex-basis:74px;font-size:11px;}
+    .gapcall{margin-left:0;}
+    .indiana .k{flex-basis:110px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <p class="kicker">A single contract, taken apart</p>
+  <h1>The HR Contract, Explained</h1>
+  <p class="sub">How the Town of Paonia hired an Indiana firm to run its Human Resources — and why the paper trail keeps raising the same question.</p>
+</header>
+
+<div class="forme">
+  This page is built for one purpose: so you can <strong>see clearly what happened</strong>. It is not the Facebook post and not for publishing — it's the picture behind it. Everything here is tagged so you always know how solid it is:
+  <div class="keylegend" style="margin-top:8px;">
+    <span class="badge b-doc">Documented</span> = in the Town's own packet or the firm's own website &nbsp;
+    <span class="badge b-inf">Inference</span> = the documents point here, but it's interpretation &nbsp;
+    <span class="badge b-no">Not established</span> = an open question — do not treat as fact
+  </div>
+</div>
+
+<div class="tldr">
+  <p><strong>The 30-second version.</strong></p>
+  <p>In June 2025 the Town of Paonia hired <strong>New Focus HR</strong> — a firm in Noblesville, Indiana, about 1,200 miles away — to rewrite its employee handbook and be its outsourced HR department. <span class="badge b-doc">Documented</span></p>
+  <p>There was <strong>no competitive bid.</strong> The contract is $7,500 up front, $150/year forever, and <strong>$175/hour of open-ended consulting with no cap.</strong> <span class="badge b-doc">Documented</span></p>
+  <p>The document the Town filed to justify skipping the bid is an <strong>email chain in which the vendor and the Town Administrator chat about meeting up at the race in Indianapolis</strong> — and the contract was already signed and dated <em>before</em> that justification was even started. <span class="badge b-doc">Documented</span></p>
+  <p>The Town Administrator built his whole career in Indiana. The firm's every client and reference is in Indiana. <strong>Whether that's why this happened is the open question</strong> — but it's a fair one, and the paper trail is what makes it fair. <span class="badge b-inf">Inference</span></p>
+</div>
+
+<h2><span class="n">1</span>The three people in this story</h2>
+<div class="players">
+  <div class="player">
+    <div class="role">The vendor</div>
+    <div class="name">Kristen Deutsch</div>
+    <p>President of New Focus HR, LLC — Noblesville, Indiana. Sent Paonia the proposal, signed it first, and — this matters — <strong>wrote the answers to the Town's own "why no bid" questionnaire herself.</strong></p>
+  </div>
+  <div class="player">
+    <div class="role">Submitted the staff report</div>
+    <div class="name">Samira Vetter</div>
+    <p>Town Clerk. Met Deutsch on May 21, 2025; brought the item to the Board on June 10. Her staff report vouches for the firm's municipal experience — a firm she had known for about 20 days.</p>
+  </div>
+  <div class="player">
+    <div class="role">Signed for the Town</div>
+    <div class="name">Stefen Wynn</div>
+    <p>Town Administrator &amp; Treasurer. The contract's signatory. The vendor's emails are addressed to him first. He spent 2016–2019 as Town Manager of Albion, <strong>Indiana</strong>; his graduate degree is from Indiana University.</p>
+  </div>
+</div>
+
+<h2><span class="n">2</span>The geography problem</h2>
+<p class="lead">Start with the thing that should make anyone blink. Paonia hired an HR firm on the other side of the country.</p>
+<div class="geo">
+  <div class="georoute">
+    <div class="geodot">
+      <div class="pin"></div>
+      <div class="lbl">PAONIA, CO</div>
+      <div class="pop">pop. ~1,500</div>
+    </div>
+    <div class="geoline"></div>
+    <div class="geodot">
+      <div class="pin"></div>
+      <div class="lbl">NOBLESVILLE, IN</div>
+      <div class="pop">pop. ~70,000</div>
+    </div>
+  </div>
+  <div class="geomiles">&#8592; about 1,200 miles / a two-day drive &#8594;</div>
+  <div class="geonote">
+    "Small town helping small town" isn't what this is. New Focus HR is based in <strong>Noblesville</strong> — a 70,000-person suburb of Indianapolis, not a rural peer. Meanwhile <strong>Albion, Indiana</strong> — the town Stefen Wynn ran before Colorado — has about <strong>2,200 people</strong>, genuinely comparable to Paonia. The contract is even written to be <strong>governed by Indiana law, in Indiana courts</strong>, and says <em>"all work will be conducted in the New Focus HR offices"</em> — in Indiana. <span class="badge b-doc">Documented</span>
+  </div>
+</div>
+<p><strong>Could Paonia have found this in Colorado?</strong> Easily. A compliant municipal employee handbook is a routine service offered across the state — including by organizations the Town <em>already pays into</em>. Paonia is a member of <strong>CIRSA</strong> (the Colorado intergovernmental insurance pool — it's in the record; CIRSA audited the Town's park electrical in 2024 and ran a Board training), and CIRSA provides member towns HR resources and model personnel policies. The Colorado Municipal League does too. <span class="badge b-doc">Documented</span> So the question isn't whether help existed closer — it's <em>why Indiana.</em>
+
+<h2><span class="n">3</span>The timeline — and why the order is the whole story</h2>
+<p>A "sole source justification" is supposed to be the <em>reason</em> you skip competitive bidding — so it has to come <em>first</em>, before you commit. Watch what order things actually happened in.</p>
+<div class="timeline">
+  <div class="tl">
+    <div class="when">May 21</div>
+    <div class="track"><div class="node"></div></div>
+    <div class="what"><div class="h">Vetter meets Kristen Deutsch</div>
+      <p>First meeting on the record. Twenty days later Vetter's staff report will call the firm's experience something she "can attest to."</p></div>
+  </div>
+  <div class="tl hot">
+    <div class="when">May 23</div>
+    <div class="track"><div class="node"></div></div>
+    <div class="what"><div class="h">The contract arrives — already signed and dated by the vendor</div>
+      <p>Deutsch emails the proposal. It's dated May 23, the terms are "effective May 23," and her signature is on it dated May 23. The same email says: <em>"Stefen, I hope that you are enjoying your time in Indy? We look forward to attending the race on Sunday... compared to past races."</em> And: <em>"Thanks so much for reaching out."</em> <span class="badge b-doc">Documented</span></p></div>
+  </div>
+  <div class="tl">
+    <div class="when">May 25</div>
+    <div class="track"><div class="node"></div></div>
+    <div class="what"><div class="h">Sunday — the Indianapolis 500 is run</div>
+      <p>"The race on Sunday." The 2025 Indy 500 was held May 25.</p></div>
+  </div>
+  <div class="tl hot">
+    <div class="when">May 28</div>
+    <div class="track"><div class="node"></div></div>
+    <div class="what"><div class="h">NOW the Town sends its "sole source" questions</div>
+      <p>Five days <em>after</em> the contract was signed and dated, Vetter emails Deutsch the Town's eight sole-source justification questions — and <strong>Deutsch answers them herself.</strong> <span class="badge b-doc">Documented</span></p></div>
+  </div>
+  <div class="tl">
+    <div class="when">June 10</div>
+    <div class="track"><div class="node"></div></div>
+    <div class="what"><div class="h">The Board votes to approve</div>
+      <p>The first time the elected body sees it. By now the vendor's signature is 18 days old.</p></div>
+  </div>
+</div>
+<div class="gapcall">&#9888; The justification for skipping the bid was created <em>after</em> the contract was already signed. The paperwork didn't drive the decision — it was assembled to cover one already made.</div>
+
+<h2><span class="n">4</span>The money — what it sounded like vs. what was signed</h2>
+<p>The Board's stated reason this didn't need a bid: it was "under $10,000." That's only true if you look at one piece and ignore the rest.</p>
+<div class="compare">
+  <div class="cbox good">
+    <p class="ch">What made it sound routine</p>
+    <div class="big">$7,500</div>
+    <ul>
+      <li>One-time, fixed fee for the employee handbook</li>
+      <li>"Under $10,000" — so, the Board was told, no formal bid required</li>
+    </ul>
+  </div>
+  <div class="cbox bad">
+    <p class="ch">What the contract actually obligates</p>
+    <div class="big">$7,500 &nbsp;+&nbsp; $150/yr &nbsp;+&nbsp; $175/hr</div>
+    <ul>
+      <li>$7,500 handbook — <em>plus</em></li>
+      <li>$150 every year, ongoing, for "updates"</li>
+      <li><strong>$175/hour of HR consulting — no cap, no ceiling, no not-to-exceed</strong> — billed every two weeks "as utilized." The same $175/hr even applies to "quality review meetings."</li>
+      <li>18%-a-year late fees; the Town indemnifies the firm</li>
+    </ul>
+  </div>
+</div>
+<p>An open-ended hourly rate with no cap is not a $7,500 purchase. <strong>Nobody knows what this contract's ceiling is — because it doesn't have one.</strong> One of the questions worth asking is simply: <em>what has it cost so far?</em> <span class="badge b-inf">Inference</span> <span class="badge b-doc">terms Documented</span></p>
+
+<h2><span class="n">5</span>The "justification" that justifies nothing</h2>
+<p>Here's the actual sole-source questionnaire — the Town's eight questions, and the vendor's own answers. Read down the right column. A sole-source justification is supposed to prove <strong>there was no other choice.</strong> Look at how little of it does that.</p>
+<table>
+  <thead><tr><th style="width:42%">The Town's question</th><th style="width:38%">New Focus HR's answer (written by the vendor)</th><th style="width:20%">Does it justify no-bid?</th></tr></thead>
+  <tbody>
+    <tr><td>1. What makes the contractor clearly <em>unique</em> vs. others in the field?</td><td>"...providing outsourced HR services to municipalities...since 2009."</td><td><span class="verdict v-no">No — that describes a normal HR firm</span></td></tr>
+    <tr><td>2. What highly specialized prior experience is vital here?</td><td>"...16 years...60 years of HR expertise on our team."</td><td><span class="verdict v-meh">Generic experience, not uniqueness</span></td></tr>
+    <tr><td>3. Substantial investment another firm would have to duplicate at Town expense?</td><td>"Not applicable."</td><td><span class="verdict v-no">No</span></td></tr>
+    <tr><td>4. If timelines are critical, why can only this firm meet them?</td><td>"...ten to 14 days to schedule...eight weeks for a first draft."</td><td><span class="verdict v-no">No — that's a normal schedule</span></td></tr>
+    <tr><td>5. Is competition precluded by patents or copyrights?</td><td>"Not applicable." (notes only that they own their own template)</td><td><span class="verdict v-no">No</span></td></tr>
+    <tr><td>6. Compatibility needed with existing Town equipment?</td><td>"Not applicable."</td><td><span class="verdict v-no">No</span></td></tr>
+    <tr><td>7. What unique characteristic of the firm's product meets the Town's needs?</td><td>"...utilizes a template that they have created..."</td><td><span class="verdict v-no">Every HR firm has a template</span></td></tr>
+    <tr><td>8. Is competition precluded by existing contracts/warranties?</td><td>"New Focus HR...does not have any existing agreements with the town."</td><td><span class="verdict v-no">No — confirms the opposite</span></td></tr>
+  </tbody>
+</table>
+<p>Three of the eight answers are literally <strong>"Not applicable."</strong> Nothing in this questionnaire establishes that New Focus HR was the <em>only</em> firm that could do this work — because it wasn't. There are hundreds of firms that write municipal employee handbooks. <strong>This isn't a justification for a sole source. It's a sole source wearing the costume of one</strong> — and the vendor sewed the costume. <span class="badge b-doc">Documented</span></p>
+
+<h2><span class="n">6</span>The relationship — what the emails actually show</h2>
+<p>This is the part you can't un-see. The Town's official file labels this email chain the "Sole Source Justification email." Here is what's in it.</p>
+<div class="eq">
+  <blockquote>"Stefen, I hope that you are enjoying your time in Indy? We look forward to attending the race on Sunday, although the temperatures may be a bit cool compared to <strong>past races</strong>."</blockquote>
+  <p class="reads">What it tells us: <strong>this is not a cold sales contact.</strong> "Past races" — plural — describes a history. "Your time in Indy" — she knew where he was. A vendor and a buyer who go to the races together, more than once, are not strangers. <span class="badge b-inf">Inference — but a strong one</span></p>
+</div>
+<div class="eq">
+  <blockquote>"Thanks so much for reaching out and I will look forward to hearing back from you."</blockquote>
+  <p class="reads">What it tells us: <strong>Paonia contacted New Focus HR first</strong> — not the other way around. Someone at the Town reached 1,200 miles to Indiana to start this. The obvious question: <em>who, and why this firm?</em> <span class="badge b-doc">Documented</span></p>
+</div>
+<div class="eq">
+  <blockquote>To: Stefen Wynn &lt;StefenW@townofpaonia.com&gt;; Samira V &lt;SamiraV@townofpaonia.com&gt;</blockquote>
+  <p class="reads">What it tells us: every email is addressed to <strong>Wynn first</strong>, Vetter second — even though Vetter is the one who "submitted" the staff report and signed the questionnaire email. The social line ("enjoying your time in Indy") is aimed squarely at Wynn. The relationship in this file runs to <strong>him.</strong> <span class="badge b-doc">Documented</span></p>
+</div>
+
+<h2><span class="n">7</span>Everything points the same direction</h2>
+<p>Take any single thread of this and you could shrug it off. The problem is that every thread runs to the same place.</p>
+<div class="indiana">
+  <div class="row"><div class="k">The firm</div><div class="v">New Focus HR, LLC — Noblesville, <em>Indiana</em></div></div>
+  <div class="row"><div class="k">Its references</div><div class="v">The 6 references it gave Paonia: Greencastle, Sheridan, Winchester, Cicero, Ligonier, Bluffton — <em>all in Indiana.</em> Zero in Colorado.</div></div>
+  <div class="row"><div class="k">Its client list</div><div class="v">Every named client on its own website — ~13 governments — <em>is in Indiana.</em> It brags it serves "over 15% of Indiana's municipalities."</div></div>
+  <div class="row"><div class="k">Its CO presence</div><div class="v">It markets itself as having clients in 6 states incl. Colorado — but names none. The <em>only</em> documented Colorado client anywhere is <em>Paonia itself.</em></div></div>
+  <div class="row"><div class="k">The contract's law</div><div class="v">Governed by the laws of <em>Indiana</em>, Hamilton County. Work performed in <em>Indiana</em>.</div></div>
+  <div class="row"><div class="k">The signer's career</div><div class="v">Stefen Wynn: Town Manager of Albion, <em>Indiana</em> (2016–2019); MPA from <em>Indiana</em> University.</div></div>
+</div>
+<p><span class="badge b-doc">Every row above is Documented.</span> Wynn arrived in Paonia in July 2023; the contract is June 2025 — so it wasn't "the day he showed up." But the pattern is unmistakable: <strong>a Colorado town's HR work flowed to Indiana, signed by the one official whose career is Indiana, justified by an email about an Indiana race.</strong></p>
+
+<h2><span class="n">8</span>The Albion thread — what's real, what isn't</h2>
+<p>This is the lead you're circling, and it's worth circling — but you have to hold it exactly right, especially before anything goes public.</p>
+<div class="splitcols">
+  <div class="col yes">
+    <div class="colhead">What we can actually prove</div>
+    <ul>
+      <li>New Focus HR's own website lists <strong>"Noble County Government (Albion)"</strong> as a client.</li>
+      <li><strong>Albion is the county seat of Noble County</strong> — the two share the same town.</li>
+      <li><strong>Wynn was Town Manager of Albion</strong> (~2016–2019).</li>
+      <li>So: the no-bid vendor's client roster includes the county government seated <strong>in the very town Paonia's Administrator used to run.</strong></li>
+    </ul>
+  </div>
+  <div class="col nope">
+    <div class="colhead">What we CANNOT yet say</div>
+    <ul>
+      <li>It's <strong>Noble <em>County</em></strong> government — not the <strong>Town of Albion.</strong> Wynn ran the town, a different government. No evidence the firm worked for <em>his</em> government.</li>
+      <li><strong>The timing is unknown.</strong> We don't know if the firm's Noble County work overlapped Wynn's years there, or came later.</li>
+      <li><strong>Neptune Beach, Florida</strong> — Wynn's job between Albion and Paonia — turned up <em>nothing.</em> No connection found.</li>
+      <li>That the firm "followed Wynn," "worked for Wynn," or that any money reached him. <strong>None of that is established.</strong></li>
+    </ul>
+  </div>
+</div>
+<p>The honest status: <span class="badge b-inf">a real, specific lead worth running down</span> — not <span class="badge b-no">a proven connection.</span> The thing that would turn the left column into a finding is confirming <em>when</em> New Focus HR worked for Noble County, and whether Wynn had any hand in it.</p>
+
+<h2><span class="n">9</span>So what's actually going on here?</h2>
+<div class="readbox">
+  <p style="margin-top:0;"><strong>Here is the most honest read of this one contract.</strong></p>
+  <p>What's <span class="badge b-doc">Documented</span> is already a serious problem on its own, regardless of anyone's motive: the Town skipped competitive bidding on an open-ended contract, wrote the justification <em>after</em> signing, let the vendor write that justification, and reached 1,200 miles for a routine service it could get in Colorado. That's a real failure of the process that's supposed to protect the public's money — and it's true no matter <em>why</em> it happened.</p>
+  <p>What's <span class="badge b-inf">Inference</span> — strong, but still inference — is that this happened <em>because</em> of a pre-existing personal relationship between the Town Administrator and the vendor. The "past races" email, the "thanks for reaching out," the all-Indiana everything, the fact that the firm's only Colorado footprint is the town Wynn runs — that all points one direction. It would be a remarkable set of coincidences if it pointed nowhere.</p>
+  <p style="margin-bottom:0;">What is <span class="badge b-no">Not established</span> — and you should hold this line hard — is that Wynn personally profited, that the firm "followed him," or that a law was broken. There is no evidence of money flowing back to anyone. This looks like <strong>relationship-driven favoritism in how a contract was steered</strong> — which is a governance problem worth exposing — but "favoritism shaped this" and "corruption was proven" are two different sentences, and only the first one is currently backed by the paper.</p>
+</div>
+
+<h2><span class="n">10</span>The questions that would actually settle it</h2>
+<p>You don't need a theory. You need answers to these — and every one of them is answerable.</p>
+<ol class="qlist">
+  <li><strong>Who at the Town first reached out to New Focus HR, and how did anyone in Paonia come to know an HR firm in Noblesville, Indiana?</strong></li>
+  <li><strong>What is the relationship between Stefen Wynn and Kristen Deutsch?</strong> What does "past races" refer to — and how far back does it go?</li>
+  <li><strong>Why was the sole-source questionnaire completed five days after the contract was already signed?</strong> And why did the vendor write the answers?</li>
+  <li><strong>Did New Focus HR ever do work connected to Wynn's previous jobs</strong> — the Town of Albion or Noble County, Indiana, or the City of Neptune Beach, Florida — and when?</li>
+  <li><strong>What has the uncapped $175/hour consulting cost the Town</strong> since June 2025 — and what is the total spent on New Focus HR to date?</li>
+  <li><strong>Why is a Colorado town's contract governed by Indiana law?</strong></li>
+  <li><strong>Was a single competing quote ever requested?</strong> If not — why not, for a service available throughout Colorado?</li>
+</ol>
+<p>If the answers are clean, this ends quietly and the Town is fine. If they're not, the questions were the right ones to ask. Either way — <strong>asking is the entire job.</strong></p>
+
+<footer>
+  Built to help you understand one contract. Primary source: pages 110–126 of the Town of Paonia Board of Trustees packet for June 10, 2025 (CivicClerk event 368) — the full New Focus HR staff report, Proposal/Agreement, Terms &amp; Conditions, consultant biographies, references, and the complete email chain — saved verbatim at <code>raw/research/contract-map/newfocushr-source-documents.txt</code>. Company facts from newfocushr.com. Population and tenure facts from public census data and news reporting. Every claim above is tagged for how solid it is; nothing here is a finding of wrongdoing — it is a clear look at one contract and the questions it leaves open.
+</footer>
+
+</div>
+</body>
+</html>

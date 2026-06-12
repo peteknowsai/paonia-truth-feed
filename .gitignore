@@ -69,3 +69,10 @@ raw/transcripts/
 
 # AI agent worktrees (scratch — never commit)
 .claude/worktrees/
+
+# Large CORA audit-log data (do not commit)
+raw/documents/cora-responses/C-26-12-cure/
+
+# Bulk-downloaded BOT meeting packets (2.3GB, regenerable via download-packets.sh)
+raw/research/contract-map/packets/
+raw/research/contract-map/download.log

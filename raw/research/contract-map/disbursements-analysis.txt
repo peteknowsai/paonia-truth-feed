@@ -1,0 +1,157 @@
+=== LEDGER: 2809 line items, 196 distinct vendors, 23 meetings (2024-02-13..2026-02-10) ===
+
+=== TOP 30 VENDORS BY TOTAL $ (across parsed registers) ===
+  $  638,997.80     2 items   2 mtgs  MARKLEYS PRECISION COMPANY LLC
+  $  378,807.81     4 items   2 mtgs  US BANK
+  $  262,598.65    42 items   9 mtgs  RESPEC COMPANY LLC
+  $  154,164.00     8 items   7 mtgs  CEBT
+  $  114,938.00     2 items   2 mtgs  MISCOWATER
+  $   95,453.60    26 items  10 mtgs  SGM, INC
+  $   90,596.59     5 items   2 mtgs  COLORADO WATER RESOURC
+  $   87,981.00     1 items   1 mtgs  KLM ENGINEERING, INC
+  $   75,043.39     4 items   4 mtgs  WRIGHT WATER ENGINEERS, I
+  $   69,859.38    29 items  18 mtgs  EMPOWER TRUST COMPANY LLC
+  $   53,063.00     8 items   2 mtgs  MITCHELL AND COMPANY LLC
+  $   52,897.50    55 items  10 mtgs  PROFESSIONAL MANAGEMENT
+  $   47,222.69     1 items   1 mtgs  EARTHWORX EXCAVATION, LLC
+  $   44,992.23    84 items  13 mtgs  PHONZ +
+  $   38,570.07   158 items   7 mtgs  UNITED MERCHANTS BANK
+  $   35,152.63    10 items   7 mtgs  SOUTHWESTERN SYSTEMS, INC
+  $   34,500.00     3 items   2 mtgs  VIAFLEX
+  $   31,447.05     5 items   4 mtgs  PHOENIX RISING RESOURCES
+  $   30,338.50    13 items   6 mtgs  KELLY PC
+  $   29,625.26     1 items   1 mtgs  DELTA COUNTY ROAD & BRIDG
+  $   26,600.00     8 items   2 mtgs  HINKLE & COMPANY, PC
+  $   23,868.29   620 items  13 mtgs  NORTH FORK SERVICE (REEDY'S)
+  $   23,618.11    19 items   5 mtgs  SUSTAINABLE FUTURES LLC
+  $   21,139.84     1 items   1 mtgs  BROWNS HILL ENGINEERING & CONTROL
+  $   19,500.00    24 items  13 mtgs  ARCHULETA, BENNY
+  $   18,669.89   327 items  12 mtgs  AMAZON BUSINESS
+  $   18,482.47    14 items   8 mtgs  CEDAR CREEK SUPPLY LLC
+  $   17,847.50    18 items  11 mtgs  SHUMS CODA ASSOCIATES
+  $   17,000.00    14 items   3 mtgs  IWORQ
+  $   16,155.76     5 items   1 mtgs  DEPARTMENT OF THE TREASU
+
+=== MOST RECURRING VENDORS (appear in most separate meeting registers) ===
+  18 mtgs  $   69,859.38    29 items  EMPOWER TRUST COMPANY LLC
+  16 mtgs  $    6,545.23   122 items  NAPA - PAONIA AUTO PARTS
+  16 mtgs  $    2,138.08   117 items  PAONIA FARM & HOME SUPPLY INC
+  15 mtgs  $    3,315.44    70 items  ADP, INC
+  14 mtgs  $    5,222.75    31 items  BRUIN WASTE
+  13 mtgs  $   19,500.00    24 items  ARCHULETA, BENNY
+  13 mtgs  $   23,868.29   620 items  NORTH FORK SERVICE (REEDY'S)
+  13 mtgs  $   44,992.23    84 items  PHONZ +
+  12 mtgs  $   18,669.89   327 items  AMAZON BUSINESS
+  12 mtgs  $      919.60    13 items  ENVIRO-CHEM ANALYTICAL IN
+  12 mtgs  $    7,712.75    41 items  MAIL SERVICES, LLC
+  11 mtgs  $    6,160.44    13 items  RHINEHART OIL CO
+  11 mtgs  $   17,847.50    18 items  SHUMS CODA ASSOCIATES
+  10 mtgs  $   14,209.32   102 items  BLACK HILLS ENERGY
+  10 mtgs  $    8,357.30    30 items  COLUMN SOFTWARE PBC
+  10 mtgs  $    6,859.35   102 items  ELEVATE FIBER
+  10 mtgs  $   95,453.60    26 items  SGM, INC
+  10 mtgs  $   52,897.50    55 items  PROFESSIONAL MANAGEMENT
+   9 mtgs  $   10,080.00    18 items  NORRIS, MARY
+   9 mtgs  $  262,598.65    42 items  RESPEC COMPANY LLC
+   8 mtgs  $   18,482.47    14 items  CEDAR CREEK SUPPLY LLC
+   8 mtgs  $    3,061.72    32 items  ALL COPY PRODUCTS INC
+   8 mtgs  $    1,266.02     9 items  AFLAC
+   8 mtgs  $    1,173.75     9 items  CITY OF GRAND JUNCTION
+   8 mtgs  $      445.00    17 items  MESA COUNTY PUBLIC HEALTH REGIO
+
+=== BIGGEST SINGLE LINE ITEMS ===
+  $  575,333.49  2025-11-25  MARKLEYS PRECISION COMPANY LLC    PAY APP 1 - 2 2MG Tank Rehab - Pay  [CAP OUTLAY-Water Tank Re]
+  $  214,073.36  2026-02-10  US BANK                           2026i 1ST LOA WATER LOAN PAYMENT  [Water Power Authority Lo]
+  $   87,981.00  2025-12-30  KLM ENGINEERING, INC              11236 Water Capital Outlay Water T  [CAP OUTLAY-Water Tank Re]
+  $   77,500.00  2024-02-13  US BANK                           2508604 ACCT: 0096754NS - DEBT SER  [Water Power Authority Lo]
+  $   67,253.19  2025-10-28  COLORADO WATER RESOURC            DBS25F262 - 0 New Loan Payment for  [Water Power Authority Lo]
+  $   66,825.23  2024-02-13  US BANK                           20240201 Principal Loan Amount  [Water Power Authority Lo]
+  $   63,664.31  2025-12-30  MARKLEYS PRECISION COMPANY LLC    PAY APP 2 - 2 Water 2MG Tank Rehab  [CAP OUTLAY-Water Tank Re]
+  $   59,566.00  2025-06-24  MISCOWATER                        46258B36405 Floating Aerator  [MACHINERY & EQUIPMENT]
+  $   55,372.00  2025-08-26  MISCOWATER                        46258B39328 Floating Aerator 304 2  [MACHINERY & EQUIPMENT]
+  $   47,222.69  2025-01-28  EARTHWORX EXCAVATION, LLC         PAYMENT1 PAY APPLICATION #1 1/20/2  [CAP OUTLAY-Water Tank Re]
+  $   45,329.35  2024-12-10  RESPEC COMPANY LLC                INV-1024-0796 WATER CIP PHASE 1 -   [LEGAL, ENGINEERING & PR]
+  $   33,336.27  2024-07-09  WRIGHT WATER ENGINEERS, I         70148 surveys, consultnig, mapping  [LEGAL, ENGINEERING & PR]
+  $   31,641.15  2024-09-10  RESPEC COMPANY LLC                INV-0724-1009 PHASE 1 WATER SYSTEM  [LEGAL, ENGINEERING & PR]
+  $   30,759.75  2024-05-14  RESPEC COMPANY LLC                INV-0324-918 WATER CIP PHASE 1 SYS  [LEGAL, ENGINEERING & PR]
+  $   29,625.26  2024-11-26  DELTA COUNTY ROAD & BRIDG         2024PA ASPHALT WORK ON 10/1/2024,  [CAPITAL OUTLAY]
+  $   29,037.12  2024-09-10  WRIGHT WATER ENGINEERS, I         70602 HYDROGEOLOGICAL STUDY S  [GRANT PROJECTS]
+  $   27,688.75  2025-01-28  RESPEC COMPANY LLC                INV12240831 WATER CIP PHASE 1 PROF  [LEGAL, ENGINEERING & PR]
+  $   25,521.25  2024-04-09  RESPEC COMPANY LLC                INV-0224-771 WATER CIP PHASE 1 - W  [LEGAL, ENGINEERING & PR]
+  $   24,502.55  2024-07-09  RESPEC COMPANY LLC                INV-0524-1218 Water CIP Phase 1 -W  [LEGAL, ENGINEERING & PR]
+  $   22,554.88  2024-06-11  SGM, INC                          2013-471.014- 5TH STREET/GRAND REA  [LEGAL, ENGINEERING & PR]
+  $   21,484.00  2024-02-13  CEBT                              INV 0063157 BENEFITS PERIOD 2024-0  [HEALTH/LIFE INSURANCE]
+  $   21,139.84  2024-04-09  BROWNS HILL ENGINEERING & CONTRO  03132024 FINAL CONTRACT PAYMENT -   [DUES & SUBSCRIPTIONS]
+  $   20,826.00  2024-09-10  CEBT                              INV-0068621 BENEFITS PERIOD 2024-0  [HEALTH/LIFE INSURANCE]
+  $   20,409.22  2024-02-13  US BANK                           20240201 Net Interest Amount  [LOAN INTEREST]
+  $   20,105.00  2024-11-26  CEBT                              INV0070774 BENEFITS PERIOD 2024-11  [HEALTH/LIFE INSURANCE]
+
+=== VENDORS ON 'LEGAL, ENGINEERING & PROF' GL ACCOUNTS (professional services $) ===
+  $ 247,124.99   35 items   8 mtgs  RESPEC COMPANY LLC
+  $  92,735.35   24 items   9 mtgs  SGM, INC
+  $  52,897.50   55 items  10 mtgs  PROFESSIONAL MANAGEMENT
+  $  46,006.27    3 items   3 mtgs  WRIGHT WATER ENGINEERS, I
+  $  31,447.05    5 items   4 mtgs  PHOENIX RISING RESOURCES
+  $  30,338.50   13 items   6 mtgs  KELLY PC
+  $  19,568.11   18 items   4 mtgs  SUSTAINABLE FUTURES LLC
+  $  19,500.00    1 items   1 mtgs  MITCHELL AND COMPANY LLC
+  $  12,140.00   11 items  10 mtgs  SHUMS CODA ASSOCIATES
+  $  12,039.00    3 items   2 mtgs  NAZARENUS STACK & WOMBACHER L
+  $  10,890.10    3 items   1 mtgs  SOUTHWESTERN SYSTEMS, INC
+  $  10,115.35   15 items   3 mtgs  PHONZ +
+  $   9,000.00   12 items   6 mtgs  ARCHULETA, BENNY
+  $   7,757.50    4 items   1 mtgs  PEAK DIGITAL OFFICE SOLUTIONS
+  $   7,200.00    3 items   3 mtgs  WAIN, SIMON
+  $   4,728.00    3 items   2 mtgs  CLAYTON M. BUCHNER ATTORNEY AT LA
+  $   4,275.00   13 items   3 mtgs  NEW FOCUS HR
+  $   3,500.00    5 items   1 mtgs  ISTONISH, INC
+  $   3,144.36   66 items  14 mtgs  ADP, INC
+  $   2,750.00   10 items   2 mtgs  COLORADO COMPLETE CLEAN LLC
+
+=== GL TITLE distribution (where the money is coded) ===
+  $  810,960.50  CAP OUTLAY-Water Tank Reli
+  $  609,956.42  LEGAL, ENGINEERING & PR
+  $  425,651.78  Water Power Authority Loan
+  $  158,127.70  HEALTH/LIFE INSURANCE
+  $  154,585.73  MACHINERY & EQUIPMENT
+  $  102,215.66  DUES & SUBSCRIPTIONS
+  $   65,145.68  RETIREMENT PLAN
+  $   64,458.58  REPAIRS & MAINTENANCE
+  $   61,321.67  CAPITAL OUTLAY
+  $   58,454.22  VEHICLE EXPENSE
+  $   42,260.78  GRANT PROJECTS
+  $   37,782.63  CONTRACT SERVICES
+  $   33,415.04  OPERATING SUPPLIES
+  $   26,600.00  AUDIT & BUDGET EXPENSE
+  $   24,382.39  MISCELLANEOUS
+  $   22,261.58  LOAN INTEREST
+  $   21,491.04  LOAN PRINCIPAL
+  $   19,500.00  CAP OUTLAY-ENGINEERING
+  $   14,660.86  UTILITIES
+  $   13,789.25  CAPTAL OUTLY-Raw Water M
+
+=== WATER-SYSTEM VENDOR CLUSTER (tank rehab + water CIP + water engineering) ===
+  water-cluster total in parsed registers: $1,864,199.27
+  $  638,997.80    2 items   2 mtgs  MARKLEYS PRECISION COMPANY LLC
+  $  358,398.59    3 items   2 mtgs  US BANK
+  $  262,598.65   42 items   9 mtgs  RESPEC COMPANY LLC
+  $  114,938.00    2 items   2 mtgs  MISCOWATER
+  $   95,453.60   26 items  10 mtgs  SGM, INC
+  $   90,596.59    5 items   2 mtgs  COLORADO WATER RESOURC
+  $   87,981.00    1 items   1 mtgs  KLM ENGINEERING, INC
+  $   75,043.39    4 items   4 mtgs  WRIGHT WATER ENGINEERS, I
+  $   47,222.69    1 items   1 mtgs  EARTHWORX EXCAVATION, LLC
+  $   34,500.00    3 items   2 mtgs  VIAFLEX
+  $   23,618.11   19 items   5 mtgs  SUSTAINABLE FUTURES LLC
+  $   21,139.84    1 items   1 mtgs  BROWNS HILL ENGINEERING & CONTROL
+  $   11,763.00    1 items   1 mtgs  HEMLOCK CONSULTING LLC
+  $    1,200.00    1 items   1 mtgs  ROOP EXCAVATING LLC
+  $      716.50    1 items   1 mtgs  SGM. INC
+  $       31.51    1 items   1 mtgs  UNITED MERCHANTS BANK
+
+=== SINGLE-APPEARANCE BIG VENDORS (>=$15k, only 1 meeting — possible one-off contracts) ===
+  $   87,981.00    1 items  KLM ENGINEERING, INC  (2025-12-30)
+  $   47,222.69    1 items  EARTHWORX EXCAVATION, LLC  (2025-01-28)
+  $   29,625.26    1 items  DELTA COUNTY ROAD & BRIDG  (2024-11-26)
+  $   21,139.84    1 items  BROWNS HILL ENGINEERING & CONTROL  (2024-04-09)
+  $   16,155.76    5 items  DEPARTMENT OF THE TREASU  (2024-03-26)
