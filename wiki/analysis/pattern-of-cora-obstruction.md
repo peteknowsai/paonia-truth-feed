@@ -2,9 +2,9 @@
 title: Pattern of CORA Obstruction
 type: analysis
 created: 2026-04-24
-updated: 2026-05-30
+updated: 2026-06-13
 tags: [cora, transparency, obstruction, redaction, withholding, vetter, wynn, audit-log]
-sources: [cora-c26-09-verkada-audit-logs, cora-c26-11-libelous-communications-response, cora-c26-12-m365-audit-logs-response, cora-c26-12-cure-response, redaction-audit-c26-12-cure, cora-c26-23-finance-committee-records, cora-tracking-log, reporter-package-email-coverup]
+sources: [cora-c26-09-verkada-audit-logs, cora-c26-11-libelous-communications-response, cora-c26-12-m365-audit-logs-response, cora-c26-12-cure-response, redaction-audit-c26-12-cure, cora-c26-23-finance-committee-records, cora-tracking-log, reporter-package-email-coverup, person-of-interest-list-erased, cora-c26-30-verkada-poi-denial]
 ---
 
 # Pattern of CORA Obstruction
@@ -14,6 +14,8 @@ Across CORA requests filed from March through May 2026, the Town Clerk's office 
 This page documents the pattern across those responses, plus the 2024 M365 denial that CFOIC confirmed was improper and that the Town has never remedied.
 
 **Status note (2026-05-30):** This analysis was first written from the *original* C 26-12 production. That production was later cured (cure cover letter dated May 27; data retrieved and analyzed May 29). Sections describing the original C 26-12 export are now stated in the past tense as the **first** production; the cure is described separately below. The cure narrowed the redactions but did not retire the pattern — it added an admission of four missing exports and a new, inconsistent redaction layer. See [[cora-c26-12-cure-response]] and [[redaction-audit-c26-12-cure]].
+
+> **Escalation (2026-06-13): the four tactics below were about *narrowing* the record. In June the Town crossed into *destroying* it.** On C 26-30 and C 26-33, the Town erased the Verkada person-of-interest list, the license-plate list, and the audit trail — **while both requests were pending and after an on-camera demand to preserve them** — then certified "no data exists to be searched," even though it had already produced and *billed* for the logs proving those records existed. Destruction is not curable, which is what makes it categorically worse than Tactics 1–4. Tracked as **Pattern 9** in the [[cora-tracking-log]]; full story at [[person-of-interest-list-erased]]; documentary record at [[cora-c26-30-verkada-poi-denial]].
 
 ## The Four Tactics
 
