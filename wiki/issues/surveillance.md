@@ -2,14 +2,16 @@
 title: Surveillance and Cameras
 type: issue
 created: 2026-04-05
-updated: 2026-04-08
+updated: 2026-06-13
 tags: [surveillance, cameras, verkada, privacy]
-sources: [board-letter-2026-03-30, verkada-10-things, hunter-rebuttal-flyer, meeting-2024-11-12, guardian-flock-cameras-privacy, cora-c26-09-verkada-audit-logs, verkada-usage-patterns]
+sources: [board-letter-2026-03-30, verkada-10-things, hunter-rebuttal-flyer, meeting-2024-11-12, guardian-flock-cameras-privacy, cora-c26-09-verkada-audit-logs, verkada-usage-patterns, person-of-interest-list-erased, cora-c26-30-verkada-poi-denial]
 ---
 
 # Surveillance and Cameras
 
 Whether the Town of Paonia should deploy surveillance cameras on public property, whether the decision followed appropriate public process, and what capabilities the system actually has.
+
+> **Update — June 2026: the Town erased the surveillance records after being asked, on camera, to preserve them.** On June 10, 2026 the Board voted to terminate Verkada and, by its own account, "erased all data" — while two records requests for the **person-of-interest list**, the license-plate list, and the audit trail were pending, and four weeks after Pete McCarthy asked the Board at a public meeting not to delete it "because [it] may be the subject of legal action." The Clerk then certified there were "no responsive records." The Town's own prior production proves the records existed. **This is the most serious development on this issue — read [[person-of-interest-list-erased]] and the documentary record at [[cora-c26-30-verkada-poi-denial]].**
 
 ## The System
 
