@@ -1,0 +1,50 @@
+PUBLIC COMMENT — AS DELIVERED (auto-transcribed)
+Town of Paonia Board of Trustees, Regular Meeting, May 12, 2026
+Item G-1: Termination of the Verkada Contract
+Speaker: Pete McCarthy
+
+Source: auto-generated transcript of the meeting recording
+(raw/transcripts/2026-05-12-regular-board-meeting.clean.txt, ~01:06:31–01:08:40).
+The meeting VIDEO is the primary/authoritative record. Speech-to-text errors are
+preserved below in [brackets]; "vera / verata / vicotta / viccata / braata" = "Verkada".
+The PREPARED version of these remarks is in 2026-05-12-speech-deck.html / .pdf.
+
+---
+
+"...I support terminating the [Verkada] contract. I want to be specific about what a
+termination does and what it does not. Ending the contract closes a chapter on this
+town's relationship with [Verkada's] product[;] [it] does not answer what has been done
+with the cameras while they were [on].
+
+This town's own [Verkada] audit log produced under records requests show[s] a person of
+interest list[,] that shows ... identity database queries[—] those are facial recognition
+operations. The board's letter to the citizens on March 30th told them that there was no
+facial re[cognition]. Those two records cannot both be true. The board has not reconciled
+them. Terminating the contract does not reconcile them either. The same audit log shows
+permanent video archives labeled with names of specific town employees. At least one of
+those archives was used as part of a basis for terminating [an] employee.
+
+The cameras are off. The contract may end tonight. The footage already captured, the
+archives that already exist, the people already affected — those are still in the town's
+hands. [I ask] that you preserve for the record and you do not delete the archives ...
+because they may be the subject of ... legal action.
+
+I'm asking the board[,] when it votes to terminate[,] to do three additional things on the
+record. [1.] Direct that no [Verkada] stored footage be deleted between now and the
+completion of an independent audit. [2.] Open a formal investigation into how the
+[Verkada] system was used[—] by whom, against whom[—] between the installation of
+October 22nd, 2025 and when the board ordered the cameras off. Report the findings to the
+public. [3.] Acknowledge ... [that] the rejection of [the] citizen surveillance initiative
+on April 27th ... citizens of this town filed to put this question of town surveillance on
+the ballot[;] that filing was rejected by the clerk. Termination tonight is the right
+outcome. But the citizens who filed that initiative deserve to vote on whether any camera
+system comes back at all..."
+
+---
+
+Significance: ~four weeks before the June 10, 2026 vote in which the Board terminated
+Verkada and "erased all data," Pete asked the Board ON THE RECORD, on camera, to preserve
+the data and not delete the archives "because they may be the subject of legal action,"
+and to direct that no stored footage be deleted pending an independent audit. The Town
+erased the records anyway, then certified (CORA C 26-30 / C 26-33) that "no data exists to
+be searched." See wiki: person-of-interest-list-erased, cora-c26-30-verkada-poi-denial.
