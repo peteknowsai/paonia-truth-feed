@@ -13,6 +13,8 @@ In late March 2026 a sourced political flyer circulated in Paonia naming specifi
 
 This page lays out that sequence chronologically. A hard limit governs everything below.
 
+> **Update, June 2026: the bodies were produced.** What this page could once cite only as audit-log subject lines is now in hand. The Police Department produced its records June 4 ([[ccjra-pd-records-2026-06-04]]) and June 18 ([[ccjra-nokings-rally-2026-06-18]]), and the Clerk produced the email bodies June 11 ([[cora-c26-28-threat-safety-bodies]]). What they show — three police reports over residents' speech, zero investigations, two "unfounded" First Amendment closures, a March 28 request to the Chief for a protection order against the critic and a fired neighbor, and a false written statement to the Board about that neighbor — is analyzed in [[what-the-police-found]]. The metadata-only caveats below are retained for the record but are superseded for the produced items.
+
 ## What this evidence is — and is not
 
 Every item described here is a **subject line, timestamp, mailbox, and operation** drawn from the audit log. The log proves a message or calendar item existed in a given mailbox at a given time. It does **not** log recipients, and — critically — it does **not** contain message bodies. None of the email or calendar bodies below have been produced or read.
@@ -40,6 +42,8 @@ Two threads sit in Police Department mailboxes — not in the administrative or 
 - A thread, in the same March window, framed around a "No Kings Rally," "Fear for Safety," and flyers posted "with my Image," ahead of the Mar 28 rally.
 
 These are PD-mailbox subjects. No attorney appears on the "bullying and harassment" chain in the audit log. What the officers wrote, and whether any law-enforcement action followed, is not in the metadata; the PD bodies are the subject of the pending CCJRA request.
+
+The "bullying and harassment" thread was produced June 18, 2026 ([[ccjra-nokings-rally-2026-06-18]]). It is a March 28 email in which Wynn asks Chief Laiminger how to seek a protection order against McCarthy and a named neighbor, and forwards his private-attorney inquiry about whether the speech "met the statute level for public officials." No attorney is on the chain because the attorney message was forwarded into it by the client.
 
 ## The coordination angle: two invites, minutes apart
 

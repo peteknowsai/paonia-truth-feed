@@ -1,0 +1,177 @@
+Received: from MW4PR12MB7261.namprd12.prod.outlook.com (2603:10b6:303:229::22) by DM6PR12MB4169.namprd12.prod.outlook.com with HTTPS; Sun, 29 Mar 2026 23:34:58 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=fail;
+ b=LkgObHiwujeG+HgtJKZ+N7vSyRPp2Zt6KC4CD52yzWvUKoemuMvoCH0TnU9LzUBxH7Iv/7Ms778sKA1qZ76IGT9j9nTqgPu0GDjBKlF+K1+hW480JR//qWUH1tzzqWciSdmUI8Q3siOiMhc8gGGDJWiZYy9T/K3zY70colFYcvBCL8LV/H7kIGljMlpB5jLCutrN4lFjzijB7d8z63JS2CTlj4uBCk6IDIxuHMxvqVqzd4AJ4v0raj700e6cvcMqGjY+x5FBM38Ltpt3pSF4wZc8DeA0An05tikCD0ywtVqGW2S9mizxzxJtbE+Egw+/Lv4HcUcGrpfD7QbMkyNiPA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=LIrBjM+/oFee2KQhRcJua+2D8RVDEpa8cUBQp3OiFNQ=; b=y4aZ2MxmgKb0OM0vtSZGEjR06SKAJPNeDMTnPxzu73IysevLlmNUI3XZGrJmoK7ybybwGmXXZi2yQnqQm/Br21mC2ZMnsiiJwvqE+8A01g674X7md+HCpqxvEGsDIEC0lcFf+A/UEkm44J2wZa3bgGLgXGBfRBSxQEpsUnhNbJrgQdfeXnrqOsiBTFXUpeB0R8khcBXZi1GdfCaqiYA0gxIbKCKZqbxxzlzCOvP+5wuWivSg0DRPKxBTtFCXJpJbu1pCSV4EgZaFfrYVyQr2CieG7d7T82vCxd8WSNfZ64YWEidtFIaVxzlUKRGdj76pJvo/blBkpUKz5sADOF19Cw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender
+ ip is 148.163.147.65) smtp.rcpttodomain=townofpaonia.com smtp.mailfrom=state.co.us;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=state.co.us;
+ dkim=fail (body hash did not verify) header.d=state.co.us; arc=fail (47)
+Received: from BLAPR05CA0012.namprd05.prod.outlook.com (2603:10b6:208:36e::21) by MW4PR12MB7261.namprd12.prod.outlook.com (2603:10b6:303:229::22) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.10; Sun, 29 Mar 2026 23:34:55 +0000
+Received: from BL6PEPF0001AB74.namprd02.prod.outlook.com (2603:10b6:208:36e:cafe::ec) by BLAPR05CA0012.outlook.office365.com (2603:10b6:208:36e::21) with Microsoft SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9745.28 via Frontend Transport; Sun, 29 Mar 2026 23:34:54 +0000
+Authentication-Results: spf=pass (sender IP is 148.163.147.65) smtp.mailfrom=state.co.us;
+ dkim=fail (body hash did not verify) header.d=state.co.us;dmarc=pass action=none
+ header.from=state.co.us;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of state.co.us designates
+ 148.163.147.65 as permitted sender) receiver=protection.outlook.com; client-ip=148.163.147.65;
+ helo=mx0a-000dbe01.pphosted.com; pr=C
+Received: from outbound-ip197a.ess.barracuda.com (209.222.82.63) by BL6PEPF0001AB74.mail.protection.outlook.com (10.167.242.167) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9745.21 via Frontend Transport; Sun, 29 Mar 2026 23:34:54 +0000
+Received: from mx0a-000dbe01.pphosted.com (mx0a-000dbe01.pphosted.com [148.163.147.65]) by mx-inbound44-204.us-east-2c.ess.aws.cudaops.com (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO); Sun, 29 Mar 2026 23:34:52 +0000
+Received: from pps.filterd (m0134152.ppops.net [127.0.0.1]) by mx0a-000dbe01.pphosted.com (8.18.1.11/8.18.1.11) with ESMTP id 62TNKWx33059708 for <paiges@townofpaonia.com>; Sun, 29 Mar 2026 17:34:51 -0600
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=state.co.us; h=
+ content-transfer-encoding:content-type:date:from:message-id :mime-version:subject:to;
+ s=PPS-04022020; bh=BKA5kiO2SyermGymrD3 EOoV50Xpc60nOr2X+c3xdbkQ=; b=m0gD7/sA71v4gjqnbl32pClrwdMCi9sz5tr
+ koiBrvbEyqzjH8f1Fkih6P8LMEqxz2vY2/WCgDGmUc4sfG2cT81q7ijpSffYLYiv 7BJcsDW86MNeN5rWXcTmN/2jidAQlwNBbO6det0+RYDUl3rHllC2K/IhQUOJIRwS
+ lq2j8PD1WdLYPQq7WdWGGbTxCXnas3KKYmSwKD0qlz6qszxJ+54AgcqgHZz+WgZ3 TK5BoC1GBdaJlh0PlZBYYZ9YsWKBLlLUBFQzrViGzVhKpMUnDkc6gONpKk/gorMK
+ pFwi5tDuXXj5Ew1qRbSkKpeulftPfQRH2pIXZw+KZjXbNhrG2MA==
+Received: from mail-ua1-f70.google.com (mail-ua1-f70.google.com [209.85.222.70]) by mx0a-000dbe01.pphosted.com (PPS) with ESMTPS id 4d6d4da50j-1 (version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 bits=128 verify=NOT) for <paiges@townofpaonia.com>; Sun, 29 Mar 2026 17:34:51 -0600 (MDT)
+Received: by mail-ua1-f70.google.com with SMTP id a1e0cc1a2514c-953c427c1a4so28340241.1 for <paiges@townofpaonia.com>; Sun, 29 Mar 2026 16:34:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1774827291; cv=none;        d=google.com;
+ s=arc-20240605;        b=eNemwGVaUqOBTBxSU0BMXjzjN+ctFewvLk9kltOvM37yVzYoW2qnc/gjbp2TXN5CbF
+         5Pco5Kvomm+8VBLWzJQyV/S2CZ5kmuO8DJQYvmO1YBsmaHOQqQ32/U1RigXQ5yT86SWT
+         H/QQuf1qGHNrcF/QslMiS5scSzuViUh2Pr5zD17F5jSzTopQJp8dctNzqXwreiBrysgo
+         9+M/o/EFNZnZeVToup6DJxfsPLEU6nOF6mm2lxbuVJjQga/YqVBPpG7JNX38LE9XOl79
+         oQmNDOMpAb2mKSj6538w9QQ5s83a4JI2csNf/yzGaTc4V5H0MtgaEbpA/IbBDa1qJgNU
+         qFKQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to;        bh=BKA5kiO2SyermGymrD3EOoV50Xpc60nOr2X+c3xdbkQ=; 
+       fh=zCMQK1ahWgpp3pIRmSQ8RHrU78Q9f4v1YsscG/eXIiY=;        b=c56AcX7Gv1lX6OgqRwOj1KD4H+hbgbcMD3iY9bkf9FsB6FepTVhBkkxn4RGTxYKqDr
+         +OBM+Ji7ChFMO41h10Eoa9O/jJ6P9YgTWZmrAbqQmplXB+cEbRKKXR7aoRfxO+s6CNFl
+         hfUyCoaSc9hUETOktAOkbFG2koAz7ro+7omqnImkW3bESjBswxgK5a7/ymU+Ju0qOJV7
+         5YGdOQLfFFPSpLM0pZZtf0+RWK+fm7pe2/KI6jq4+WmRGeQ3E9gCtFwDbu34nB390eIH
+         HVShR3yMQyMoNjujbCmzI5vYws/OF1tMv4C3CO7u/IgBAW+6kZRgVZSGShE1SgrlmFHq
+         NJRw==;        darn=townofpaonia.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;       
+ d=1e100.net; s=20251104; t=1774827291; x=1775432091;        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:x-gm-gg:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;        bh=BKA5kiO2SyermGymrD3EOoV50Xpc60nOr2X+c3xdbkQ=;
+        b=DvJf6jx86KRIyzyhHsYWihxcmsKSgS0yqsvgN/sM4WgHqDa5uJlqrlJ4yoWezqdyfF
+         BiPpPR1Nz+x5MiBkHAGqSAdc/fl1lThBWjCjdrmTT7ppkoTEwpELyAeglkW3FWGzSs/u
+         Rb7mAfV2BQi06X02NDLTIN2v+yGIWQmL1x9BTJFGnQ+i1ptV0Ov/kaKkK+2gh3Ekafq2
+         twYQXuiyVGKtMHYMgowlK1Rr8hC70VWykZsktZyH1bf0b3QFHVC5ky+YlZ9+F3ij7o7l
+         NocM4v/YzwHetVCnyFoWmnmH0CjmaF1aRPkrPcnIgER5y1zMX4df1BeP3zzTxVtCi06D
+         qFIA==
+X-Gm-Message-State: AOJu0YzZUyz6Y7JzrbWQTa5KvpGqcKffZfr2wf3kOq0aaM7TVHdK3PB0	0mFZHand6zxwCiA+wUYFou0kyjdZBrVSNm1JKOEW6oPTlFhKIqCuqchgEhUxPOAcIkSYz8deucP	rubAKPtu4hcGu7VmB5Lx39f93eDtIreY/5ptypQfIx9hYRN8cSu+sH4h0LGc4XtvDZPhfxXdy+O	oetmeaOVLrUNGBULQgnKmkt7yeOCwOy/AH+Eyz+yaN67bdeqk4DPEly5A4yhWXuZY+hIAB6CkiX	95M1SSP77LpKJGNYTbkXg==
+X-Gm-Gg: ATEYQzwAlbyGVJNXuArIMVz684mfalxPoIjwIJ3Smok3gg6tGSGPk5YRyVl41jR25ol	jP+cJBLMLZ+JjqOnb8+9k9vCwP2saSPe1KdTfsZM+TWRT99PFzf+8jxTCQyLu28xoMosy2+xtjl	uMbI7+fSDFoILjIJdSZ6sRgUBUnnK7jQjeYmE0Rtp8dg7i+xu1R8XhlxC8ohuB
+X-Received: by 2002:a05:6102:6c4:b0:5ff:17bd:9e83 with SMTP id ada2fe7eead31-604f9098d6amr3343928137.14.1774827290888;
+        Sun, 29 Mar 2026 16:34:50 -0700 (PDT)
+X-Received: by 2002:a05:6102:6c4:b0:5ff:17bd:9e83 with SMTP id ada2fe7eead31-604f9098d6amr3343924137.14.1774827290574;
+        Sun, 29 Mar 2026 16:34:50 -0700 (PDT)
+To: paiges@townofpaonia.com
+From: "Hlavac - DOLA, Dana" <dana.hlavac@state.co.us>
+Date: Sun, 29 Mar 2026 16:34:50 -0700
+Message-ID: <CA+Ukd1bkvBN4JjG20p4kSqS5nXRU5o3+8V3LKRSW_bT93FP1QA@mail.gmail.com>
+Subject: Out of Office Re: Town is holding a Special Meeting tomorrow
+ at 6:30 to set the record straight
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Precedence: bulk
+X-Autoreply: yes
+Auto-Submitted: auto-replied
+X-Proofpoint-ORIG-GUID: 31BfQKcpH1Hd3UF9WXMitnTbVL8RI8Ag
+X-Authority-Analysis: v=2.4 cv=OrZCCi/t c=1 sm=1 tr=0 ts=69c9b71b cx=c_pps
+ a=R6oCqFB+Yf/t2GF8e0/dFg==:117 a=ekJmGO2g-eUlW_4H:21 a=IkcTkHD0fZMA:10
+ a=Yq5XynenixoA:10 a=MlKHZCcKK8kA:10 a=ZZnuYtJkoWoA:10 a=VkNPw1HP01LnGYTKEx00:22
+ a=QO_YH_zVa_8lHkkFro6v:22 a=TDrq_ETGvWJnWNrTk1ZK:22 a=Z_lNH1_ZAAAA:8 a=vh0X6gnaAAAA:8
+ a=LlXNX1PgEYPG5zxF-qkA:9 a=QEXdDO2ut3YA:10 a=TD8TdBvy0hsOASGTdmB-:22 a=dN7Z_C8_8FSegMwB_j2G:22
+ a=ayt8WFG0cmdwRhKdLEUI:22 a=NPhNaJKUDm7b7B7NnNxW:22 a=NWVoK91CQySWRX1oVYDe:22
+X-Proofpoint-GUID: 31BfQKcpH1Hd3UF9WXMitnTbVL8RI8Ag
+X-Proofpoint-Spam-Details-Enc: AW1haW4tMjYwMzI5MDE4NiBTYWx0ZWRfX4f4bhzh/+9w+
+ uQjD4ZlScs19Gvkj7CWRA3GgrkG5ilRddYMBDMP1NwCi/8/4GdbFsyFEDXo0ZUQt0vvgq3vLNHu
+ vR9eiXVJ3rUl4LYkl5ckBNtGCcwI49LUSz5HxzrkrYKOk/oXrdgzVcJNKgwaWnEA+TR8ob1A+si
+ SUO+ANxayXov93CP2ZlLPxa6Oret0ESF03Rm5zke3B0/SqQk1rGDRx/xS1ybI4rzptUofL4aJb/
+ 36JBMZYDp9PJEJbhBGVwNEL+UJpSY5oI2zciOi/MHJdtB4OyCZt9pcTOc2/W/aubvxyK8H8gwLz
+ B7iSYdnVnvNUEY7uVM3VeUIlw18toCklXOElc9/Zn4LaNVhzIyHR4TxwL3Bnp4ZnQh19L3IYLRp
+ 5YFGXF5oiS4ZLE3AcSIKxi7Tlsdla/PwCtlhqZPMnXYnZh829H/ybS42ULuWFaYabnFyxSwaLN1
+ 3oCvWQ9B930ucZCOrfg==
+X-Proofpoint-Virus-Version: vendor=baseguard engine=ICAP:2.0.293,Aquarius:18.0.1143,Hydra:6.1.51,FMLib:17.12.100.49
+ definitions=2026-03-29_05,2026-03-28_01,2025-10-01_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0
+ malwarescore=0 bulkscore=0 phishscore=0 clxscore=1031 lowpriorityscore=0
+ impostorscore=0 priorityscore=1501 adultscore=0 spamscore=0 suspectscore=0
+ classifier=typeunknown authscore=0 authtc= authcc= route=outbound adjust=0
+ reason=mlx scancount=1 engine=8.22.0-2603050001 definitions=main-2603290186
+X-BESS-ID: 1774827292-111468-7701-10638-1
+X-BESS-VER: 2019.1_20260324.1831
+X-BESS-Apparent-Source-IP: 148.163.147.65
+X-BESS-Parts: H4sIAAAAAAACA4uuVkqtKFGyUioBkjpK+cVKVoZGlkZAVgZQ0CDZ3MQ0zTTRNC	UlOSnJzNTIzDDRJMUwOdk42cLIwsBAqTYWAFRO9G5BAAAA
+X-BESS-Spam-Status: SCORE=0.00 using account:ESS216445 scores of QUARANTINE_LEVEL=4.0
+ KILL_LEVEL=5.0 tests=OOBOUNCE_MESSAGE
+Received-SPF: pass (mx-inbound44-204.us-east-2c.ess.aws.cudaops.com: domain
+ of dana.hlavac@state.co.us designates 148.163.147.65 as permitted sender)
+X-BESS-Spam-Score: 0.00
+Authentication-Results-Original: mx-inbound44-204.us-east-2c.ess.aws.cudaops.com;
+ spf=pass (sender IP is 148.163.147.65) smtp.mailfrom=dana.hlavac@state.co.us;
+ dkim=pass header.d=state.co.us; dmarc=none header.from=dana.hlavac@state.co.us
+X-BESS-Spam-Report: Code version 3.2, rules version 3.2.2.272168 [from
+ cloudscan20-	185.us-east-2b.ess.aws.cudaops.com]	Rule breakdown below	
+ pts rule name              description	---- ---------------------- --------------------------------	0.00
+ OOBOUNCE_MESSAGE       META: Out-of-Office bounce message
+X-BESS-BRTS-Status: 1
+X-BESS-Info: H4sIAAAAAAACA6tWSslMUbIyNrUwNzHSUUrJU7JSKskvz8tPK0jMz8tM1EvOz1W	qBQBbuQy8JgAAAA==
+Return-Path: dana.hlavac@state.co.us
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Mar 2026 23:34:54.4479
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 7392daca-29dd-4278-febf-08de8debc7f0
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: c83e1d4a-0da0-407c-b733-c01e65de3917:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender: ip=[148.163.147.65];domain=mx0a-000dbe01.pphosted.com
+X-MS-Exchange-ExternalOriginalInternetSender: ip=[148.163.147.65];domain=mx0a-000dbe01.pphosted.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BL6PEPF0001AB74:EE_|MW4PR12MB7261:EE_|DM6PR12MB4169:EE_
+X-MS-Exchange-Organization-AuthSource: BL6PEPF0001AB74.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7392daca-29dd-4278-febf-08de8debc7f0
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|43022699015|82310400026|55112099003|57112099003|13003099007|19002099003|16102099003|56710200001;
+X-Forefront-Antispam-Report: CIP:209.222.82.63;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mx0a-000dbe01.pphosted.com;PTR:mx0a-000dbe01.pphosted.com;CAT:NONE;SFS:(13230040)(43022699015)(82310400026)(55112099003)(57112099003)(13003099007)(19002099003)(16102099003)(56710200001);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Mar 2026 23:34:54.1680 (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7392daca-29dd-4278-febf-08de8debc7f0
+X-MS-Exchange-CrossTenant-Id: c83e1d4a-0da0-407c-b733-c01e65de3917
+X-MS-Exchange-CrossTenant-AuthSource: BL6PEPF0001AB74.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR12MB7261
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.1257855
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9769.009
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info: 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
+MIME-Version: 1.0
+dropmyemail-o365-email-id: AAMkAGI3YmZlMzEyLWM3NjgtNDE0MS1iM2E5LWFmZmNmNDM5MmYxMwBGAAAAAAD5yFVrF0diTq4/03touKK2BwCjk/PMxxdFQZqvfVxwg84xAAAAAAEMAACjk/PMxxdFQZqvfVxwg84xAAQL23yuAAA=
+
+CAUTION: This email originated from outside your organization. Exercise caution when opening attachments or clicking links, especially from unknown senders.
+
+I am out of the office until Monday March 30.  If you have an
+important issue, please reach out to Nichole Robillard, the Northwest
+Regional Assistant (Moffat, Rio Blanco, Mesa, Garfield counties) or
+Ted Gantzer (Gunnison, Delta and Hinsdale counties).  I will be
+monitoring my phone and emails, and will respond as quickly as
+possible.
+
+
+-- 
+
+*Appreciatively,*
+
+*Dana P. Hlavac*
+*Northwest Regional Manager*
+
+
+P 970-903-0230
+Dana.Hlavac@state.co.us |  https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Flinkprotect.cudasvc.com%2Furl%3Fa%3Dhttps%253a%252f%252fdlg.colorado.gov%26c%3DE%2C1%2C91A4Eb6D236BCJrCeXSHZsuDWYk2d1wELbL-eM5Az3XW6nuMKJFAHQPeqJALNG6D3o3unCWVtZQ-mcF4GJHPg6bb2ON7uXHktjQl8F-O78DX2RCa%26typo%3D1&data=05%7C02%7Cpaiges%40townofpaonia.com%7C7392daca29dd4278febf08de8debc7f0%7Cc83e1d4a0da0407cb733c01e65de3917%7C0%7C0%7C639104240988640301%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=dCX8vBF9veI6W315hYI58GGIN%2Ffpmg3krcVzfPl5%2BqQ%3D&reserved=0
+<https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttp-3A__dlg.colorado.gov%26d%3DDwMFaQ%26c%3DsdnEM9SRGFuMt5z5w3AhsPNahmNicq64TgF1JwNR0cs%26r%3DInaSPauc4r9FF-PjcXnVX8UB9V6fsIwX8_GzbuEanO8KBYda3HkDvy91ka66jfOH%26m%3Dz77KShEfDcmRfL_sMyTBZqql_wFE_jCoUMfpgrzPTVR_THdwICkVT0hQV5N2Hu2E%26s%3DvAXOGbuXAz0TRGBJgKiQiOA_ZrXKYgKnJQNnQj94c3c%26e%3D&data=05%7C02%7Cpaiges%40townofpaonia.com%7C7392daca29dd4278febf08de8debc7f0%7Cc83e1d4a0da0407cb733c01e65de3917%7C0%7C0%7C639104240988669812%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Ksa6OYZRTDnTs8YAcbrfVMsgF62PEHpfZuk2I%2FHytlg%3D&reserved=0>
+*Learn more about why my pronouns are displayed here
+<https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__assets2.hrc.org_files_assets_resources_TalkingAboutPronouns-5Fonesheet-5FFINAL.pdf-3F-5Fga-3D2.58205356.726626415.1564161499-2D866369302.1564161499%26d%3DDwMFaQ%26c%3DsdnEM9SRGFuMt5z5w3AhsPNahmNicq64TgF1JwNR0cs%26r%3DyIyr7vu_3rtFdCn2yWh5NHk3-5zP1ZNSsj10qGRY39A%26m%3DrPFe3DPdaBeJRtTsE8xJ8QvDsPj-maZ2FExelEadK3k%26s%3Dt5Vf_2Df1QjeKCG0IG9e3F3Ex_cOj6EG85yl0leIwp4%26e%3D&data=05%7C02%7Cpaiges%40townofpaonia.com%7C7392daca29dd4278febf08de8debc7f0%7Cc83e1d4a0da0407cb733c01e65de3917%7C0%7C0%7C639104240988692071%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=npCgMJkbBspN5oth69xMN19ZhOFcYCdL7VZrxi2T5kM%3D&reserved=0>
+
+Sign up for the DLG newsletter <traci.stoffel@state.co.us>.

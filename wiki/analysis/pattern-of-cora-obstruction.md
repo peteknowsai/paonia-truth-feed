@@ -164,6 +164,7 @@ None of this requires the Town Clerk to act alone. The Board has the authority a
 
 ## See Also
 
+- [[the-clerks-cora-record]] — the request-by-request ledger and count
 - [[cora-tracking-log]]
 - [[cora-c26-09-verkada-audit-logs]]
 - [[cora-c26-11-libelous-communications-response]]

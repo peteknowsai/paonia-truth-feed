@@ -269,3 +269,13 @@ The Town's response to CORA C 26-09 (Verkada camera records), delivered 2026-04-
 9. **The "purpose" metadata requested in item 3 was not produced.** The audit logs show Archive Action Taken events but not the archive labels, descriptions, case numbers, or notes associated with them.
 
 10. **The redaction rationale is inconsistent with the redactions applied.** The clerk claimed redactions were needed to prevent phishing and social engineering, but internal user IDs (UUIDs that cannot be phished) were redacted while full names and email addresses (the actual phishing surface) were left visible.
+
+---
+
+## [2026-06-20] consolidate | Police records + Clerk's CORA Record onto the live tree
+
+Built on origin/main (the stale ingest/police-records branch would have resurrected retired site code, so its wiki content was ported forward instead). Site code untouched.
+
+**New pages:** sources/ccjra-pd-records-2026-06-04, sources/cora-c26-28-threat-safety-bodies, sources/ccjra-nokings-rally-2026-06-18, sources/cora-c26-29-march30-letter-drafts, analysis/what-the-police-found, analysis/the-clerks-cora-record, events/2026-03-28-protection-order-request. Raw: raw/documents/police-records/*, raw/documents/cora-responses/c26-28/*, raw/documents/cora-responses/c26-29/*.
+
+**Updated:** people/stefen-wynn (police / protection-order section), people/kaja-bowman (March 28 entry), analysis/the-case-against-the-critic (bodies-produced update), analysis/cora-tracking-log (CCJRA #1/#2 + C 26-29 marked PRODUCED), analysis/pattern-of-cora-obstruction + people/samira-vetter (See Also), index.

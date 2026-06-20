@@ -1,0 +1,422 @@
+Received: from DS7PR12MB8345.namprd12.prod.outlook.com (2603:10b6:8:d8::14) by SA1PR12MB8888.namprd12.prod.outlook.com with HTTPS; Fri, 27 Mar 2026 21:13:23 +0000
+Received: from DM6PR12MB4169.namprd12.prod.outlook.com (2603:10b6:5:215::22) by DS7PR12MB8345.namprd12.prod.outlook.com (2603:10b6:8:d8::14) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.8; Fri, 27 Mar 2026 21:13:20 +0000
+Received: from DM6PR12MB4169.namprd12.prod.outlook.com ([fe80::8947:423b:1aed:1545]) by DM6PR12MB4169.namprd12.prod.outlook.com ([fe80::8947:423b:1aed:1545%4]) with mapi id 15.20.9769.009; Fri, 27 Mar 2026 21:13:20 +0000
+From: Paige S <paiges@townofpaonia.com>
+To: "Samira Vetter" <SamiraV@townofpaonia.com>,
+ "Stefen Wynn" <StefenW@townofpaonia.com>,
+ "Lucy H" <LucyH@townofpaonia.com>
+Subject: RE: PLease see the attached drafft Mayor's report for the Special
+ Meeting
+Thread-Topic: PLease see the attached drafft Mayor's report for the Special
+ Meeting
+Thread-Index: Ady+Jpxv5ScqvyEMTrS+6QE/e6gqhAABcYBvAACF3DA=
+Date: Fri, 27 Mar 2026 21:13:19 +0000
+Message-ID: <DM6PR12MB4169A8468ACBCB4322E2F982AF57A@DM6PR12MB4169.namprd12.prod.outlook.com>
+References: <DM6PR12MB41698CB8C9A4CC01C6BD0894AF57A@DM6PR12MB4169.namprd12.prod.outlook.com>
+ <SA1PR12MB8888E10C11C60D0F70118B5BD557A@SA1PR12MB8888.namprd12.prod.outlook.com>
+In-Reply-To: <SA1PR12MB8888E10C11C60D0F70118B5BD557A@SA1PR12MB8888.namprd12.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: DM6PR12MB4169.namprd12.prod.outlook.com
+X-MS-Has-Attach: 
+X-MS-Exchange-Organization-Network-Message-Id: 3fbf023a-31cb-428d-10c2-08de8c45ac1c
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator: 
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels: 
+x-ms-publictraffictype: Email
+authentication-results: dkim=none (message not signed) header.d=none;dmarc=none
+ action=none header.from=townofpaonia.com;
+x-ms-office365-filtering-correlation-id: 3fbf023a-31cb-428d-10c2-08de8c45ac1c
+x-microsoft-antispam: BCL:0;ARA:13230040|366016|8096899003|18002099003|22082099003|56012099003|55112099003|13003099007|41050700001;
+x-ms-traffictypediagnostic: DM6PR12MB4169:EE_|DS7PR12MB8345:EE_|SA1PR12MB8888:EE_
+x-forefront-antispam-report: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DM6PR12MB4169.namprd12.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(8096899003)(18002099003)(22082099003)(56012099003)(55112099003)(13003099007)(41050700001);DIR:INT;
+x-ms-exchange-crosstenant-network-message-id: 3fbf023a-31cb-428d-10c2-08de8c45ac1c
+x-ms-exchange-crosstenant-originalarrivaltime: 27 Mar 2026 21:13:20.0855 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: c83e1d4a-0da0-407c-b733-c01e65de3917
+x-ms-exchange-transport-crosstenantheadersstamped: DS7PR12MB8345
+x-ms-exchange-atpmessageproperties: SA|SL
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: DM6PR12MB4169.namprd12.prod.outlook.com
+x-ms-exchange-transport-endtoendlatency: 00:00:03.4210847
+x-ms-exchange-processed-by-bccfoldering: 15.20.9769.001
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname: rH4H2sF2cUoRGZJJZ6yQIrFuJhiI308GTU1yA4YIikvOfePlV6A0itleq/BsPc6G26ELg3ztD9T9ghWp5L7VIw==
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info: SWebt/Rsakp2yvzG91r8s7hU2qWNghWB4iWzTnJj12MJyZIG9jEBVjWnDVCWx3l+EG949lJQ76InRPSgEOgfo/6diO1BshNkFOV6DL8jA7C9LlXFg8eRTV9RPgKqyIWyaplJQkX6feE3IwaUgPnVlE2ptLHOCi7NqyELFB+af0Abi0ib3uMt2A/mZZNB5AALZYICl/hycl8hIf4cR5lXpAczoTuumzKFCEBZb/lhN0DFb18fiS/XkHAt0B27+vNw+2SPtczxKRxbMoH7mAX0JXMcjpeYkp+fDnKkleYbD7/aVKArlmEVqpmWnMYAOg7auBsRevQ0zzXobS5I5sBSW2uOig5v052ahxYC/4xD4eOBk3fN2vNv76c/dct6V4nmPykCWAoVCO72EVf4RanhvZ0TeW0A2nk3O6PFYiI/I810HlUCm0HvbLZHu60+vBesR9+M+r7KZKz6HGbYs3Pp4Nt4ra9AfxfWFRVBf9HZFnslopZYl92XVaZOibjHw4nNi/zxXUZKorxtDQ8XMp9gacGU/Nd2rJQFqRuVJ0GmGy/ap26OmpABRB8g9pRKF2Tu0J40vViqXvLPmPccdaWrxjsN2UhpDaj6gbFtP4u6YJqYeHTcPJ+cHjH4IaMNZTqdXXLYYAkTYGFOGHaIN4TGA3wVzj8W/ZGkcXqoPAYsSDAU0v9K4ObkqU9FirNG7mA20gPbvU/j/7q69IzyAwqqACBVZSjIyc0rN/oM6T00n9cyfaolVcAxIz+Vu8taZVboZgcz972xNcg7G9IePgyp+FYCe3eTrLMcZvW3gVDB5GBPXJD3OALiJ2qxh2yRQC6BkBdchYa93xNTLKzovTSIV6K2fcpRLtF35MmNn2E41wE0O5wjq3SqCWulJWth2rGWmg6JzTR6e+sC2DypGSCylg==
+Content-Type: multipart/alternative; boundary=_000_DM6PR12MB4169A8468ACBCB4322E2F982AF57ADM6PR12MB4169namp_
+MIME-Version: 1.0
+dropmyemail-o365-email-id: AAMkADA1ODMyZmNiLWIwMzUtNGU1Yi05N2Y3LTdkZDhlOTkyYjA1YgBGAAAAAADGTrZHXW7JQoaByNOC4G0GBwCN1UZY/S0tSb8VrLyG/V90AAAAAAEKAACN1UZY/S0tSb8VrLyG/V90AAPDffUZAAA=
+
+--_000_DM6PR12MB4169A8468ACBCB4322E2F982AF57ADM6PR12MB4169namp_
+Content-Type: text/plain; charset=windows-1252; format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+Thank you.
+
+Paige Smith
+Mayor, Town of Paonia
+
+Sender and receiver should be mindful that all my incoming and outgoing ema=
+ils may be subject to the Colorado Open Records Act, =A7 24-72-100.1, et se=
+q.
+
+From: Samira Vetter <SamiraV@townofpaonia.com>
+Sent: Friday, March 27, 2026 2:59 PM
+To: Paige S <paiges@townofpaonia.com>; Stefen Wynn <StefenW@townofpaonia.co=
+m>; Lucy H <LucyH@townofpaonia.com>
+Subject: Re: PLease see the attached drafft Mayor's report for the Special =
+Meeting
+
+Thank you, I will take my computer home when I come on Saturday to publish =
+the agenda so I can publish the packet on Sunday
+
+Best,
+Samira
+
+
+[X]
+
+Samira M. Vetter, CMC
+Paonia Town Clerk/Human Resources
+P : (970) 527-4101
+M: (970) 742-4658
+E : SamiraV@TownofPaonia.com<mailto:SamiraV@TownofPaonia.com>
+ 214 Grand Ave.
+PO Box 460
+Paonia, CO 81428
+https://townofpaonia.colorado.gov<https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Ftownofpaonia.colorado.gov%2F&data=3D05%7C02%7CSa=
+miraV%40townofpaonia.com%7C3fbf023a31cb428d10c208de8c45ac1c%7Cc83e1d4a0da04=
+07cb733c01e65de3917%7C0%7C0%7C639102428038743168%7CUnknown%7CTWFpbGZsb3d8ey=
+JFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsI=
+ldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DAvMDbKcm1hlTUmPCL5Qfo9RKNi039To2do0syJ=
+FZBcI%3D&reserved=3D0>
+
+=93The measure of who we are is what we do with what we have.=94 =96 Vince =
+Lombardi
+
+Sender and receiver should be mindful that all my incoming and outgoing ema=
+ils may be subject to the Colorado Open Records Act, =A7 24-72-100.1, et se=
+q.
+
+________________________________
+From: Paige S <paiges@townofpaonia.com<mailto:paiges@townofpaonia.com>>
+Sent: Friday, March 27, 2026 2:21 PM
+To: Stefen Wynn <StefenW@townofpaonia.com<mailto:StefenW@townofpaonia.com>>=
+; Samira Vetter <SamiraV@townofpaonia.com<mailto:SamiraV@townofpaonia.com>>=
+; Lucy H <LucyH@townofpaonia.com<mailto:LucyH@townofpaonia.com>>
+Subject: PLease see the attached drafft Mayor's report for the Special Meet=
+ing
+
+
+Sam, I have all of the attachments mentioned and can upload everything once=
+ approved (by all=85 including Clay) for you to publish on Sunday.
+
+
+
+Thanks everyone.
+
+
+
+Paige Smith
+
+Mayor, Town of Paonia
+
+
+
+Sender and receiver should be mindful that all my incoming and outgoing ema=
+ils may be subject to the Colorado Open Records Act, =A7 24-72-100.1, et se=
+q.
+
+
+
+--_000_DM6PR12MB4169A8468ACBCB4322E2F982AF57ADM6PR12MB4169namp_
+Content-Type: text/html; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+=2Eshape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Agency FB";
+	panose-1:2 11 5 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:"Brush Script MT";
+	panose-1:3 6 8 2 4 4 6 7 3 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	text-decoration:underline;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+span.EmailStyle22
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+=2EMsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you.<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><span style=3D"fon=
+t-size:11.0pt;color:black;mso-ligatures:standardcontextual">Paige Smith<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><span style=3D"fon=
+t-size:11.0pt;color:black;mso-ligatures:standardcontextual">Mayor, Town of =
+Paonia<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><span style=3D"fon=
+t-size:11.0pt;color:black;mso-ligatures:standardcontextual"><o:p>&nbsp;</o:=
+p></span></p>
+<p class=3D"MsoNormal" style=3D"vertical-align:baseline"><span style=3D"fon=
+t-size:9.0pt;color:black;mso-ligatures:standardcontextual">Sender and recei=
+ver should be mindful that all my incoming and outgoing emails may be subje=
+ct to the Colorado Open Records Act, =A7
+ 24-72-100.1, et seq.</span><span style=3D"font-size:9.0pt"><o:p></o:p></sp=
+an></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif">From:</span></b><span style=3D"font-size:11.0pt;=
+font-family:&quot;Calibri&quot;,sans-serif"> Samira Vetter &lt;SamiraV@town=
+ofpaonia.com&gt;
+<br>
+<b>Sent:</b> Friday, March 27, 2026 2:59 PM<br>
+<b>To:</b> Paige S &lt;paiges@townofpaonia.com&gt;; Stefen Wynn &lt;StefenW=
+@townofpaonia.com&gt;; Lucy H &lt;LucyH@townofpaonia.com&gt;<br>
+<b>Subject:</b> Re: PLease see the attached drafft Mayor's report for the S=
+pecial Meeting<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:14.0pt;font-family:&quot;Ag=
+ency FB&quot;,sans-serif;color:black">Thank you, I will take my computer ho=
+me when I come on Saturday to publish the agenda so I can publish the packe=
+t on Sunday<o:p></o:p></span></p>
+</div>
+<div id=3D"Signature">
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:14.0pt;font-family:&quot;Ag=
+ency FB&quot;,sans-serif;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:14.0pt;font-family:&quot;Ca=
+mbria&quot;,serif;color:black">Best,<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:20.0pt;font-family:&quot;Br=
+ush Script MT&quot;;color:black">Samira<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:20.0pt;font-family:&quot;Br=
+ush Script MT&quot;;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"318" style=3D"width:238.25pt;border-collapse:collapse;box-s=
+izing: border-box;border-spacing: 0px" id=3D"x_x_x_x_table_0">
+<tbody>
+<tr style=3D"height:60.7pt">
+<td width=3D"97" valign=3D"top" style=3D"width:72.8pt;border:none;border-ri=
+ght:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:60.7pt">
+<p style=3D"margin-top:12.0pt"><span style=3D"font-size:9.0pt;font-family:&=
+quot;Calibri&quot;,sans-serif;color:black"><img width=3D"132" height=3D"80"=
+ style=3D"width:1.375in;height:.8333in" id=3D"_x0000_i1027" src=3D"data:tex=
+t/html;base64,PCFET0NUWVBFIGh0bWw+IDxodG1sIGRpcj1sdHIgeG1sbnM9aHR0cDovL3d3d=
+y53My5vcmcvMTk5OS94aHRtbCB0cmFuc2xhdGU9bm8+IDxoZWFkPiA8bWV0YSBjaGFyc2V0PXV0=
+Zi04PiA8bWV0YSBodHRwLWVxdWl2PVgtVUEtQ29tcGF0aWJsZSBjb250ZW50PSJJRT1lZGdlIj4=
+gPG1ldGEgaHR0cC1lcXVpdj1wcmFnbWEgY29udGVudD1uby1jYWNoZT4gPG1ldGEgbmFtZT12aW=
+V3cG9ydCBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsaW5pdGlhbC1zY2FsZT0xLHVzZXItc=
+2NhbGFibGU9MCI+IDxtZXRhIG5hbWU9Z29vZ2xlIHZhbHVlPW5vdHJhbnNsYXRlPiA8bWV0YSBu=
+YW1lPWZvcm1hdC1kZXRlY3Rpb24gY29udGVudD0idGVsZXBob25lPW5vIj4gPG1ldGEgbmFtZT1=
+zY3JpcHRWZXIgY29udGVudD0yMDI2MDMyMDAwMi4wND4gPG1ldGEgbmFtZT1oYXNoZWRQYXRoIG=
+NvbnRlbnQ9aGFzaGVkLXYxPiA8bWV0YSBuYW1lPXBoeXNpY2FsUmluZyBjb250ZW50PVdXPiA8b=
+WV0YSBuYW1lPWVudmlyb25tZW50IGNvbnRlbnQ9UHJvZD4gPG1ldGEgbmFtZT1ib290RmxpZ2h0=
+cyBjb250ZW50PWF1dGgtY2FjaGVUb2tlbkZvck1ldGFPc0h1YixhdXRoLXVzZUF1dGhUb2tlbkN=
+sYWltc0Zvck1ldGFPc0h1YixhdXRoLWNvZGVDaGFsbGVuZ2UsYXV0aC1tc2FsanMtZXZlbnRpZn=
+ksY2FsLXN0b3JlLU5hdkJhckRhdGEsYXV0aC1tc2FsanMtbmV3c2xldHRlcnMsYXV0aC1tc2Fsa=
+nMtbWVldCxhdXRoLW1zYWxqcy1wbGFjZXMsYXV0aC1tc2FsanMtYm9va2luZ3MsYXV0aC1tc2Fs=
+anMtZmluZHRpbWUsc3VwcG9ydG9uYm9vdCxhdXRoLW1hdHNTY2VuYXJpb3MtTmV3QWNjb3VudCx=
+wZTE0MTYyMzUyOjE0NTg4OCxwZTE0NDQ1NDJjMToxNTczNDgscGUxNDQ1NjAxYzE6MTU3NzkwLH=
+ByMTUzOTg5MmMxOTozMDU3NDUscHIxNjM0NzExYzc6MTAwMDYxMCxwcjE2OTYxMDk4OjEwODgwO=
+DYscHIxNTk1NDY0MjI6MTEyMzUyMyxhdXRoLW5hYS1ib29raW5ncyxuaC13aW5kb3dzdGF0ZWJv=
+b3RpbnRlcm9wLGNhbC1yZWxvYWQtcGF1c2Usd29ya2VyQXN5bmNMb2FkLG1vbi1hY2N0LWFkZEF=
+jY291bnREZWVwbGluayxhdXRoLWNsb3VkQ2FjaGUtYmFzaWNBdXRoUGFzc3dvcmRMb29rdXAsYX=
+V0aC1tb24tbG9va3VwVW5pcXVlSWRlbnRpdHkyLGF1dGgtZGlzYWJsZUFub255bW91c1Rva2VuR=
+m9ySGVhZGVyLG1zcGxhY2VzLWhvc3RlZC1sb2NhbHNlc3Npb25kYXRhLXYyLGZ3ay1lbmFibGUt=
+ZGVmYXVsdC10cnVzdGVkLXR5cGVzLXBvbGljeSxtc3BsYWNlcy1hcHAtYm9vdC1zZXF1ZW5jZSx=
+hdXRoLW1zYWxqcy1ob3N0ZWRwbGFjZXMsZndrLWVuYWJsZS1vd2EtbG9vcC10cnVzdGVkLXR5cG=
+VzLXBvbGljeSxmd2staW5pdC1hY2MtbG9jc3RvcmUsYXV0aC1tc2FsanMtZG9tYWluSGludCxhd=
+XRoLXRva2VuQ2FjaGUtZXhwaXJ5RGF0ZSxhdXRoLW1vbi1yZW1vdmVGYWxsYmFja1RvR0FURlIs=
+YXV0aC1ob3N0ZWQtcmVtb3ZlRmFsbGJhY2tUb0dBVEZSLGNhbC1hcHBDYWNoaW5nLVJlbG9hZE9=
+uRXJyb3IsYXV0aC1tc2FsanMtY29uc3VtZXItYm9vdC1lcnJvc"></span><o:p></o:p></p>
+</td>
+<td width=3D"221" valign=3D"top" style=3D"width:165.45pt;padding:0in 5.4pt =
+0in 5.4pt;height:60.7pt">
+<p style=3D"margin-top:12.0pt"><b><span style=3D"font-size:10.0pt;font-fami=
+ly:&quot;Arial&quot;,sans-serif;color:#443238">Samira M. Vetter, CMC<br>
+</span></b><i><span style=3D"font-size:8.0pt;font-family:&quot;Arial&quot;,=
+sans-serif;color:#443238">Paonia Town Clerk/Human Resources<br>
+</span></i><span style=3D"font-size:8.0pt;font-family:&quot;Cambria&quot;,s=
+erif;color:#443238">P&nbsp;:
+</span><span style=3D"font-size:8.0pt;font-family:&quot;Cambria&quot;,serif=
+;color:black">(970) 527-4101</span><span style=3D"font-size:8.0pt;font-fami=
+ly:&quot;Arial&quot;,sans-serif;color:black"><br>
+</span><span style=3D"font-size:8.0pt;font-family:&quot;Cambria&quot;,serif=
+;color:#443238">M: (970) 742-4658</span><span style=3D"font-size:8.0pt;font=
+-family:&quot;Arial&quot;,sans-serif;color:black"><br>
+</span><span style=3D"font-size:8.0pt;font-family:&quot;Cambria&quot;,serif=
+;color:#443238">E&nbsp;:</span><span style=3D"font-size:8.0pt;font-family:&=
+quot;Arial&quot;,sans-serif;color:#443238">
+</span><span style=3D"font-size:8.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;color:black"><a href=3D"mailto:SamiraV@TownofPaonia.com">SamiraV@Townof=
+Paonia.com</a><br>
+</span><b><span style=3D"font-size:4.0pt;font-family:&quot;Arial&quot;,sans=
+-serif;color:#5B9BD5">&nbsp;</span></b><span style=3D"font-size:8.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;color:#443238">214 Grand Ave.<br>
+PO Box 460<br>
+Paonia, CO 81428<br>
+</span><b><span style=3D"font-size:8.0pt;font-family:&quot;Arial&quot;,sans=
+-serif;color:#2F5496"><a href=3D"https://nam02.safelinks.protection.outlook=
+=2Ecom/?url=3Dhttps%3A%2F%2Ftownofpaonia.colorado.gov%2F&amp;data=3D05%7C02=
+%7CSamiraV%40townofpaonia.com%7C3fbf023a31cb428d10c208de8c45ac1c%7Cc83e1d4a=
+0da0407cb733c01e65de3917%7C0%7C0%7C639102428038743168%7CUnknown%7CTWFpbGZsb=
+3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFp=
+bCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DAvMDbKcm1hlTUmPCL5Qfo9RKNi039=
+To2do0syJFZBcI%3D&amp;reserved=3D0" originalsrc=3D"https://townofpaonia.col=
+orado.gov/">https://townofpaonia.colorado.gov</a></span></b><span style=3D"=
+font-size:4.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black">&nb=
+sp;&nbsp;</span><o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial Narrow&quot;,=
+sans-serif;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:14.0pt;font-family:&quot;Ca=
+mbria&quot;,serif;color:black">=93The measure of who we are is what we do w=
+ith what we have.=94<b>&nbsp;=96 Vince Lombardi</b><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:14.0pt;font-family:&quot;Ca=
+mbria&quot;,serif;color:black"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:14.0pt;font-family:&quot=
+;Cambria&quot;,serif;color:black">Sender and receiver should be mindful tha=
+t all my incoming and outgoing emails may be subject to the Colorado Open R=
+ecords Act, =A7 24-72-100.1, et seq.</span></b><span style=3D"font-size:14.=
+0pt;font-family:&quot;Cambria&quot;,serif;color:black"><o:p></o:p></span></=
+p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:20.0pt;font-family:&quot;Br=
+ush Script MT&quot;;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"divRplyFwdMsg">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,sans-serif;color:black">From:</span></b><span style=3D"font-=
+size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black"> Paige =
+S &lt;<a href=3D"mailto:paiges@townofpaonia.com">paiges@townofpaonia.com</a=
+>&gt;<br>
+<b>Sent:</b> Friday, March 27, 2026 2:21 PM<br>
+<b>To:</b> Stefen Wynn &lt;<a href=3D"mailto:StefenW@townofpaonia.com">Stef=
+enW@townofpaonia.com</a>&gt;; Samira Vetter &lt;<a href=3D"mailto:SamiraV@t=
+ownofpaonia.com">SamiraV@townofpaonia.com</a>&gt;; Lucy H &lt;<a href=3D"ma=
+ilto:LucyH@townofpaonia.com">LucyH@townofpaonia.com</a>&gt;<br>
+<b>Subject:</b> PLease see the attached drafft Mayor's report for the Speci=
+al Meeting</span>
+<o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">Sam, I have all of=
+ the attachments mentioned and can upload everything once approved (by all=
+=85 including Clay) for you to publish on Sunday.</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">Thanks everyone.</=
+span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:11.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal" style=3D"vertical-align:baseline"><span style=3D"fo=
+nt-size:11.0pt;color:black">Paige Smith</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"vertical-align:baseline"><span style=3D"fo=
+nt-size:11.0pt;color:black">Mayor, Town of Paonia</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"vertical-align:baseline"><span style=3D"fo=
+nt-size:11.0pt;color:black">&nbsp;</span><o:p></o:p></p>
+<p class=3D"xmsonormal" style=3D"vertical-align:baseline"><span style=3D"fo=
+nt-size:9.0pt;color:black">Sender and receiver should be mindful that all m=
+y incoming and outgoing emails may be subject to the Colorado Open Records =
+Act, =A7 24-72-100.1, et seq.</span><o:p></o:p></p>
+<p class=3D"xmsonormal">&nbsp;<o:p></o:p></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_DM6PR12MB4169A8468ACBCB4322E2F982AF57ADM6PR12MB4169namp_--

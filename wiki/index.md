@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Last updated: 2026-04-08
+> Last updated: 2026-06-20
 
 The Paonia civic transparency wiki. All pages maintained by LLM; sources curated by Pete.
 
@@ -25,6 +25,7 @@ See [[SCHEMA]] for conventions and workflows.
 - [[2025-05-28-str-initiative-rejection|STR Initiative Rejected (2025-05-28)]] -- First citizen initiative rejected by Vetter
 - [[2025-10-09-bowman-termination|Bowman Termination (2025-10-09)]] -- Deputy Treasurer terminated 23 days after complaint inquiry
 - [[2026-03-25-ten-things-flyer|10 Things Flyer Distributed (2026-03-25)]] -- Sourced citizen flyer, triggered 5-day response
+- [[2026-03-28-protection-order-request|Administrator Seeks Protection Order Against a Critic (2026-03-28)]] -- Wynn asks the Police Chief how to get a protection order against McCarthy and a named neighbor; forwards his attorney inquiry
 - [[2026-03-30-special-meeting|Special Meeting (2026-03-30)]] -- Board response, 5-1 vote, "libelous," unedited publication
 - [[2026-04-03-surveillance-initiative-rejection|Surveillance Initiative Rejected (2026-04-03)]] -- Second initiative rejected, same pattern
 - [[2026-04-13-str-initiative-approval|STR Initiative Approved (2026-04-13)]] -- First citizen initiative approved by Vetter; 57 signatures needed
@@ -62,6 +63,10 @@ See [[SCHEMA]] for conventions and workflows.
 - [[reporter-package-email-coverup|Reporter Package: Email Coverup Timeline]] -- Nov 4 email deception, CFOIC confirmation
 - [[cora-libelous-communications|CORA Request: Libelous Communications]] -- Seeking drafts, advice, and communications behind "libelous"
 - [[cora-c26-09-verkada-audit-logs|CORA C 26-09: Verkada Audit Logs Response]] -- 57,460 audit log rows, contract, no written policy, $167.90 fee
+- [[ccjra-pd-records-2026-06-04|Paonia PD Records (CCJRA, 2026-06-04)]] -- Eight case files; two reports over speech closed unfounded on First Amendment grounds
+- [[cora-c26-28-threat-safety-bodies|CORA C 26-28: Threat/Safety Email Bodies (2026-06-11)]] -- The bodies behind the threat/safety subjects; false neighbor statement to the Board
+- [[ccjra-nokings-rally-2026-06-18|Paonia PD "No Kings Rally" Emails (CCJRA, 2026-06-18)]] -- Protection-order request naming McCarthy and Bowman; forwarded attorney inquiry; read receipts
+- [[cora-c26-29-march30-letter-drafts|CORA C 26-29: March 30 Letter Drafts (2026-06-19)]] -- The response-letter and Mayor's-report drafts C 26-11 omitted, produced only on re-request
 - [[meeting-2024-11-04|Planning Commission Meeting (2024-11-04)]] -- Wynn's "oh we do have an email" moment on camera
 - [[meeting-2024-11-12|Board Budget Work Session (2024-11-12)]] -- Verkada camera discussion, $50K budget
 - [[meeting-2024-11-20|Planning Commission Work Session (2024-11-20)]] -- Walk-out threat, stonewalling, resignation catalyst
@@ -78,6 +83,8 @@ See [[SCHEMA]] for conventions and workflows.
 - [[what-the-board-did-not-dispute|What the Board Did Not Dispute]] -- 10 claims, zero factual sources disputed. All disagreements are interpretation.
 - [[the-brunner-standard|The Brunner Standard]] -- The conduct standard set by removing Brunner, applied to Wynn and Vetter's documented actions.
 - [[discrepancies-register|Discrepancies Register]] -- Every factual conflict in the record. 9 documented, 5 unresolved.
+- [[what-the-police-found|What the Police Found: Unfounded]] -- Three reports over residents' speech, zero investigations, two unfounded First Amendment closures, the March 28 protection-order request, and a false neighbor statement to the Board.
+- [[the-clerks-cora-record|The Clerk's CORA Record]] -- Request-by-request ledger: at least ten records requests with a defect verifiable from the Town's own documents, including records destroyed while pending. Records-only.
 - [[verkada-usage-patterns|Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)]] -- 57,460 audit log rows analyzed. Clerk's office = 53% of activity. Community Room = 1,938 views. Four weekend archives of the public meeting room.
 - [[facial-recognition-proof|Facial Recognition Is Enabled on the Town's Verkada System]] -- Contradicts the March 30 board letter. Oct 22-23 configuration events, "Ruben's Dashboard," Blurred Faces archive.
 - [[wynn-memo-vs-audit-log|Wynn's April 14 Memorandum vs the Audit Log]] -- Point-by-point comparison: 130 events vs "two isolated entries," 65 distinct days vs "October testing," "disabled today" vs "never enabled."

@@ -45,6 +45,12 @@ Sources: News4Jax (2023-06-27), WOKV (2023-01-18). Court filings in `raw/documen
 ### Special meeting response (2026)
 - Coordinated with [[lucy-hunter|Trustee Hunter]] and [[clayton-buchner|Clayton Buchner]] on Hunter's unsigned counter-flyer responding to Pete's 10 Things flyer. [[board-letter-2026-03-30|source]]
 
+### Police complaints and protection-order request (2026)
+
+- **2026-03-28**: emailed Chief Matt Laiminger (CC Officer Henderson) asking "who … at the county level … to begin seeking a **protection order** from Mr. McCarthy and his accomplices, namely [[kaja-bowman|Kaja Bowman]]," regarding the King Leopold II image and the "10 reasons … should be fired" flyer. In the same email he forwarded the inquiry he had sent his private attorney minutes earlier, asking whether the speech "met the statute level for public officials." [[2026-03-28-protection-order-request|event]] [[ccjra-nokings-rally-2026-06-18|source]]
+- Took residents' political speech to the Paonia PD repeatedly in 2026 (March 12, April 21, May 8). The April 21 and May 8 matters were closed **unfounded** on First Amendment grounds; the PD certified that no record exists of being asked to investigate McCarthy or any other citizen critic. [[what-the-police-found|analysis]] [[ccjra-pd-records-2026-06-04|source]]
+- **2026-05-08**: made a formal criminal complaint against McCarthy over a Facebook post ("86 WYNN"), requesting harassment, witness-intimidation, and retaliation charges; closed unfounded the next day. The same afternoon he emailed the Board his non-renewal and "safety concerns" letter announcing he was "seeking a civil protection order." [[what-the-police-found|analysis]]
+
 ### Verkada procurement and usage (2025–2026)
 
 - **Signed the Mitchell and Company Verkada quote on 2025-08-18** ($50,288 total, 23 cameras, 47 estimated labor hours), acting as Town Administrator & Treasurer. [[cora-c26-09-verkada-audit-logs|source]]
@@ -72,6 +78,8 @@ Specific dated sessions:
 ## See Also
 
 - [[retaliation-pattern]]
+- [[what-the-police-found]]
+- [[2026-03-28-protection-order-request]]
 - [[board-oversight]]
 - [[bill-brunner]]
 - [[kaja-bowman]]

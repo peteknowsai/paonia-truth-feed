@@ -53,6 +53,8 @@ Specific dated sessions:
 
 ## See Also
 
+- [[the-clerks-cora-record]]
+- [[pattern-of-cora-obstruction]]
 - [[public-records-access]]
 - [[initiative-process]]
 - [[stefen-wynn]]
