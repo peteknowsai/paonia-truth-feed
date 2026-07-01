@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORA C 26-12 — The Cure Response (May 27, 2026) — Paoniapedia</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="mw-page">
+<div id="sidebar">
+  <div class="logo"><a href="index.html">
+    <span class="globe">🌐</span>
+    <span class="name">Paoniapedia</span>
+    <span class="tag">the free encyclopedia of the Town of Paonia</span>
+  </a></div>
+  <div id="searchbox">
+    <input id="searchInput" type="text" placeholder="Search Paoniapedia" autocomplete="off" aria-label="Search">
+    <div id="suggest"></div>
+  </div>
+  <h3>Navigation</h3>
+  <ul>
+    <li><a href="index.html">Main page</a></li>
+    <li><a href="#" class="random-article">Random article</a></li>
+    <li><a href="allpages.html">All pages</a></li>
+    <li><a href="categories.html">Categories</a></li>
+    <li><a href="about.html">About Paoniapedia</a></li>
+  </ul>
+  <h3>Categories</h3>
+  <ul>
+    <li><a href="category-people.html">People</a></li>
+    <li><a href="category-events.html">Events</a></li>
+    <li><a href="category-issues.html">Issues</a></li>
+    <li><a href="category-sources.html">Sources</a></li>
+    <li><a href="category-analysis.html">Analysis</a></li>
+    <li><a href="category-open-questions.html">Open questions</a></li>
+  </ul>
+</div>
+<main id="content">
+  <div class="tabs">
+    <a class="selected" href="cora-c26-12-cure-response.html">Article</a>
+    <a href="talk-cora-c26-12-cure-response.html">Talk</a>
+    <span class="spacer"></span>
+    <a href="allpages.html">All pages</a>
+  </div>
+  <h1 id="firstHeading">CORA C 26-12 — The Cure Response (May 27, 2026)</h1>
+  <div class="sitesub">From Paoniapedia, the free encyclopedia of the Town of Paonia</div>
+  <div id="body"><div class="infobox">
+  <div class="ib-title">CORA C 26-12 — The Cure Response (May 27, 2026)</div>
+  <div class="ib-sub">Source document</div>
+  <table><tbody>
+    
+    <tr><td class="ib-section" colspan="2">Record</td></tr>
+    <tr><th>Type</th><td>Source document</td></tr>
+    <tr><th>First recorded</th><td>2026-05-30</td></tr>
+    <tr><th>Topics</th><td class="ib-tags"><a href="category-cora.html">cora</a> <a href="category-m365.html">m365</a> <a href="category-audit-log.html">audit-log</a> <a href="category-redaction.html">redaction</a> <a href="category-cure.html">cure</a> <a href="category-inbox-rules.html">inbox-rules</a> <a href="category-wynn.html">wynn</a></td></tr>
+  </tbody></table>
+</div><p>On May 27, 2026, the Town produced a &quot;cure&quot; to CORA request C 26-12, the Microsoft 365 Unified Audit Log request. This page documents the cure as a record distinct from the original, defective production page <a href="cora-c26-12-m365-audit-logs-response.html">CORA C 26-12: M365 Unified Audit Log Response</a>. The cure functions two ways at once: it is an admission that the first production was both incomplete and over-redacted, and it is itself an incomplete fix.</p>
+<h2>What the Cure Delivered</h2>
+<ul>
+<li><strong>An admission that exports were missing.</strong> The Town acknowledged that four exports had been omitted from the original C 26-12 production.</li>
+<li><strong>Ten uncapped CSV exports.</strong> The cure delivered ten exports — six monthly files spanning November 2025 through April 2026, plus four short-window files that fill gaps or overlap the monthly coverage — totaling roughly 1.13 million audit records, far less truncated than the capped original export.</li>
+<li><strong>The <code>AuditData</code> column un-redacted.</strong> The original C 26-12 redacted the <code>AuditData</code> column in full. The cure removed that blanket redaction, making operation context, user, workload, client application, mailbox owner, folder names, and rule metadata readable.</li>
+<li><strong>Narrowed redactions.</strong> Redaction was narrowed to identifier classes (GUIDs and correlation/session/token IDs, IP addresses, and mailbox/item immutable IDs).</li>
+<li><strong>Fees waived.</strong> The Town waived its fees for the cure production.</li>
+</ul>
+<h2>What the Cure Resolved</h2>
+<p>The cure found no record of mail suppression. With <code>AuditData</code> readable, the inbox-rule activity attributed to <a href="stefen-wynn.html">Stefen Wynn</a> could be examined directly. Every populated rule action across all ten files is a &quot;move sender into folder&quot; operation; there are no delete, external-forward, or redirect actions anywhere in the inbox-rule events. The only forwarding rules in the data — utility-locate ticket distribution, voicemail notifications, a clerks listserv — forward to internal <code>@townofpaonia.com</code> addresses. No external forwarding, no auto-delete rule, and no mailbox exfiltration appears in the 1.13 million records.</p>
+<p>The large <code>UpdateInboxRules</code> bursts (Dec 19, Jan 27, Feb 24, Apr 3, Apr 9) are confirmed and, in the uncapped data, larger than previously estimated — the cure shows roughly 19,543 Wynn <code>UpdateInboxRules</code> events summed across the set (a few hundred overlap between the late-March gap-filler and the monthly files and would be double-counted in that raw sum), still on the order of three times the prior figure of 6,357. But the bursts are overwhelmingly <code>ModifyMailboxRule</code> events: hundreds to thousands of pre-existing rule IDs re-stamped within seconds, all from Wynn&#39;s own logged-in Outlook desktop client. That is the mechanical signature of an Outlook rule-store resync, not deliberate per-rule editing. This activity is benign — see <a href="inbox-rules-investigation-closed.html">What the Audit Logs Don’t Show: The Inbox-Rules Dead End</a>.</p>
+<p>A limit of the cure, not a redaction: the substance of a modified rule (its name, conditions, and actions) is blank for <code>ModifyMailboxRule</code> events because Microsoft never records the rule body for a modify/resync operation. Rule contents are present only for <code>AddMailboxRule</code> (new-rule) events and admin cmdlets. The bursts therefore cannot be read for purpose from the log — not because the Town redacted them, but because the underlying data was never in the M365 log to begin with. Where intent rests on whether a rule &quot;does&quot; something, the rule body is the relevant record, and for the burst events that body does not exist in any export.</p>
+<h2>What the Cure Did Not Resolve</h2>
+<p>The cure introduced a new problem: its redactions are over-broad and internally inconsistent. The clock time inside the <code>CreationDate</code> column was redacted as if it were an IP address (e.g., a timestamp rendered as <code>[REDACTED_IP]</code>), and some operation cmdlet names were partially clobbered to <code>[REDACTED_TOKEN]</code> (for example <code>Set-[REDACTED_TOKEN]</code>). These are mechanical redaction errors, not exemptions applied to substantive content. The full redaction audit is at <a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a>.</p>
+<h2>Significance</h2>
+<p>The cure is an admission against the original production: by delivering four previously omitted exports, un-redacting <code>AuditData</code>, and waiving fees, the Town effectively conceded that the first C 26-12 response was incomplete and over-redacted. On the question that drew the most scrutiny, the readable records show no evidence of mail suppression — no delete, external-forward, or redirect rule actions, and no mailbox exfiltration across the 1.13 million records. What the bursts were for cannot be read from the log, because Microsoft never recorded the rule bodies for the modify/resync events that compose them. The cure leaves a narrower problem of its own: a redaction process that mislabels timestamps as IP addresses and clips cmdlet names is not applying exemptions, it is malfunctioning. This places the cure within the broader <a href="pattern-of-cora-obstruction.html">Pattern of CORA Obstruction</a>: a production that requires a cure, and a cure that still ships defective redactions.</p>
+<h2>See Also</h2>
+<ul>
+<li><a href="cora-c26-12-m365-audit-logs-response.html">CORA C 26-12: M365 Unified Audit Log Response</a> — the original, defective production</li>
+<li><a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a> — analysis of the cure&#39;s over-broad and inconsistent redactions</li>
+<li><a href="inbox-rules-investigation-closed.html">What the Audit Logs Don’t Show: The Inbox-Rules Dead End</a> — why the inbox-rule bursts are benign</li>
+<li><a href="pattern-of-cora-obstruction.html">Pattern of CORA Obstruction</a> — broader pattern</li>
+<li><a href="cora-tracking-log.html">CORA Request Tracking Log</a> — request status tracking</li>
+</ul>
+<div class="references"><h2>References</h2><ol><li><a href="cora-c26-12-m365-audit-logs-response.html">CORA C 26-12: M365 Unified Audit Log Response</a></li></ol></div><div class="catlinks"><b>Categories:</b><ul><li><a href="category-sources.html">Sources</a></li><li><a href="category-cora.html">cora</a></li><li><a href="category-m365.html">m365</a></li><li><a href="category-audit-log.html">audit-log</a></li><li><a href="category-redaction.html">redaction</a></li><li><a href="category-cure.html">cure</a></li><li><a href="category-inbox-rules.html">inbox-rules</a></li><li><a href="category-wynn.html">wynn</a></li></ul></div><div class="wlh"><h2>What links here</h2><ul><li><a href="cora-c26-12-m365-audit-logs-response.html">CORA C 26-12: M365 Unified Audit Log Response</a></li>
+<li><a href="master-timeline.html">Master Timeline</a></li>
+<li><a href="pattern-of-cora-obstruction.html">Pattern of CORA Obstruction</a></li>
+<li><a href="the-clerks-cora-record.html">The Clerk's CORA Record</a></li>
+<li><a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a></li>
+<li><a href="inbox-rules-investigation-closed.html">What the Audit Logs Don’t Show: The Inbox-Rules Dead End</a></li></ul></div></div>
+</main>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

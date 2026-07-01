@@ -1,0 +1,298 @@
+/* Paoniapedia — Vector-2010-style skin. Faithful-ish Wikipedia look. */
+
+:root {
+  --link: #0645ad;
+  --link-visited: #0b0080;
+  --link-red: #ba0000;
+  --border: #a2a9b1;
+  --border-light: #c8ccd1;
+  --box-bg: #f8f9fa;
+  --page-bg: #f6f6f6;
+  --sidebar-bg: #f6f6f6;
+  --text: #202122;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 100%; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: sans-serif;
+  font-size: 0.875em;
+  line-height: 1.6;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:visited { color: var(--link-visited); }
+a:hover { text-decoration: underline; }
+a.new { color: var(--link-red); }
+a.new:visited { color: var(--link-red); }
+a.external { color: #36b; }
+a.external::after {
+  content: "";
+  padding-right: 13px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%2336b' d='M6 1h5v5L9 4 4 9 3 8l5-5zM3 2v1H2v7h7V7h1v4H1V2z'/%3E%3C/svg%3E") center right no-repeat;
+}
+
+/* ---- Overall frame ---- */
+.mw-page {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ---- Sidebar ---- */
+#sidebar {
+  width: 11.6em;
+  flex: 0 0 11.6em;
+  padding: 0.5em 0.6em 2em;
+  font-size: 0.85em;
+}
+#sidebar .logo {
+  display: block;
+  text-align: center;
+  margin: 0.4em 0 1.2em;
+}
+#sidebar .logo a { color: var(--text); }
+#sidebar .logo .globe {
+  font-size: 2.6em;
+  line-height: 1;
+  display: block;
+}
+#sidebar .logo .name {
+  font-family: "Linux Libertine", Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.2em;
+}
+#sidebar .logo .tag {
+  font-size: 0.75em;
+  color: #54595d;
+  display: block;
+}
+#sidebar h3 {
+  color: #54595d;
+  font-size: 0.75em;
+  font-weight: normal;
+  padding: 0.25em 0 0.25em 0.25em;
+  margin: 0.6em 0 0;
+  border-bottom: 1px solid transparent;
+}
+#sidebar ul { list-style: none; margin: 0 0 0.6em; padding: 0; }
+#sidebar li { padding: 0.15em 0 0.15em 0.6em; line-height: 1.3; }
+
+#searchbox { margin: 0.4em 0 1em; position: relative; }
+#searchInput {
+  width: 100%;
+  padding: 3px 4px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-size: 1em;
+}
+#suggest {
+  position: absolute;
+  left: 0; right: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: none;
+  z-index: 20;
+  display: none;
+}
+#suggest a {
+  display: block;
+  padding: 3px 5px;
+  color: var(--text);
+  border-bottom: 1px solid #eaecf0;
+}
+#suggest a:hover { background: #eaf3ff; text-decoration: none; }
+#suggest a small { color: #72777d; display: block; font-size: 0.85em; }
+
+/* ---- Content ---- */
+#content {
+  flex: 1 1 auto;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-right: none;
+  padding: 1em 1.5em 2em;
+  margin-top: 0.5em;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.15em;
+  font-size: 0.85em;
+  margin: -1em -1.5em 0;
+  padding: 0.4em 1.5em 0;
+  border-bottom: 1px solid var(--border);
+}
+.tabs a {
+  padding: 0.3em 0.7em 0.2em;
+  background: var(--box-bg);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  color: var(--link);
+}
+.tabs a.selected { background: #fff; color: var(--text); position: relative; top: 1px; }
+.tabs .spacer { flex: 1 1 auto; border: none; background: none; }
+
+#firstHeading {
+  font-family: "Linux Libertine", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 1.8em;
+  line-height: 1.3;
+  margin: 0.6em 0 0;
+  padding-bottom: 0.17em;
+  border-bottom: 1px solid var(--border);
+}
+.sitesub {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #54595d;
+  margin: 0.2em 0 1em;
+}
+
+#body h2 {
+  font-family: "Linux Libertine", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 1em 0 0.25em;
+  padding-bottom: 0.17em;
+  border-bottom: 1px solid var(--border);
+}
+#body h3 { font-size: 1.15em; margin: 0.9em 0 0.2em; }
+#body h4 { font-size: 1em; margin: 0.8em 0 0.2em; }
+#body p { margin: 0.5em 0; }
+#body ul, #body ol { margin: 0.3em 0 0.6em; padding-left: 1.6em; }
+#body li { margin: 0.1em 0; }
+#body blockquote {
+  border-left: 4px solid var(--border);
+  margin: 0.8em 0;
+  padding: 0.3em 0 0.3em 1em;
+  background: var(--box-bg);
+  color: #202122;
+}
+#body table {
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  background: var(--box-bg);
+  border: 1px solid var(--border);
+}
+#body th, #body td { border: 1px solid var(--border); padding: 0.3em 0.6em; text-align: left; }
+#body th { background: #eaecf0; }
+#body hr { border: none; border-top: 1px solid var(--border-light); margin: 1em 0; }
+#body code { background: #f0f0f0; padding: 0 3px; border-radius: 2px; font-size: 0.95em; }
+
+/* ---- Infobox ---- */
+.infobox {
+  float: right;
+  clear: right;
+  width: 22em;
+  max-width: 45%;
+  margin: 0.5em 0 1em 1.4em;
+  border: 1px solid var(--border);
+  background: var(--box-bg);
+  font-size: 0.88em;
+  line-height: 1.4;
+}
+.infobox .ib-title {
+  background: #ccceff;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.35em 0.5em;
+  font-size: 1.05em;
+}
+.infobox .ib-sub {
+  text-align: center;
+  font-style: italic;
+  color: #54595d;
+  padding: 0.2em 0.5em;
+  border-bottom: 1px solid var(--border);
+}
+.infobox table { width: 100%; border-collapse: collapse; }
+.infobox th, .infobox td {
+  padding: 0.3em 0.5em;
+  vertical-align: top;
+  border-top: 1px solid #eaecf0;
+}
+.infobox th {
+  text-align: left;
+  white-space: nowrap;
+  width: 6.5em;
+  color: #54595d;
+  font-weight: bold;
+}
+.infobox .ib-section {
+  background: #ccceff;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.25em;
+}
+.infobox .ib-tags a { display: inline-block; margin: 0 0.2em 0.2em 0; }
+
+/* ---- References ---- */
+.references { font-size: 0.9em; }
+.references ol { padding-left: 1.8em; }
+
+/* ---- What links here / footer boxes ---- */
+.catlinks {
+  clear: both;
+  margin-top: 1.5em;
+  padding: 0.4em 0.6em;
+  border: 1px solid var(--border);
+  background: var(--box-bg);
+  font-size: 0.9em;
+}
+.catlinks b { margin-right: 0.4em; }
+.catlinks ul { display: inline; list-style: none; padding: 0; margin: 0; }
+.catlinks li { display: inline-block; margin-right: 0.2em; padding-right: 0.5em; border-right: 1px solid var(--border); }
+.catlinks li:last-child { border-right: none; }
+
+.wlh {
+  clear: both;
+  margin-top: 1.2em;
+  padding-top: 0.6em;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.9em;
+}
+.wlh h2 { font-size: 1.15em; border: none; margin: 0 0 0.3em; }
+.wlh ul { columns: 2; column-gap: 2em; }
+
+.printfooter {
+  clear: both;
+  margin-top: 1.5em;
+  padding-top: 0.6em;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.8em;
+  color: #72777d;
+}
+
+/* ---- Main page ---- */
+.mainpage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1em; margin-top: 1em; }
+.mp-box { border: 1px solid var(--border); background: var(--box-bg); padding: 0.6em 1em 1em; }
+.mp-box h2 {
+  font-family: "Linux Libertine", Georgia, serif;
+  font-weight: normal; font-size: 1.25em;
+  border-bottom: 1px solid var(--border); margin: 0 0 0.5em; padding-bottom: 0.15em;
+}
+.mp-featured { border-left: 4px solid #36c; }
+.mp-stats { text-align: center; color: #54595d; margin: 1.2em 0 0.5em; font-size: 0.95em; }
+
+/* ---- Category / list pages ---- */
+.catmembers { columns: 3; column-gap: 2em; margin-top: 0.8em; }
+.catmembers a { display: block; padding: 0.1em 0; break-inside: avoid; }
+
+@media (max-width: 720px) {
+  .mw-page { flex-direction: column; }
+  #sidebar { width: 100%; flex-basis: auto; }
+  #content { border-right: 1px solid var(--border-light); }
+  .infobox { float: none; width: auto; max-width: none; margin: 0.5em 0 1em; }
+  .mainpage-grid { grid-template-columns: 1fr; }
+  .catmembers { columns: 1; }
+  .wlh ul { columns: 1; }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Cameras Are Not Motion Activated — Paoniapedia</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="mw-page">
+<div id="sidebar">
+  <div class="logo"><a href="index.html">
+    <span class="globe">🌐</span>
+    <span class="name">Paoniapedia</span>
+    <span class="tag">the free encyclopedia of the Town of Paonia</span>
+  </a></div>
+  <div id="searchbox">
+    <input id="searchInput" type="text" placeholder="Search Paoniapedia" autocomplete="off" aria-label="Search">
+    <div id="suggest"></div>
+  </div>
+  <h3>Navigation</h3>
+  <ul>
+    <li><a href="index.html">Main page</a></li>
+    <li><a href="#" class="random-article">Random article</a></li>
+    <li><a href="allpages.html">All pages</a></li>
+    <li><a href="categories.html">Categories</a></li>
+    <li><a href="about.html">About Paoniapedia</a></li>
+  </ul>
+  <h3>Categories</h3>
+  <ul>
+    <li><a href="category-people.html">People</a></li>
+    <li><a href="category-events.html">Events</a></li>
+    <li><a href="category-issues.html">Issues</a></li>
+    <li><a href="category-sources.html">Sources</a></li>
+    <li><a href="category-analysis.html">Analysis</a></li>
+    <li><a href="category-open-questions.html">Open questions</a></li>
+  </ul>
+</div>
+<main id="content">
+  <div class="tabs">
+    <a class="selected" href="cameras-always-on-not-motion.html">Article</a>
+    <a href="talk-cameras-always-on-not-motion.html">Talk</a>
+    <span class="spacer"></span>
+    <a href="allpages.html">All pages</a>
+  </div>
+  <h1 id="firstHeading">The Cameras Are Not Motion Activated</h1>
+  <div class="sitesub">From Paoniapedia, the free encyclopedia of the Town of Paonia</div>
+  <div id="body"><div class="infobox">
+  <div class="ib-title">The Cameras Are Not Motion Activated</div>
+  <div class="ib-sub">Analysis</div>
+  <table><tbody>
+    
+    <tr><td class="ib-section" colspan="2">Record</td></tr>
+    <tr><th>Type</th><td>Analysis</td></tr>
+    <tr><th>First recorded</th><td>2026-04-09</td></tr>
+    <tr><th>Topics</th><td class="ib-tags"><a href="category-surveillance.html">surveillance</a> <a href="category-verkada.html">verkada</a> <a href="category-cameras.html">cameras</a> <a href="category-board-letter.html">board-letter</a> <a href="category-fact-check.html">fact-check</a></td></tr>
+  </tbody></table>
+</div><h2>The Claim Being Tested</h2>
+<p>On March 30, 2026, the Paonia Board of Trustees published an official &quot;Letter to Town of Paonia Citizens&quot; on the Town website, signed by all seven trustees. The letter stated:</p>
+<blockquote>
+<p>&quot;The proposal to install <strong>motion activated cameras</strong> in Town Park, Town-owned buildings, and critical water and sewer buildings was the topic of discussion during at least six public meetings held between October 2024 and December 2025.&quot;</p>
+</blockquote>
+<p>Source: <a href="final-published-letter.html">Final Published &quot;Letter to Town of Paonia Citizens&quot; (2026-03-30)</a></p>
+<h2>What Verkada Says About Its Own Cameras</h2>
+<p>Verkada&#39;s own product documentation explicitly states that all Verkada cameras record continuously, regardless of motion. This is a feature Verkada markets as &quot;Adaptive Quality Recording.&quot;</p>
+<p>From Verkada&#39;s official product blog (publicly accessible at <a href="https://www.verkada.com/blog/recording-in-adaptive-quality/">https://www.verkada.com/blog/recording-in-adaptive-quality/</a>):</p>
+<blockquote>
+<p><strong>&quot;The standard quality video retention is unaffected by motion and is recorded continuously up to the designated retention of 15, 30, 60, 90, 120 or 365 days.&quot;</strong></p>
+</blockquote>
+<blockquote>
+<p>&quot;Our cameras record video in both high and standard quality streams simultaneously. Standard quality video is recorded up to the amount of retention specified by the customer — 30 days for most of our deployments. If motion is detected within a scene, our cameras also save high quality footage to the onboard storage.&quot;</p>
+</blockquote>
+<p>There is no &quot;motion only&quot; mode in Verkada&#39;s product line. Every Verkada camera records two simultaneous streams:</p>
+<ol>
+<li><strong>Standard Quality (SQ)</strong>: always-on, continuous, 24/7 recording</li>
+<li><strong>High Quality (HQ)</strong>: motion-triggered additional capture layered on top of the continuous SQ stream</li>
+</ol>
+<p>The &quot;motion activated&quot; claim in the March 30 letter does not describe how Verkada cameras function. Verkada&#39;s own documentation, on Verkada&#39;s own website, directly contradicts it.</p>
+<h2>What the Mitchell and Company Contract Specifies</h2>
+<p>The signed contract in the Town&#39;s CORA response lists five camera models, each with &quot;30 days retention&quot; in the specification. Those models are:</p>
+<ul>
+<li><strong>CF81-E Fisheye Camera</strong></li>
+<li><strong>CH52-E Multisensor Camera</strong></li>
+<li><strong>CB52-E Bullet Camera</strong></li>
+<li><strong>CM42 Mini Dome Camera</strong></li>
+<li><strong>CF83-E Fisheye Camera</strong></li>
+</ul>
+<p>Verkada&#39;s product pages and datasheets for each of these models explicitly list &quot;Adaptive quality, capturing both standard and high quality streams&quot; as a feature. The &quot;30 days retention&quot; on the Mitchell quote refers to the retention of the continuous Standard Quality stream, per Verkada&#39;s documentation. It does not mean &quot;30 days of motion events.&quot; It means 30 days of continuous 24/7 footage.</p>
+<p>Source: <a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09 Response</a>, pages 3-8 (signed Mitchell and Company quote).</p>
+<h2>What the Town&#39;s Device Configurations Show</h2>
+<p>The CORA response includes 16 separate device configuration screenshots from the Town&#39;s Verkada Command admin panel, one for each camera. Every screenshot shows the same configured values:</p>
+<ul>
+<li><strong>Max Retention Days: 30 days</strong></li>
+<li><strong>Cloud Backup: Earliest [date] to Latest [date]</strong> — typically showing exactly 30 days of continuous backup data</li>
+</ul>
+<p>For example, the Bulk Fill Station camera screenshot shows:</p>
+<blockquote>
+<p>Cloud Backup: Earliest: 2/24/2026, 1:01 PM MST | Latest: 3/26/2026, 11:48 AM MDT</p>
+</blockquote>
+<p>That is a 30-day continuous range ending at the time the screenshot was taken. Two cameras (WTP Front and WTP Interior) show &quot;Cloud Backup: Not Enabled&quot; — meaning they record locally but not to cloud. Either way, they record continuously, not on motion.</p>
+<p>Source: <a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09 Response</a>, camera configuration screenshots.</p>
+<h2>What the Audit Log Shows</h2>
+<p>In six months of operation, the Town&#39;s Verkada system recorded:</p>
+<table>
+<thead>
+<tr>
+<th>Event type</th>
+<th>Count</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>LIVE_STREAM_START</code></td>
+<td><strong>21,245</strong></td>
+<td>A user opened a live camera feed</td>
+</tr>
+<tr>
+<td><code>LIVE_STREAM_END</code></td>
+<td>21,214</td>
+<td>A live camera feed was closed</td>
+</tr>
+<tr>
+<td><code>VIDEO_HISTORY_M3U8</code></td>
+<td>1,964</td>
+<td>A user scrubbed through recorded footage</td>
+</tr>
+</tbody></table>
+<p>21,245 live stream events in six months is roughly <strong>115 per day</strong>. Every one of those is a deliberate user action: opening a live camera view in the Verkada Command admin panel.</p>
+<p>Additionally, the <code>VIDEO_HISTORY_M3U8</code> events (1,964 instances) prove that users can scrub back through any moment in the 30-day retention window. In the detailed event records, the <code>start_time</code> field on some of these events points to specific timestamps the user scrubbed to. Those timestamps are continuous across the retention window. If the cameras were motion-activated, gaps would appear where no motion had been detected. Instead, users are able to scrub to any moment in the past 30 days and play footage.</p>
+<p>Source: <a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09 Response</a>, audit log XLSX files. Raw files at <code>raw/documents/cora-requests/c26-09-response/</code>.</p>
+<h2>The Plain-English Interpretation</h2>
+<p><strong>A motion-activated camera records only when motion is detected.</strong> It does not have a continuous 24/7 feed. It does not accumulate 30 days of footage regardless of what happens in front of it. It does not support a live stream that users can open and watch at any time.</p>
+<p><strong>Verkada cameras do all three.</strong> They record 24 hours a day, 7 days a week, on a continuous Standard Quality stream that is &quot;unaffected by motion&quot; in Verkada&#39;s own words. They save an additional High Quality clip when motion happens, but the continuous stream exists regardless. Users can open a live feed of any camera at any time. They have done so 21,245 times in six months.</p>
+<p><strong>The board&#39;s March 30 statement that these are &quot;motion activated cameras&quot; is contradicted by three independent sources:</strong></p>
+<ol>
+<li>Verkada&#39;s own publicly available product documentation</li>
+<li>The Mitchell and Company contract signed by the Town Administrator</li>
+<li>The Town&#39;s own audit log and device configuration data</li>
+</ol>
+<p>Every one of those sources was produced or is publicly verifiable. No disputed fact is required to establish that the claim is inaccurate.</p>
+<h2>What Would Change This Analysis</h2>
+<ul>
+<li>If Verkada updated its product documentation to state that its cameras support a &quot;motion only&quot; recording mode. (They do not, and the &quot;Adaptive Quality Recording&quot; feature is Verkada&#39;s flagship recording model.)</li>
+<li>If the Town produced evidence that the cameras had been specifically configured to override the default Adaptive Quality Recording behavior. (No such configuration change appears in the audit log, and the device configuration screenshots show the default continuous recording is active.)</li>
+</ul>
+<h2>See Also</h2>
+<ul>
+<li><a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09: Verkada Audit Logs Response</a> — The CORA response source</li>
+<li><a href="verkada-usage-patterns.html">Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)</a> — Full statistical analysis</li>
+<li><a href="final-published-letter.html">Final Published &quot;Letter to Town of Paonia Citizens&quot; (Edited)</a> — The board letter being fact-checked</li>
+<li><a href="facial-recognition-proof.html">Facial Recognition Is Enabled on the Town&#39;s Verkada System</a> — The other false claim in the same letter</li>
+<li><a href="surveillance.html">Surveillance and Cameras</a> — Issue overview</li>
+</ul>
+<h2>External Sources Cited</h2>
+<ul>
+<li>Verkada, &quot;Recording in Adaptive Quality&quot; (blog): <a href="https://www.verkada.com/blog/recording-in-adaptive-quality/">https://www.verkada.com/blog/recording-in-adaptive-quality/</a></li>
+<li>Verkada product page for CM42 Mini Dome: <a href="https://www.verkada.com/security-cameras/mini/cm42/">https://www.verkada.com/security-cameras/mini/cm42/</a></li>
+<li>Verkada CM42 datasheet (PDF): <a href="https://docs.verkada.com/docs/video-security-cm42-datasheet.pdf">https://docs.verkada.com/docs/video-security-cm42-datasheet.pdf</a></li>
+</ul>
+<div class="references"><h2>References</h2><ol><li><a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09: Verkada Audit Logs Response</a></li>
+<li><a href="final-published-letter.html">Final Published &quot;Letter to Town of Paonia Citizens&quot; (Edited)</a></li>
+<li><a href="verkada-usage-patterns.html">Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)</a></li></ol></div><div class="catlinks"><b>Categories:</b><ul><li><a href="category-analysis.html">Analysis</a></li><li><a href="category-surveillance.html">surveillance</a></li><li><a href="category-verkada.html">verkada</a></li><li><a href="category-cameras.html">cameras</a></li><li><a href="category-board-letter.html">board-letter</a></li><li><a href="category-fact-check.html">fact-check</a></li></ul></div><div class="wlh"><h2>What links here</h2><ul><li><a href="cora-tracking-log.html">CORA Request Tracking Log</a></li>
+<li><a href="facial-recognition-proof.html">Facial Recognition Is Enabled on the Town's Verkada System</a></li>
+<li><a href="wynn-knowledge-of-cameras.html">Stefen Wynn Had Full Knowledge of the Verkada System's Capabilities</a></li>
+<li><a href="the-case-against-mayor-smith.html">The Case Against Mayor Smith</a></li>
+<li><a href="community-room-surveillance.html">The Community Room Camera Is the Most-Watched in the System</a></li>
+<li><a href="false-claims-about-the-cameras.html">The Town Put False Claims About the Cameras in Writing</a></li></ul></div></div>
+</main>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
