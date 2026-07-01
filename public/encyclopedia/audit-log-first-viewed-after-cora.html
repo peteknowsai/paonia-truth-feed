@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nobody Looked at the Audit Log Until the Day They Received the CORA Request — Paoniapedia</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="mw-page">
+<div id="sidebar">
+  <div class="logo"><a href="index.html">
+    <span class="globe">🌐</span>
+    <span class="name">Paoniapedia</span>
+    <span class="tag">the free encyclopedia of the Town of Paonia</span>
+  </a></div>
+  <div id="searchbox">
+    <input id="searchInput" type="text" placeholder="Search Paoniapedia" autocomplete="off" aria-label="Search">
+    <div id="suggest"></div>
+  </div>
+  <h3>Navigation</h3>
+  <ul>
+    <li><a href="index.html">Main page</a></li>
+    <li><a href="#" class="random-article">Random article</a></li>
+    <li><a href="allpages.html">All pages</a></li>
+    <li><a href="categories.html">Categories</a></li>
+    <li><a href="about.html">About Paoniapedia</a></li>
+  </ul>
+  <h3>Categories</h3>
+  <ul>
+    <li><a href="category-people.html">People</a></li>
+    <li><a href="category-events.html">Events</a></li>
+    <li><a href="category-issues.html">Issues</a></li>
+    <li><a href="category-sources.html">Sources</a></li>
+    <li><a href="category-analysis.html">Analysis</a></li>
+    <li><a href="category-open-questions.html">Open questions</a></li>
+  </ul>
+</div>
+<main id="content">
+  <div class="tabs">
+    <a class="selected" href="audit-log-first-viewed-after-cora.html">Article</a>
+    <a href="talk-audit-log-first-viewed-after-cora.html">Talk</a>
+    <span class="spacer"></span>
+    <a href="allpages.html">All pages</a>
+  </div>
+  <h1 id="firstHeading">Nobody Looked at the Audit Log Until the Day They Received the CORA Request</h1>
+  <div class="sitesub">From Paoniapedia, the free encyclopedia of the Town of Paonia</div>
+  <div id="body"><div class="infobox">
+  <div class="ib-title">Nobody Looked at the Audit Log Until the Day They Received the CORA Request</div>
+  <div class="ib-sub">Analysis</div>
+  <table><tbody>
+    
+    <tr><td class="ib-section" colspan="2">Record</td></tr>
+    <tr><th>Type</th><td>Analysis</td></tr>
+    <tr><th>First recorded</th><td>2026-04-09</td></tr>
+    <tr><th>Topics</th><td class="ib-tags"><a href="category-surveillance.html">surveillance</a> <a href="category-verkada.html">verkada</a> <a href="category-cora.html">cora</a> <a href="category-cover-up.html">cover-up</a> <a href="category-wynn.html">wynn</a> <a href="category-laiminger.html">laiminger</a></td></tr>
+  </tbody></table>
+</div><h2>The Claim</h2>
+<p>For the first five months and two days of the Town&#39;s Verkada surveillance system operation, no user ever opened the audit log page. Not the Town Administrator, not the Police Chief, not the Town Clerk, not anyone. The feature sat dormant. Every single audit log view event in the entire six-month record happened on March 25 or March 26, 2026 — the day the Town Clerk received Pete McCarthy&#39;s CORA request C 26-09 for the Verkada records, and the day after.</p>
+<h2>The Data</h2>
+<p>Every audit log view event in the full six-month audit log export produced in response to <a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09</a>:</p>
+<table>
+<thead>
+<tr>
+<th>Date &amp; Time (MDT)</th>
+<th>User</th>
+<th>Event</th>
+<th>Query Window</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2026-03-25 ~11:13 AM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>7-day rolling (Mar 18 → Mar 25)</td>
+</tr>
+<tr>
+<td>2026-03-25 ~11:14 AM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>7-day rolling</td>
+</tr>
+<tr>
+<td>2026-03-25 ~11:14 AM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>Oct 22 – Oct 24, 2025 (installation day)</td>
+</tr>
+<tr>
+<td>2026-03-25 ~11:14 AM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>90-day (Dec 26 – Mar 26)</td>
+</tr>
+<tr>
+<td>2026-03-26 ~11:58 AM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>7-day rolling (Mar 19 → Mar 26)</td>
+</tr>
+<tr>
+<td>2026-03-26 ~11:58 AM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>7-day rolling</td>
+</tr>
+<tr>
+<td>2026-03-26 ~11:58 AM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>90-day (Dec 27 – Mar 27)</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:10 PM</td>
+<td>Stefen Wynn</td>
+<td>USER_LOGIN_SUCCESS</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:11 PM</td>
+<td>Stefen Wynn</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>7-day rolling (Mar 19 → Mar 26)</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:11 PM</td>
+<td>Stefen Wynn</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>7-day rolling (same window)</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:11 PM</td>
+<td>Stefen Wynn</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>90-day (Dec 26 – Mar 26)</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:25 PM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>90-day</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:33 PM</td>
+<td>Matt Laiminger</td>
+<td><strong>AUDIT_LOG_EXPORT_CSV</strong></td>
+<td>Full export to CSV file</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:33 PM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>additional 90-day</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:33 PM</td>
+<td>Matt Laiminger</td>
+<td>AUDIT_LOG_VIEW_LIST</td>
+<td>extended window</td>
+</tr>
+<tr>
+<td>2026-03-26 ~12:33 PM</td>
+<td>Matt Laiminger</td>
+<td><strong>SUPPORT_ACCESS (Verkada Support granted)</strong></td>
+<td>1-day access, video_access: False</td>
+</tr>
+</tbody></table>
+<p><strong>Total audit log view events in the entire 6-month log: 16.</strong>
+<strong>Total audit log view events before March 25, 2026: 0.</strong></p>
+<p>Source: <a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09 Response</a>, <code>Verkada_Audit Log_REDACTED.xlsx</code>, filtered on <code>message_code</code> containing <code>AUDIT_LOG</code>.</p>
+<h2>The Timeline</h2>
+<table>
+<thead>
+<tr>
+<th>When</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>2025-10-22</strong></td>
+<td>Verkada cameras installed. System operational.</td>
+</tr>
+<tr>
+<td><strong>2025-10-23 through 2026-03-24</strong></td>
+<td><strong>Five months and two days with zero audit log view events.</strong></td>
+</tr>
+<tr>
+<td><strong>2026-03-23 09:18:55 MDT</strong></td>
+<td>Pete McCarthy files CORA C 26-09 via email to Town Clerk</td>
+</tr>
+<tr>
+<td><strong>2026-03-25</strong></td>
+<td>Town Clerk formally records the CORA in the Town&#39;s records system</td>
+</tr>
+<tr>
+<td><strong>2026-03-25 ~11:13 AM</strong></td>
+<td>Police Chief Laiminger opens the Verkada audit log for the first time in the history of the account</td>
+</tr>
+<tr>
+<td><strong>2026-03-25 ~11:13–11:14 AM</strong></td>
+<td>Laiminger runs 4 audit log queries (7-day, installation day, 90-day windows)</td>
+</tr>
+<tr>
+<td><strong>2026-03-26 ~11:58 AM</strong></td>
+<td>Laiminger runs 3 more audit log queries</td>
+</tr>
+<tr>
+<td><strong>2026-03-26 ~12:10 PM</strong></td>
+<td>Town Administrator Stefen Wynn logs in</td>
+</tr>
+<tr>
+<td><strong>2026-03-26 ~12:11 PM</strong></td>
+<td>Wynn runs his first 3 audit log queries (same 7-day and 90-day windows as Laiminger) — this is the only audit log activity ever recorded by Wynn</td>
+</tr>
+<tr>
+<td><strong>2026-03-26 ~12:25 PM</strong></td>
+<td>Laiminger runs 1 more audit log query</td>
+</tr>
+<tr>
+<td><strong>2026-03-26 ~12:33 PM</strong></td>
+<td>Laiminger exports the complete audit log to a CSV file (<code>AUDIT_LOG_EXPORT_CSV</code> event)</td>
+</tr>
+<tr>
+<td><strong>2026-03-26 ~12:33 PM</strong></td>
+<td>Laiminger grants <strong>Verkada Support</strong> one-day access to the Town&#39;s account, with <code>video_access: False</code> (support access without footage access)</td>
+</tr>
+<tr>
+<td><strong>2026-03-26 13:00</strong></td>
+<td>All audit log activity ceases</td>
+</tr>
+<tr>
+<td><strong>2026-04-07</strong></td>
+<td>Town Clerk Vetter produces the audit log export to Pete in response to C 26-09, charging $167.90</td>
+</tr>
+<tr>
+<td><strong>2026-04-08</strong></td>
+<td>Pete receives the CORA response and begins analysis</td>
+</tr>
+</tbody></table>
+<h2>Characteristics of the Queries</h2>
+<h3>No filters applied</h3>
+<p>In all 16 audit log view events, the <code>filters</code> field in the event details is empty (<code>{}</code>). This means none of the queries were targeted — Laiminger and Wynn were not filtering by a specific user, camera, event type, or date range that would indicate they were investigating a specific incident. They were reviewing <strong>all system activity</strong> in broad rolling windows.</p>
+<h3>The 7-day and 90-day windows are Verkada UI presets</h3>
+<p>The &quot;7-day&quot; queries (604,800 seconds, ending at the moment of the query) and &quot;90-day&quot; queries (7,776,000 seconds) correspond to standard preset time ranges in the Verkada Command audit log interface. This is consistent with a user clicking &quot;Last 7 days&quot; and &quot;Last 90 days&quot; buttons rather than typing in custom date ranges.</p>
+<h3>The 90-day window matches the CORA response date range</h3>
+<p>The 90-day windows queried by Wynn and Laiminger cover December 26, 2025 to March 26, 2026. This is the <strong>exact date range</strong> of the audit log export subsequently produced to Pete in the CORA response (specifically the <code>VERKADA- Audit Logs_REDACTED.xlsx</code> file). The correspondence to the day suggests that the window being reviewed is what ultimately got exported.</p>
+<h3>Laiminger exported the audit log to CSV on March 26</h3>
+<p>At approximately 12:33 PM MDT on March 26, 2026, Laiminger triggered an <code>AUDIT_LOG_EXPORT_CSV</code> event. This is the Verkada feature that generates a spreadsheet file of the audit log for download. The exported file has the same structure and date range as the one subsequently produced to Pete in the CORA response.</p>
+<p><strong>The Town Clerk then sat on the exported file for eleven days before producing it to Pete on April 7.</strong></p>
+<h3>Verkada Support was granted access that same day</h3>
+<p>Immediately after the CSV export, Laiminger created a <code>SUPPORT_ACCESS</code> event granting Verkada Support one-day access to the Town&#39;s account. The <code>video_access</code> field in the event is <code>False</code>, meaning support was not given access to video footage — only to the account configuration and logs. This is consistent with a support ticket involving the audit log or account settings, not with a video review.</p>
+<p>The fact that the Town contacted Verkada Support specifically at the moment of audit log review is suggestive. Verkada Support is used to answer questions about the system, interpret its behavior, and assist with configuration. Contacting Verkada Support with <code>video_access: False</code> while simultaneously running audit log queries and exporting the log is consistent with seeking vendor assistance with a records request rather than investigating a security incident.</p>
+<h2>The Plain-English Interpretation</h2>
+<p><strong>For five months and two days after the cameras were installed, no one at the Town of Paonia ever looked at the Verkada audit log.</strong> Not Wynn. Not Laiminger. Not Vetter. Not Santiago. Not anyone. The audit log feature sat dormant. No reviews, no exports, no checks.</p>
+<p><strong>On March 23 at 9:18 AM, Pete McCarthy filed a Colorado Open Records Act request for the Verkada system records.</strong> On March 25, the Town Clerk formally received that request in the Town&#39;s records system.</p>
+<p><strong>Within hours of the Clerk receiving the CORA, the Police Chief logged into Verkada and opened the audit log for the first time ever.</strong> He ran four queries that morning covering broad rolling time windows. The next day, March 26, he ran three more queries. Town Administrator Stefen Wynn logged in at 12:10 PM that day and ran three queries of his own — those three queries are the only audit log activity ever recorded by Wynn in the system&#39;s history. Laiminger then exported the audit log to a CSV file, granted Verkada Support one-day access to the account, and logged out.</p>
+<p><strong>The Town Clerk then held onto that exported file for eleven days before producing it to the person who had requested it.</strong></p>
+<p><strong>The complete audit log viewing history of the Town&#39;s Verkada system consists of 16 events, all concentrated in approximately 90 minutes across two consecutive days, all occurring immediately after a records request was filed by a citizen.</strong> There are zero audit log views before those 90 minutes, and zero audit log views after.</p>
+<p>This is not a pattern of routine system administration. A routine administrator would check the audit log occasionally during normal operation. It is not a pattern of incident response. An incident response would involve filtered queries targeting a specific user, camera, or time window. It is a pattern consistent with one thing only: reviewing what records exist before producing them to a person who has asked for them.</p>
+<h2>What Would Change This Analysis</h2>
+<ul>
+<li>If the Town produced evidence of routine audit log review during the five months before the CORA request. (No such evidence exists in the audit log itself.)</li>
+<li>If the Town identified a specific incident or investigation that would have caused Laiminger and Wynn to simultaneously review the audit log on those two specific days. (No such incident has been publicly identified, and the timing corresponds exactly to the CORA filing.)</li>
+<li>If the Verkada Support ticket opened on March 26 was about a technical issue unrelated to audit log review. (The Town has not disclosed what the support ticket was about.)</li>
+</ul>
+<h2>See Also</h2>
+<ul>
+<li><a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09: Verkada Audit Logs Response</a> — The CORA response source</li>
+<li><a href="verkada-usage-patterns.html">Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)</a> — Full statistical analysis</li>
+<li><a href="wynn-knowledge-of-cameras.html">Stefen Wynn Had Full Knowledge of the Verkada System&#39;s Capabilities</a> — What Wynn knew and when</li>
+<li><a href="surveillance.html">Surveillance and Cameras</a> — Issue overview</li>
+</ul>
+<div class="references"><h2>References</h2><ol><li><a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09: Verkada Audit Logs Response</a></li>
+<li><a href="verkada-usage-patterns.html">Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)</a></li></ol></div><div class="catlinks"><b>Categories:</b><ul><li><a href="category-analysis.html">Analysis</a></li><li><a href="category-surveillance.html">surveillance</a></li><li><a href="category-verkada.html">verkada</a></li><li><a href="category-cora.html">cora</a></li><li><a href="category-cover-up.html">cover-up</a></li><li><a href="category-wynn.html">wynn</a></li><li><a href="category-laiminger.html">laiminger</a></li></ul></div><div class="wlh"><h2>What links here</h2><ul><li><a href="cora-c26-12-m365-audit-logs-response.html">CORA C 26-12: M365 Unified Audit Log Response</a></li>
+<li><a href="cora-c26-30-verkada-poi-denial.html">CORA C 26-30 &amp; C 26-33 — The Person-of-Interest List Erased While the Request Was Pending</a></li>
+<li><a href="cora-tracking-log.html">CORA Request Tracking Log</a></li>
+<li><a href="pattern-of-cora-obstruction.html">Pattern of CORA Obstruction</a></li>
+<li><a href="wynn-knowledge-of-cameras.html">Stefen Wynn Had Full Knowledge of the Verkada System's Capabilities</a></li>
+<li><a href="cameras-and-hostile-workplace.html">The Camera Logs Corroborate the Hostile Work Environment Claim</a></li>
+<li><a href="person-of-interest-list-erased.html">The Town Was Asked, On Camera, to Preserve the Person-of-Interest List. Then It Erased It.</a></li></ul></div></div>
+</main>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
