@@ -21,7 +21,7 @@ export default function SiteFooter() {
           <Link href="/timeline">Timeline</Link>
           <Link href="/initiatives">Initiatives</Link>
           <Link href="/actions">Take Action</Link>
-          <Link href="/wiki">The Full Record</Link>
+          <a href="/encyclopedia/">The Full Record</a>
           <Link href="/about">About</Link>
         </p>
       </div>
