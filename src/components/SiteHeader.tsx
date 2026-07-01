@@ -38,7 +38,7 @@ export default function SiteHeader() {
           {channels.map((c) => (
             <Link key={c.href} href={c.href}>{c.label}</Link>
           ))}
-          <Link href="/wiki" style={{ marginLeft: "auto", color: "#a9d0b3" }}>The Full Record</Link>
+          <a href="/encyclopedia/" style={{ marginLeft: "auto", color: "#a9d0b3" }}>The Full Record</a>
         </div>
       </nav>
     </header>
