@@ -57,12 +57,42 @@
   </tbody></table>
 </div><p>On April 14, 2026, Town Administrator <a href="stefen-wynn.html">Stefen Wynn</a> submitted a seven-page written memorandum to the Board of Trustees responding to public claims about the Town&#39;s Verkada surveillance system, most of which were based on records produced in <a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09</a>. This analysis compares the specific factual statements in that memorandum to the content of the audit log Wynn cites.</p>
 <p>The analysis uses only three inputs: the <a href="wynn-verkada-memo-2026-04-14.html">memorandum itself</a>, the audit log the Town produced, and Verkada&#39;s own public documentation. No characterization of intent is offered. The question is whether the memorandum&#39;s factual assertions match the document it describes.</p>
-<h2>Assertion 1: &quot;Two isolated audit log entries&quot;</h2>
-<h3>The memorandum says</h3>
+<details class="toc" open><summary>Contents</summary><ul><li class="toc-l1"><a href="#assertion-1-quot-two-isolated-audit-log-entries-quot"><span class="tocnum">1</span> <span class="toctext">Assertion 1: &amp;quot;Two isolated audit log entries&amp;quot;</span></a></li>
+<li class="toc-l2"><a href="#the-memorandum-says"><span class="tocnum">1.1</span> <span class="toctext">The memorandum says</span></a></li>
+<li class="toc-l2"><a href="#the-audit-log-contains"><span class="tocnum">1.2</span> <span class="toctext">The audit log contains</span></a></li>
+<li class="toc-l2"><a href="#observation"><span class="tocnum">1.3</span> <span class="toctext">Observation</span></a></li>
+<li class="toc-l1"><a href="#assertion-2-quot-system-installation-and-testing-in-october-2025-quot"><span class="tocnum">2</span> <span class="toctext">Assertion 2: &amp;quot;System installation and testing in October 2025&amp;quot;</span></a></li>
+<li class="toc-l2"><a href="#the-memorandum-says-2"><span class="tocnum">2.1</span> <span class="toctext">The memorandum says</span></a></li>
+<li class="toc-l2"><a href="#the-audit-log-contains-2"><span class="tocnum">2.2</span> <span class="toctext">The audit log contains</span></a></li>
+<li class="toc-l2"><a href="#observation-2"><span class="tocnum">2.3</span> <span class="toctext">Observation</span></a></li>
+<li class="toc-l1"><a href="#assertion-3-quot-verified-as-disabled-quot"><span class="tocnum">3</span> <span class="toctext">Assertion 3: &amp;quot;Verified as disabled&amp;quot;</span></a></li>
+<li class="toc-l2"><a href="#the-memorandum-says-3"><span class="tocnum">3.1</span> <span class="toctext">The memorandum says</span></a></li>
+<li class="toc-l2"><a href="#what-the-statement-does-and-does-not-cover"><span class="tocnum">3.2</span> <span class="toctext">What the statement does and does not cover</span></a></li>
+<li class="toc-l2"><a href="#observation-3"><span class="tocnum">3.3</span> <span class="toctext">Observation</span></a></li>
+<li class="toc-l1"><a href="#assertion-4-quot-people-detection-does-not-constitute-facial-recognition-quot"><span class="tocnum">4</span> <span class="toctext">Assertion 4: &amp;quot;People detection does not constitute facial recognition&amp;quot;</span></a></li>
+<li class="toc-l2"><a href="#the-memorandum-says-4"><span class="tocnum">4.1</span> <span class="toctext">The memorandum says</span></a></li>
+<li class="toc-l2"><a href="#the-audit-log-contains-3"><span class="tocnum">4.2</span> <span class="toctext">The audit log contains</span></a></li>
+<li class="toc-l2"><a href="#observation-4"><span class="tocnum">4.3</span> <span class="toctext">Observation</span></a></li>
+<li class="toc-l1"><a href="#assertion-5-quot-each-login-camera-selection-or-page-refresh-generates-a-separate-log-entry-quot"><span class="tocnum">5</span> <span class="toctext">Assertion 5: &amp;quot;Each login, camera selection, or page refresh generates a separate log entry&amp;quot;</span></a></li>
+<li class="toc-l2"><a href="#the-memorandum-says-5"><span class="tocnum">5.1</span> <span class="toctext">The memorandum says</span></a></li>
+<li class="toc-l2"><a href="#the-audit-log-contains-4"><span class="tocnum">5.2</span> <span class="toctext">The audit log contains</span></a></li>
+<li class="toc-l2"><a href="#observation-5"><span class="tocnum">5.3</span> <span class="toctext">Observation</span></a></li>
+<li class="toc-l1"><a href="#assertion-6-community-room-camera-operational-justification"><span class="tocnum">6</span> <span class="toctext">Assertion 6: Community Room camera operational justification</span></a></li>
+<li class="toc-l2"><a href="#the-memorandum-says-6"><span class="tocnum">6.1</span> <span class="toctext">The memorandum says</span></a></li>
+<li class="toc-l2"><a href="#the-audit-log-contains-see-verkada-camera-usage-patterns-oct-2025-mar-2026"><span class="tocnum">6.2</span> <span class="toctext">The audit log contains (see Verkada Camera Usage Patterns (Oct 2025 – Mar 2026))</span></a></li>
+<li class="toc-l2"><a href="#observation-6"><span class="tocnum">6.3</span> <span class="toctext">Observation</span></a></li>
+<li class="toc-l1"><a href="#assertion-7-redaction-rationale"><span class="tocnum">7</span> <span class="toctext">Assertion 7: Redaction rationale</span></a></li>
+<li class="toc-l2"><a href="#the-memorandum-says-7"><span class="tocnum">7.1</span> <span class="toctext">The memorandum says</span></a></li>
+<li class="toc-l2"><a href="#what-was-actually-redacted"><span class="tocnum">7.2</span> <span class="toctext">What was actually redacted</span></a></li>
+<li class="toc-l2"><a href="#observation-7"><span class="tocnum">7.3</span> <span class="toctext">Observation</span></a></li>
+<li class="toc-l1"><a href="#what-is-not-disputed"><span class="tocnum">8</span> <span class="toctext">What Is Not Disputed</span></a></li>
+<li class="toc-l1"><a href="#open-questions"><span class="tocnum">9</span> <span class="toctext">Open Questions</span></a></li>
+<li class="toc-l1"><a href="#see-also"><span class="tocnum">10</span> <span class="toctext">See Also</span></a></li></ul></details><h2 id="assertion-1-quot-two-isolated-audit-log-entries-quot">Assertion 1: &quot;Two isolated audit log entries&quot;</h2>
+<h3 id="the-memorandum-says">The memorandum says</h3>
 <blockquote>
 <p>&quot;Two isolated audit log entries out of 32,339 separate log entries, referencing a &#39;person_of_interests_id&#39; appear to coincide with system installation and testing in October 2025 and do not demonstrate ongoing or operational use.&quot;</p>
 </blockquote>
-<h3>The audit log contains</h3>
+<h3 id="the-audit-log-contains">The audit log contains</h3>
 <p>A direct count of <code>message_code</code> values in <code>Verkada_Audit Log_REDACTED.xlsx</code> returns the following events related to People Analytics, facial-recognition infrastructure, and Persons of Interest:</p>
 <table>
 <thead>
@@ -109,20 +139,20 @@
 </tr>
 </tbody></table>
 <p>The string <code>person_of_interests_id</code> is a field name inside the JSON payload of <code>ALERT_RULE_*</code> events. It is not itself an event code. Searching the log for that literal string would not return the 114 <code>IDENTITY_LIST</code> events, the 6 <code>IDENTITY_PEOPLE_LIST_BULK_GET</code> events, the dashboard creation events, the alert rule events as rows (only as payload contents), or the Blurred Faces archive.</p>
-<h3>Observation</h3>
+<h3 id="observation">Observation</h3>
 <p>The memorandum&#39;s count is off by two orders of magnitude against the events directly tied to People Analytics and facial-recognition surfaces. Whether the miscount is the product of a narrow literal-string search or a different methodology is not stated in the memorandum.</p>
-<h2>Assertion 2: &quot;System installation and testing in October 2025&quot;</h2>
-<h3>The memorandum says</h3>
+<h2 id="assertion-2-quot-system-installation-and-testing-in-october-2025-quot">Assertion 2: &quot;System installation and testing in October 2025&quot;</h2>
+<h3 id="the-memorandum-says-2">The memorandum says</h3>
 <blockquote>
 <p>&quot;... appear to coincide with system installation and testing in October 2025 and do not demonstrate ongoing or operational use.&quot;</p>
 </blockquote>
-<h3>The audit log contains</h3>
+<h3 id="the-audit-log-contains-2">The audit log contains</h3>
 <p>Of the 114 <code>IDENTITY_LIST</code> events, <strong>100 are logged under user account &quot;Matt Laiminger&quot;</strong> and span <strong>65 distinct calendar days from October 22, 2025 through March 16, 2026</strong>.</p>
 <p>The October 23, 2025 <code>ARCHIVE_START</code> event with the <code>&quot;Blurred Faces&quot;</code> tag is logged under the same account, with archive label &quot;Ballot Box Observation Footage&quot; — an archive of actual operational footage, not a test clip.</p>
-<h3>Observation</h3>
+<h3 id="observation-2">Observation</h3>
 <p>An access pattern that occurs on 65 distinct days over five months, attributed to a single user account (the Police Chief&#39;s), through ten days before the CORA request arrived, is not limited to October installation and testing. The memorandum does not offer an alternative characterization for the November 2025 through March 2026 portion of the pattern.</p>
-<h2>Assertion 3: &quot;Verified as disabled&quot;</h2>
-<h3>The memorandum says</h3>
+<h2 id="assertion-3-quot-verified-as-disabled-quot">Assertion 3: &quot;Verified as disabled&quot;</h2>
+<h3 id="the-memorandum-says-3">The memorandum says</h3>
 <blockquote>
 <p>&quot;Administrator verification conducted on April 14, 2026, confirmed that these features were disabled.&quot;</p>
 </blockquote>
@@ -130,7 +160,7 @@
 <blockquote>
 <p><strong>Claim:</strong> Facial recognition is enabled. <strong>Determination:</strong> Verified as disabled. <strong>Conclusion:</strong> Not Substantiated.</p>
 </blockquote>
-<h3>What the statement does and does not cover</h3>
+<h3 id="what-the-statement-does-and-does-not-cover">What the statement does and does not cover</h3>
 <p>The statement describes the <strong>state of the Verkada admin dashboard on April 14, 2026</strong>. It does not state:</p>
 <ul>
 <li>Whether the features were ever enabled at any prior time.</li>
@@ -139,15 +169,15 @@
 <li>Whether the <a href="final-published-letter.html">March 30, 2026 board letter</a> statement that the cameras &quot;are not face recognition&quot; was accurate at the time it was published.</li>
 </ul>
 <p>The produced audit log covers October 3, 2025 to March 26, 2026. The memorandum&#39;s verification was conducted April 14, 2026. The 19-day window between March 27 and April 14 is not covered by the records released to date, and any feature-state change during that window would not be visible to the public until additional audit log entries are produced.</p>
-<h3>Observation</h3>
+<h3 id="observation-3">Observation</h3>
 <p>&quot;Disabled on April 14, 2026&quot; and &quot;never enabled&quot; are not the same assertion. The memorandum makes the first and does not make the second. Determining whether the features were enabled at any time between October 22, 2025 and March 26, 2026, and when they were disabled if so, requires either a written clarification from the Administrator or production of the audit log from March 27 forward.</p>
-<h2>Assertion 4: &quot;People detection does not constitute facial recognition&quot;</h2>
-<h3>The memorandum says</h3>
+<h2 id="assertion-4-quot-people-detection-does-not-constitute-facial-recognition-quot">Assertion 4: &quot;People detection does not constitute facial recognition&quot;</h2>
+<h3 id="the-memorandum-says-4">The memorandum says</h3>
 <blockquote>
 <p>&quot;All Verkada cameras perform basic people detection &#39;out of the box,&#39; meaning they identify when a person is present within the camera&#39;s field of view without any additional configuration. This function is a standard feature and does not identify or recognize specific individuals.&quot;</p>
 </blockquote>
 <p>This statement is correct. People detection (finding a person in frame) is distinct from face detection (finding a face) and from face matching (identifying a specific person).</p>
-<h3>The audit log contains</h3>
+<h3 id="the-audit-log-contains-3">The audit log contains</h3>
 <p>An <code>ARCHIVE_START</code> event on October 23, 2025 under user account Matt Laiminger, with the following details field:</p>
 <pre><code class="language-json">{&quot;archive_group_id&quot;:null,&quot;filter_type&quot;:&quot;4~1af7d81c&quot;,&quot;label&quot;:&quot;Ballot Box Observation Footage&quot;,&quot;public&quot;:false,&quot;tags&quot;:[&quot;Blurred Faces&quot;]}
 </code></pre>
@@ -157,25 +187,25 @@
 — help.verkada.com/en/articles/9321844-selective-face-blur-for-archives</p>
 </blockquote>
 <p>Selective face blur requires face detection to operate on the footage. You cannot selectively blur faces that have not first been detected as faces.</p>
-<h3>Observation</h3>
+<h3 id="observation-4">Observation</h3>
 <p>The presence of the <code>&quot;Blurred Faces&quot;</code> tag on an archive created on October 23, 2025 establishes that face detection was operating on the Town&#39;s Verkada system on that date. The memorandum&#39;s assertion that only basic people-detection has ever been active is not consistent with the existence of this event in the log.</p>
-<h2>Assertion 5: &quot;Each login, camera selection, or page refresh generates a separate log entry&quot;</h2>
-<h3>The memorandum says</h3>
+<h2 id="assertion-5-quot-each-login-camera-selection-or-page-refresh-generates-a-separate-log-entry-quot">Assertion 5: &quot;Each login, camera selection, or page refresh generates a separate log entry&quot;</h2>
+<h3 id="the-memorandum-says-5">The memorandum says</h3>
 <blockquote>
 <p>&quot;It is my belief that this claim misinterprets how Verkada systems record activity. Each login, camera selection, or page refresh generates a separate log entry. Consequently, a single user session may produce multiple &#39;views.&#39;&quot;</p>
 </blockquote>
 <p>This is correct as a general statement about how audit logs work. Individual log rows are micro-events, not viewing sessions.</p>
-<h3>The audit log contains</h3>
+<h3 id="the-audit-log-contains-4">The audit log contains</h3>
 <p>Counts that the session-math critique does not apply to:</p>
 <ul>
 <li><strong>Distinct calendar days</strong> on which <code>IDENTITY_LIST</code> events are recorded under the Police Chief&#39;s account: <strong>65</strong>, spanning a five-month window.</li>
 <li><strong>Distinct archives</strong> created by the Town: <strong>33 total archive creation events</strong>, each representing a deliberate save of footage beyond the 30-day retention window.</li>
 <li><strong>Distinct camera configuration changes</strong>: 82 <code>CAMERA_SET_NAME</code>, 42 <code>CAMERA_CONFIG_SET</code>, 12 <code>CAMERA_SET_FOCUS_TARGET</code> events.</li>
 </ul>
-<h3>Observation</h3>
+<h3 id="observation-5">Observation</h3>
 <p>The session-inflation critique applies to aggregate event counts. It does not apply to distinct-day counts, distinct archive counts, or configuration events, each of which represents a discrete human action. The memorandum&#39;s critique is valid for one framing and does not apply to the framings most commonly used in the public record.</p>
-<h2>Assertion 6: Community Room camera operational justification</h2>
-<h3>The memorandum says</h3>
+<h2 id="assertion-6-community-room-camera-operational-justification">Assertion 6: Community Room camera operational justification</h2>
+<h3 id="the-memorandum-says-6">The memorandum says</h3>
 <blockquote>
 <p>&quot;It is my understanding that the Community Room camera has been accessed for legitimate municipal purposes, including:</p>
 <ul>
@@ -185,7 +215,7 @@
 <li>Protecting public property from vandalism or theft.&quot;</li>
 </ul>
 </blockquote>
-<h3>The audit log contains (see <a href="verkada-usage-patterns.html">Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)</a>)</h3>
+<h3 id="the-audit-log-contains-see-verkada-camera-usage-patterns-oct-2025-mar-2026">The audit log contains (see <a href="verkada-usage-patterns.html">Verkada Camera Usage Patterns (Oct 2025 – Mar 2026)</a>)</h3>
 <ul>
 <li>1,938 Community Room live-stream views total, of which 1,670 are under user account Ruben Santiago.</li>
 <li>35% of Santiago&#39;s Community Room views occur on Saturday or Sunday.</li>
@@ -193,14 +223,14 @@
 <li>428 views occur at or after 5 PM; 408 views occur at or before 9 AM.</li>
 <li>93.6% of events on the Community Room camera are <code>LIVE_STREAM_STARTED</code>, not <code>VIDEO_HISTORY_STREAMED</code> (real-time viewing, not minutes review).</li>
 </ul>
-<h3>Observation</h3>
+<h3 id="observation-6">Observation</h3>
 <p>The four operational purposes cited in the memorandum do not account for the weekend concentration, the after-hours distribution, or the predominance of real-time live streaming over historical review. The Board of Trustees does not meet on Sundays. Town offices are closed on weekends. Minutes clarification, by definition, would use historical-review functions rather than live-stream functions.</p>
-<h2>Assertion 7: Redaction rationale</h2>
-<h3>The memorandum says</h3>
+<h2 id="assertion-7-redaction-rationale">Assertion 7: Redaction rationale</h2>
+<h3 id="the-memorandum-says-7">The memorandum says</h3>
 <blockquote>
 <p>&quot;According to the Town Clerk, the only information redacted from the Verkada audit logs consisted of MAC addresses, IP addresses, device identification numbers, and serial numbers. These elements constitute sensitive technical security information that, if disclosed, could expose or make the Town&#39;s camera system vulnerable to unauthorized access or cyber attack.&quot;</p>
 </blockquote>
-<h3>What was actually redacted</h3>
+<h3 id="what-was-actually-redacted">What was actually redacted</h3>
 <p>In addition to the categories Wynn lists, the produced log also redacts:</p>
 <ul>
 <li><code>organization_id</code></li>
@@ -213,12 +243,12 @@
 <li><code>user_name</code> (full names of all 11 users)</li>
 <li><code>user_email</code> (complete townofpaonia.com and vendor email addresses)</li>
 </ul>
-<h3>Observation</h3>
+<h3 id="observation-7">Observation</h3>
 <p>If the redaction rationale is phishing, credential-stuffing, or social-engineering prevention, the attack surface is user names and email addresses, not opaque internal UUIDs. The redaction pattern — opaque UUIDs redacted, human-readable identifiers left in plain text — is the opposite of what the stated rationale would produce.</p>
-<h2>What Is Not Disputed</h2>
+<h2 id="what-is-not-disputed">What Is Not Disputed</h2>
 <p>The memorandum does not dispute the existence or authenticity of any of the underlying audit log events. Wynn cites the same CORA C 26-09 dataset used in the public analysis. The disagreement is over characterization and interpretation, not over the presence of the events themselves.</p>
 <p>The memorandum also does not dispute the language or publication of the <a href="final-published-letter.html">March 30, 2026 board letter</a> stating the cameras &quot;are not face recognition, or private property surveillance apparatus.&quot; It does not address that statement at all.</p>
-<h2>Open Questions</h2>
+<h2 id="open-questions">Open Questions</h2>
 <ol>
 <li><p>Were the People Analytics, face detection, or related facial-recognition features ever enabled on the Town&#39;s Verkada organization at any time between October 2025 and April 2026? If so, on what date were they enabled, on what date disabled, by which user account, and under what event codes are those state changes recorded?</p>
 </li>
@@ -229,7 +259,7 @@
 <li><p>Was the March 30, 2026 board letter statement that the cameras &quot;are not face recognition&quot; accurate at the time it was published? Which trustees were made aware of the Oct 22–23 configuration events before signing?</p>
 </li>
 </ol>
-<h2>See Also</h2>
+<h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="wynn-verkada-memo-2026-04-14.html">Wynn Memorandum: Verification and Clarification of Claims Regarding the Verkada Security Camera Systems</a> — The memorandum under analysis</li>
 <li><a href="factual-corrections-2026-04-15.html">Factual Corrections to the Administrator&#39;s April 14, 2026 Memorandum</a> — The citizen written response filed 2026-04-15</li>

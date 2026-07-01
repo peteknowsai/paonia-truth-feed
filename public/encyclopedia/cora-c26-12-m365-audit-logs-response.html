@@ -79,13 +79,26 @@
 <strong>Custodian:</strong> <a href="samira-vetter.html">Samira Vetter</a>, Town Clerk / Official Custodian of Records
 <strong>Requester:</strong> Pete McCarthy
 <strong>Fees:</strong> None charged</p>
-<h2>What Was Requested</h2>
+<details class="toc" open><summary>Contents</summary><ul><li class="toc-l1"><a href="#what-was-requested"><span class="tocnum">1</span> <span class="toctext">What Was Requested</span></a></li>
+<li class="toc-l1"><a href="#what-the-cover-letter-says"><span class="tocnum">2</span> <span class="toctext">What the Cover Letter Says</span></a></li>
+<li class="toc-l1"><a href="#structural-problems-with-the-first-production-april-22-2026"><span class="tocnum">3</span> <span class="toctext">Structural Problems With the First Production (April 22, 2026)</span></a></li>
+<li class="toc-l2"><a href="#1-the-quot-march-2026-quot-file-is-a-duplicate-of-the-april-2026-file"><span class="tocnum">3.1</span> <span class="toctext">1. The &amp;quot;March 2026&amp;quot; file is a duplicate of the April 2026 file</span></a></li>
+<li class="toc-l2"><a href="#2-every-file-is-capped-at-exactly-50-000-rows"><span class="tocnum">3.2</span> <span class="toctext">2. Every file is capped at exactly 50,000 rows</span></a></li>
+<li class="toc-l2"><a href="#3-the-auditdata-column-is-100-redacted"><span class="tocnum">3.3</span> <span class="toctext">3. The AuditData column is 100% redacted</span></a></li>
+<li class="toc-l2"><a href="#4-april-2026-stops-at-april-9"><span class="tocnum">3.4</span> <span class="toctext">4. April 2026 stops at April 9</span></a></li>
+<li class="toc-l2"><a href="#5-retention-math-does-not-line-up-with-the-cover-letter"><span class="tocnum">3.5</span> <span class="toctext">5. Retention math does not line up with the cover letter</span></a></li>
+<li class="toc-l2"><a href="#6-format-does-not-match-the-request"><span class="tocnum">3.6</span> <span class="toctext">6. Format does not match the request</span></a></li>
+<li class="toc-l1"><a href="#what-was-provided-that-is-useful"><span class="tocnum">4</span> <span class="toctext">What Was Provided That Is Useful</span></a></li>
+<li class="toc-l1"><a href="#retention-policy-disclosure"><span class="tocnum">5</span> <span class="toctext">Retention Policy Disclosure</span></a></li>
+<li class="toc-l1"><a href="#significance-of-the-first-production"><span class="tocnum">6</span> <span class="toctext">Significance of the First Production</span></a></li>
+<li class="toc-l1"><a href="#the-cure-may-27-2026"><span class="tocnum">7</span> <span class="toctext">The Cure (May 27, 2026)</span></a></li>
+<li class="toc-l1"><a href="#see-also"><span class="tocnum">8</span> <span class="toctext">See Also</span></a></li></ul></details><h2 id="what-was-requested">What Was Requested</h2>
 <p>Two items:</p>
 <ol>
 <li>Complete Microsoft 365 Unified Audit Log export for the Town of Paonia tenant, for <strong>all available dates retained by the system</strong>. Requested as CSV export from the Microsoft Purview compliance portal.</li>
 <li>The Town&#39;s current M365 audit log retention policy, including configured retention period and licensing tier.</li>
 </ol>
-<h2>What the Cover Letter Says</h2>
+<h2 id="what-the-cover-letter-says">What the Cover Letter Says</h2>
 <ul>
 <li>Town uses <strong>Microsoft 365 Business Premium</strong> with <strong>180-day audit retention</strong> (answers item 2).</li>
 <li>Provided audit logs covering &quot;November 2025 through April 2026&quot; (6 monthly Excel files).</li>
@@ -94,9 +107,9 @@
 <li>&quot;User identifiers not associated with the Town of Paonia domain have been redacted.&quot;</li>
 <li>Clerk claims &quot;the records provided reflect the nature and timing of system activity.&quot;</li>
 </ul>
-<h2>Structural Problems With the First Production (April 22, 2026)</h2>
+<h2 id="structural-problems-with-the-first-production-april-22-2026">Structural Problems With the First Production (April 22, 2026)</h2>
 <p>The defects in this section describe the <strong>original April 22, 2026 production</strong>. The Town later acknowledged them and issued a cure on May 27, 2026 (below). They are preserved here because they are the record of how the request was first answered.</p>
-<h3>1. The &quot;March 2026&quot; file is a duplicate of the April 2026 file</h3>
+<h3 id="1-the-quot-march-2026-quot-file-is-a-duplicate-of-the-april-2026-file">1. The &quot;March 2026&quot; file is a duplicate of the April 2026 file</h3>
 <p>Both <code>Redacted_TownOfPaonia_Audit_Log_Mar2026.xlsx</code> and <code>Redacted_TownOfPaonia_Audit_Log_Apr2026.xlsx</code> contain the <strong>exact same 50,000 rows</strong>, spanning <strong>April 1 – April 9, 2026</strong>. Verified by comparing RecordId fingerprints: the first 20 RecordIds are byte-identical between the two files.</p>
 <p>Consequence: <strong>actual March 2026 audit log data was not delivered.</strong> March 2026 is the month containing:</p>
 <ul>
@@ -106,7 +119,7 @@
 <li>The period covered by Pete&#39;s separate <a href="cora-libelous-communications.html">C 26-11 request</a></li>
 </ul>
 <p>The month whose email audit log would corroborate or contradict the <a href="cora-c26-11-libelous-communications-response.html">C 26-11 communications production</a> is the one month that was not delivered.</p>
-<h3>2. Every file is capped at exactly 50,000 rows</h3>
+<h3 id="2-every-file-is-capped-at-exactly-50-000-rows">2. Every file is capped at exactly 50,000 rows</h3>
 <p>All six files contain exactly 50,000 rows of audit data. That number is the legacy UI export cap in Microsoft Purview&#39;s in-browser audit search. Programmatic exports via <code>Search-UnifiedAuditLog</code> (PowerShell) or the Office 365 Management Activity API have no such cap.</p>
 <p>For the months the file actually spans (Nov, Dec, Jan, Feb — 28 to 31 days each), the 50,000-row cap almost certainly truncated the full record:</p>
 <ul>
@@ -115,7 +128,7 @@
 </ul>
 <p>The request asked for &quot;complete&quot; export, &quot;for all available dates retained by the system.&quot; What was produced is <strong>the first 50,000 events from each month</strong>, not the complete month.</p>
 <p>A Purview admin with Global Reader or Audit Reader permissions can run a <code>Search-UnifiedAuditLog -StartDate 2025-11-01 -EndDate 2025-11-30 -ResultSize 5000</code> with pagination in about 15 minutes of attended time. An API pull through the Management Activity API is scheduled and unattended. The 50K cap is a choice, not a technical limit.</p>
-<h3>3. The AuditData column is 100% redacted</h3>
+<h3 id="3-the-auditdata-column-is-100-redacted">3. The AuditData column is 100% redacted</h3>
 <p>Each file has seven columns:</p>
 <table>
 <thead>
@@ -164,29 +177,29 @@
 <p><code>AuditData</code> is the only column in an M365 unified audit log that contains the <em>substance</em> of an event. For a <code>MailItemsAccessed</code> event, AuditData contains the client IP, the client application (e.g. Outlook desktop, iPhone Mail, OWA), the session ID, and — most importantly — the <code>Folders</code> object listing which folder was accessed and which <code>InternetMessageIds</code> (i.e. which specific emails) were read. For a <code>Send</code> event, AuditData contains subject lines, recipients, attachments. For <code>FileAccessed</code>, AuditData contains the file path and site.</p>
 <p>Without AuditData, the produced log answers &quot;which accounts did something&quot; and &quot;at what time,&quot; but never &quot;what did they do.&quot; A row showing <code>SamiraV@townofpaonia.com — MailItemsAccessed — 2026-04-06T22:02:51Z</code> with <code>AuditData=[REDACTED]</code> tells the public that the clerk read her mailbox that evening. It says nothing about whether she read Pete&#39;s formal complaint, the Board&#39;s draft letter, or something routine.</p>
 <p>The redaction is applied as a blanket column-wide replace. It is not itemized. It is not a targeted redaction of particular sensitive subjects. The clerk cites C.R.S. § 24-72-204(2)(a)(VIII), which permits withholding &quot;specific details of bona fide research projects&quot; and &quot;particular security arrangements.&quot; Colorado records law requires itemized redactions with stated reasons, not categorical redaction of an entire field that contains the substance of every event.</p>
-<h3>4. April 2026 stops at April 9</h3>
+<h3 id="4-april-2026-stops-at-april-9">4. April 2026 stops at April 9</h3>
 <p>The April file covers April 1 through April 9, 2026. The request was filed April 7. The clerk&#39;s office pulled the data close to the request date and never refreshed before delivery on April 22.</p>
 <p>The data from April 10 through April 22 — including the days the clerk&#39;s office was actually working on this CORA — <strong>is not in the export</strong>, even though the request explicitly asked for all available retained dates.</p>
-<h3>5. Retention math does not line up with the cover letter</h3>
+<h3 id="5-retention-math-does-not-line-up-with-the-cover-letter">5. Retention math does not line up with the cover letter</h3>
 <p>Microsoft 365 Business Premium provides a stated <strong>180-day</strong> unified audit log retention. The response was dated <strong>2026-04-22</strong>. 180 days before April 22 is <strong>October 25, 2025</strong>. A complete export of all dates retained by the system should therefore include data from late October 2025.</p>
 <p>The earliest record delivered is from 2025-11-01. <strong>Five to six days of late-October 2025 audit data that should still be within retention was not produced.</strong></p>
-<h3>6. Format does not match the request</h3>
+<h3 id="6-format-does-not-match-the-request">6. Format does not match the request</h3>
 <p>The request asked for CSV from the Purview compliance portal. The response was delivered as Excel <code>.xlsx</code> files with a clerk-added &quot;Summary&quot; column. The Summary column is not a Microsoft system field — it is prose written by the Town Clerk (or by someone on her behalf) characterizing what each event means. Summary values like &quot;User accessed mailbox items.&quot; for a <code>MailItemsAccessed</code> row are clerk editorial, not source data.</p>
-<h2>What Was Provided That Is Useful</h2>
+<h2 id="what-was-provided-that-is-useful">What Was Provided That Is Useful</h2>
 <ul>
 <li><strong>User activity volumes per month.</strong> Who is active, at what scale.</li>
 <li><strong>Operation type distributions.</strong> <code>MailItemsAccessed</code>, <code>TaskListRead</code>, <code>FileAccessed</code>, <code>UpdateInboxRules</code>, <code>MoveToDeletedItems</code>, etc.</li>
 <li><strong>Date ranges</strong> (for the months that were not mislabeled).</li>
 <li>Confirmation of the existence of a <code>backupadminLefH@townofpaonia.com</code> account with heavy activity — a previously-undocumented backup admin.</li>
 </ul>
-<h2>Retention Policy Disclosure</h2>
+<h2 id="retention-policy-disclosure">Retention Policy Disclosure</h2>
 <p>Confirmed:</p>
 <ul>
 <li><strong>Licensing tier:</strong> Microsoft 365 Business Premium</li>
 <li><strong>Audit log retention:</strong> 180 days (standard Business Premium retention, the minimum retention Microsoft sells)</li>
 </ul>
 <p>The Town is operating on the shortest retention tier Microsoft offers for unified audit logs. Anything older than 180 days has already aged out. Records from the 2024 Planning Commission period — when Pete originally sought MailItemsAccessed data for the November 12, 2024 meeting and was told the records were &quot;not in custody&quot; — are permanently lost under this retention policy. See <a href="reporter-package-email-coverup.html">Reporter Package - Email Deception and CORA Cover-Up Timeline</a>.</p>
-<h2>Significance of the First Production</h2>
+<h2 id="significance-of-the-first-production">Significance of the First Production</h2>
 <p>This is the second M365 unified audit log CORA Pete has filed. The first, in September 2024, was denied outright with a statutory citation CFOIC confirmed was improper. The records were never produced and have now aged out of retention.</p>
 <p>The April 22, 2026 production was nominally a fulfillment, but, as delivered:</p>
 <ul>
@@ -195,7 +208,7 @@
 <li>The total volume was <strong>capped at 50,000 rows per month</strong>, a Purview UI artifact, not a complete export.</li>
 </ul>
 <p>As first produced, the audit log could not be used to audit anything. The Town later acknowledged these defects and cured them.</p>
-<h2>The Cure (May 27, 2026)</h2>
+<h2 id="the-cure-may-27-2026">The Cure (May 27, 2026)</h2>
 <p>On <strong>May 27, 2026</strong> the Town issued a cure to C 26-12. The full record is at <a href="cora-c26-12-cure-response.html">CORA C 26-12 — The Cure Response (May 27, 2026)</a>; in summary:</p>
 <ul>
 <li><strong>Four missing exports admitted.</strong> The Town acknowledged that four exports had been omitted from the April production.</li>
@@ -205,7 +218,7 @@
 </ul>
 <p>What the readable records show, and what they do not: with <code>AuditData</code> open, the inbox-rule activity attributed to <a href="stefen-wynn.html">Stefen Wynn</a> could be examined directly. Every populated rule action in the data is a &quot;move sender into folder&quot; operation; there are no delete, external-forward, or redirect actions in any inbox-rule event, and no mailbox exfiltration appears across the 1.13 million records. The large <code>UpdateInboxRules</code> bursts are confirmed and, in the uncapped data, larger than previously estimated — but they are overwhelmingly <code>ModifyMailboxRule</code> resync events: pre-existing rule IDs re-stamped within seconds from Wynn&#39;s own Outlook desktop client. That is the mechanical signature of an Outlook rule-store resync, <strong>not</strong> mail suppression or hidden rules. This activity is benign — see <a href="inbox-rules-investigation-closed.html">What the Audit Logs Don’t Show: The Inbox-Rules Dead End</a>. The substance of a modified rule (its name and actions) is absent for those events because Microsoft never records the rule body for a modify/resync operation, not because the Town redacted it.</p>
 <p>What the cure did not resolve: it shipped <strong>new over-broad redactions</strong>. The clock time inside the <code>CreationDate</code> column was redacted as if it were an IP address, some cmdlet names were partially clipped, and the same identifier categories the Town claims as exempt sit in plaintext in hundreds of thousands of other rows. The redaction is over-broad as a category and inconsistent as applied. Full analysis: <a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a>.</p>
-<h2>See Also</h2>
+<h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="cora-c26-12-cure-response.html">CORA C 26-12 — The Cure Response (May 27, 2026)</a> — the May 27, 2026 cure to this request</li>
 <li><a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a> — analysis of the cure&#39;s over-broad redactions</li>

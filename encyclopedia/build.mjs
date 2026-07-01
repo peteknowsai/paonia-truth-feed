@@ -173,6 +173,37 @@ function infobox(page, rows) {
 </div>`;
 }
 
+// ---------- table of contents (Wikipedia "Contents" box) ----------
+// Adds id anchors to h2/h3 and, for articles with 4+ headings, inserts a
+// numbered collapsible TOC right before the first section (like real Wikipedia).
+function addTocAndAnchors(bodyHtml) {
+  const seen = new Set();
+  const entries = [];
+  let major = 0, minor = 0;
+  const withIds = bodyHtml.replace(/<h([23])[^>]*>([\s\S]*?)<\/h\1>/g, (_m, lvl, inner) => {
+    const text = inner.replace(/<[^>]+>/g, "").trim();
+    let id = slugify(text) || "section";
+    let n = id, i = 2;
+    while (seen.has(n)) n = `${id}-${i++}`;
+    seen.add(n);
+    let num;
+    if (lvl === "2") { major++; minor = 0; num = `${major}`; }
+    else { minor++; num = `${major}.${minor}`; }
+    entries.push({ lvl, text, id: n, num });
+    return `<h${lvl} id="${n}">${inner}</h${lvl}>`;
+  });
+  if (entries.length < 4) return withIds;
+  const items = entries
+    .map(
+      (e) =>
+        `<li class="toc-l${e.lvl === "2" ? "1" : "2"}"><a href="#${e.id}"><span class="tocnum">${e.num}</span> <span class="toctext">${esc(e.text)}</span></a></li>`
+    )
+    .join("\n");
+  const toc = `<details class="toc" open><summary>Contents</summary><ul>${items}</ul></details>`;
+  const idx = withIds.search(/<h2\b/);
+  return idx === -1 ? withIds : withIds.slice(0, idx) + toc + withIds.slice(idx);
+}
+
 // ---------- references ----------
 function references(page) {
   const src = page.sources.filter((s) => s);
@@ -278,7 +309,7 @@ for (const page of pages) {
   const { rows, bodyHtml } = parseBody(page);
   const full =
     infobox(page, rows) +
-    bodyHtml +
+    addTocAndAnchors(bodyHtml) +
     references(page) +
     catBar(page) +
     whatLinksHere(page);

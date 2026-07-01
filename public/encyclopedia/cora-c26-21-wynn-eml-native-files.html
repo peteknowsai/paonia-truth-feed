@@ -55,7 +55,14 @@
     <tr><th>First recorded</th><td>2026-05-30</td></tr>
     <tr><th>Topics</th><td class="ib-tags"><a href="category-cora.html">cora</a> <a href="category-wynn.html">wynn</a> <a href="category-native-format.html">native-format</a> <a href="category-eml.html">eml</a> <a href="category-timestamps.html">timestamps</a> <a href="category-message-directionality.html">message-directionality</a> <a href="category-planning-commission.html">planning-commission</a></td></tr>
   </tbody></table>
-</div><h2>What This Request Was For</h2>
+</div><details class="toc" open><summary>Contents</summary><ul><li class="toc-l1"><a href="#what-this-request-was-for"><span class="tocnum">1</span> <span class="toctext">What This Request Was For</span></a></li>
+<li class="toc-l1"><a href="#what-was-produced"><span class="tocnum">2</span> <span class="toctext">What Was Produced</span></a></li>
+<li class="toc-l2"><a href="#a-responsive"><span class="tocnum">2.1</span> <span class="toctext">(a) — Responsive</span></a></li>
+<li class="toc-l2"><a href="#c-responsive"><span class="tocnum">2.2</span> <span class="toctext">(c) — Responsive</span></a></li>
+<li class="toc-l2"><a href="#b-non-responsive-wrong-direction"><span class="tocnum">2.3</span> <span class="toctext">(b) — Non-responsive (wrong direction)</span></a></li>
+<li class="toc-l2"><a href="#d-non-responsive-wrong-direction"><span class="tocnum">2.4</span> <span class="toctext">(d) — Non-responsive (wrong direction)</span></a></li>
+<li class="toc-l1"><a href="#what-the-records-show-and-what-they-do-not"><span class="tocnum">3</span> <span class="toctext">What the Records Show, and What They Do Not</span></a></li>
+<li class="toc-l1"><a href="#see-also"><span class="tocnum">4</span> <span class="toctext">See Also</span></a></li></ul></details><h2 id="what-this-request-was-for">What This Request Was For</h2>
 <p>C 26-15 produced 165 pages of <a href="stefen-wynn.html">Wynn</a>&#39;s outbound email from November 4, 2024 as a PDF assembled in Microsoft Word. Several of those messages were produced without a top-level &quot;Sent:&quot; timestamp — the Word-based assembly did not preserve the header for every item. The Town&#39;s M365 audit retention is 180 days, and the production date is roughly 18 months after November 4, 2024, so the send timestamps cannot be recovered from the audit log. The native mailbox files are the only remaining source.</p>
 <p>C 26-21 asked for native <code>.eml</code> files (or direct Outlook-to-PDF prints) for the four specific messages C 26-15 produced without a send timestamp:</p>
 <ul>
@@ -65,22 +72,22 @@
 <li><strong>(d)</strong> Wynn&#39;s &quot;P-Hill tower extension&quot; email</li>
 </ul>
 <p>The request sought the complete header metadata for each so the actual send times could be established.</p>
-<h2>What Was Produced</h2>
+<h2 id="what-was-produced">What Was Produced</h2>
 <p>Four <code>.eml</code> files were delivered. Two are responsive; two are not.</p>
-<h3>(a) — Responsive</h3>
+<h3 id="a-responsive">(a) — Responsive</h3>
 <p><code>C106545E0C5FBD068AF13A8ABE5F767A.eml</code> is Wynn&#39;s forward of McCarthy&#39;s Planning Commission comments. The message is From StefenW and carries a Date header reading <code>Tue 5 Nov 2024 01:10:53 +0000</code>. That UTC time converts to <strong>November 4, 2024, 6:10 PM Mountain</strong> — a November 4 send, despite the UTC date rolling over to the 5th.</p>
-<h3>(c) — Responsive</h3>
+<h3 id="c-responsive">(c) — Responsive</h3>
 <p><code>60B177499A58440D79E8A013B567FC39.eml</code> is Wynn&#39;s invoice forward. The message is From StefenW with a Date header of <code>Mon 4 Nov 2024 15:55:04 +0000</code>, which converts to <strong>November 4, 2024, 8:55 AM Mountain</strong>.</p>
 <p>Both recovered timestamps are read from the native message headers — the metadata the Word-assembled C 26-15 production had dropped.</p>
-<h3>(b) — Non-responsive (wrong direction)</h3>
+<h3 id="b-non-responsive-wrong-direction">(b) — Non-responsive (wrong direction)</h3>
 <p><code>55856453240EA8FB230790ECB1A83086.eml</code> is not Wynn&#39;s reply. It is Vetter&#39;s <strong>inbound</strong> message <em>to</em> Wynn — the master-plan email he was supposed to have replied to — not his outbound print-copies response. The Town substituted the message Wynn received for the message Wynn sent.</p>
-<h3>(d) — Non-responsive (wrong direction)</h3>
+<h3 id="d-non-responsive-wrong-direction">(d) — Non-responsive (wrong direction)</h3>
 <p><code>2F3CDF22176991B29A52C9E5C479CCF9.eml</code> is an external contractor&#39;s email to Delta County Planning on which Wynn appears only on Cc. Its Exchange header carries <code>X-MS-Exchange-Organization-MessageDirectionality: Incoming</code>, confirming it is mail Wynn received, not mail he sent. No Wynn-authored &quot;P-Hill tower extension&quot; email was produced.</p>
-<h2>What the Records Show, and What They Do Not</h2>
+<h2 id="what-the-records-show-and-what-they-do-not">What the Records Show, and What They Do Not</h2>
 <p>The two responsive <code>.eml</code> files do what the request set out to do: they recover send timestamps that the C 26-15 production had stripped, for items (a) and (c). Those timestamps come directly from the native message headers.</p>
 <p>For items (b) and (d), the produced files are inbound messages — one Wynn received from Vetter, one on which he was only a Cc recipient. The <code>MessageDirectionality: Incoming</code> tag on (d) is the Town&#39;s own Exchange metadata. These files do not establish a send time for any Wynn-authored message, because they are not Wynn-authored messages. The requested outbound items remain unproduced.</p>
 <p>The Town closed C 26-21 as fulfilled despite producing inbound substitutes for half the request. On these records, two of the four targeted timestamps are still outstanding. The matter is a candidate to be reopened for items (b) and (d) — Wynn&#39;s master-plan reply and any Wynn-sent P-Hill tower email — which the produced files do not contain.</p>
-<h2>See Also</h2>
+<h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="cora-c26-15-wynn-sent-emails-nov4-2024.html">CORA C 26-15 — Wynn Outbound Emails, November 4, 2024</a> — The original Nov-4 outbound-email production this follows up</li>
 <li><a href="stefen-wynn.html">Stefen Wynn</a> — Town Administrator and author of the responsive messages</li>
