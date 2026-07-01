@@ -56,10 +56,14 @@
     <tr><th>Topics</th><td class="ib-tags"><a href="category-audit-log.html">audit-log</a> <a href="category-inbox-rules.html">inbox-rules</a> <a href="category-m365.html">m365</a> <a href="category-deletions.html">deletions</a> <a href="category-wynn.html">wynn</a> <a href="category-cora.html">cora</a> <a href="category-forensics.html">forensics</a></td></tr>
   </tbody></table>
 </div><p>Transparency cuts both ways. This page records a theory the records do <strong>not</strong> support, because a citizen-transparency project that only publishes the findings that help its case is doing the same thing it criticizes.</p>
-<h2>The theory we chased</h2>
+<details class="toc" open><summary>Contents</summary><ul><li class="toc-l1"><a href="#the-theory-we-chased"><span class="tocnum">1</span> <span class="toctext">The theory we chased</span></a></li>
+<li class="toc-l1"><a href="#what-the-records-actually-show-benign"><span class="tocnum">2</span> <span class="toctext">What the records actually show: benign</span></a></li>
+<li class="toc-l1"><a href="#the-deletions-checked-the-same-skeptical-way"><span class="tocnum">3</span> <span class="toctext">The deletions, checked the same skeptical way</span></a></li>
+<li class="toc-l1"><a href="#where-this-leaves-the-live-issue"><span class="tocnum">4</span> <span class="toctext">Where this leaves the live issue</span></a></li>
+<li class="toc-l1"><a href="#see-also"><span class="tocnum">5</span> <span class="toctext">See Also</span></a></li></ul></details><h2 id="the-theory-we-chased">The theory we chased</h2>
 <p>The starting point was a set of real, large numbers in Town Administrator Stefen Wynn&#39;s Microsoft 365 mailbox: roughly 19,543 <code>UpdateInboxRules</code> events across the period, with tightly clustered bursts on several dates — including about 1,134 events on April 3, 2026, the first business day after the Board&#39;s March 30 letter. The hypothesis was that those rules were being used to suppress, hide, or redirect email.</p>
 <p>The <a href="cora-c26-12-cure-response.html">C 26-12 cure</a> let us test that hypothesis directly. The cure un-redacted the audit-data column the original response had blanked across about 1.13 million rows. We parsed all of them.</p>
-<h2>What the records actually show: benign</h2>
+<h2 id="what-the-records-actually-show-benign">What the records actually show: benign</h2>
 <p>The theory does not hold. Across all 1.13 million rows:</p>
 <ul>
 <li><strong>The bursts are <code>ModifyMailboxRule</code> events, and Microsoft logs no rule body for them.</strong> Inbox-rule events come in two flavors. A <code>AddMailboxRule</code> (a genuinely new rule) is fully logged — name, condition, action. A <code>ModifyMailboxRule</code> (an existing rule touched or re-synced) is logged with the rule body blank by design: empty name, empty condition, empty action, only the rule&#39;s ID surviving. The bursts are overwhelmingly the second kind. <strong>The blank fields are native M365 behavior, not a Town redaction</strong> — Exchange simply does not re-serialize a rule&#39;s contents on a modify operation.</li>
@@ -71,17 +75,17 @@
 </ul>
 <p>A note on what the records cannot say either way: because Microsoft never recorded the bodies of the modified rules, the log cannot prove what those rules <em>do</em>. It also offers no evidence that they do anything other than file mail. The mechanical pattern points to a client resync; the contents are simply not in the M365 log to begin with.</p>
 <p>This finding reverses an earlier line of inquiry. The inbox-rule bursts are not evidence of hidden or suppressed mail.</p>
-<h2>The deletions, checked the same skeptical way</h2>
+<h2 id="the-deletions-checked-the-same-skeptical-way">The deletions, checked the same skeptical way</h2>
 <p>A separate theory — that mailbox deletions tenant-wide amounted to records destruction or &quot;spoliation&quot; — was re-checked against the same un-redacted data with the same skepticism.</p>
 <ul>
 <li><strong>About 79% of all hard-deletes tenant-wide are automation or third-party-client artifacts</strong>, not interactive human deletions. The bulk are a Microsoft Substrate server-side process and two users&#39; mail clients running a fixed ~30-second draft-purge timer.</li>
 <li><strong>The &quot;synchronized cascade&quot; pattern is routine.</strong> Where the same message is hard-deleted across several mailboxes in the same second, the field values show the cause: staff hold delegate access to each other&#39;s calendars, so when a meeting is canceled the Substrate removes the duplicate copy from every delegate&#39;s mailbox at the same instant. That pattern fires hundreds of times on lunches, webinars, and hire dates. Of ten flagged &quot;synchronized cascade&quot; clusters, eight collapse into this same benign calendar-cancel mechanism (or into draft cleanup and routine move-to-Deleted-Items of items that demonstrably still existed afterward).</li>
 <li><strong>One lead survives, and is noted — not asserted.</strong> A SharePoint folder recycle by the Town Clerk&#39;s account targets the Town&#39;s attorney, insurer, and a <code>Legal_2022</code> folder, with the folder contents downloaded locally immediately before the deletion and no restore anywhere in the logs. This is the one cluster that withstands scrutiny. Honest caveats apply: a recycle is recoverable, not permanent destruction, and download-then-delete is also consistent with relocating files. It is a lead worth pursuing, not proven destruction.</li>
 </ul>
-<h2>Where this leaves the live issue</h2>
+<h2 id="where-this-leaves-the-live-issue">Where this leaves the live issue</h2>
 <p>The live records dispute is <strong>not</strong> hidden mail. It is the <strong>legality of the redactions</strong> the Town applied to the original C 26-12 response — whether the withholdings were proper under CORA — which is the subject of <a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a>. The inbox-rules theory closes here.</p>
 <p>That distinction matters for the broader record in <a href="pattern-of-cora-obstruction.html">Pattern of CORA Obstruction</a>: an obstruction case is stronger, not weaker, for naming the leads that did not pan out. The status of the underlying requests is tracked in the <a href="cora-tracking-log.html">CORA Request Tracking Log</a>.</p>
-<h2>See Also</h2>
+<h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="cora-c26-12-cure-response.html">CORA C 26-12 — The Cure Response (May 27, 2026)</a></li>
 <li><a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a></li>

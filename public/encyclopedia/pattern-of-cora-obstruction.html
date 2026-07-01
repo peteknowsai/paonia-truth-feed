@@ -62,13 +62,30 @@
 <blockquote>
 <p><strong>Escalation (2026-06-13): the four tactics below were about <em>narrowing</em> the record. In June the Town crossed into <em>destroying</em> it.</strong> On C 26-30 and C 26-33, the Town erased the Verkada person-of-interest list, the license-plate list, and the audit trail — <strong>while both requests were pending and after an on-camera demand to preserve them</strong> — then certified &quot;no data exists to be searched,&quot; even though it had already produced and <em>billed</em> for the logs proving those records existed. Destruction is not curable, which is what makes it categorically worse than Tactics 1–4. Tracked as <strong>Pattern 9</strong> in the <a href="cora-tracking-log.html">CORA Request Tracking Log</a>; full story at <a href="person-of-interest-list-erased.html">The Town Was Asked, On Camera, to Preserve the Person-of-Interest List. Then It Erased It.</a>; documentary record at <a href="cora-c26-30-verkada-poi-denial.html">CORA C 26-30 &amp; C 26-33 — The Person-of-Interest List Erased While the Request Was Pending</a>.</p>
 </blockquote>
-<h2>The Four Tactics</h2>
-<h3>Tactic 1 — Redact the column that contains the substance</h3>
+<details class="toc" open><summary>Contents</summary><ul><li class="toc-l1"><a href="#the-four-tactics"><span class="tocnum">1</span> <span class="toctext">The Four Tactics</span></a></li>
+<li class="toc-l2"><a href="#tactic-1-redact-the-column-that-contains-the-substance"><span class="tocnum">1.1</span> <span class="toctext">Tactic 1 — Redact the column that contains the substance</span></a></li>
+<li class="toc-l2"><a href="#tactic-2-withhold-the-responsive-records-and-claim-they-do-not-exist"><span class="tocnum">1.2</span> <span class="toctext">Tactic 2 — Withhold the responsive records and claim they do not exist</span></a></li>
+<li class="toc-l2"><a href="#tactic-3-deliver-the-wrong-file"><span class="tocnum">1.3</span> <span class="toctext">Tactic 3 — Deliver the wrong file</span></a></li>
+<li class="toc-l2"><a href="#tactic-4-cap-the-volume-at-the-ui-export-limit"><span class="tocnum">1.4</span> <span class="toctext">Tactic 4 — Cap the volume at the UI export limit</span></a></li>
+<li class="toc-l1"><a href="#the-cross-cora-contradiction"><span class="tocnum">2</span> <span class="toctext">The Cross-CORA Contradiction</span></a></li>
+<li class="toc-l1"><a href="#the-c-26-12-cure-admission-then-a-new-redaction-problem"><span class="tocnum">3</span> <span class="toctext">The C 26-12 Cure — Admission, Then a New Redaction Problem</span></a></li>
+<li class="toc-l1"><a href="#c-26-17-deny-as-non-existent-cite-nothing"><span class="tocnum">4</span> <span class="toctext">C 26-17 — Deny as Non-Existent, Cite Nothing</span></a></li>
+<li class="toc-l1"><a href="#c-26-23-redirect-to-an-adjacent-record-then-close"><span class="tocnum">5</span> <span class="toctext">C 26-23 — Redirect to an Adjacent Record, Then Close</span></a></li>
+<li class="toc-l1"><a href="#an-adjacent-failure-who-they-said-the-flyer-was-about"><span class="tocnum">6</span> <span class="toctext">An Adjacent Failure — Who They Said the Flyer Was About</span></a></li>
+<li class="toc-l1"><a href="#the-extension-pattern"><span class="tocnum">7</span> <span class="toctext">The Extension Pattern</span></a></li>
+<li class="toc-l1"><a href="#the-2024-precedent"><span class="tocnum">8</span> <span class="toctext">The 2024 Precedent</span></a></li>
+<li class="toc-l1"><a href="#the-brunner-precedent"><span class="tocnum">9</span> <span class="toctext">The Brunner Precedent</span></a></li>
+<li class="toc-l1"><a href="#combined-effect"><span class="tocnum">10</span> <span class="toctext">Combined Effect</span></a></li>
+<li class="toc-l1"><a href="#recommendations"><span class="tocnum">11</span> <span class="toctext">Recommendations</span></a></li>
+<li class="toc-l2"><a href="#for-the-requester"><span class="tocnum">11.1</span> <span class="toctext">For the requester</span></a></li>
+<li class="toc-l2"><a href="#for-the-board"><span class="tocnum">11.2</span> <span class="toctext">For the Board</span></a></li>
+<li class="toc-l1"><a href="#see-also"><span class="tocnum">12</span> <span class="toctext">See Also</span></a></li></ul></details><h2 id="the-four-tactics">The Four Tactics</h2>
+<h3 id="tactic-1-redact-the-column-that-contains-the-substance">Tactic 1 — Redact the column that contains the substance</h3>
 <p>When Colorado records law requires production, the Town produces the file. But the column of the file that tells a reader <em>what actually happened</em> is redacted under a broad security-arrangements citation.</p>
 <p><strong>In C 26-09 (Verkada cameras):</strong> user IDs, IP addresses, device IDs, device serial numbers, organizational IDs, and MAC addresses are redacted across the board. User names, email addresses, timestamps, event types, and camera labels are not. The redactions cluster around fields that would let a reader correlate events across systems (e.g., who logged in from where, from what device). See <a href="cora-c26-09-verkada-audit-logs.html">CORA C 26-09: Verkada Audit Logs Response</a>.</p>
 <p><strong>In C 26-12 (M365 audit logs), first production:</strong> the <code>AuditData</code> column was redacted on every row of the original export. AuditData is the only column in a unified audit log that contains event substance — email subject lines, recipients, accessed item IDs, client IP, client app. Without AuditData, a <code>MailItemsAccessed</code> event reports only that a user opened their mailbox at a timestamp; it does not report which messages they read. The redaction was column-wide and categorical, not itemized. The May 27 cure later un-redacted AuditData — replacing the column-wide blackout with an over-broad, inconsistent identifier redaction described below. See <a href="cora-c26-12-m365-audit-logs-response.html">CORA C 26-12: M365 Unified Audit Log Response</a>, <a href="cora-c26-12-cure-response.html">CORA C 26-12 — The Cure Response (May 27, 2026)</a>, and <a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a>.</p>
 <p>The legal basis asserted each time is a narrow exemption: C.R.S. § 24-72-204(2)(a)(VIII) for the Verkada and M365 responses; § 24-72-204(2)(a) generally. The exemption is for &quot;specific details&quot; that &quot;would compromise security.&quot; The Town applies it as &quot;entire-column&quot; redaction.</p>
-<h3>Tactic 2 — Withhold the responsive records and claim they do not exist</h3>
+<h3 id="tactic-2-withhold-the-responsive-records-and-claim-they-do-not-exist">Tactic 2 — Withhold the responsive records and claim they do not exist</h3>
 <p><strong>In C 26-11 (libelous communications):</strong> the request asked for all communications between the Mayor, Wynn, Buchner, and any Trustee regarding Pete or the flyer during the six days leading up to and including the Board&#39;s March 30 special meeting. The response produced <strong>four emails</strong>, two of which Pete sent himself or received individually:</p>
 <ol>
 <li>Pete&#39;s own complaint (3/30, 3:29 PM)</li>
@@ -85,7 +102,7 @@
 </ul>
 <p>The only way the production is complete is if seven elected officials orchestrated a special meeting and a group letter, revised overnight, <strong>without a single trustee-to-trustee email, text, or Teams message</strong>. That is not credible. Either the communications exist and were withheld, or they occurred on channels (personal email, phone, in-person) that the Board routinely uses for Town business in deliberate avoidance of records law.</p>
 <p>See <a href="cora-c26-11-libelous-communications-response.html">CORA C 26-11: Libelous Communications Response</a> for the complete production. See <a href="2026-03-30-special-meeting.html">Special Meeting - Board Response to 10 Things Flyer</a> for the meeting it should have documented.</p>
-<h3>Tactic 3 — Deliver the wrong file</h3>
+<h3 id="tactic-3-deliver-the-wrong-file">Tactic 3 — Deliver the wrong file</h3>
 <p><strong>In C 26-12 (M365 audit logs), first production:</strong> the six monthly audit log files produced included a file labeled <code>Redacted_TownOfPaonia_Audit_Log_Mar2026.xlsx</code>. That file did not contain March 2026 data. It contained April 1 – April 9 2026 data — identical, byte-for-byte in the first 20 RecordIds, to the separately-delivered April 2026 file. The May 27 cure delivered a corrected standalone March log and admitted that the IT vendor had &quot;inadvertently downloaded one incorrectly&quot; — and that four monthly exports in total were missing from the first production. See <a href="cora-c26-12-cure-response.html">CORA C 26-12 — The Cure Response (May 27, 2026)</a>.</p>
 <p>March 2026 is the month containing:</p>
 <ul>
@@ -95,16 +112,16 @@
 <li>All the activity that would corroborate or contradict the <a href="cora-c26-11-libelous-communications-response.html">C 26-11 communications response</a></li>
 </ul>
 <p>Replacing it with a duplicate of the April file was not a plausible clerical error in isolation: the files were named with clear month labels; a person responsible for preparing the export would have checked that the correct month was in the correct file. The one month whose data most directly tests the accuracy of the Town&#39;s other CORA response was, in the first production, replaced with a duplicate of a different month. The cure produced the true March log, so the record is no longer missing — but the first production stood for over a month, and the gap was corrected only after Pete objected.</p>
-<h3>Tactic 4 — Cap the volume at the UI export limit</h3>
+<h3 id="tactic-4-cap-the-volume-at-the-ui-export-limit">Tactic 4 — Cap the volume at the UI export limit</h3>
 <p><strong>In C 26-12, first production:</strong> every monthly file was capped at exactly <strong>50,000 rows</strong>. That is the legacy Microsoft Purview in-browser UI export cap. Programmatic access via PowerShell <code>Search-UnifiedAuditLog</code> or the Microsoft Management Activity API has no such cap.</p>
 <p>A full month of a Town M365 tenant with 70+ active accounts generates more than 50,000 events. The 50,000-row per-month files were the first 50,000 events the Purview UI would produce for that date range, not a complete month.</p>
 <p>The request explicitly asked for &quot;complete&quot; export &quot;for all available dates retained by the system.&quot; The Town produced a capped export and called it complete. The May 27 cure replaced the capped files with ten un-capped CSV exports totaling 1,134,799 rows — confirming the first production was truncated. A retention policy of 180 days is also the Microsoft Business Premium <em>minimum</em> — the Town is on the shortest retention tier Microsoft sells. Audit evidence for any dispute older than six months is already gone by system design.</p>
-<h2>The Cross-CORA Contradiction</h2>
+<h2 id="the-cross-cora-contradiction">The Cross-CORA Contradiction</h2>
 <p>The tactics compound across requests.</p>
 <p>Pete&#39;s C 26-11 sought the emails and drafts around the March 30 special meeting. The Town produced four emails and no drafts. C 26-11&#39;s production is therefore not externally verifiable without something else to cross-check it.</p>
 <p>The cross-check exists: the M365 unified audit log for March 2026 would independently record every email sent or received by every board member during the six-day window in C 26-11. A person examining the March audit log could see events like <code>Send</code> from <code>PaigeS@townofpaonia.com</code> to <code>StefenW@townofpaonia.com</code> at a given time, with AuditData containing the recipients and subject line. That record would corroborate or contradict the four emails produced in C 26-11.</p>
 <p><strong>The March 2026 file in C 26-12 was, in the first production, the one replaced with a duplicate of April.</strong> The only month whose audit log would validate the C 26-11 production was the one month whose audit log was not produced — and even had it been produced, the AuditData column (subject lines, recipients) was fully redacted at that time. The May 27 cure resolved both: it delivered the true March log with AuditData un-redacted. The recovered March subject lines are now what several follow-up requests are built from (see <a href="cora-tracking-log.html">CORA Request Tracking Log</a>). That the verifying record was withheld on first pass, and surfaced only under objection, is the point — not that it was permanently lost.</p>
-<h2>The C 26-12 Cure — Admission, Then a New Redaction Problem</h2>
+<h2 id="the-c-26-12-cure-admission-then-a-new-redaction-problem">The C 26-12 Cure — Admission, Then a New Redaction Problem</h2>
 <p>The May 27 cure is the clearest single illustration of the pattern, because it is the Town&#39;s own correction of its own first production. The cure cover letter admits that <strong>four</strong> monthly audit-log exports were missing from the original C 26-12 production due to a repeated vendor export error, delivers a corrected standalone March log, lifts the 50,000-row cap (ten un-capped CSVs, 1,134,799 rows), and un-redacts the AuditData column down to what the Town characterizes as technical identifiers. Fees were waived. See <a href="cora-c26-12-cure-response.html">CORA C 26-12 — The Cure Response (May 27, 2026)</a>.</p>
 <p>So far this reads as a remedy. The problem is what the new redactions did when examined row by row. A line-by-line audit of all 1,134,799 rows found the cure&#39;s redactions are <strong>over-broad as a category and inconsistent as applied</strong> (full method and figures: <a href="redaction-audit-c26-12-cure.html">The Redactions Don’t Hold Up — Auditing the C 26-12 Cure</a>):</p>
 <ul>
@@ -115,16 +132,16 @@
 </ul>
 <p>A defensible core exists: live session and bearer-token material is a legitimate fit for the exemption. But that is a minority of the redaction weight. The legality of the rest is now the live question. The point for this page is structural: the first production was column-wide blackout; the cure replaced it with a narrower but still over-broad and inconsistent redaction, applied without the itemized log the statute contemplates. The volume of what is withheld went down; the rigor did not arrive.</p>
 <p>A separate guardrail belongs here, because the cured data tested a darker reading and did not support it. The cure was partly sought to expose the substance of <a href="stefen-wynn.html">Wynn</a>&#39;s thousands of <code>UpdateInboxRules</code> audit events. The cured logs show those bursts are overwhelmingly <code>ModifyMailboxRule</code> events — for which Microsoft logs no rule body at all (the blank rule definitions are native M365 behavior, not Town redaction). The rule bodies that <em>are</em> logged are benign move-to-folder rules, and every forwarding target across all ten files is an internal <code>@townofpaonia.com</code> address. There is no evidence of mail suppression, hidden inbox rules, or external exfiltration in the 1.13M records. The inbox-rules anomaly is best explained as Wynn&#39;s own desktop Outlook bulk-resyncing a large pre-existing rule store. This page does not assert otherwise, and neither does the redaction audit.</p>
-<h2>C 26-17 — Deny as Non-Existent, Cite Nothing</h2>
+<h2 id="c-26-17-deny-as-non-existent-cite-nothing">C 26-17 — Deny as Non-Existent, Cite Nothing</h2>
 <p>C 26-17 (filed April 23) sought, in Item 2, the Caselle Connect Management Tracking Report — the ERP system&#39;s own security audit log of changes to user rights, users, and group rights. The Town&#39;s May 11 response denied Item 2 in a single sentence: the feature &quot;is not used and therefore the record does not exist.&quot;</p>
 <p>A &quot;record does not exist&quot; answer can be legitimate. The defect is what is missing around it. The denial carried no statutory withholding statement under C.R.S. § 24-72-204(3), and no independent way to verify the assertion that a standard ERP module is in fact disabled. Item 1 of the same request (permission-change communications) was answered with two emails dated July and August 2024 — both <em>predating</em> the October 1, 2024 start of the scope window the request specified — with no document from inside the requested window produced. See <a href="cora-tracking-log.html">CORA Request Tracking Log</a> for the full entry and the segregation-of-duties context the produced August 5 email revealed.</p>
-<h2>C 26-23 — Redirect to an Adjacent Record, Then Close</h2>
+<h2 id="c-26-23-redirect-to-an-adjacent-record-then-close">C 26-23 — Redirect to an Adjacent Record, Then Close</h2>
 <p>C 26-23 (received May 20) sought all Finance Committee records for January 2024 through May 2026 — minutes, agendas, sign-in sheets, and any log, journal, or tracking spreadsheet the Committee maintains — and expressly invoked C.R.S. § 24-72-204(3), asking for a written non-existence confirmation if records did not exist.</p>
 <p>The May 26 response redirected Pete to the Board meeting packets on the Town website — specifically the initialed Payment Approval Reports filed under &quot;Disbursements&quot; — and declared the request closed. No minutes, agendas, sign-in sheets, or logs were produced. No § 204(3) non-existence certification was issued for the categories that produced nothing. A Payment Approval Report is an accounting-system output; it is not a meeting minute, agenda, sign-in sheet, or deliberative log. Treating it as responsive to a request for <em>meeting</em> records, and closing on that basis, addresses one record type while leaving five enumerated categories neither produced nor certified as non-existent.</p>
 <p>The custodian&#39;s on-record position made the dodge explicit: the Town declined to certify non-existence on the ground that it had &quot;provided you with a way to access the records that were responsive&quot; — treating the existence of one record type as discharging a request for a different one. That is a redirect-and-close, not a production. See <a href="cora-c26-23-finance-committee-records.html">CORA C 26-23 — Finance Committee Records</a>.</p>
-<h2>An Adjacent Failure — Who They Said the Flyer Was About</h2>
+<h2 id="an-adjacent-failure-who-they-said-the-flyer-was-about">An Adjacent Failure — Who They Said the Flyer Was About</h2>
 <p>A separate transparency problem sits alongside these CORA responses. The Mayor&#39;s report for the March 30 special meeting described the flyer&#39;s author as anonymous, and the Board&#39;s public March 30 letter adopted that framing — while the Town&#39;s internal records — recovered in the C 26-12 cure subject lines and elsewhere — show officials had identified Pete by name internally. The public framing and the internal record do not match. That contradiction is documented at <a href="they-knew-it-was-mccarthy.html">They Knew It Was McCarthy — Then Called Him “Anonymous”</a> and is relevant here only as context: the same custodial process that controlled what the CORA productions disclosed also controlled what the public letter disclosed.</p>
-<h2>The Extension Pattern</h2>
+<h2 id="the-extension-pattern">The Extension Pattern</h2>
 <p>Both recent CORAs followed an identical timing pattern:</p>
 <table>
 <thead>
@@ -158,13 +175,13 @@
 </tr>
 </tbody></table>
 <p>The 7-day &quot;extenuating circumstances&quot; extension under C.R.S. § 24-72-203 is supposed to be invoked only when unusual conditions prevent production within the standard 3-day window. The clerk&#39;s office takes the maximum extension routinely. The Caselle ERP user access report — a single report any IT admin can produce in 30 minutes — also received a maximum extension in early April. See <a href="cora-tracking-log.html">CORA Request Tracking Log</a>.</p>
-<h2>The 2024 Precedent</h2>
+<h2 id="the-2024-precedent">The 2024 Precedent</h2>
 <p>In September 2024 Pete filed a CORA for the M365 unified audit log (admin activity, May through July 2024). <a href="samira-vetter.html">Vetter</a> denied citing C.R.S. § 24-72-203(2)(a) — &quot;not in custody.&quot; On November 25, 2024, the Executive Director of the Colorado Freedom of Information Coalition wrote a four-page memo confirming the denial was improper: § 203(2)(a) is a notification requirement, not a basis for denial; the licensee of M365 is the custodian; <em>Leonard v. Interquest</em> is controlling. The Town never produced the records. The events are now permanently lost because they aged out of the 180-day retention window.</p>
 <p>When Pete filed the same category of request again in April 2026 (C 26-12), the Town did not deny. It produced the narrow-column, capped, and mislabeled file described above; only after a supplemental objection did it issue the May 27 cure. The method changed. The friction did not.</p>
-<h2>The Brunner Precedent</h2>
+<h2 id="the-brunner-precedent">The Brunner Precedent</h2>
 <p>In a separate matter, Judge Steven Schultz of the Delta County District Court found the Town &quot;failed to exercise reasonable diligence or reasonable inquiry&quot; in responding to a CORA filed by <a href="bill-brunner.html">Bill Brunner</a> and ordered the Town to pay Brunner&#39;s legal costs. That is a judicial finding of CORA bad faith entered in the record against the Town.</p>
 <p><a href="samira-vetter.html">Vetter</a> remains the Official Custodian of Records. The Town&#39;s CORA practices have not changed since the Brunner ruling.</p>
-<h2>Combined Effect</h2>
+<h2 id="combined-effect">Combined Effect</h2>
 <p>For a citizen trying to confirm or challenge what happened around the Board&#39;s March 30 action, the CORA responses on first pass produced the following effective outcome:</p>
 <ol>
 <li><strong>What happened between Town officials</strong> (emails, texts, Teams messages) was missing from C 26-11 and reconstructible only from the M365 audit log.</li>
@@ -174,8 +191,8 @@
 <li><strong>Previously-denied records</strong> from the 2024 M365 request have aged out of retention under the minimum retention tier and are permanently lost.</li>
 </ol>
 <p>None of those outcomes is a single act of bad faith. Together they form a system. The cure shows the system is responsive to pressure — the right objection, properly framed, moved the Town from blackout to a 1.13M-row production. But every step of that arc required the requester to push, and the cure carried its own redaction defects and no § 204(4) log. The purpose of CORA is to let a citizen verify the official record of what their government did without having to litigate each pillar of verifiability into place one at a time.</p>
-<h2>Recommendations</h2>
-<h3>For the requester</h3>
+<h2 id="recommendations">Recommendations</h2>
+<h3 id="for-the-requester">For the requester</h3>
 <ol>
 <li><strong>File a CFOIC complaint</strong> documenting the original C 26-12 mislabeled-March file, the C 26-11 production gap, the C 26-17 &quot;feature not used&quot; denial with no statutory statement, and the C 26-23 redirect-and-close with no § 204(3) certification. CFOIC wrote a memo the last time; they will write another.</li>
 <li><strong>Demand a privilege log</strong> for every Buchner record withheld under attorney-client privilege in C 26-11. CORA requires identification of each withheld record.</li>
@@ -183,9 +200,9 @@
 <li><strong>Press the C 26-23 and C 26-17 defects in writing.</strong> For C 26-23, box each missing category into produce / cite an exemption / certify non-existence under § 204(3). For C 26-17, demand a statutory basis for the Item 2 denial or production of the Management Tracking Report.</li>
 <li><strong>Send a C.R.S. § 24-72-204(5) 14-day pre-suit notice</strong> on the requests where production or certification is still deficient. That is the statutory predicate for a district-court CORA action with fee-shifting in favor of the prevailing requester.</li>
 </ol>
-<h3>For the Board</h3>
+<h3 id="for-the-board">For the Board</h3>
 <p>None of this requires the Town Clerk to act alone. The Board has the authority and obligation to instruct the Town Administrator and the Clerk to comply with records law. The Board has not done so. That inaction is itself subject to CORA and to electoral accountability.</p>
-<h2>See Also</h2>
+<h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="the-clerks-cora-record.html">The Clerk&#39;s CORA Record</a> — the request-by-request ledger and count</li>
 <li><a href="cora-tracking-log.html">CORA Request Tracking Log</a></li>

@@ -235,6 +235,38 @@ a.external::after {
 }
 .infobox .ib-tags a { display: inline-block; margin: 0 0.2em 0.2em 0; }
 
+/* ---- Table of contents ---- */
+.toc {
+  display: table;
+  min-width: 18em;
+  max-width: 32em;
+  border: 1px solid var(--border-light);
+  background: var(--box-bg);
+  padding: 0.5em 0.9em 0.7em;
+  margin: 0.4em 0 1em;
+  font-size: 0.9em;
+}
+.toc summary {
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+  padding-bottom: 0.3em;
+}
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after {
+  content: " [hide]";
+  font-weight: normal;
+  font-size: 0.85em;
+  color: var(--link);
+}
+.toc:not([open]) summary::after { content: " [show]"; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0.15em 0; }
+.toc .toc-l2 { padding-left: 1.6em; }
+.toc a { display: inline; }
+.toc .tocnum { color: var(--text); padding-right: 0.4em; }
+
 /* ---- References ---- */
 .references { font-size: 0.9em; }
 .references ol { padding-left: 1.8em; }
