@@ -9,6 +9,9 @@ sources: [initiative-process, what-the-board-did-not-dispute, samira-vetter]
 
 # Four Ballot Measures, Four Rejections
 
+*Written when the count stood at four. The rejections continued — the full ledger now
+stands at nine. See [[initiative-rejection-scorecard]].*
+
 When residents tried to go around Town Hall and legislate directly, the door closed there too. Across two subjects — short-term rentals and surveillance — the Clerk rejected [[initiative-process|four citizen ballot initiatives]]. Every rejection leaned on the same objection.
 
 ## The same word, four times
