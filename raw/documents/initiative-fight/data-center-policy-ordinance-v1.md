@@ -1,6 +1,14 @@
-# Citizen Initiative Petition — Data Center Policy Ordinance v1
+# Citizen Initiative Petition — Data Center Policy Ordinance v1.1
 
-**Drafted 2026-08-01** as a deliberate parallel text to the Surveillance Policy Ordinance v7
+**Drafted 2026-08-01; revised same day** with "legislative-character armor": a new WHEREAS
+placing the measure in the established category of contract-condition laws (TABOR, bidding
+ordinances), authorization-layer verb discipline in § 2(b), and a new § 6 (Prospective
+Operation; Relation to Administrative Functions) that expressly cedes the execution layer.
+Lesson from the v8 surveillance rejection: narrowing to performance verbs ("conduct, cause,
+permit") moves TOWARD the administrative label — the defensible posture is authorization-layer
+verbs plus an express savings clause, not fewer contract words.
+
+Parallel text to the Surveillance Policy Ordinance v7
 (`Rule-106-Filing-Package/working/v7-petition-source.md`). Every structural element mirrors v7
 clause-for-clause: same section skeleton, same operative verbs ("ordinance, resolution, contract
 authorization, or budget appropriation"), same WHEREAS architecture, same exceptions pattern.
@@ -42,6 +50,8 @@ Town's own municipal information systems, public safety communications equipment
 broadband and telecommunications distribution equipment, and on-premises computing incidental
 to the operations of local businesses and institutions; prohibiting the Town Board from delegating
 to or accomplishing through any person or entity what this ordinance prohibits directly; declaring
+that the ordinance operates prospectively only, does not impair any existing contract, and neither
+directs nor withdraws any administrative function of the Town; declaring
 the ordinance to be of permanent and general character; and providing for severability and an
 effective date upon certification of the vote?
 
@@ -82,6 +92,14 @@ Bill 26-102 (data center energy, water, and ratepayer protections), and upon the
 governments, many of which regulate data center facilities by ordinance — thereby treating data
 center development as a subject appropriate to legislative action;
 
+**WHEREAS**, ordinances establishing general and prospective conditions upon the exercise of a
+municipality's contracting and spending powers — competitive-bidding and purchasing ordinances,
+debt limitations, and the elector-approval requirements of Article X, Section 20 of the Colorado
+Constitution, itself adopted by citizen initiative — are an established and quintessentially
+legislative category of law: such measures execute no contract, manage no property, and direct
+no employee, but define in advance the conditions under which such executive acts may be
+authorized;
+
 **WHEREAS**, this Ordinance does not concern the management or operation of any Town property
 or asset; it concerns the relationship between the Town government and the people who reside in,
 work in, and visit the Town of Paonia, and the disposition of resources the Town holds in trust
@@ -111,11 +129,13 @@ policy of the Town of Paonia within the meaning of Article V, Section 1(9) of th
 Constitution.
 
 (b) **Limitation on Town Board Authority.** It shall be unlawful for the Town of Paonia, or the
-Town Board acting on its behalf, to adopt any ordinance, resolution, contract authorization,
-utility service agreement, lease or conveyance of Town real property, or budget appropriation
-that funds, authorizes, or otherwise enables a data center facility, unless the commitment has
-first been approved by a majority of the registered electors of the Town voting on the question
-at a regular or special municipal election.
+Town Board acting on its behalf, to adopt any ordinance or resolution, or to approve or
+authorize any contract, utility service agreement, lease or conveyance of Town real property,
+or budget appropriation, that funds, authorizes, or otherwise enables a data center facility,
+unless the commitment has first been approved by a majority of the registered electors of the
+Town voting on the question at a regular or special municipal election. This subsection
+operates solely upon the Town Board's acts of adoption, approval, and authorization; it directs
+no act of contract negotiation, execution, performance, or administration.
 
 ### Section 3. Definitions.
 
@@ -174,7 +194,26 @@ facility on the Town's behalf or under the Town's authority. This Ordinance appl
 force to direct Town action and to third-party action authorized, funded, or facilitated by the
 Town.
 
-### Section 6. Permanent and General Character.
+### Section 6. Prospective Operation; Relation to Administrative Functions.
+
+(a) **Prospective Only.** This Ordinance operates prospectively only. It does not rescind,
+modify, or impair any contract or agreement in existence on its effective date; it does not
+direct the performance or administration of any existing contract; and it does not affect any
+vested right.
+
+(b) **No Administrative Direction.** Nothing in this Ordinance directs, manages, or administers
+any specific Town facility, operation, contract, transaction, or personnel decision; approves
+or disapproves any pending application or agreement; or withdraws from the Town's
+administrative staff any function committed to them. The negotiation, execution, and
+day-to-day administration of any contract or commitment authorized consistently with this
+Ordinance remain executive functions of the Town.
+
+(c) **Rule of Authorization.** This Ordinance operates solely upon the authorization layer of
+Town government: it defines the conditions precedent to the Town Board's adoption or approval
+of the acts enumerated in Section 2(b). It is a law about what may be authorized, not a
+directive about how anything shall be done.
+
+### Section 7. Permanent and General Character.
 
 This Ordinance is permanent in operation. It contains no sunset provision. It applies to all
 departments, officers, employees, agents, and contractors of the Town of Paonia, in all
@@ -182,19 +221,19 @@ geographic areas subject to the Town's jurisdiction, at all times. It declares a
 permanent and general character within the meaning of Article V, Section 1(9) of the Colorado
 Constitution.
 
-### Section 7. Liberal Construction.
+### Section 8. Liberal Construction.
 
 This Ordinance shall be liberally construed to effectuate its purpose of reserving to the
 electors the commitment of the Town's resources to data center facilities as established in
 Section 2.
 
-### Section 8. Severability.
+### Section 9. Severability.
 
 If any provision of this Ordinance, or its application to any person or circumstance, is held
 invalid by a court of competent jurisdiction, the remaining provisions and applications shall
 continue in full force and effect.
 
-### Section 9. Effective Date.
+### Section 10. Effective Date.
 
 This Ordinance takes effect upon certification of the vote.
 
