@@ -68,6 +68,7 @@ Key precedents cited in the formal response and Rule 106 draft:
 
 ## See Also
 
+- [[initiative-rejection-scorecard]] — the full nine-rejection ledger through June 2026
 - [[2025-05-28-str-initiative-rejection]]
 - [[2026-04-03-surveillance-initiative-rejection]]
 - [[clerk-rejection-2026-04-03]] — full text of first surveillance rejection
