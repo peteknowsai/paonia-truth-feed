@@ -1,9 +1,9 @@
-# Request to the Board of Trustees
+# In 2024 the Town said it couldn't produce these records. In 2026 it produced 1.1 million of them.
 
-**Subject: A review of how the Town has answered public records requests**
+### A request to the Board of Trustees to review how the Town has answered public records requests
 
-**Date: August 4, 2026**
-**From: Pete McCarthy, resident**
+**From:** Pete McCarthy, resident
+**Date:** August 4, 2026
 
 ---
 
