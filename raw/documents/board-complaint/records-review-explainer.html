@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why the Board Should Review the Town's Records Requests</title>
+<style>
+:root{
+  --bg:#faf9f6; --fg:#111; --dim:#5a5a55; --rule:#d6d4cc;
+  --accent:#b3261e; --mark:#fff3a3; --card:#fff;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#12120f; --fg:#eceae2; --dim:#9a978c; --rule:#33322c;
+         --accent:#ff6b5e; --mark:#4a4212; --card:#1a1a16; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:0;
+  background:var(--bg); color:var(--fg);
+  font-family:"Courier Prime","Courier New",ui-monospace,monospace;
+  font-size:16px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:44rem; margin:0 auto; padding:4rem 1.5rem 6rem}
+h1{font-size:1.9rem; line-height:1.2; margin:0 0 .5rem; letter-spacing:-.02em}
+h2{font-size:1.15rem; margin:3.5rem 0 1rem; padding-top:1.25rem; border-top:2px solid var(--fg)}
+h3{font-size:1rem; margin:2rem 0 .5rem}
+p{margin:0 0 1.1rem}
+a{color:inherit}
+.kicker{font-size:.75rem; letter-spacing:.18em; text-transform:uppercase; color:var(--dim); margin:0 0 1.5rem}
+.byline{font-size:.8rem; color:var(--dim); margin:0 0 3rem; padding-bottom:2rem; border-bottom:1px solid var(--rule)}
+
+.ask{
+  background:var(--card); border:2px solid var(--fg);
+  padding:1.5rem 1.5rem .5rem; margin:0 0 2.5rem;
+}
+.ask p:first-child{font-size:1.15rem; font-weight:700}
+.ask .small{font-size:.85rem; color:var(--dim); border-top:1px solid var(--rule); padding-top:1rem; margin-top:1.25rem}
+
+blockquote{
+  margin:1.5rem 0; padding:0 0 0 1.25rem;
+  border-left:4px solid var(--accent); font-style:normal;
+}
+
+/* timeline */
+.tl{margin:1.5rem 0 2rem; padding:0; list-style:none; position:relative}
+.tl::before{content:""; position:absolute; left:5.5rem; top:.6rem; bottom:.6rem; width:2px; background:var(--rule)}
+.tl li{position:relative; display:grid; grid-template-columns:5.5rem 1fr; gap:1.25rem; margin:0 0 1.4rem}
+.tl .d{font-size:.8rem; color:var(--dim); text-align:right; padding-top:.15rem; white-space:nowrap}
+.tl .e{position:relative}
+.tl .e::before{
+  content:""; position:absolute; left:-1.65rem; top:.55rem;
+  width:9px; height:9px; border-radius:50%;
+  background:var(--bg); border:2px solid var(--fg);
+}
+.tl li.hit .e::before{background:var(--accent); border-color:var(--accent)}
+.tl li.hit .e strong{color:var(--accent)}
+.tl .e strong{display:block; font-weight:700}
+.tl .e span{font-size:.88rem; color:var(--dim)}
+
+.punch{
+  margin:2rem 0; padding:1.25rem 1.5rem;
+  border:2px dashed var(--accent); font-size:1.02rem;
+}
+.punch b{color:var(--accent)}
+
+table{width:100%; border-collapse:collapse; margin:1.5rem 0; font-size:.82rem}
+th,td{text-align:left; padding:.6rem .5rem; border-bottom:1px solid var(--rule); vertical-align:top}
+th{font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--dim); border-bottom:2px solid var(--fg)}
+td:first-child{white-space:nowrap; font-weight:700}
+
+ol.q{padding-left:1.3rem}
+ol.q li{margin-bottom:.8rem}
+ul.not{list-style:none; padding:0}
+ul.not li{padding-left:1.8rem; position:relative; margin-bottom:.6rem}
+ul.not li::before{content:"✕"; position:absolute; left:0; color:var(--accent); font-weight:700}
+
+mark{background:var(--mark); color:inherit; padding:0 .15em}
+footer{margin-top:4rem; padding-top:1.5rem; border-top:1px solid var(--rule); font-size:.78rem; color:var(--dim)}
+
+@media print{
+  :root{--bg:#fff;--fg:#000;--dim:#444;--rule:#bbb;--accent:#000;--card:#fff;--mark:#eee}
+  .wrap{padding:0; max-width:none}
+  h2{page-break-after:avoid}
+  .tl,.punch,.ask,table{page-break-inside:avoid}
+}
+@media (max-width:34rem){
+  .tl::before{left:0}
+  .tl li{grid-template-columns:1fr; gap:.15rem}
+  .tl .d{text-align:left; padding-left:1.5rem}
+  .tl .e{padding-left:1.5rem}
+  .tl .e::before{left:-.3rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="kicker">Town of Paonia · Public Records</p>
+<h1>In 2024 the Town said it couldn't produce these records.<br>In 2026 it produced 1.1 million of them.</h1>
+<p class="byline">A request to the Board of Trustees · Pete McCarthy, resident · August 4, 2026</p>
+
+<div class="ask">
+  <p>I am asking the Board to look at this.</p>
+  <p class="small">A public review of how the Town has answered records requests since 2024. That's the ask. What the Board concludes from it, and what it decides to do about it, is the Board's to decide — not mine to prescribe.</p>
+</div>
+
+<p>Colorado's Open Records Act gives every resident the right to see what their government is doing. When you file a request, the Town has three working days to answer — ten if it documents a good reason for more time. If it holds something back, it has to say so <em>in writing</em>, and say why.</p>
+
+<p>Since 2024 I've filed more than a dozen requests. What follows are three of them. I've picked these three because none of them asks you to believe me about anything — no motives, no mind-reading. All three are proven by the Town's own documents, and all three come down to dates.</p>
+
+<h2>One · Impossible in 2024. Routine in 2026. By then the records were gone.</h2>
+
+<p>In the fall of 2024 I was a member of the Planning Commission. I sent the Town Administrator a set of questions at 1:13 PM, asking that they go in the packet for that evening's meeting. At the meeting that night, he said on camera: <em>"Oh, we do have an email from Pete"</em> — as though seeing it for the first time.</p>
+
+<p>Microsoft 365 keeps a record of when an email is opened. I asked for it.</p>
+
+<ul class="tl">
+  <li>
+    <span class="d">Sep 27, 2024</span>
+    <span class="e"><strong>I request the Town's Microsoft 365 audit logs</strong></span>
+  </li>
+  <li class="hit">
+    <span class="d">Sep 30, 2024</span>
+    <span class="e"><strong>Denied — the records are "not in the Town's custody"</strong><span>No explanation of who did have them, or where they were.</span></span>
+  </li>
+  <li>
+    <span class="d">Nov 18, 2024</span>
+    <span class="e"><strong>I put it in writing to all seven trustees</strong><span>A formal complaint asking the Board to obtain the access logs itself. <mark>Not one trustee responded.</mark></span></span>
+  </li>
+  <li>
+    <span class="d">Nov 25, 2024</span>
+    <span class="e"><strong>CFOIC says the denial was improper</strong><span>Jeff Roberts, Executive Director of the Colorado Freedom of Information Coalition, put it in writing: the statute the Town cited is a notification requirement, not grounds for a denial. The Town is the license holder. The Town is the custodian.</span></span>
+  </li>
+  <li>
+    <span class="d">Spring 2025</span>
+    <span class="e"><strong>The records age out</strong><span>The Town keeps these logs for 180 days — the shortest retention Microsoft sells. The 2024 records are now permanently gone.</span></span>
+  </li>
+  <li class="hit">
+    <span class="d">May 2026</span>
+    <span class="e"><strong>The Town produces 1,134,799 rows of exactly this kind of record</strong><span>Same custodian. Same email system. Same category of record. Opposite answer.</span></span>
+  </li>
+</ul>
+
+<div class="punch">
+  These logs would have shown whether the Administrator had opened that email before the meeting where he said he was seeing it for the first time. The request was denied. The records aged out. <b>Nobody ever found out — and now nobody can.</b>
+</div>
+
+<p>An outside expert told the Town in writing that the denial was wrong. The Board was told in writing and said nothing. The clock ran out. Eighteen months later the same office produced a million rows of the same thing without difficulty.</p>
+
+<h2>Two · They said there was nothing. Two months later there was something.</h2>
+
+<p>In March 2026 the Board held a special meeting about a flyer I had distributed, and issued a public letter about it. I asked for the emails and drafts behind that letter.</p>
+
+<ul class="tl">
+  <li>
+    <span class="d">Apr 6</span>
+    <span class="e"><strong>I file the request</strong><span>All communications and drafts around the Board's March 30 letter.</span></span>
+  </li>
+  <li>
+    <span class="d">Apr 21</span>
+    <span class="e"><strong>The Town answers: four emails</strong><span>Two of the four I had written myself. No drafts of the letter. The Town certifies the response complete.</span></span>
+  </li>
+  <li>
+    <span class="d">Jun 1</span>
+    <span class="e"><strong>I ask again — by filename</strong><span>This time naming the exact documents, taken from the Town's own computer activity logs.</span></span>
+  </li>
+  <li class="hit">
+    <span class="d">Jun 19</span>
+    <span class="e"><strong>The Town produces the drafts</strong><span>The same drafts of the same letter. No explanation for why they weren't produced in April.</span></span>
+  </li>
+</ul>
+
+<div class="punch">
+  The drafts existed in April. They could have been handed over in April. They weren't produced, they weren't listed as withheld, and <b>no reason has ever been given</b> — not then, not since.
+</div>
+
+<h2>Three · They erased the records while I was asking for them.</h2>
+
+<p>The Town ran a Verkada camera system. It kept two watch lists: a "person of interest" list and a license plate list. I know those lists existed because the Town sold me the log that proves it — I paid <mark>$167.90</mark> for that record in April.</p>
+
+<ul class="tl">
+  <li>
+    <span class="d">May 12</span>
+    <span class="e"><strong>I ask the Board, on camera, to preserve the camera data</strong><span>Because it may be the subject of legal action.</span></span>
+  </li>
+  <li>
+    <span class="d">Jun 4</span>
+    <span class="e"><strong>I request the two watch lists</strong></span>
+  </li>
+  <li>
+    <span class="d">Jun 8</span>
+    <span class="e"><strong>I request the camera activity log</strong><span>Both requests are now open and pending.</span></span>
+  </li>
+  <li class="hit">
+    <span class="d">Jun 10</span>
+    <span class="e"><strong>The Board ends the Verkada contract. All the data is erased.</strong><span>Twenty-nine days after the on-camera request to preserve it. Both records requests are still open.</span></span>
+  </li>
+  <li class="hit">
+    <span class="d">Jun 11–12</span>
+    <span class="e"><strong>Both requests denied</strong><span>The same sentence on both: <em>"no data exists to be searched."</em></span></span>
+  </li>
+</ul>
+
+<div class="punch">
+  A records request was open. The records were destroyed. Then the Town certified that <b>nothing existed to give me</b>. Every one of those five dates is a Town document or a Town vote on video.
+</div>
+
+<h2>Why this is the Board's problem, not just mine</h2>
+
+<p>Paonia has been here before — twice, with two different outsiders reaching the same conclusion.</p>
+
+<p>In the Brunner case, Judge Steven Schultz of the Delta County District Court found that the Town <mark>"failed to exercise reasonable diligence or reasonable inquiry"</mark> in answering a records request — and ordered the Town to pay that resident's legal costs. In 2024, CFOIC's Executive Director put in writing that the Town's denial to me was improper.</p>
+
+<p>Both times, the Town was told. Both times, nothing changed.</p>
+
+<p>I want to be direct about the part that involves this body. In November 2024 I sent a formal complaint to all seven trustees asking them to obtain those logs. Not one replied. The records were still recoverable on the day that complaint was sent. They aren't now.</p>
+
+<p>Most of you weren't on this Board then. That's exactly why I'm bringing it back. The last Board was told and didn't answer. You can be the one that did.</p>
+
+<p>Colorado law works that way on purpose. A resident who is improperly denied records and prevails in court is awarded court costs and attorney fees. That bill goes to the Town's budget. It comes out of the same money as streets and water.</p>
+
+<p>Nothing about how the Town answers records requests has changed since that ruling. There is no written policy governing records requests at all — I asked for one, and the answer confirmed none exists.</p>
+
+<p><strong>A review now is the cheap version of this. The expensive version is a courtroom.</strong></p>
+
+<h2>What I'm asking the Board to do</h2>
+
+<p>Not an investigation. Not an audit with a budget. A defined look at a defined stack of paper — the requests from 2024 to today. Three questions each:</p>
+
+<ol class="q">
+  <li><strong>Was it answered inside the deadline the law sets?</strong> Three working days, or ten with a documented extension.</li>
+  <li><strong>Was everything responsive actually produced?</strong></li>
+  <li><strong>Where something was withheld or called non-existent, is the written reason on file that state law requires?</strong></li>
+</ol>
+
+<p>Every answer is already in a file drawer. Then a report back to the public, at a public meeting.</p>
+
+<h3>One caution on who does it</h3>
+<p>The review shouldn't be run by the same people whose responses are under review. That's not an accusation — it's just how a review works. The Colorado Freedom of Information Coalition looks at these matters at no cost, and has already written to this Town once about a records denial. A trustee committee would also do the job.</p>
+
+<h2>What I'm not asking for</h2>
+
+<p>I'm not telling this Board what to conclude, and I'm not asking it to take an action against any employee. I've deliberately left that out.</p>
+
+<p>I'm asking you to look at it. If you look at these requests and reach conclusions about how this office has been run, those are your conclusions to reach and yours to act on. You have the authority. You don't need me to tell you how to use it, and it isn't my place to.</p>
+
+<p>What I'd ask is that the looking actually happen, in public, and that whatever comes of it be said out loud.</p>
+
+<h2>The record</h2>
+
+<p>Every item below is a dated Town document, available on request.</p>
+
+<table>
+<thead><tr><th>Request</th><th>What happened</th></tr></thead>
+<tbody>
+<tr><td>C 26-09</td><td>Verkada records, produced Apr 8 for $167.90 — the log that proves the erased watch lists existed</td></tr>
+<tr><td>C 26-11</td><td>March 30 letter communications, certified complete Apr 21 — four emails, no drafts</td></tr>
+<tr><td>C 26-12</td><td>Microsoft 365 audit logs, Apr 22 — wrong month delivered, export cut short, corrected May 27 only after objection</td></tr>
+<tr><td>C 26-17</td><td>Accounting system audit log, May 11 — denied as non-existent with no written basis</td></tr>
+<tr><td>C 26-23</td><td>Finance Committee records, May 26 — closed with five of six categories unanswered</td></tr>
+<tr><td>C 26-29</td><td>The same records as C 26-11, produced Jun 19 — the drafts C 26-11 left out</td></tr>
+<tr><td>C 26-30</td><td>Verkada watch lists, denied Jun 12 — data erased Jun 10 while pending</td></tr>
+<tr><td>C 26-33</td><td>Verkada activity log, denied Jun 12 — same erasure</td></tr>
+</tbody>
+</table>
+
+<footer>
+<p>Colorado's Open Records Act designates a single "official custodian" of a town's records; in Paonia that is the Town Clerk. This request concerns the Town's <em>practice</em> — which the Board of Trustees sets, and oversees.</p>
+<p>Prepared by Pete McCarthy · August 4, 2026 · Supporting documents at paoniatruth.site</p>
+</footer>
+
+</div>
+</body>
+</html>
