@@ -1,0 +1,224 @@
+{
+  "slug": "first-time-today",
+  "title": "FIRST TIME TODAY",
+  "steps": [
+    "COLOR",
+    "PLANS",
+    "TODAY",
+    "RECORDS",
+    "RULING"
+  ],
+  "music": "Sparse, tense investigative documentary underscore. Muted plucked strings and soft low piano pulse, slow 80 bpm, subdued and serious, no vocals, no drums build, steady bed for spoken narration.",
+  "segments": [
+    {
+      "step": 0,
+      "scene": "plans",
+      "narration": "Neptune Beach, Florida. City Manager Stefen Wynn picks a new water tank's color. Green in color is good.",
+      "overlays": [
+        {
+          "type": "label",
+          "word": "Neptune",
+          "text": "Neptune Beach, FL · 2022",
+          "pos": [
+            0.5,
+            0.08
+          ]
+        },
+        {
+          "type": "quote",
+          "word": "Green",
+          "text": "“Green in color is good.”",
+          "by": "Wynn's email, June 2022",
+          "pos": [
+            0.5,
+            0.78
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "picks",
+          "prompt": "single soft paper card slid across a wooden desk",
+          "dur": 1.0
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "scene": "plans",
+      "zoom": [
+        1.0,
+        1.35
+      ],
+      "focus": [
+        0.55,
+        0.32
+      ],
+      "narration": "Days later, he has the plans. Twenty-nine feet tall.",
+      "overlays": [
+        {
+          "type": "caption",
+          "word": "Twenty-nine",
+          "text": "29 FEET TALL"
+        }
+      ],
+      "sfx": [
+        {
+          "word": "Twenty-nine",
+          "prompt": "soft deep cinematic boom hit, short",
+          "dur": 1.2
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "scene": "tank",
+      "narration": "The tank goes up behind people's homes. Neighbors call it the big green monster.",
+      "overlays": [
+        {
+          "type": "label",
+          "word": "behind",
+          "text": "residents' back yards",
+          "pos": [
+            0.28,
+            0.62
+          ],
+          "arrow": [
+            0.32,
+            0.72
+          ]
+        },
+        {
+          "type": "caption",
+          "word": "big",
+          "text": "THE BIG GREEN MONSTER"
+        }
+      ],
+      "sfx": [
+        {
+          "word": "goes",
+          "prompt": "distant heavy construction crane and metal clank, brief",
+          "dur": 2.0
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "scene": "council",
+      "narration": "Wynn tells the council, the first time that I had seen the site plan was today.",
+      "overlays": [
+        {
+          "type": "quote",
+          "word": "first",
+          "text": "“The first time that I had seen the site plan … was today.”",
+          "by": "Wynn to the City Council, Dec. 9, 2022",
+          "pos": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "tells",
+          "prompt": "quiet email notification chime",
+          "dur": 0.8
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "scene": "door",
+      "narration": "As staff gather tank records for a public records request, he closes her door, and tells her to run them by him first.",
+      "overlays": [
+        {
+          "type": "label",
+          "word": "closes",
+          "text": "door closed",
+          "pos": [
+            0.78,
+            0.2
+          ],
+          "arrow": [
+            0.72,
+            0.42
+          ]
+        },
+        {
+          "type": "quote",
+          "word": "run",
+          "text": "Run anything about the tank by him, “so that he could decide whether it was okay to send.”",
+          "by": "Court order, undisputed facts",
+          "pos": [
+            0.5,
+            0.8
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "closes",
+          "prompt": "wooden office door closing firmly with latch click",
+          "dur": 1.2
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "scene": "council",
+      "narration": "Fired, unanimously. He sued, calling himself a whistleblower.",
+      "overlays": [
+        {
+          "type": "stamp",
+          "word": "unanimously",
+          "text": "FIRED · UNANIMOUS"
+        }
+      ],
+      "sfx": [
+        {
+          "word": "unanimously",
+          "prompt": "heavy rubber stamp pressed onto paper, single hit",
+          "dur": 0.8
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "scene": "court",
+      "narration": "October first, twenty twenty-six. A judge ruled against him. The city attorney, under oath: when it was shown that he picked the color, that was proven to be a lie.",
+      "overlays": [
+        {
+          "type": "stamp",
+          "word": "ruled",
+          "text": "JUDGMENT FOR THE CITY"
+        },
+        {
+          "type": "quote",
+          "word": "when",
+          "text": "“…when it was shown that he picked the color, that was proven to be a lie.”",
+          "by": "Neptune Beach City Attorney, sworn deposition",
+          "pos": [
+            0.5,
+            0.78
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "ruled",
+          "prompt": "single wooden judge gavel strike in a quiet courtroom",
+          "dur": 1.2
+        }
+      ]
+    }
+  ],
+  "end": {
+    "lines": [
+      "FIRED.",
+      "SUED.",
+      "LOST."
+    ],
+    "source": "Wynn v. City of Neptune Beach, No. 16-2023-CA-008801 (Fla. 4th Cir. Ct.), Order Granting Summary Judgment, Oct. 1, 2026",
+    "dur": 4.0
+  }
+}
