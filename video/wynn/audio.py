@@ -14,6 +14,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 import urllib.request
 from pathlib import Path
 
@@ -39,12 +40,15 @@ def call(path, body, cache_dir, ext):
         return out
     req = urllib.request.Request(f"{API}{path}", data=json.dumps(body).encode(), method="POST",
                                  headers={"xi-api-key": key(), "content-type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=300) as r:
-            out.write_bytes(r.read())
-    except urllib.error.HTTPError as e:
-        sys.exit(f"ElevenLabs {path} failed: {e.code} {e.read().decode()[:300]}")
-    return out
+    for attempt in range(4):  # ElevenLabs answers 429 "system_busy" under load
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                out.write_bytes(r.read())
+            return out
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503) or attempt == 3:
+                sys.exit(f"ElevenLabs {path} failed: {e.code} {e.read().decode()[:300]}")
+            time.sleep(20 * (attempt + 1))
 
 
 def duration(path):
@@ -75,6 +79,8 @@ def narrate(seg, voice, cache):
 
 
 def main(spec_path, voice):
+    slug = json.loads(Path(spec_path).read_text())["slug"]
+    (ROOT / "build" / slug / "timing.json").unlink(missing_ok=True)  # stale after script edits
     spec = load(spec_path)
     build = ROOT / "build" / spec["slug"]
     cache = build / "audio"

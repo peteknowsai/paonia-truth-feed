@@ -260,12 +260,15 @@ def draw_overlays(canvas, seg, lt):
 def end_frame(canvas, end, lt):
     d = ImageDraw.Draw(canvas)
     lines = end["lines"]
+    size = 150
+    while max(display(size).getlength(ln) for ln in lines) > W - 140:
+        size -= 4
     for k, ln in enumerate(lines):
         age = lt - 0.25 - 0.55 * k
         if age < 0:
             continue
         img = Image.new("RGBA", (W, 200), (0, 0, 0, 0))
-        outlined(ImageDraw.Draw(img), (W // 2, 100), ln, display(150), RED, DRED, 4)
+        outlined(ImageDraw.Draw(img), (W // 2, 100), ln, display(size), RED, DRED, 4)
         y = 470 - (len(lines) - 1) * 85 + k * 170
         paste_pop(canvas, img, (W / 2, y), age, grow=0.4)
     if lt > 0.25 + 0.55 * len(lines):
