@@ -1,0 +1,56 @@
+{
+  "slug": "quit-unless",
+  "title": "QUIT UNLESS",
+  "steps": ["ELECTED", "ULTIMATUM", "REMOVED", "COMMISSION", "PATTERN"],
+  "music": "Low, brooding political-documentary underscore. Slow pulsing synth bass and muted strings, 80 bpm, tense but restrained, no vocals, no drums, steady bed under narration.",
+  "segments": [
+    {
+      "step": 0, "scene": "ballot",
+      "narration": "Paonia, twenty twenty-four. Voters elect Bill Brunner trustee with sixty-eight percent of the vote. He asks questions. He files records requests.",
+      "overlays": [
+        {"type": "caption", "word": "sixty-eight", "text": "67.7% OF THE VOTE"}
+      ],
+      "sfx": [{"word": "elect", "prompt": "paper ballot dropped into a ballot box", "dur": 0.8}]
+    },
+    {
+      "step": 1, "scene": "letter",
+      "narration": "On August first, Town Administrator Stefen Wynn hands in his resignation, with a condition. He will stay, if Brunner is removed.",
+      "overlays": [
+        {"type": "label", "word": "August", "text": "Aug. 1, 2024", "pos": [0.5, 0.08]},
+        {"type": "stamp", "word": "condition", "text": "UNLESS HE GOES"}
+      ],
+      "sfx": [{"word": "condition", "prompt": "envelope slapped down on a wooden desk", "dur": 0.8}]
+    },
+    {
+      "step": 2, "scene": "dais",
+      "narration": "Two weeks later, the board removes Brunner, four to one, for harassment, with no specific incident ever documented in public.",
+      "overlays": [
+        {"type": "stamp", "word": "removes", "text": "REMOVED 4–1"},
+        {"type": "label", "word": "harassment", "text": "no incident documented publicly", "pos": [0.5, 0.86]}
+      ],
+      "sfx": [{"word": "removes", "prompt": "single wooden gavel strike in a quiet meeting room", "dur": 1.0}]
+    },
+    {
+      "step": 3, "scene": "inbox",
+      "narration": "Months later, a planning commissioner asks questions too. Wynn forwards his private emails to every official, calls his work a waste of town resources, and refuses to attend the next meeting unless the board orders him to.",
+      "overlays": [
+        {"type": "quote", "word": "waste", "text": "“a waste of Town resources”", "by": "Wynn, Nov. 14, 2024", "pos": [0.5, 0.3]},
+        {"type": "quote", "word": "refuses", "text": "“I will not attend the December 2, 2024 meeting unless required to by the Board of Trustees.”", "by": "Wynn, Nov. 2024", "pos": [0.5, 0.74]}
+      ],
+      "sfx": [{"word": "forwards", "prompt": "several quick email send whooshes", "dur": 1.2}]
+    },
+    {
+      "step": 4, "scene": "dais",
+      "narration": "An unelected administrator, deciding who gets to oversee him.",
+      "overlays": [
+        {"type": "caption", "word": "deciding", "text": "WHO OVERSEES WHOM?"}
+      ],
+      "sfx": [{"word": "deciding", "prompt": "soft deep cinematic boom hit, short", "dur": 1.2}]
+    }
+  ],
+  "end": {
+    "lines": ["HIS JOB,", "OR THEIR SEAT."],
+    "source": "Sources: Wynn conditional resignation (Aug. 1, 2024); Paonia Board removal hearing, Aug. 13–15, 2024; Wynn emails Sept.–Nov. 2024 (board letter, Mar. 30, 2026)",
+    "dur": 4.0
+  }
+}

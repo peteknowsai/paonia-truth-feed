@@ -22,7 +22,7 @@ from render import ROOT, load, norm
 API = "https://api.elevenlabs.io/v1"
 VOICE = "nPczCjzI2devNBz1zQrb"  # "Brian": measured American narrator
 LEAD, TAIL = 0.3, 0.35  # silence around each narration segment
-MUSIC_DB, SFX_DB = -20, -6
+MUSIC_DB, SFX_DB = -20, -12
 
 
 def key():
@@ -118,7 +118,7 @@ def main(spec_path, voice):
     filters.append("[mus][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[duck]")
     all_in = ["[voice]", "[duck]"] + sfx_labels
     filters.append(f"{''.join(all_in)}amix=inputs={len(all_in)}:normalize=0,"
-                   f"alimiter=limit=0.95,apad=whole_dur={total}[out]")
+                   f"loudnorm=I=-16:TP=-1.5:LRA=11,apad=whole_dur={total}[out]")
 
     out = build / "mix.wav"
     subprocess.run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(filters),
