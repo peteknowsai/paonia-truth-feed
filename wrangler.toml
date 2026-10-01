@@ -9,10 +9,6 @@ main = ".open-next/worker.js"
 workers_dev = true
 
 [[routes]]
-pattern = "paoniatruth.site"
-custom_domain = true
-
-[[routes]]
 pattern = "truth.townofpaonia.co"
 custom_domain = true
 
