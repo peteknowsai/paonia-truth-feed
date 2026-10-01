@@ -12,6 +12,10 @@ workers_dev = true
 pattern = "paoniatruth.site"
 custom_domain = true
 
+[[routes]]
+pattern = "truth.townofpaonia.co"
+custom_domain = true
+
 [observability]
 enabled = true
 
