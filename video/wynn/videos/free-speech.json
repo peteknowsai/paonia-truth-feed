@@ -1,0 +1,158 @@
+{
+  "slug": "free-speech",
+  "title": "FREE SPEECH IS NOT A CRIME",
+  "voice": "8BNZXqdnYLBqxWWAuQYn",
+  "steps": [
+    "FLORIDA",
+    "MARCH",
+    "APRIL",
+    "MAY",
+    "COUNT"
+  ],
+  "music": "Taut minimalist documentary underscore. Ticking muted pizzicato strings over a low sustained drone, 85 bpm, suspenseful but understated, no vocals, no drums, steady bed under narration.",
+  "segments": [
+    {
+      "step": 0,
+      "scene": "phone",
+      "narration": "Neptune Beach, twenty twenty-two. Stefen Wynn tells the police chief a city councilor and her husband committed a felony. They had not. A judge's order now lays it out.",
+      "overlays": [
+        {
+          "type": "quote",
+          "word": "felony",
+          "text": "Told the chief the councilor and her husband “had committed a felony.” The husband wasn’t in the room, and it wouldn’t have been a felony anyway.",
+          "by": "Court order, Oct. 1, 2026",
+          "pos": [
+            0.5,
+            0.74
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "tells",
+          "prompt": "old desk telephone receiver picked up, brief dial tone",
+          "dur": 1.0
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "scene": "station",
+      "narration": "Pay-own-yuh, twenty twenty-six. March. He takes a resident's Facebook post to the police.",
+      "overlays": [
+        {
+          "type": "stamp",
+          "word": "police",
+          "text": "NO INVESTIGATION"
+        }
+      ],
+      "sfx": [
+        {
+          "word": "police",
+          "prompt": "heavy rubber stamp pressed onto paper, single hit",
+          "dur": 0.8
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "scene": "voicemail",
+      "narration": "In April, two voicemails. One asks him to fix the potholes on Third Street. Police: free speech. Unfounded.",
+      "overlays": [
+        {
+          "type": "quote",
+          "word": "potholes",
+          "text": "“maybe you should fix the potholes on Third Street first. Have a great day.”",
+          "by": "voicemail he reported, April 2026",
+          "pos": [
+            0.5,
+            0.3
+          ]
+        },
+        {
+          "type": "stamp",
+          "word": "Unfounded",
+          "text": "UNFOUNDED",
+          "pos": [
+            0.5,
+            0.72
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "voicemails",
+          "prompt": "answering machine beep",
+          "dur": 0.6
+        },
+        {
+          "word": "Unfounded",
+          "prompt": "heavy rubber stamp pressed onto paper, single hit",
+          "dur": 0.8
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "scene": "shells",
+      "narration": "In May, a criminal complaint over a post reading eighty-six Wynn. Out of ten commenters, he names one: his critic's partner, who wrote, we have a lovely town. Police: not a victim, not a witness. Unfounded.",
+      "overlays": [
+        {
+          "type": "quote",
+          "word": "lovely",
+          "text": "“We have a lovely town, so let’s have lovely people working to protect it.”",
+          "by": "the only commenter he named",
+          "pos": [
+            0.5,
+            0.3
+          ]
+        },
+        {
+          "type": "quote",
+          "word": "victim",
+          "text": "Wynn is “not a victim or a witness to a crime.”",
+          "by": "Paonia PD, case P26-0323",
+          "pos": [
+            0.5,
+            0.74
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "Unfounded",
+          "prompt": "heavy rubber stamp pressed onto paper, single hit",
+          "dur": 0.8
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "scene": "station",
+      "narration": "Four times, in two towns, he took his critics to the police. Four times, no crime.",
+      "overlays": [
+        {
+          "type": "caption",
+          "word": "Four",
+          "text": "4 REPORTS · 0 CRIMES"
+        }
+      ],
+      "sfx": [
+        {
+          "word": "Four",
+          "prompt": "soft deep cinematic boom hit, short",
+          "dur": 1.2
+        }
+      ]
+    }
+  ],
+  "end": {
+    "lines": [
+      "IT'S CALLED",
+      "THE FIRST",
+      "AMENDMENT."
+    ],
+    "source": "Sources: Wynn v. City of Neptune Beach, Order Granting Summary Judgment (Oct. 1, 2026); Paonia PD records P26-0191, P26-0289, P26-0323 (CCJRA, June 4, 2026)",
+    "dur": 3.5
+  }
+}

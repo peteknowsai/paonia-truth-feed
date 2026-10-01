@@ -1,0 +1,164 @@
+{
+  "slug": "ask-a-question",
+  "title": "ASK A QUESTION",
+  "voice": "8BNZXqdnYLBqxWWAuQYn",
+  "steps": [
+    "ASK",
+    "NAMED",
+    "FIRED",
+    "HR FIRM",
+    "EXODUS"
+  ],
+  "music": "Quiet, uneasy documentary underscore. Soft felt piano with slow sustained cello, 75 bpm, restrained and serious, no vocals, no percussion build, steady bed under narration.",
+  "segments": [
+    {
+      "step": 0,
+      "scene": "townhall",
+      "narration": "Pay-own-yuh, Colorado. September twenty twenty-five. Deputy Treasurer Kaja Bowman asks the mayor how staff can raise a concern about the town administrator.",
+      "overlays": [
+        {
+          "type": "label",
+          "word": "Pay-own-yuh",
+          "text": "Paonia, CO · Sept. 16, 2025",
+          "pos": [
+            0.5,
+            0.08
+          ]
+        },
+        {
+          "type": "caption",
+          "word": "asks",
+          "text": "SHE ASKED HOW"
+        }
+      ],
+      "sfx": [
+        {
+          "word": "asks",
+          "prompt": "soft knock on a wooden office door",
+          "dur": 0.8
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "scene": "file",
+      "narration": "That same day, the mayor gives Stefen Wynn her name. Write-ups dated that week land in her personnel file.",
+      "overlays": [
+        {
+          "type": "stamp",
+          "word": "same",
+          "text": "SAME DAY"
+        },
+        {
+          "type": "label",
+          "word": "Write-ups",
+          "text": "dated Sept. 16 & 18",
+          "pos": [
+            0.7,
+            0.2
+          ],
+          "arrow": [
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "Write-ups",
+          "prompt": "manila folder dropped onto a desk, papers shuffle",
+          "dur": 1.0
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "scene": "emptydesk",
+      "narration": "Twenty-three days later, she is fired. Wynn, in his own words: we just terminated without cause so she could get unemployment.",
+      "overlays": [
+        {
+          "type": "caption",
+          "word": "Twenty-three",
+          "text": "23 DAYS LATER"
+        },
+        {
+          "type": "quote",
+          "word": "we",
+          "text": "“We just terminated without cause so she could get unemployment.”",
+          "by": "Wynn, Delta County Independent, June 2026",
+          "pos": [
+            0.5,
+            0.74
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "fired",
+          "prompt": "cardboard box of office items set down heavily",
+          "dur": 1.0
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "scene": "handbook",
+      "narration": "The HR help? An Indiana firm Wynn reached out to while in Indianapolis. No bid. The town paid in full for an employee handbook that, months later, the board still had not seen.",
+      "overlays": [
+        {
+          "type": "quote",
+          "word": "Indiana",
+          "text": "“Stefen, I hope that you are enjoying your time in Indy?… Thanks so much for reaching out.”",
+          "by": "New Focus HR to Wynn, May 23, 2025",
+          "pos": [
+            0.5,
+            0.3
+          ]
+        },
+        {
+          "type": "stamp",
+          "word": "No",
+          "text": "NO BID",
+          "pos": [
+            0.5,
+            0.72
+          ]
+        }
+      ],
+      "sfx": [
+        {
+          "word": "No",
+          "prompt": "heavy rubber stamp pressed onto paper, single hit",
+          "dur": 0.8
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "scene": "chairs",
+      "narration": "And the staff kept leaving. Both public works directors quit. The finance office, fired within weeks. Seven departures in a year.",
+      "overlays": [
+        {
+          "type": "caption",
+          "word": "Seven",
+          "text": "7 GONE IN A YEAR"
+        }
+      ],
+      "sfx": [
+        {
+          "word": "Seven",
+          "prompt": "soft deep cinematic boom hit, short",
+          "dur": 1.2
+        }
+      ]
+    }
+  ],
+  "end": {
+    "lines": [
+      "ASK A QUESTION.",
+      "LOSE YOUR JOB."
+    ],
+    "source": "Sources: Delta County Independent (June 30, 2026); Town of Paonia board packet June 10, 2025; Town M365 audit logs (CORA C 26-12, C 26-35)",
+    "dur": 3.5
+  }
+}

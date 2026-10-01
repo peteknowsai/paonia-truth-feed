@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
         destination: "/initiatives/admin-search",
         permanent: false,
       },
+      // The Wynn link gets pasted into sentences; a trailing period shouldn't 404.
+      { source: "/stefen-wynn.", destination: "/stefen-wynn", permanent: true },
     ];
   },
   // Force webpack off its bundled WASM hash (xxhash64/md4), which crashes

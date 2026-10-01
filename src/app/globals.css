@@ -378,3 +378,28 @@ img { max-width: 100%; display: block; }
   }
   .deck-tile:hover { transform: none; }
 }
+
+/* ---------- /stefen-wynn ---------- */
+.wynn-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+@media (max-width: 640px) { .wynn-tiles { grid-template-columns: 1fr 1fr; gap: 1.25rem 0.9rem; } }
+.wynn-tile { margin: 0; scroll-margin-top: 1.5rem; min-width: 0; }
+.wynn-tile video { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain; background: #f3eee4; border: 1px solid var(--rule); }
+.wynn-tile figcaption { display: flex; flex-direction: column; gap: 0.25rem; padding-top: 0.5rem; font-size: 0.85rem; line-height: 1.35; color: var(--ink-soft); }
+.wynn-tile figcaption strong { color: var(--ink); font-size: 0.95rem; }
+.wynn-tile-actions { display: flex; gap: 0.75rem; margin-top: 0.15rem; }
+.wynn-tile-actions button, .wynn-tile-actions a {
+  font-family: var(--serif-display); font-size: 0.82rem; font-weight: 600; color: var(--accent);
+  background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
+}
+.wynn-findings { padding-left: 1.4rem; }
+.wynn-findings > li { margin: 0 0 2rem; padding-left: 0.3rem; scroll-margin-top: 1.5rem; }
+.wynn-findings > li::marker { font-family: var(--serif-display); font-weight: 600; color: var(--accent); }
+.wynn-findings h3 { font-weight: 600; font-size: 1.25rem; line-height: 1.25; margin: 0 0 0.6rem; }
+.wynn-findings p { margin: 0 0 0.8rem; line-height: 1.6; }
+.wynn .cite { font-size: 0.72rem; padding: 0 0.12rem; text-decoration: none; }
+.wynn-sources { padding-left: 1.4rem; font-size: 0.92rem; line-height: 1.5; }
+.wynn-sources li { margin-bottom: 0.45rem; scroll-margin-top: 1.5rem; }
+.wynn-sources li:target { background: #f6e3cf; }
+/* /stefen-wynn stands alone: no Paonia Truth masthead or footer */
+body:has(article.wynn) .mast,
+body:has(article.wynn) .site-foot { display: none; }

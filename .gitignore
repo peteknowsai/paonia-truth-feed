@@ -72,3 +72,6 @@ raw/transcripts/
 
 # Public, build-time NEXT_PUBLIC_* values (safe to commit; already shipped in the client bundle)
 !.env.production
+
+# Wynn videos and court PDF: hosted on R2 in production, copied here only for local dev
+/public/media/
