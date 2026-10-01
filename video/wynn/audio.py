@@ -21,9 +21,11 @@ from pathlib import Path
 from render import ROOT, load, norm
 
 API = "https://api.elevenlabs.io/v1"
-VOICE = "nPczCjzI2devNBz1zQrb"  # "Brian": measured American narrator
-LEAD, TAIL = 0.3, 0.35  # silence around each narration segment
+VOICE = "nPczCjzI2devNBz1zQrb"  # "Brian"; override per video with "voice" in its JSON
+MODEL = "eleven_v4"
+LEAD, TAIL = 0.2, 0.25  # silence around each narration segment
 MUSIC_DB, SFX_DB = -20, -12
+TEMPO = 1.15  # pitch-preserving speed-up; eleven_v4 ignores voice_settings.speed
 
 
 def key():
@@ -57,25 +59,28 @@ def duration(path):
 
 
 def narrate(seg, voice, cache):
-    body = {"text": seg["narration"], "model_id": "eleven_multilingual_v2",
-            "voice_settings": {"stability": 0.6, "similarity_boost": 0.8, "style": 0.1}}
+    body = {"text": seg["narration"], "model_id": MODEL,
+            "voice_settings": {"stability": 0.6, "similarity_boost": 0.8, "style": 0.1, "speed": 1.1}}
     raw = json.loads(call(f"/text-to-speech/{voice}/with-timestamps", body, cache, "json").read_text())
     mp3 = cache / f"{hashlib.sha256(raw['audio_base64'][:2000].encode()).hexdigest()[:16]}.mp3"
     if not mp3.exists():
         mp3.write_bytes(base64.b64decode(raw["audio_base64"]))
+    fast = mp3.with_name(f"{mp3.stem}-x{TEMPO}.wav")
+    if not fast.exists():
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp3), "-af", f"atempo={TEMPO}", str(fast)], check=True)
     al = raw["alignment"]
     words, cur, start = [], "", None
     for ch, t in zip(al["characters"], al["character_start_times_seconds"]):
         if ch.isspace():
             if cur:
-                words.append({"w": cur, "t": round(LEAD + start, 3)})
+                words.append({"w": cur, "t": round(LEAD + start / TEMPO, 3)})
             cur, start = "", None
         else:
             start = t if start is None else start
             cur += ch
     if cur:
-        words.append({"w": cur, "t": round(LEAD + start, 3)})
-    return mp3, {"dur": round(LEAD + duration(mp3) + TAIL, 3), "words": words}
+        words.append({"w": cur, "t": round(LEAD + start / TEMPO, 3)})
+    return fast, {"dur": round(LEAD + duration(fast) + TAIL, 3), "words": words}
 
 
 def main(spec_path, voice):
@@ -133,5 +138,5 @@ def main(spec_path, voice):
 
 
 if __name__ == "__main__":
-    v = sys.argv[sys.argv.index("--voice") + 1] if "--voice" in sys.argv else VOICE
-    main(sys.argv[1], v)
+    spec_voice = json.loads(Path(sys.argv[1]).read_text()).get("voice", VOICE)
+    main(sys.argv[1], sys.argv[sys.argv.index("--voice") + 1] if "--voice" in sys.argv else spec_voice)

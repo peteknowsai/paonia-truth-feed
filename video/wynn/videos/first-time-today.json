@@ -1,6 +1,7 @@
 {
   "slug": "first-time-today",
   "title": "FIRST TIME TODAY",
+  "voice": "8BNZXqdnYLBqxWWAuQYn",
   "steps": [
     "COLOR",
     "PLANS",
@@ -219,6 +220,6 @@
       "LOST."
     ],
     "source": "Wynn v. City of Neptune Beach, No. 16-2023-CA-008801 (Fla. 4th Cir. Ct.), Order Granting Summary Judgment, Oct. 1, 2026",
-    "dur": 4.0
+    "dur": 3.5
   }
 }

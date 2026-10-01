@@ -1,6 +1,7 @@
 {
   "slug": "ask-a-question",
   "title": "ASK A QUESTION",
+  "voice": "8BNZXqdnYLBqxWWAuQYn",
   "steps": [
     "ASK",
     "NAMED",
@@ -158,6 +159,6 @@
       "LOSE YOUR JOB."
     ],
     "source": "Sources: Delta County Independent (June 30, 2026); Town of Paonia board packet June 10, 2025; Town M365 audit logs (CORA C 26-12, C 26-35)",
-    "dur": 4.0
+    "dur": 3.5
   }
 }

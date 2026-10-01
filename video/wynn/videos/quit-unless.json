@@ -1,6 +1,7 @@
 {
   "slug": "quit-unless",
   "title": "QUIT UNLESS",
+  "voice": "8BNZXqdnYLBqxWWAuQYn",
   "steps": [
     "ELECTED",
     "ULTIMATUM",
@@ -145,6 +146,6 @@
       "OR THEIR SEAT."
     ],
     "source": "Sources: Wynn conditional resignation (Aug. 1, 2024); Paonia Board removal hearing, Aug. 13–15, 2024; Wynn emails Sept.–Nov. 2024 (board letter, Mar. 30, 2026)",
-    "dur": 4.0
+    "dur": 3.5
   }
 }
