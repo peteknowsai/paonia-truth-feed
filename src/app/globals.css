@@ -400,3 +400,6 @@ img { max-width: 100%; display: block; }
 .wynn-sources { padding-left: 1.4rem; font-size: 0.92rem; line-height: 1.5; }
 .wynn-sources li { margin-bottom: 0.45rem; scroll-margin-top: 1.5rem; }
 .wynn-sources li:target { background: #f6e3cf; }
+/* /stefen-wynn stands alone: no Paonia Truth masthead or footer */
+body:has(article.wynn) .mast,
+body:has(article.wynn) .site-foot { display: none; }
